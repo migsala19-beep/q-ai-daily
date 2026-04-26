@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 
 REPORTS_DIR = os.path.expanduser("~/qxia-reports/reports")
 DATA_FILE = os.path.expanduser("~/qxia-reports/data/reports.json")
-BASE_URL = "https://7541e05cae1f04.lhr.life"
+BASE_URL = "https://348afb4850b528.lhr.life"
 
 # 邮件配置（需要填写）
 SMTP_HOST = os.environ.get("QXIA_SMTP_HOST", "")
