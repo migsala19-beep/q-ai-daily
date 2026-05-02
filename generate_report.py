@@ -32,7 +32,7 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
 
-def fetch(url, timeout=15):
+def fetch(url, timeout=60):
     try:
         r = requests.get(url, timeout=timeout, headers={
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
@@ -131,17 +131,77 @@ def get_blog_posts():
             if "/discover/blog/" in a["href"] and a.get_text(strip=True):
                 blogs.append({"source": "DeepMind", "title": a.get_text(strip=True), "url": urljoin("https://deepmind.google", a["href"])})
     return blogs[:12]
-def call_hermes(prompt: str) -> str:
-    """调用 Hermes CLI 生成文本分析"""
+BASE_URL = "https://domiai.com.cn"
+
+def call_kimi_api(prompt: str) -> str:
+    """调用 Kimi API 生成文本分析"""
+    api_key = os.environ.get("KIMI_API_KEY", "")
+    if not api_key:
+        return ""
     try:
-        result = subprocess.run(
-            ["hermes", "chat", "-q", prompt, "-Q", "--source", "cronjob"],
-            capture_output=True, text=True, timeout=180
+        r = requests.post(
+            "https://api.moonshot.cn/v1/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json={
+                "model": "moonshot-v1-8k",
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.7,
+                "max_tokens": 2048
+            },
+            timeout=120
         )
-        return result.stdout.strip() or "（Hermes 无返回）"
+        data = r.json()
+        if r.status_code != 200:
+            print(f"[ERR] Kimi API HTTP {r.status_code}: {data}")
+            return ""
+        return data["choices"][0]["message"]["content"].strip()
     except Exception as e:
-        print(f"[ERR] hermes call: {e}")
-        return "（分析超时或异常）"
+        print(f"[ERR] Kimi API call: {e}")
+        return ""
+
+def call_local_summary(raw_data: dict) -> str:
+    """无 API Key 时，从原始数据生成简单汇总"""
+    parts = []
+    
+    gh = raw_data.get("github", [])
+    if gh:
+        repos = [f"{x['repo']}（{x['desc'][:40]}）" for x in gh[:3] if x.get('repo')]
+        parts.append(f"【GitHub 热门】{'; '.join(repos)}")
+    
+    arxiv = raw_data.get("arxiv", [])
+    if arxiv:
+        titles = [x['title'][:50] for x in arxiv[:3] if x.get('title')]
+        parts.append(f"【arXiv 论文】{'; '.join(titles)}")
+    
+    hf = raw_data.get("hf", [])
+    if hf:
+        titles = [x['title'][:50] for x in hf[:3] if x.get('title')]
+        parts.append(f"【HuggingFace】{'; '.join(titles)}")
+    
+    blogs = raw_data.get("blogs", [])
+    if blogs:
+        titles = [f"{x['source']}:{x['title'][:40]}" for x in blogs[:3] if x.get('title')]
+        parts.append(f"【大厂动态】{'; '.join(titles)}")
+    
+    raw_summary = "\n\n".join(parts) if parts else "暂无原始数据"
+    
+    return f"""### 执行摘要
+今日 AI 资讯摘要：
+{raw_summary.replace(chr(10), '<br>')}
+
+### 深度研究报告
+基于上述来源，以下内容值得关注：
+<br>1. GitHub Trending 反映了开发者对 {gh[0]['repo'].split('/')[1] if gh else 'AI 工具'} 等方向的关注
+<br>2. arXiv 最新论文探索了 {arxiv[0]['title'][:30] if arxiv else 'AI 技术'} 等课题
+<br>3. 大厂博客动态显示 {blogs[0]['source'] if blogs else '业界'}在持续推进相关产品和研究
+<br><br>【提示】配置 Kimi API Key 后，此处将由 AI 自动生成深度分析。
+
+### 实践启发
+<br>1. 关注 GitHub 热门项目，了解开源社区最新工具和框架
+<br>2. 浏览 arXiv 论文摘要，把握学术前沿动向
+<br>3. 阅读大厂博客，了解产品化应用和商业落地情况
+<br>4. 尝试将有趣的工具/框架应用到自己的项目中
+<br>5. 持续关注 Q虾 AI 日报，获取每日精选资讯"""
 
 
 def git_push():
@@ -182,7 +242,7 @@ def send_email(date_str: str, report_url: str, summary_text: str):
         </p>
         <p style="color:#888;font-size:12px">
           此邮件由运行于 Mac mini 上的 Q虾 AI 助手自动发送<br>
-          固定网址：https://migsala19-beep.github.io/ai-daily/
+          固定网址：{BASE_URL}
         </p>
         </body>
         </html>
@@ -198,8 +258,8 @@ def send_email(date_str: str, report_url: str, summary_text: str):
         print(f"[ERR] 邮件发送失败: {e}")
 
 
-def generate_analysis(raw_data: dict) -> dict:
-    # 构造 prompt 让 Hermes 产生结构化分析
+def generate_analysis(raw_data: dict) -> str:
+    # 先尝试调用 Kimi API，无 Key 时自动回退到本地汇总
     prompt = f"""你是 AI 行业研究员。以下是今日收集到的原始 AI 资讯：
 
 [GitHub Trending]
@@ -225,7 +285,11 @@ def generate_analysis(raw_data: dict) -> dict:
 ### 实践启发
 基于今日资讯，给出 3-5 个可落地的实践 idea 或行动建议，每条带一句简短理由。
 """
-    return call_hermes(prompt)
+    analysis = call_kimi_api(prompt)
+    if not analysis:
+        print("[INFO] 未配置 Kimi API Key，使用本地汇总模式")
+        analysis = call_local_summary(raw_data)
+    return analysis
 
 
 def build_html(date_str: str, raw_data: dict, analysis_text: str) -> str:
@@ -397,7 +461,7 @@ def main():
     git_push()
 
     # 发送邮件通知
-    report_url = f"https://migsala19-beep.github.io/ai-daily/reports/{today}.html"
+    report_url = f"{BASE_URL}/reports/{today}.html"
     send_email(today, report_url, analysis)
 
 
