@@ -32,7 +32,7 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 
 
-def fetch(url, timeout=60):
+def fetch(url, timeout=15):
     try:
         r = requests.get(url, timeout=timeout, headers={
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
@@ -136,6 +136,13 @@ BASE_URL = "https://domiai.com.cn"
 def call_kimi_api(prompt: str) -> str:
     """调用 Kimi API 生成文本分析"""
     api_key = os.environ.get("KIMI_API_KEY", "")
+    # 备选：从本地安全文件读取
+    if not api_key and os.path.exists(os.path.expanduser("~/.kimi_key")):
+        try:
+            with open(os.path.expanduser("~/.kimi_key"), "r") as f:
+                api_key = f.read().strip()
+        except Exception:
+            pass
     if not api_key:
         return ""
     try:
