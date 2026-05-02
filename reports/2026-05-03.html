@@ -18,7 +18,8 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 .back{display:inline-block;margin-bottom:20px;color:#888}
 .tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
 .empty{color:#666;font-style:italic}
-.en{color:#aaa;font-size:14px;margin-top:12px;padding-top:12px;border-top:1px dashed #333}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
 .source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
 </style>
 </head>
@@ -26,30 +27,37 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 <a class="back" href="../index.html">← 返回首页</a>
 <h1>🔔 AI 日报 — 2026-05-03</h1>
 <div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
   <span class="tag">执行摘要</span>
   <span class="tag">深度研究</span>
   <span class="tag">实践启发</span>
-  <span class="tag">English</span>
 </div>
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI驱动科学发现：光学平台实现端到端自主实验<br>- 生产级LLM迁移框架出炉，解决模型EOL痛点<br>- 自修复多智能体系统自动生成ML流水线<br>- 微软开源Qlib整合强化学习赋能量化投研<br>- 因果模型解释二元脉冲神经网络行为机制</div>
+  <div>- AI自主科学发现加速，光学实验平台端到端落地<br>- 生产级LLM迁移框架发布，缓解模型迭代风险<br>- 脉冲神经网络因果解释性研究取得突破<br>- 微软开源AI量化平台Qlib，强化学习赋能金融<br>- 隐私自托管工具链持续升温，个人数据主权受关注</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - AI autonomous scientific discovery accelerates on real optical platforms<br>- Production LLM migration framework mitigates model iteration risks<br>- Causal interpretability breakthrough in binary spiking neural networks<br>- Microsoft's Qlib empowers quant trading with RL and AutoML<br>- Privacy-first self-hosted tools gain traction amid data sovereignty trends
+  </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>**趋势一：AI for Science 走向端到端自主化**<br>今日arXiv两篇论文揭示了AI科学研究的范式跃迁。《End-to-end autonomous scientific discovery on a real optical platform》首次在真实光学硬件平台上实现了LLM Agent驱动的全流程自主科学发现——从提出假设、设计实验到分析数据，无需人工干预。另一篇《Think it, Run it》则提出自修复多Agent架构，能根据自然语言需求自动生成并迭代优化ML流水线。两者结合表明：AI正从"辅助分析工具"进化为"自主研究者"，这对材料科学、光学、药物发现等实验密集型领域具有颠覆意义。<br><br>**趋势二：生产级LLM生命周期管理成为刚需**<br>《When Your LLM Reaches End-of-Life》聚焦一个被忽视但极现实的痛点：生产系统中的LLM如何安全迁移。该论文提出贝叶斯统计框架来校准自动化评估指标，确保模型替换时的置信度量化。与此同时，微软Qlib作为AI量化投资平台持续迭代，支持监督学习、市场动力学建模到RL的全链路范式，并引入RD-Agent自动化R&D流程。这反映出AI应用从"实验室Demo"向"生产系统"过渡时，模型治理、MLOps和迁移策略正成为核心基础设施。</div>
+  <div>方向一：AI for Science 从"辅助计算"走向"自主闭环"。arXiv今日出现两篇关键论文：一篇在真实光学平台上实现端到端自主科学发现，LLM智能体不再只是生成假设，而是直接驱动物理实验设备、分析反馈数据并迭代优化；另一篇通过自修复多智能体系统实现ML pipeline的自动生成。这标志着AI科研正从数字孪生走向物理世界的闭环控制，结合PINN的组合元学习论文，说明AI正在同时解决"建模"和"实验编排"两大瓶颈。<br><br>方向二：LLM生产系统的"生命周期管理"成为新焦点。论文《When Your LLM Reaches End-of-Life》首次系统提出贝叶斯统计框架来校准自动化评估指标，指导生产环境中LLM的自信迁移。这与GitHub上微软Qlib集成RD-Agent自动化研发流程的方向一致：当模型成为生产基础设施的一部分，其迭代、评估、迁移必须工程化、可量化。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two key trends merit attention. First, AI for Science is moving from "digital assistance" to "closed-loop autonomy." The paper on end-to-end autonomous scientific discovery on a real optical platform marks a milestone: LLM agents now directly orchestrate physical experiments, analyze feedback, and iterate hypotheses without human intervention. Coupled with the self-healing multi-agent ML pipeline generation paper, we see AI research shifting from pure simulation to physical-world closed-loop control. The PINN meta-learning paper further addresses task heterogeneity in scientific modeling, suggesting a convergence of automated experimentation and robust model adaptation.<br><br>Second, LLM lifecycle management in production is emerging as a critical discipline. The "End-of-Life" migration framework introduces Bayesian calibration of automated evaluation metrics, enabling confident model replacement in live systems. This mirrors Microsoft Qlib's integration of RD-Agent for automating quant R&D pipelines: as AI models become core infrastructure, their evaluation, iteration, and migration must be engineered and measurable, not ad-hoc.
+  </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. **跟踪LLM迁移评估框架** —— 生产系统部署大模型时，提前建立模型EOL的自动化评估与灰度切换机制，避免模型迭代导致服务风险。<br><br>2. **尝试多Agent生成ML流水线** —— "Think it, Run it"思路可降低建模门槛，适合用来自动化企业内部重复的数据清洗与特征工程流程。<br><br>3. **关注PINNs组合元学习** —— 若涉及物理仿真或工程优化，该方向能缓解不同边界条件/参数下的任务异质性，提升神经算子泛化能力。<br><br>4. **试用Qlib进行量化策略研究** —— 微软已集成RL与自动R&D Agent，适合作为AI+金融的实验平台，快速验证因子挖掘和策略回测想法。<br><br>5. **评估自托管知识管理工具** —— SiYuan等隐私优先的PKM方案在AI Agent时代更具数据主权价值，可作为个人/团队知识库的安全底座。</div>
-</div>
-
-<div class="card">
-  <h2>🌐 English Summary</h2>
-  <div class="en">Executive Summary：<br>- End-to-end AI autonomous scientific discovery on optical platforms<br>- Production LLM migration framework tackles model EOL challenges<br>- Self-healing multi-agent systems auto-generate ML pipelines<br>- Microsoft's Qlib integrates RL for AI-driven quant investment<br>- Causal models explain binary spiking neural network behavior<br><br>Key Research Insights：<br>1. AI for Science is evolving toward full autonomy. The paper "End-to-end autonomous scientific discovery on a real optical platform" demonstrates LLM agents conducting independent experiments on physical hardware, while "Think it, Run it" shows self-healing multi-agent systems autonomously generating ML pipelines—signaling a shift from AI as a tool to AI as an independent researcher.<br>2. LLM production lifecycle management is maturing. The "When Your LLM Reaches End-of-Life" paper introduces a Bayesian statistical approach to automate model migration evaluation, while Microsoft's Qlib platform applies diverse ML paradigms including RL to quantitative research production—reflecting the industry's need for robust MLOps and model governance as AI systems transition from experimentation to production.<br><br>Practical Takeaways：<br>1. Adopt LLM migration evaluation frameworks for production model iteration to avoid service risks during model replacement.<br>2. Explore multi-agent collaborative ML pipeline generation to lower modeling barriers and automate repetitive data workflows.<br>3. Investigate compositional meta-learning for PINNs to improve physics simulation generalization across varying boundary conditions.<br>4. Trial Microsoft Qlib for quantitative strategy backtesting and AI-powered financial research.<br>5. Evaluate self-hosted knowledge management tools like SiYuan for data privacy control in the AI Agent era.</div>
+  <div>1. 关注AI科研自动化赛道，光学实验+LLM智能体的闭环方案可能在材料、生物领域复制。理由：物理世界闭环是下一代AI for Science的核心壁垒。<br>2. 企业部署LLM应提前规划模型迁移策略，建立自动化评估基准。理由：模型迭代速度加快，缺乏迁移框架将导致技术债务累积。<br>3. 量化投资团队可评估微软Qlib的RL模块，将RD-Agent接入现有因子挖掘流程。理由：AI正从"回测工具"升级为"全链路研发自动化"。<br>4. 开发者可尝试自托管笔记+文件服务器组合（如Siyuan+Copyparty）保护数据主权。理由：隐私合规成本上升，本地化部署是长期趋势。<br>5. 脉冲神经网络（SNN）的因果解释性突破值得关注，边缘AI场景或可提前布局。理由：低功耗+可解释性使其在物联网和自动驾驶感知层有替代潜力。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Track AI-driven autonomous research platforms; closed-loop physical experiment systems may replicate in materials and biology. Rationale: Real-world orchestration is the next moat in AI for Science.<br>2. Enterprises deploying LLMs should establish automated evaluation baselines and migration playbooks early. Rationale: Accelerated model iteration without migration discipline creates compounding technical debt.<br>3. Quant teams should evaluate Microsoft Qlib's RL module and integrate RD-Agent into factor mining workflows. Rationale: AI is evolving from backtesting tools to full-cycle R&D automation.<br>4. Developers should pilot self-hosted knowledge stacks (e.g., Siyuan + Copyparty) to retain data sovereignty. Rationale: Rising privacy compliance costs make local deployment a sustainable hedge.<br>5. Monitor causal interpretability advances in binary spiking neural networks for edge AI opportunities. Rationale: Their ultra-low power plus explainability offers disruptive potential in IoT and autonomous perception.
+  </div>
 </div>
 
 <div class="card">
@@ -117,7 +125,7 @@ This study presents an unsupervised machine learning workflow for electrofacies 
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-05-03 00:41 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-05-03 00:50 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

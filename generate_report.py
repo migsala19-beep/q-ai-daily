@@ -153,7 +153,7 @@ def call_hermes(prompt: str) -> str:
         return ""
 
 def call_local_summary(raw_data: dict) -> str:
-    """无 API Key 时，从原始数据生成简单汇总"""
+    """无 Hermes 时，从原始数据生成简单汇总（中英对照）"""
     parts = []
     
     gh = raw_data.get("github", [])
@@ -179,22 +179,41 @@ def call_local_summary(raw_data: dict) -> str:
     raw_summary = "\n\n".join(parts) if parts else "暂无原始数据"
     
     return f"""### 执行摘要
+中文：
 今日 AI 资讯摘要：
-{raw_summary.replace(chr(10), '<br>')}
+{raw_summary}
+
+English:
+Daily AI briefing summary based on collected sources.
 
 ### 深度研究报告
+中文：
 基于上述来源，以下内容值得关注：
 <br>1. GitHub Trending 反映了开发者对 {gh[0]['repo'].split('/')[1] if gh else 'AI 工具'} 等方向的关注
 <br>2. arXiv 最新论文探索了 {arxiv[0]['title'][:30] if arxiv else 'AI 技术'} 等课题
 <br>3. 大厂博客动态显示 {blogs[0]['source'] if blogs else '业界'}在持续推进相关产品和研究
-<br><br>【提示】配置 Kimi API Key 后，此处将由 AI 自动生成深度分析。
+<br><br>【提示】Hermes 分析服务暂时不可用，此处为自动汇总。
+
+English:
+Key findings from today's collected AI sources. 
+1. GitHub trends reflect developer interest in emerging AI tools.
+2. Latest arXiv papers explore cutting-edge AI research topics.
+3. Industry blogs show continued product and research development.
 
 ### 实践启发
+中文：
 <br>1. 关注 GitHub 热门项目，了解开源社区最新工具和框架
 <br>2. 浏览 arXiv 论文摘要，把握学术前沿动向
 <br>3. 阅读大厂博客，了解产品化应用和商业落地情况
 <br>4. 尝试将有趣的工具/框架应用到自己的项目中
-<br>5. 持续关注 Q虾 AI 日报，获取每日精选资讯"""
+<br>5. 持续关注 Q虾 AI 日报，获取每日精选资讯
+
+English:
+<br>1. Follow GitHub trending projects for latest open-source tools
+<br>2. Browse arXiv abstracts to track academic frontiers  
+<br>3. Read industry blogs for product applications and commercial adoption
+<br>4. Apply interesting tools/frameworks to your own projects
+<br>5. Stay tuned to Q虾 AI Daily for curated daily insights"""
 
 
 def git_push():
@@ -270,28 +289,25 @@ def generate_analysis(raw_data: dict) -> str:
 请严格按照下面格式输出（不要说任何多余的话，只输出下面四部分内容，每部分用 ### 分隔）：
 
 ### 执行摘要
+中文：
 用 3-5 条幻灯片要点，每条 20 字以内，概括今日最重要的 AI 动态。
 
+English:
+3-5 bullet points summarizing today's most important AI developments.
+
 ### 深度研究报告
+中文：
 结合上述来源，分析 1-2 个值得关注的趋势或技术方向，每点配合具体案例/论文/项目进行说明。约 300 字。
 
+English:
+In-depth analysis of 1-2 key trends or directions, with specific cases/papers/projects. About 200 words.
+
 ### 实践启发
+中文：
 基于今日资讯，给出 3-5 个可落地的实践 idea 或行动建议，每条带一句简短理由。
 
-### English Summary
-基于上述中文分析，输出对应的英文执行摘要。格式：
-Executive Summary：
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Key Research Insights：
-1. ...
-2. ...
-
-Practical Takeaways：
-1. ...
-2. ...
+English:
+3-5 practical ideas or action recommendations with brief rationale.
 """
     analysis = call_hermes(prompt)
     if not analysis:
@@ -301,24 +317,50 @@ Practical Takeaways：
 
 
 def build_html(date_str: str, raw_data: dict, analysis_text: str) -> str:
-    # 解析 Hermes 返回的文本
+    # 解析 Hermes 返回的中英对照文本
+    def parse_bilingual(part_text: str) -> tuple:
+        """解析中英对照，返回 (zh, en)"""
+        if "English:" in part_text:
+            zh_part = part_text.split("English:")[0].strip()
+            en_part = part_text.split("English:")[1].strip()
+            # 去掉中文标记
+            zh_part = zh_part.replace("中文：", "").strip()
+            return zh_part, en_part
+        elif "English" in part_text:
+            # 兼容旧格式
+            lines = part_text.split("\n")
+            zh_lines = []
+            en_lines = []
+            in_en = False
+            for line in lines:
+                if line.strip().startswith("English") or line.strip() == "English":
+                    in_en = True
+                    continue
+                if in_en:
+                    en_lines.append(line)
+                else:
+                    zh_lines.append(line)
+            return "\n".join(zh_lines).strip(), "\n".join(en_lines).strip()
+        return part_text.strip(), ""
+
     parts = analysis_text.split("###")
-    summary = "暂无摘要"
-    research = "暂无研究报告"
-    insights = "暂无实践启发"
-    english_summary = ""
+    summary_zh, summary_en = "暂无摘要", ""
+    research_zh, research_en = "暂无研究报告", ""
+    insights_zh, insights_en = "暂无实践启发", ""
+
     for part in parts[1:]:
         lines = part.strip().split("\n", 1)
         title = lines[0].strip()
         body = lines[1].strip() if len(lines) > 1 else ""
-        if "执行摘要" in title and "English" not in title:
-            summary = body.replace("\n", "<br>")
+        if "执行摘要" in title:
+            summary_zh, summary_en = parse_bilingual(body)
         elif "深度研究" in title:
-            research = body.replace("\n", "<br>")
-        elif ("启发" in title or "实践" in title) and "Takeaways" not in title:
-            insights = body.replace("\n", "<br>")
-        elif "English" in title or "Executive" in title:
-            english_summary = body.replace("\n", "<br>")
+            research_zh, research_en = parse_bilingual(body)
+        elif "启发" in title or "实践" in title:
+            insights_zh, insights_en = parse_bilingual(body)
+
+    def fmt(text: str) -> str:
+        return text.replace("\n", "<br>")
 
     # 原始数据 - 丰富格式
     gh_items = ""
@@ -371,7 +413,8 @@ li::before{{content:"•";color:#00d4aa;margin-right:8px}}
 .back{{display:inline-block;margin-bottom:20px;color:#888}}
 .tag{{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}}
 .empty{{color:#666;font-style:italic}}
-.en{{color:#aaa;font-size:14px;margin-top:12px;padding-top:12px;border-top:1px dashed #333}}
+.en{{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}}
+.en-title{{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}}
 .source-count{{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}}
 </style>
 </head>
@@ -379,30 +422,37 @@ li::before{{content:"•";color:#00d4aa;margin-right:8px}}
 <a class="back" href="../index.html">← 返回首页</a>
 <h1>🔔 AI 日报 — {date_str}</h1>
 <div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
   <span class="tag">执行摘要</span>
   <span class="tag">深度研究</span>
   <span class="tag">实践启发</span>
-  <span class="tag">English</span>
 </div>
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>{summary}</div>
+  <div>{fmt(summary_zh)}</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    {fmt(summary_en) if summary_en else "<i>English translation will appear here when AI analysis is enabled.</i>"}
+  </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>{research}</div>
+  <div>{fmt(research_zh)}</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    {fmt(research_en) if research_en else "<i>English translation will appear here when AI analysis is enabled.</i>"}
+  </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>{insights}</div>
-</div>
-
-<div class="card">
-  <h2>🌐 English Summary</h2>
-  <div class="en">{english_summary or "<i>English summary will be generated when Hermes API is available.</i>"}</div>
+  <div>{fmt(insights_zh)}</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    {fmt(insights_en) if insights_en else "<i>English translation will appear here when AI analysis is enabled.</i>"}
+  </div>
 </div>
 
 <div class="card">
