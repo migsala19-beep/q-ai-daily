@@ -133,37 +133,23 @@ def get_blog_posts():
     return blogs[:12]
 BASE_URL = "https://domiai.com.cn"
 
-def call_kimi_api(prompt: str) -> str:
-    """调用 Kimi API 生成文本分析"""
-    api_key = os.environ.get("KIMI_API_KEY", "")
-    # 备选：从本地安全文件读取
-    if not api_key and os.path.exists(os.path.expanduser("~/.kimi_key")):
-        try:
-            with open(os.path.expanduser("~/.kimi_key"), "r") as f:
-                api_key = f.read().strip()
-        except Exception:
-            pass
-    if not api_key:
+def call_hermes(prompt: str) -> str:
+    """调用本地 Hermes CLI 生成文本分析"""
+    hermes_path = os.path.expanduser("~/.local/bin/hermes")
+    if not os.path.exists(hermes_path):
         return ""
     try:
-        r = requests.post(
-            "https://api.moonshot.cn/v1/chat/completions",
-            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            json={
-                "model": "moonshot-v1-8k",
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.7,
-                "max_tokens": 2048
-            },
-            timeout=120
+        result = subprocess.run(
+            [hermes_path, "chat", "-q", prompt, "-Q", "--source", "cronjob"],
+            capture_output=True, text=True, timeout=180
         )
-        data = r.json()
-        if r.status_code != 200:
-            print(f"[ERR] Kimi API HTTP {r.status_code}: {data}")
-            return ""
-        return data["choices"][0]["message"]["content"].strip()
+        # Hermes -Q 输出最后几行是 session_id 和结果，去掉 session_id 行
+        lines = result.stdout.strip().split("\n")
+        # 过滤掉 session_id 行
+        filtered = [l for l in lines if not l.startswith("session_id:")]
+        return "\n".join(filtered).strip() or result.stdout.strip()
     except Exception as e:
-        print(f"[ERR] Kimi API call: {e}")
+        print(f"[ERR] hermes call: {e}")
         return ""
 
 def call_local_summary(raw_data: dict) -> str:
@@ -292,9 +278,9 @@ def generate_analysis(raw_data: dict) -> str:
 ### 实践启发
 基于今日资讯，给出 3-5 个可落地的实践 idea 或行动建议，每条带一句简短理由。
 """
-    analysis = call_kimi_api(prompt)
+    analysis = call_hermes(prompt)
     if not analysis:
-        print("[INFO] 未配置 Kimi API Key，使用本地汇总模式")
+        print("[INFO] Hermes 未返回，使用本地汇总模式")
         analysis = call_local_summary(raw_data)
     return analysis
 
