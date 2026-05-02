@@ -8,14 +8,18 @@
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
 h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
 h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
 .card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
 a{color:#4ecdc4;text-decoration:none}
 a:hover{text-decoration:underline}
-ul{padding-left:20px}
+ul{padding-left:20px;list-style:none}
 li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
 .back{display:inline-block;margin-bottom:20px;color:#888}
 .tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
-.empty{color:#666}
+.empty{color:#666;font-style:italic}
+.en{color:#aaa;font-size:14px;margin-top:12px;padding-top:12px;border-top:1px dashed #333}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
 </style>
 </head>
 <body>
@@ -25,43 +29,95 @@ li{margin:8px 0}
   <span class="tag">执行摘要</span>
   <span class="tag">深度研究</span>
   <span class="tag">实践启发</span>
+  <span class="tag">English</span>
 </div>
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI量化平台Qlib升级，自动化研发成新趋势<br>- LLM生产迁移框架发布，解决模型换代痛点<br>- 自主科学发现Agent落地真实光学实验平台<br>- 多Agent自修复系统实现ML流程全自动构建<br>- 二元脉冲神经网络因果解释性取得突破</div>
+  <div>- AI驱动科学发现：光学平台实现端到端自主实验<br>- 生产级LLM迁移框架出炉，解决模型EOL痛点<br>- 自修复多智能体系统自动生成ML流水线<br>- 微软开源Qlib整合强化学习赋能量化投研<br>- 因果模型解释二元脉冲神经网络行为机制</div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>**趋势一：LLM Agent 从"数字助手"进化为"自主科研与工程执行体"**<br><br>今日arXiv多篇论文集中印证了这一拐点。在科研领域，《End-to-end autonomous scientific discovery on a real optical platform》首次将LLM Agent部署于真实光学实验平台，完成假设生成、实验设计到结果分析的完整闭环，标志AI走出模拟环境、直接操控物理世界。在工程领域，《Think it, Run it》提出的自修复多Agent系统可自主生成并迭代ML pipeline；同时微软开源的Qlib量化平台已集成RD-Agent，实现量化策略的自动化研发。三者共同指向：AI正加速接管"提出想法—执行—验证"的完整工作流，从辅助工具转变为自主执行体。<br><br>**趋势二：生产级LLM生命周期管理进入学术与工程视野**<br><br>《When Your LLM Reaches End-of-Life》针对模型退役与迁移这一长期被忽视痛点，提出基于贝叶斯统计的自动化评估指标校准框架，使企业能在模型迭代时量化新旧版本的性能差异与置信度。随着基础模型更新周期缩短，"安全换脑"能力将成为LLM Ops的核心竞争力，对依赖第三方API的企业尤为关键。</div>
+  <div>**趋势一：AI for Science 走向端到端自主化**<br>今日arXiv两篇论文揭示了AI科学研究的范式跃迁。《End-to-end autonomous scientific discovery on a real optical platform》首次在真实光学硬件平台上实现了LLM Agent驱动的全流程自主科学发现——从提出假设、设计实验到分析数据，无需人工干预。另一篇《Think it, Run it》则提出自修复多Agent架构，能根据自然语言需求自动生成并迭代优化ML流水线。两者结合表明：AI正从"辅助分析工具"进化为"自主研究者"，这对材料科学、光学、药物发现等实验密集型领域具有颠覆意义。<br><br>**趋势二：生产级LLM生命周期管理成为刚需**<br>《When Your LLM Reaches End-of-Life》聚焦一个被忽视但极现实的痛点：生产系统中的LLM如何安全迁移。该论文提出贝叶斯统计框架来校准自动化评估指标，确保模型替换时的置信度量化。与此同时，微软Qlib作为AI量化投资平台持续迭代，支持监督学习、市场动力学建模到RL的全链路范式，并引入RD-Agent自动化R&D流程。这反映出AI应用从"实验室Demo"向"生产系统"过渡时，模型治理、MLOps和迁移策略正成为核心基础设施。</div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. **关注AI量化投资工具的平民化机会**：Qlib等开源平台叠加RD-Agent自动化研发，正降低量化策略开发门槛，个人投资者可尝试基于AI的因子挖掘与回测。<br>   *理由：策略研发自动化使非专业量化背景者也能快速验证投资假设。*<br><br>2. **为生产系统预留LLM版本迁移与灰度切换机制**：模型迭代加速，需提前设计评估指标校准、A/B测试及回退方案。<br>   *理由：模型生命周期管理将成为LLM Ops标配，早布局可避免未来强制换代时的业务中断风险。*<br><br>3. **探索多Agent协作在内部数据分析流程中的落地**：借鉴"自修复多Agent"思路，将数据清洗、特征工程到模型训练的重复流程交给Agent自动构建。<br>   *理由：减少数据分析师在工程任务上的时间消耗，使其聚焦业务洞察与策略制定。*<br><br>4. **跟踪神经形态计算在边缘设备上的应用前景**：二元脉冲神经网络（BSNN）因果解释性的突破，可能带来低功耗、可解释的边缘AI方案。<br>   *理由：相比传统ANN，BSNN在IoT和嵌入式场景具备显著能效优势，因果建模更利于通过安全审计。*<br><br>5. **在科研或产品开发中引入"AI科研助手"工作流**：借鉴端到端自主科学发现范式，让AI参与实验设计与假设验证。<br>   *理由：可大幅降低试错成本，加速迭代，尤其适用于材料、化学、光学等实验密集型领域。*</div>
+  <div>1. **跟踪LLM迁移评估框架** —— 生产系统部署大模型时，提前建立模型EOL的自动化评估与灰度切换机制，避免模型迭代导致服务风险。<br><br>2. **尝试多Agent生成ML流水线** —— "Think it, Run it"思路可降低建模门槛，适合用来自动化企业内部重复的数据清洗与特征工程流程。<br><br>3. **关注PINNs组合元学习** —— 若涉及物理仿真或工程优化，该方向能缓解不同边界条件/参数下的任务异质性，提升神经算子泛化能力。<br><br>4. **试用Qlib进行量化策略研究** —— 微软已集成RL与自动R&D Agent，适合作为AI+金融的实验平台，快速验证因子挖掘和策略回测想法。<br><br>5. **评估自托管知识管理工具** —— SiYuan等隐私优先的PKM方案在AI Agent时代更具数据主权价值，可作为个人/团队知识库的安全底座。</div>
 </div>
 
 <div class="card">
-  <h2>🗣️ 原始资讯</h2>
-  <h3>GitHub Trending</h3>
-  <ul><li><a href="https://github.com/siyuan-note/siyuan">siyuan-note/siyuan</a> — A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.</li><li><a href="https://github.com/9001/copyparty">9001/copyparty</a> — Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file</li><li><a href="https://github.com/microsoft/qlib">microsoft/qlib</a> — Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped withhttps://github.com/microsoft/RD-Agentto automate R&D process.</li><li><a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a> — 😎 Awesome lists about all kinds of interesting topics</li><li><a href="https://github.com/mxrch/GHunt">mxrch/GHunt</a> — 🕵️‍♂️ Offensive Google framework.</li><li><a href="https://github.com/QuiteAFancyEmerald/InvisiProxy">QuiteAFancyEmerald/InvisiProxy</a> — InvisiProxy LTS is a web proxy service that helps you access websites that may be blocked by your network, government or policy all within your browser with no download or setup. It does this securely and with additional privacy features. Browse Tor/Onion sites in any browser, hide browsing activity and bypass filters. (Star if you fork it!)</li><li><a href="https://github.com/evcc-io/evcc">evcc-io/evcc</a> — solar charging ☀️🚘</li><li><a href="https://github.com/schollz/croc">schollz/croc</a> — Easily and securely send things from one computer to another 🐊 📦</li></ul>
-  <h3>arXiv 论文</h3>
-  <ul><li><a href="https://arxiv.org/abs/2604.26999">Compositional Meta-Learning for Mitigating Task Heterogeneity in Physics-Informed Neural Networks</a> — arXiv:2604.26999v1 Announce Type: new 
-Physics-informed neural networks (PINNs) approximate solutions of partial differential equations (PDEs) by embedding physical laws into the loss function. In parameterized PDE families, variations in coefficients or boundary/initial conditions define distinct t</li><li><a href="https://arxiv.org/abs/2604.27007">Binary Spiking Neural Networks as Causal Models</a> — arXiv:2604.27007v1 Announce Type: new 
-We provide a causal analysis of Binary Spiking Neural Networks (BSNNs) to explain their behavior. We formally define a BSNN and represent its spiking activity as a binary causal model. Thanks to this causal representation, we are able to explain the output of t</li><li><a href="https://arxiv.org/abs/2604.27082">When Your LLM Reaches End-of-Life: A Framework for Confident Model Migration in Production Systems</a> — arXiv:2604.27082v1 Announce Type: new 
-We present a framework for migrating production Large Language Model (LLM) based systems when the underlying model reaches end-of-life or requires replacement. The key contribution is a Bayesian statistical approach that calibrates automated evaluation metrics </li><li><a href="https://arxiv.org/abs/2604.27092">End-to-end autonomous scientific discovery on a real optical platform</a> — arXiv:2604.27092v1 Announce Type: new 
-Scientific research has long been human-led, driving new knowledge and transformative technologies through the continual revision of questions, methods and claims as evidence accumulates. Although large language model (LLM)-based agents are beginning to move be</li><li><a href="https://arxiv.org/abs/2604.27096">Think it, Run it: Autonomous ML pipeline generation via self-healing multi-agent AI</a> — arXiv:2604.27096v1 Announce Type: new 
-The purpose of our paper is to develop a unified multi-agent architecture that automates end-to-end machine learning (ML) pipeline generation from datasets and natural-language (NL) goals, improving efficiency, robustness and explainability. A five-agent system</li><li><a href="https://arxiv.org/abs/2604.27126">Unsupervised Electrofacies Classification and Porosity Characterization in the Offshore Keta Basin Using Wireline Logs</a> — arXiv:2604.27126v1 Announce Type: new 
-This study presents an unsupervised machine learning workflow for electrofacies analysis in the offshore Keta Basin, Ghana, where core data are scarce. Six standard wireline logs from Well~C were analysed over a depth interval comprising approximately $11{,}195</li></ul>
-  <h3>HuggingFace Papers</h3>
+  <h2>🌐 English Summary</h2>
+  <div class="en">Executive Summary：<br>- End-to-end AI autonomous scientific discovery on optical platforms<br>- Production LLM migration framework tackles model EOL challenges<br>- Self-healing multi-agent systems auto-generate ML pipelines<br>- Microsoft's Qlib integrates RL for AI-driven quant investment<br>- Causal models explain binary spiking neural network behavior<br><br>Key Research Insights：<br>1. AI for Science is evolving toward full autonomy. The paper "End-to-end autonomous scientific discovery on a real optical platform" demonstrates LLM agents conducting independent experiments on physical hardware, while "Think it, Run it" shows self-healing multi-agent systems autonomously generating ML pipelines—signaling a shift from AI as a tool to AI as an independent researcher.<br>2. LLM production lifecycle management is maturing. The "When Your LLM Reaches End-of-Life" paper introduces a Bayesian statistical approach to automate model migration evaluation, while Microsoft's Qlib platform applies diverse ML paradigms including RL to quantitative research production—reflecting the industry's need for robust MLOps and model governance as AI systems transition from experimentation to production.<br><br>Practical Takeaways：<br>1. Adopt LLM migration evaluation frameworks for production model iteration to avoid service risks during model replacement.<br>2. Explore multi-agent collaborative ML pipeline generation to lower modeling barriers and automate repetitive data workflows.<br>3. Investigate compositional meta-learning for PINNs to improve physics simulation generalization across varying boundary conditions.<br>4. Trial Microsoft Qlib for quantitative strategy backtesting and AI-powered financial research.<br>5. Evaluate self-hosted knowledge management tools like SiYuan for data privacy control in the AI Agent era.</div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/siyuan-note/siyuan" target="_blank" style="font-weight:600">siyuan-note/siyuan</a>
+            <span style="color:#888;font-size:13px"> — A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/9001/copyparty" target="_blank" style="font-weight:600">9001/copyparty</a>
+            <span style="color:#888;font-size:13px"> — Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/qlib" target="_blank" style="font-weight:600">microsoft/qlib</a>
+            <span style="color:#888;font-size:13px"> — Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped withhttps://github.com/microsoft/RD-Agentto automate R&D process.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/mxrch/GHunt" target="_blank" style="font-weight:600">mxrch/GHunt</a>
+            <span style="color:#888;font-size:13px"> — 🕵️‍♂️ Offensive Google framework.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/QuiteAFancyEmerald/InvisiProxy" target="_blank" style="font-weight:600">QuiteAFancyEmerald/InvisiProxy</a>
+            <span style="color:#888;font-size:13px"> — InvisiProxy LTS is a web proxy service that helps you access websites that may be blocked by your network, government or policy all within your browser with no download or setup. It does this securely and with additional privacy features. Browse Tor/Onion sites in any browser, hide browsing activity and bypass filters. (Star if you fork it!)</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/evcc-io/evcc" target="_blank" style="font-weight:600">evcc-io/evcc</a>
+            <span style="color:#888;font-size:13px"> — solar charging ☀️🚘</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/schollz/croc" target="_blank" style="font-weight:600">schollz/croc</a>
+            <span style="color:#888;font-size:13px"> — Easily and securely send things from one computer to another 🐊 📦</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.26999" target="_blank" style="font-weight:600">Compositional Meta-Learning for Mitigating Task Heterogeneity in Physics-Informed Neural Networks</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.26999v1 Announce Type: new 
+Physics-informed neural networks (PINNs) approximate solutions of partial differential equations (PDEs) by embedding physical laws into the loss function. In par</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.27007" target="_blank" style="font-weight:600">Binary Spiking Neural Networks as Causal Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.27007v1 Announce Type: new 
+We provide a causal analysis of Binary Spiking Neural Networks (BSNNs) to explain their behavior. We formally define a BSNN and represent its spiking activity as</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.27082" target="_blank" style="font-weight:600">When Your LLM Reaches End-of-Life: A Framework for Confident Model Migration in Production Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.27082v1 Announce Type: new 
+We present a framework for migrating production Large Language Model (LLM) based systems when the underlying model reaches end-of-life or requires replacement. T</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.27092" target="_blank" style="font-weight:600">End-to-end autonomous scientific discovery on a real optical platform</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.27092v1 Announce Type: new 
+Scientific research has long been human-led, driving new knowledge and transformative technologies through the continual revision of questions, methods and claim</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.27096" target="_blank" style="font-weight:600">Think it, Run it: Autonomous ML pipeline generation via self-healing multi-agent AI</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.27096v1 Announce Type: new 
+The purpose of our paper is to develop a unified multi-agent architecture that automates end-to-end machine learning (ML) pipeline generation from datasets and n</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2604.27126" target="_blank" style="font-weight:600">Unsupervised Electrofacies Classification and Porosity Characterization in the Offshore Keta Basin Using Wireline Logs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2604.27126v1 Announce Type: new 
+This study presents an unsupervised machine learning workflow for electrofacies analysis in the offshore Keta Basin, Ghana, where core data are scarce. Six stand</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
   <ul><li class="empty">暂无数据</li></ul>
-  <h3>大厂博客</h3>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
   <ul><li class="empty">暂无数据</li></ul>
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-05-03 00:34 | Q虾 AI 助手
+  生成于 2026-05-03 00:41 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

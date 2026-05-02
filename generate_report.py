@@ -267,7 +267,7 @@ def generate_analysis(raw_data: dict) -> str:
 [大厂博客]
 {json.dumps(raw_data.get('blogs', []), ensure_ascii=False, indent=2)[:1500]}
 
-请严格按照下面格式输出（不要说任何多余的话，只输出下面三部分内容，每部分用 ### 分隔）：
+请严格按照下面格式输出（不要说任何多余的话，只输出下面四部分内容，每部分用 ### 分隔）：
 
 ### 执行摘要
 用 3-5 条幻灯片要点，每条 20 字以内，概括今日最重要的 AI 动态。
@@ -277,6 +277,21 @@ def generate_analysis(raw_data: dict) -> str:
 
 ### 实践启发
 基于今日资讯，给出 3-5 个可落地的实践 idea 或行动建议，每条带一句简短理由。
+
+### English Summary
+基于上述中文分析，输出对应的英文执行摘要。格式：
+Executive Summary：
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+Key Research Insights：
+1. ...
+2. ...
+
+Practical Takeaways：
+1. ...
+2. ...
 """
     analysis = call_hermes(prompt)
     if not analysis:
@@ -291,21 +306,50 @@ def build_html(date_str: str, raw_data: dict, analysis_text: str) -> str:
     summary = "暂无摘要"
     research = "暂无研究报告"
     insights = "暂无实践启发"
+    english_summary = ""
     for part in parts[1:]:
         lines = part.strip().split("\n", 1)
         title = lines[0].strip()
         body = lines[1].strip() if len(lines) > 1 else ""
-        if "摘要" in title:
+        if "执行摘要" in title and "English" not in title:
             summary = body.replace("\n", "<br>")
-        elif "研究" in title:
+        elif "深度研究" in title:
             research = body.replace("\n", "<br>")
-        elif "启发" in title or "实践" in title:
+        elif ("启发" in title or "实践" in title) and "Takeaways" not in title:
             insights = body.replace("\n", "<br>")
+        elif "English" in title or "Executive" in title:
+            english_summary = body.replace("\n", "<br>")
 
-    gh_items = "".join([f'<li><a href="{x["url"]}">{x["repo"]}</a> — {x["desc"]}</li>' for x in raw_data.get("github", [])])
-    arxiv_items = "".join([f'<li><a href="{x["url"]}">{x["title"]}</a> — {x["desc"]}</li>' for x in raw_data.get("arxiv", [])])
-    hf_items = "".join([f'<li><a href="{x["url"]}">{x["title"]}</a></li>' for x in raw_data.get("hf", [])])
-    blog_items = "".join([f'<li>[{x["source"]}] <a href="{x["url"]}">{x["title"]}</a></li>' for x in raw_data.get("blogs", [])])
+    # 原始数据 - 丰富格式
+    gh_items = ""
+    for x in raw_data.get("github", []):
+        desc = x.get("desc", "")
+        gh_items += f'''<li style="margin:12px 0">
+            <a href="{x["url"]}" target="_blank" style="font-weight:600">{x["repo"]}</a>
+            <span style="color:#888;font-size:13px"> — {desc}</span>
+        </li>'''
+
+    arxiv_items = ""
+    for x in raw_data.get("arxiv", []):
+        title = x.get("title", "")
+        desc = x.get("desc", "")
+        arxiv_items += f'''<li style="margin:12px 0">
+            <a href="{x["url"]}" target="_blank" style="font-weight:600">{title}</a>
+            <span style="color:#888;font-size:13px"> — {desc[:200]}</span>
+        </li>'''
+
+    hf_items = ""
+    for x in raw_data.get("hf", []):
+        hf_items += f'''<li style="margin:12px 0">
+            <a href="{x["url"]}" target="_blank" style="font-weight:600">{x["title"]}</a>
+        </li>'''
+
+    blog_items = ""
+    for x in raw_data.get("blogs", []):
+        blog_items += f'''<li style="margin:12px 0">
+            <span style="color:#00d4aa;font-weight:600">[{x["source"]}]</span>
+            <a href="{x["url"]}" target="_blank">{x["title"]}</a>
+        </li>'''
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -317,14 +361,18 @@ def build_html(date_str: str, raw_data: dict, analysis_text: str) -> str:
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}}
 h1{{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}}
 h2{{color:#00d4aa;margin-top:32px;font-size:1.3em}}
+h3{{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}}
 .card{{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}}
 a{{color:#4ecdc4;text-decoration:none}}
 a:hover{{text-decoration:underline}}
-ul{{padding-left:20px}}
+ul{{padding-left:20px;list-style:none}}
 li{{margin:8px 0}}
+li::before{{content:"•";color:#00d4aa;margin-right:8px}}
 .back{{display:inline-block;margin-bottom:20px;color:#888}}
 .tag{{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}}
-.empty{{color:#666}}
+.empty{{color:#666;font-style:italic}}
+.en{{color:#aaa;font-size:14px;margin-top:12px;padding-top:12px;border-top:1px dashed #333}}
+.source-count{{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}}
 </style>
 </head>
 <body>
@@ -334,6 +382,7 @@ li{{margin:8px 0}}
   <span class="tag">执行摘要</span>
   <span class="tag">深度研究</span>
   <span class="tag">实践启发</span>
+  <span class="tag">English</span>
 </div>
 
 <div class="card">
@@ -352,19 +401,28 @@ li{{margin:8px 0}}
 </div>
 
 <div class="card">
-  <h2>🗣️ 原始资讯</h2>
-  <h3>GitHub Trending</h3>
+  <h2>🌐 English Summary</h2>
+  <div class="en">{english_summary or "<i>English summary will be generated when Hermes API is available.</i>"}</div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">{len(raw_data.get("github", []))} items</span></h3>
   <ul>{gh_items or '<li class="empty">暂无数据</li>'}</ul>
-  <h3>arXiv 论文</h3>
+
+  <h3>arXiv 论文 <span class="source-count">{len(raw_data.get("arxiv", []))} items</span></h3>
   <ul>{arxiv_items or '<li class="empty">暂无数据</li>'}</ul>
-  <h3>HuggingFace Papers</h3>
+
+  <h3>HuggingFace Papers <span class="source-count">{len(raw_data.get("hf", []))} items</span></h3>
   <ul>{hf_items or '<li class="empty">暂无数据</li>'}</ul>
-  <h3>大厂博客</h3>
+
+  <h3>大厂博客 <span class="source-count">{len(raw_data.get("blogs", []))} items</span></h3>
   <ul>{blog_items or '<li class="empty">暂无数据</li>'}</ul>
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 {datetime.now().strftime("%Y-%m-%d %H:%M")} | Q虾 AI 助手
+  生成于 {datetime.now().strftime("%Y-%m-%d %H:%M")} | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>'''
@@ -374,7 +432,8 @@ li{{margin:8px 0}}
 def update_index(reports_meta: list):
     items = ""
     for r in sorted(reports_meta, key=lambda x: x["date"], reverse=True):
-        items += f'<div class="card"><a href="reports/{r["date"]}.html"><h3>{r["date"]}</h3></a><p>{r["summary"][:120]}...</p></div>\n'
+        summary_preview = r["summary"][:100].replace("<br>", " ").replace("###", "")
+        items += f'<div class="card"><a href="reports/{r["date"]}.html"><h3>{r["date"]}</h3></a><p>{summary_preview}...</p></div>\n'
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -385,27 +444,31 @@ def update_index(reports_meta: list):
 <style>
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8}}
 h1{{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}}
-.card{{background:#12121e;border-radius:14px;padding:18px;margin:14px 0;transition:transform .1s}}
+.card{{background:#12121e;border-radius:14px;padding:18px;margin:14px 0;transition:transform .1s;position:relative}}
 .card:hover{{transform:translateX(6px)}}
-.card a{{color:#00d4aa;text-decoration:none}}
-.card p{{color:#aaa;margin:6px 0 0}}
+.card a{{color:#00d4aa;text-decoration:none;display:block;cursor:pointer}}
+.card p{{color:#aaa;margin:6px 0 0;font-size:14px}}
+.card a::after{{content:"";position:absolute;top:0;left:0;right:0;bottom:0}}
 .empty{{text-align:center;color:#666;padding:40px}}
 .tag{{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:3px 12px;border-radius:20px;font-size:12px;margin-right:6px}}
+.stats{{color:#666;font-size:13px;margin-top:8px}}
+footer{{text-align:center;color:#444;margin-top:40px}}
 </style>
 </head>
 <body>
 <h1>🐠 Q虾 AI 报告中心</h1>
-<p style="color:#888">每日早晨 8:00 自动更新最新 AI 资讯 | 历史报告永久归档</p>
+<p style="color:#888">每日早辰 8:00 自动更新最新 AI 资讯 | 中英双语 | 历史报告永久归档</p>
 <div style="margin:10px 0">
   <span class="tag">执行摘要</span>
   <span class="tag">深度研究</span>
   <span class="tag">实践启发</span>
+  <span class="tag">English</span>
   <span class="tag">永久归档</span>
 </div>
 <div id="reports">
 {items or '<div class="empty">暂无报告，请等待每日 8:00 自动生成。</div>'}
 </div>
-<footer style="text-align:center;color:#444;margin-top:40px">
+<footer>
   Q虾 AI 助手 · 运行于 Mac mini
 </footer>
 </body>
