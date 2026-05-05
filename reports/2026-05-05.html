@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-05-05</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-05-05</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agentic AI 成今日核心主题，工业与去中心化场景齐头并进<br>- 工具使用并非万能，LLM Agent 面临"语义干扰器"新挑战<br>- 模型智能路由兴起，Manifest 项目宣称可降本 70%<br>- LLM 越狱机理获因果解释，安全对齐研究走向精细化<br>- 拓扑感知 DPO 新算法，提升偏好优化稳定性</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agentic AI dominates today's feed, spanning industrial and decentralized use cases<br>- Tool-use in LLM agents carries hidden "taxes" under semantic distractors<br>- Smart model routing emerges as cost-cutting infra, with Manifest claiming 70% savings<br>- Causal explanations for jailbreak success advance LLM safety research<br>- Topology-aware DPO (TUR-DPO) improves preference optimization stability
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>**趋势一：Agentic AI 从通用对话走向垂直工业与去中心化协作**<br>今日 arXiv 密集出现 Agent 相关研究。TADI 系统将 Agentic LLM 应用于挪威 Equinor 油田的钻井数据分析，整合 1,759 份日报实现证据驱动的决策，标志 Agent 正在渗透重资产工业场景。与此同时，AgentReputation 提出去中心化信誉框架，解决无中央监管环境下 AI Agent 协作的信任问题。这两个方向一纵一横，分别对应"深度垂直"与"广域协作"的 Agent 进化路径。<br><br>**趋势二：Agent 基础设施层开始关注"成本与效率"**<br>GitHub  trending 中的 Manifest（mnfst/manifest）主打智能模型路由，通过动态选择模型降低成本高达 70%。这与 arXiv 论文《Are Tools All We Need?》形成有趣对照——后者揭示工具增强型 Agent 在语义干扰器面前反而表现更差，说明"堆工具"不是无代价的。基础设施层正在从"功能丰富"转向"成本可控、鲁棒可预期"，智能路由和工具代价量化将成为下一阶段关键赛道。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    **Trend 1: Agentic AI moves from general chat to vertical industry and decentralized collaboration**<br>Today's arXiv cluster shows Agentic LLMs entering heavy industry: TADI orchestrates drilling intelligence for Equinor's oil field using 1,759 daily reports. Simultaneously, AgentReputation proposes a decentralized reputation framework for trustless AI-agent marketplaces. These represent vertical depth and horizontal coordination as dual evolution paths.<br><br>**Trend 2: Agent infrastructure shifts focus to cost and robustness**<br>Manifest (GitHub trending) offers smart model routing with up to 70% cost reduction, while the paper "Are Tools All We Need?" reveals that tool-augmented agents degrade under semantic distractors. The juxtaposition signals a shift from feature-stacking to cost-aware, robust agent infrastructure. Intelligent routing and quantifying "tool-use tax" will be key battlegrounds.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 关注智能模型路由方案（如 Manifest），在多 Agent 系统中引入动态模型选择，直接降低 Token 开销。<br>   理由：成本削减 70% 的数据极具吸引力，适合已有 Agent 工作流的用户立即试点。<br>2. 在构建工具型 Agent 时，增加"语义干扰器"过滤层，避免工具误调用导致性能崩塌。<br>   理由：论文已证明工具并非总是增益，鲁棒性设计需前置。<br>3. 探索去中心化 Agent 信誉机制设计，为开源/众包型 AI 服务建立信任基础。<br>   理由：AgentReputation 框架为无平台托管的 AI 协作提供了理论起点。<br>4. 工业领域从业者可将内部报告/日志通过 Agentic LLM 重构为知识库。<br>   理由：TADI 验证了海量非结构化工业数据可被 Agent 转化为可执行洞察。<br>5. LLM 安全团队可借鉴"局部因果解释"方法，定位特定越狱 prompt 的失效节点。<br>   理由：精细化归因比整体对齐训练更利于快速修复新攻击向量。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Pilot smart model routing (e.g., Manifest) in multi-agent stacks to cut token costs dynamically.<br>   Rationale: 70% cost reduction claim makes it a high-ROI immediate experiment.<br>2. Add semantic-distractor guardrails in tool-using agents to prevent mis-invocation cascades.<br>   Rationale: Paper shows tool augmentation can hurt; robustness must be designed in.<br>3. Explore decentralized reputation primitives for open AI-agent marketplaces.<br>   Rationale: AgentReputation provides a theoretical base for trustless collaboration.<br>4. Industrial teams should prototype Agentic LLM pipelines over internal logs and reports.<br>   Rationale: TADI proves unstructured operational data can become actionable intelligence.<br>5. Safety teams should adopt minimal causal explanations to pinpoint jailbreak failure nodes.<br>   Rationale: Fine-grained attribution enables faster patching of novel attack vectors.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/jellyfin/jellyfin" target="_blank" style="font-weight:600">jellyfin/jellyfin</a>
+            <span style="color:#888;font-size:13px"> — The Free Software Media System - Server Backend & API</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NetHack/NetHack" target="_blank" style="font-weight:600">NetHack/NetHack</a>
+            <span style="color:#888;font-size:13px"> — Official NetHack Git Repository</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" style="font-weight:600">nautechsystems/nautilus_trader</a>
+            <span style="color:#888;font-size:13px"> — Production-grade Rust-native trading engine with deterministic event-driven architecture</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/mnfst/manifest" target="_blank" style="font-weight:600">mnfst/manifest</a>
+            <span style="color:#888;font-size:13px"> — Smart Model Routing for Agents. Cut Costs up to 70% 🦚</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tailscale/tailscale" target="_blank" style="font-weight:600">tailscale/tailscale</a>
+            <span style="color:#888;font-size:13px"> — The easiest, most secure way to use WireGuard and 2FA.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ArchipelagoMW/Archipelago" target="_blank" style="font-weight:600">ArchipelagoMW/Archipelago</a>
+            <span style="color:#888;font-size:13px"> — Archipelago Multi-Game Randomizer and Server</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NixOS/nixpkgs" target="_blank" style="font-weight:600">NixOS/nixpkgs</a>
+            <span style="color:#888;font-size:13px"> — Nix Packages collection & NixOS</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/maplibre/maplibre-gl-js" target="_blank" style="font-weight:600">maplibre/maplibre-gl-js</a>
+            <span style="color:#888;font-size:13px"> — MapLibre GL JS - Interactive vector tile maps in the browser</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00060" target="_blank" style="font-weight:600">TADI: Tool-Augmented Drilling Intelligence via Agentic LLM Orchestration over Heterogeneous Wellsite Data</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00060v1 Announce Type: new 
+We present TADI (Tool-Augmented Drilling Intelligence), an agentic AI system that transforms drilling operational data into evidence-based analytical intelligenc</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00073" target="_blank" style="font-weight:600">AgentReputation: A Decentralized Agentic AI Reputation Framework</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00073v1 Announce Type: new 
+Decentralized, agentic AI marketplaces are rapidly emerging to support software engineering tasks such as debugging, patch generation, and security auditing, oft</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00123" target="_blank" style="font-weight:600">Minimal, Local, Causal Explanations for Jailbreak Success in Large Language Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00123v1 Announce Type: new 
+Safety trained large language models (LLMs) can often be induced to answer harmful requests through jailbreak prompts. Because we lack a robust understanding of </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00136" target="_blank" style="font-weight:600">Are Tools All We Need? Unveiling the Tool-Use Tax in LLM Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00136v1 Announce Type: new 
+Tool-augmented reasoning has become a popular direction for LLM-based agents, and it is widely assumed to improve reasoning and reliability. However, we demonstr</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00224" target="_blank" style="font-weight:600">TUR-DPO: Topology- and Uncertainty-Aware Direct Preference Optimization</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00224v1 Announce Type: new 
+Aligning large language models (LLMs) with human preferences is commonly done via reinforcement learning from human feedback (RLHF) with Proximal Policy Optimiza</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.00245" target="_blank" style="font-weight:600">ARMOR 2025: A Military-Aligned Benchmark for Evaluating Large Language Model Safety Beyond Civilian Contexts</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.00245v1 Announce Type: new 
+Large language models (LLMs) are now being explored for defense applications that require reliable and legally compliant decision support. They also hold signifi</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-05-05 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
