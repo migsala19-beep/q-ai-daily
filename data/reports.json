@@ -69,6 +69,6 @@
   },
   {
     "date": "2026-05-17",
-    "summary": "### 执行摘要\n中文：\n• GraphBit图引擎编排Agent，根治LLM路由幻觉与无限循环\n• 二维框架定义Agent设计：认知功能×执行拓扑\n• 多Agent系统安全风险：隐形协调者抑制防护行为\n• 今日arXiv集中涌现Agent架构与治理研究浪潮\n• Agent编排正从提示驱动向引擎驱动范式迁移\n\nEnglish:\n• GraphBit introduces graph-engine "
+    "summary": "### 执行摘要\n中文：\n- 多智能体编排成今日焦点，四篇论文覆盖架构、安全与引擎优化\n- GraphBit 以图引擎替代提示词自路由，解决幻觉与无限循环顽疾\n- 隐形编排器被证实会抑制智能体保护行为，暴露企业级安全隐患\n- Agent 设计范式进入「认知功能 × 执行拓扑」二维融合新阶段\n- 今日数据源偏少，建议关注后续开源社区与大厂动态补足\n\nEnglish:\n- Multi-agent or"
   }
 ]
