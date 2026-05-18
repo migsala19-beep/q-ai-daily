@@ -70,5 +70,9 @@
   {
     "date": "2026-05-17",
     "summary": "### 执行摘要\n中文：\n- 多智能体编排成今日焦点，四篇论文覆盖架构、安全与引擎优化\n- GraphBit 以图引擎替代提示词自路由，解决幻觉与无限循环顽疾\n- 隐形编排器被证实会抑制智能体保护行为，暴露企业级安全隐患\n- Agent 设计范式进入「认知功能 × 执行拓扑」二维融合新阶段\n- 今日数据源偏少，建议关注后续开源社区与大厂动态补足\n\nEnglish:\n- Multi-agent or"
+  },
+  {
+    "date": "2026-05-18",
+    "summary": "### 执行摘要\n中文：\n• 自托管基础设施升温，隐私可控成核心诉求\n• 高性能JS运行时Bun上榜，工具链加速迭代\n• 安全编排引擎受关注，AI驱动安全成趋势\n• 开源教育平台常青，AI人才培育根基稳固\n\nEnglish:\n• Self-hosting infrastructure surges as privacy control becomes paramount.\n• High-perfo"
   }
 ]
