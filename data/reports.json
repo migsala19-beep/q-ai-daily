@@ -73,6 +73,6 @@
   },
   {
     "date": "2026-05-18",
-    "summary": "### 执行摘要\n中文：\n• 自托管基础设施升温，隐私可控成核心诉求\n• 高性能JS运行时Bun上榜，工具链加速迭代\n• 安全编排引擎受关注，AI驱动安全成趋势\n• 开源教育平台常青，AI人才培育根基稳固\n\nEnglish:\n• Self-hosting infrastructure surges as privacy control becomes paramount.\n• High-perfo"
+    "summary": "### 执行摘要\n中文：\n1. 今日 AI 前沿论文与大厂动态缺失，学界产业界处于静默期\n2. GitHub 热榜聚焦开发者基础设施：调度、运行时、PaaS 持续升温\n3. 自托管开源方案（Coolify、Immich）成独立开发者主流选择\n4. AI 应用落地依赖底层工具链成熟，高性能运行时 Bun 受关注\n5. 安全编排引擎 Osmedeus 上榜，AI 自动化安全测试需求上升\n\nEnglis"
   }
 ]
