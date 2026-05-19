@@ -74,5 +74,9 @@
   {
     "date": "2026-05-18",
     "summary": "### 执行摘要\n中文：\n1. 今日 AI 前沿论文与大厂动态缺失，学界产业界处于静默期\n2. GitHub 热榜聚焦开发者基础设施：调度、运行时、PaaS 持续升温\n3. 自托管开源方案（Coolify、Immich）成独立开发者主流选择\n4. AI 应用落地依赖底层工具链成熟，高性能运行时 Bun 受关注\n5. 安全编排引擎 Osmedeus 上榜，AI 自动化安全测试需求上升\n\nEnglis"
+  },
+  {
+    "date": "2026-05-19",
+    "summary": "### 执行摘要\n中文：\n• 自托管PaaS工具持续爆发，隐私可控成主流诉求\n• AI Agent编排从\"能跑\"进化到\"状态约束\"精细管控\n• AI生成幻灯片从\"artifact颜值\"转向\"delivery体验\"\n• LLM心理理论能力需从交互实证，而非仅靠基准测试\n• Agent技能编译与边界控制成为系统安全新范式\n\nEnglish:\n• Self-hosted PaaS tools surge"
   }
 ]
