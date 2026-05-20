@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-05-20</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-05-20</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 多智能体编排工程化成焦点，学术与工具齐发力<br>- AI内容生成从"做得出"转向"讲得好"<br>- n8n工作流平台持续引领低代码自动化<br>- LLM心智理论提升效果存疑，需交互验证<br>- 技能编译化趋势显现，Agent接口更规范</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Multi-agent orchestration heats up across tools and research.<br>- AI content generation shifts from artifact quality to delivery.<br>- n8n workflow platform leads low-code automation trend.<br>- LLM Theory of Mind gains may not directly improve interactions.<br>- Skill compilation trend emerges for standardized agent interfaces.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>**趋势一：多智能体编排从"能跑"进入"可控"阶段。** 今日 GitHub Trending 中的 n8n 作为低代码工作流自动化平台，已集成 400+ 连接器和原生 AI 能力，代表工程侧的成熟落地。学术侧两篇论文直击痛点：SDOF 针对 LangChain/CrewAI 等框架缺乏业务流程状态约束的问题，提出状态约束调度以削减"对齐税"；SkillSmith 则将 Agent 技能编译为带边界检查的运行时接口，解决技能注入后的越权与冲突。两者共同指向一个信号——多 Agent 系统的下一个战场是可控性与工程规范，而非单纯的能力堆砌。<br><br>**趋势二：AI 生成内容的评价维度从"产物"扩展到"交付"。** DeepSlide 论文指出，现有 AI 幻灯片生成器过度优化视觉产物（artifact），却忽视了演讲节奏、叙事结构和准备过程。这揭示了一个更广泛的范式转移：随着大模型生成质量趋于饱和，"最后一公里"的交付体验（delivery）将成为差异化关键，适用于文档、代码、视频等所有生成场景。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    **Trend 1: Multi-agent orchestration moves from "functional" to "controllable."** On the engineering side, n8n (trending on GitHub) offers a mature low-code workflow platform with 400+ integrations and native AI. On the research side, SDOF tackles the "alignment tax" in LangChain/CrewAI by enforcing state-constrained dispatch, while SkillSmith compiles agent skills into boundary-guided runtime interfaces to prevent skill conflicts. Together, they signal that the next battleground for multi-agent systems is control and engineering discipline, not raw capability stacking.<br><br>**Trend 2: AI-generated content evaluation shifts from artifact to delivery.** The DeepSlide paper argues that current AI slide generators optimize visual artifacts while neglecting pacing, narrative, and presentation preparation. This reflects a broader paradigm shift: as generative quality plateaus, the "last mile" delivery experience will become the key differentiator across documents, code, video, and beyond.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 在内部自动化项目中引入 n8n 替代零散脚本，利用其可视化编排降低维护成本。<br>  理由：400+ 集成与 AI 节点可快速搭建业务流程，减少重复开发。<br>- 若在使用 LangChain/CrewAI 做多 Agent 系统，可引入 SDOF 的状态约束思想。<br>  理由：防止 Agent 链在无状态管控下产生越权调用或循环依赖。<br>- 设计 AI Agent 的技能库时，参考 SkillSmith 的边界接口模式。<br>  理由：明确技能输入输出边界，降低运行时冲突与提示注入风险。<br>- 评估内部 LLM 应用效果时，加入交互式场景测试而非仅看基准分数。<br>  理由：Theory of Mind 论文显示，故事阅读理解高分未必转化为更好的人机协作。<br>- 如果你在做 AI 演示/内容工具，把优化重心从"生成质量"扩展到"使用体验"。<br>  理由：DeepSlide 表明，交付环节（节奏、叙事）才是用户真正感知价值的时刻。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Adopt n8n for internal automation instead of scattered scripts.<br>  Rationale: 400+ integrations and AI nodes reduce maintenance and speed up workflow building.<br>- Apply state-constrained dispatch (SDOF) in LangChain/CrewAI multi-agent setups.<br>  Rationale: Prevents unauthorized calls and circular dependencies in agent pipelines.<br>- Design agent skill libraries with boundary-guided interfaces (SkillSmith).<br>  Rationale: Clear input/output boundaries reduce runtime conflicts and prompt-injection risks.<br>- Evaluate LLM applications with interactive scenarios, not just benchmark scores.<br>  Rationale: Theory of Mind research shows high story-task scores may not improve real collaboration.<br>- Shift optimization focus from generation quality to delivery experience in AI content tools.<br>  Rationale: DeepSlide shows pacing and narrative are where users actually perceive value.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/n8n-io/n8n" target="_blank" style="font-weight:600">n8n-io/n8n</a>
+            <span style="color:#888;font-size:13px"> — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/calcom/cal.diy" target="_blank" style="font-weight:600">calcom/cal.diy</a>
+            <span style="color:#888;font-size:13px"> — Scheduling infrastructure for absolutely everyone.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" style="font-weight:600">nautechsystems/nautilus_trader</a>
+            <span style="color:#888;font-size:13px"> — Production-grade Rust-native trading engine with deterministic event-driven architecture</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nektos/act" target="_blank" style="font-weight:600">nektos/act</a>
+            <span style="color:#888;font-size:13px"> — Run your GitHub Actions locally 🚀</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/google/flatbuffers" target="_blank" style="font-weight:600">google/flatbuffers</a>
+            <span style="color:#888;font-size:13px"> — FlatBuffers: Memory Efficient Serialization Library</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nats-io/nats-server" target="_blank" style="font-weight:600">nats-io/nats-server</a>
+            <span style="color:#888;font-size:13px"> — High-Performance server for NATS.io, the cloud and edge native messaging system.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nextcloud/server" target="_blank" style="font-weight:600">nextcloud/server</a>
+            <span style="color:#888;font-size:13px"> — ☁️ Nextcloud server, a safe home for all your data</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/jaywcjlove/awesome-mac" target="_blank" style="font-weight:600">jaywcjlove/awesome-mac</a>
+            <span style="color:#888;font-size:13px"> —  This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15202" target="_blank" style="font-weight:600">DeepSlide: From Artifacts to Presentation Delivery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15202v1 Announce Type: new 
+Presentations are a primary medium for scholarly communication, yet most AI slide generators optimize the artifact (a visually plausible deck) while under-optimi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15204" target="_blank" style="font-weight:600">SDOF: Taming the Alignment Tax in Multi-Agent Orchestration with State-Constrained Dispatch</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15204v1 Announce Type: new 
+Multi-agent orchestration frameworks such as LangChain, LangGraph, and CrewAI route tasks through graph-based pipelines but do not enforce the stage constraints </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15205" target="_blank" style="font-weight:600">Does Theory of Mind Improvement Really Benefit Human-AI Interactions? Empirical Findings from Interactive Evaluations</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15205v1 Announce Type: new 
+Improving the Theory of Mind (ToM) capability of Large Language Models (LLMs) is crucial for effective social interactions between these AI models and humans. Ho</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15215" target="_blank" style="font-weight:600">SkillSmith: Compiling Agent Skills into Boundary-Guided Runtime Interfaces</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15215v1 Announce Type: new 
+Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15217" target="_blank" style="font-weight:600">Fair outputs, Biased Internals: Causal Potency and Asymmetry of Latent Bias in LLMs for High-Stakes Decisions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15217v1 Announce Type: new 
+Instruction-tuned language models exhibit behavioural fairness in high-stakes decisions while retaining biased associations in their internal representations. Ho</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.15218" target="_blank" style="font-weight:600">CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.15218v1 Announce Type: new 
+Large language models deployed for MAPDL finite-element simulation face practical reliability challenges: without structured execution control, tool encapsulatio</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-05-20 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
