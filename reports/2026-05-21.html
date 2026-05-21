@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-05-21</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-05-21</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>• 数据探针技术揭示训练数据对LLM性能的影响机制<br>• 文档AI微服务架构加速OCR与LLM生产化落地<br>• 个人健康记录成为个性化医疗AI的重要数据基石<br>• 训练稳定性治理框架降低大模型计算资源浪费<br>• 微软Presidio持续领跑开源PII检测与脱敏领域</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    • Data probe techniques reveal how training data impacts LLM performance<br>• Document AI microservices accelerate OCR+LLM production deployment<br>• Personal health records emerge as key data for personalized medical AI<br>• Training stability governance reduces compute waste in large model training<br>• Microsoft Presidio continues leading open-source PII detection and redaction
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯凸显两大关键趋势。第一是**数据工程与治理正成为LLM落地的核心壁垒**。《Let's Develop Data Probes》提出"数据探针"概念，系统性研究数据在训练、微调、对齐、上下文学习等各阶段的作用机制，这对解决"黑盒训练"问题至关重要。与此同时，微软Presidio登上GitHub Trending，反映企业对PII检测、脱敏、匿名化的强烈需求——数据不仅要"有用"，更要"合规"。两者结合表明：未来AI竞争将从模型架构转向数据资产与数据治理能力。<br><br>第二是**文档AI正在从学术研究走向工业级生产**。《Operationalizing Document AI》提出微服务架构封装OCR与LLM流水线，直接回应了学术界"重模型、轻部署"的痛点。配合Docker Compose等容器编排工具的生态成熟，企业构建可扩展的文档理解系统门槛正在快速降低。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two key trends emerge today. First, **data engineering and governance are becoming central bottlenecks for LLM deployment**. The "Data Probes" paper proposes systematic methods to understand how data affects LLM performance across training, tuning, and alignment stages, addressing the black-box nature of model training. Meanwhile, Microsoft Presidio's presence on GitHub Trending reflects strong enterprise demand for PII detection and anonymization. Together, they signal a shift in AI competition from model architecture toward data assets and governance capabilities.<br><br>Second, **Document AI is transitioning from research to production**. The "Operationalizing Document AI" paper presents a microservice architecture for OCR and LLM pipelines, directly addressing the academic gap between model definition and production deployment. Combined with mature container orchestration ecosystems like Docker Compose, the barrier to building scalable document understanding systems is rapidly decreasing.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. **建立数据探针评估流程** —— 在训练前用小规模探针实验预测数据质量，避免盲目堆数据浪费算力。<br>2. **参考微服务架构重构文档Pipeline** —— 将OCR、提取、LLM推理解耦为独立服务，提升系统可维护性与扩展性。<br>3. **集成Presidio做隐私合规前置检查** —— 在数据进入训练或RAG系统前自动扫描并脱敏PII，降低合规风险。<br>4. **关注健康AI细分赛道** —— 个人健康记录与LLM结合尚处早期，存在消费级健康管理产品的创业窗口。<br>5. **为训练任务添加稳定性监控** —— 借鉴LBW-Guard思路，设置学习率与损失异常的自动熔断机制。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Establish data probe evaluation workflows** — Run small-scale probe experiments before full training to predict data quality and avoid wasting compute on poor datasets.<br>2. **Refactor document pipelines using microservices** — Decouple OCR, extraction, and LLM inference into independent services for better maintainability and scalability.<br>3. **Integrate Presidio for privacy compliance** — Automatically scan and redact PII before data enters training or RAG systems to reduce regulatory risk.<br>4. **Explore the health AI niche** — The intersection of personal health records and LLMs is still early-stage, offering a window for consumer health management products.<br>5. **Add stability monitoring to training jobs** — Adopt LBW-Guard-inspired approaches with automatic circuit breakers for abnormal learning rates or loss spikes.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/juce-framework/JUCE" target="_blank" style="font-weight:600">juce-framework/JUCE</a>
+            <span style="color:#888;font-size:13px"> — JUCE is an open-source cross-platform C++ application framework for desktop and mobile applications, including VST, VST3, AU, AUv3, LV2 and AAX audio plug-ins.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/terraform-aws-modules/terraform-aws-eks" target="_blank" style="font-weight:600">terraform-aws-modules/terraform-aws-eks</a>
+            <span style="color:#888;font-size:13px"> — Terraform module to create Amazon Elastic Kubernetes (EKS) resources 🇺🇦</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/presidio" target="_blank" style="font-weight:600">microsoft/presidio</a>
+            <span style="color:#888;font-size:13px"> — An open-source framework for detecting, redacting, masking, and anonymizing sensitive data (PII) across text, images, and structured data. Supports NLP, pattern matching, and customizable pipelines.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/huggingface/transformers" target="_blank" style="font-weight:600">huggingface/transformers</a>
+            <span style="color:#888;font-size:13px"> — 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/docker/compose" target="_blank" style="font-weight:600">docker/compose</a>
+            <span style="color:#888;font-size:13px"> — Define and run multi-container applications with Docker</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/steven2358/awesome-generative-ai" target="_blank" style="font-weight:600">steven2358/awesome-generative-ai</a>
+            <span style="color:#888;font-size:13px"> — A curated list of modern Generative Artificial Intelligence projects and services</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/jesseduffield/lazygit" target="_blank" style="font-weight:600">jesseduffield/lazygit</a>
+            <span style="color:#888;font-size:13px"> — simple terminal UI for git commands</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.18801" target="_blank" style="font-weight:600">Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.18801v1 Announce Type: new 
+Data is fundamental to large language models (LLMs). However, understanding of what makes certain data useful for different stages of an LLM workflow, including </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.18818" target="_blank" style="font-weight:600">Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.18818v1 Announce Type: new 
+Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at pr</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.18937" target="_blank" style="font-weight:600">Evaluating the Utility of Personal Health Records in Personalized Health AI</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.18937v1 Announce Type: new 
+Patient-managed Personal Health Records (PHRs) promises to empower patients to better understand their health; but information in the record is complex, potentia</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.19008" target="_blank" style="font-weight:600">Learn-by-Wire Training Control Governance: Bounded Autonomous Training Under Stress for Stability and Efficiency</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.19008v1 Announce Type: new 
+Modern language-model training is increasingly exposed to instability, degraded runs, and wasted compute, especially under aggressive learning-rate, scale, and r</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.19010" target="_blank" style="font-weight:600">AgentNLQ: A General-Purpose Agent for Natural Language to SQL</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.19010v1 Announce Type: new 
+Natural language to SQL (NL2SQL) conversion is an important problem for researchers and enterprises due to the ubiquitous importance of relational databases in b</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.19031" target="_blank" style="font-weight:600">KAN-MLP-Mixer: A comprehensive investigation of the usage of Kolmogorov-Arnold Networks (KANs) for improving IMU-based Human Activity Recognition</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.19031v1 Announce Type: new 
+Kolmogorov-Arnold Networks (KANs) have demonstrated an exceptional ability to learn complex functions on clean, low-dimensional data but struggle to maintain per</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-05-21 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

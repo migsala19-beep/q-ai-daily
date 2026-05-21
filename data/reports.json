@@ -82,5 +82,9 @@
   {
     "date": "2026-05-20",
     "summary": "### 执行摘要\n中文：\n- AI工作流自动化升温，n8n低代码平台引领趋势\n- 多智能体编排聚焦状态约束，降低对齐成本\n- LLM心理理论能力是否改善交互引发新讨论\n- Agent技能编译与运行时边界管理成新方向\n- AI生成演示从视觉美化走向叙事交付优化\n\nEnglish:\n- AI workflow automation heats up, led by low-code platforms"
+  },
+  {
+    "date": "2026-05-21",
+    "summary": "### 执行摘要\n中文：\n• 数据探针技术揭示训练数据对LLM性能的影响机制\n• 文档AI微服务架构加速OCR与LLM生产化落地\n• 个人健康记录成为个性化医疗AI的重要数据基石\n• 训练稳定性治理框架降低大模型计算资源浪费\n• 微软Presidio持续领跑开源PII检测与脱敏领域\n\nEnglish:\n• Data probe techniques reveal how training data"
   }
 ]
