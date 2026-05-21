@@ -85,6 +85,6 @@
   },
   {
     "date": "2026-05-21",
-    "summary": "### 执行摘要\n中文：\n• 数据探针技术揭示训练数据对LLM性能的影响机制\n• 文档AI微服务架构加速OCR与LLM生产化落地\n• 个人健康记录成为个性化医疗AI的重要数据基石\n• 训练稳定性治理框架降低大模型计算资源浪费\n• 微软Presidio持续领跑开源PII检测与脱敏领域\n\nEnglish:\n• Data probe techniques reveal how training data"
+    "summary": "### 执行摘要\n中文：\n- LLM数据影响机制成基础研究新焦点\n- 文档AI微服务架构推进生产落地\n- 训练稳定性控制技术提升算力效率\n- 微软开源隐私工具强化数据合规\n- 个性化健康AI探索个人医疗记录应用\n\nEnglish:\n- LLM data impact mechanisms draw foundational research focus\n- Document AI microser"
   }
 ]
