@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>1. 数据探针成LLM研究新焦点，探究数据对模型性能的根本影响<br>2. 文档AI微服务架构论文发布，弥合科研与生产部署鸿沟<br>3. 训练稳定性治理框架问世，为高强度训练提供自动防护<br>4. Whisper与Transformers持续热门，语音/多模态生态稳健<br>5. 个人健康记录结合LLM，医疗AI个性化应用加速落地</div>
+  <div>• 数据探针成为理解LLM性能的新方法论<br>• 文档AI生产化微服务架构受学术界关注<br>• 个人健康记录结合LLM探索个性化医疗<br>• 训练稳定性治理技术降低算力浪费风险<br>• Whisper与Transformers持续领跑开源生态</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Data probes emerge as a new focal point in LLM research to fundamentally understand data's impact on model performance.<br>2. A microservice architecture for Document AI bridges the gap between academic research and production deployment.<br>3. A training governance framework (LBW-Guard) introduces automated safeguards for high-stress model training.<br>4. Whisper and Transformers remain highly active, signaling steady growth in speech and multimodal AI ecosystems.<br>5. Integration of Personal Health Records with LLMs accelerates personalized healthcare AI applications.
+    • Data probes emerge as a new methodology to understand LLM performance<br>• Document AI production microservice architectures gain academic attention<br>• Personal health records combined with LLMs explore personalized healthcare<br>• Training stability governance techniques reduce compute waste risks<br>• Whisper and Transformers continue leading the open-source ecosystem
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯反映出两大趋势：一是"数据-centric AI"的方法论升级，二是文档AI的生产化落地。<br><br>在数据-centric方向，论文《Position: Let's Develop Data Probes...》提出构建"数据探针"（Data Probes），系统性量化数据对LLM在训练、微调、对齐、上下文学习等各阶段的影响。这标志着行业正从"堆模型"转向"治数据"——数据质量评估将成为下一代MLOps的核心组件。与此同时，《Learn-by-Wire Training Control Governance》提出LBW-Guard框架，在激进学习率和规模压力下实现训练过程的自主边界控制，直接回应了大模型训练成本飙升和算力浪费的痛点。两者共同指向：LLM竞赛的下一站是"数据工程"与"训练治理"的精细化运营。<br><br>在Document AI方向，《Operationalizing Document AI》提出OCR+LLM的微服务流水线架构，将模型封装为可扩展的生产级服务。这与GitHub上changedetection.io（网站变更监控）和containerd（容器运行时）同时登榜形成呼应：AI应用正从Demo走向可持续运维的生产系统，底层基础设施与上层AI服务需要同步升级。</div>
+  <div>今日资讯揭示了两大关键趋势。第一是**数据探针（Data Probes）**的基础研究转向。arXiv论文提出开发系统性数据探针，以理解数据在LLM训练、微调、对齐及上下文学习等各阶段的真实影响机制。这标志AI研究正从"堆数据、堆算力"的粗放模式，转向对数据本质作用的精细化科学探究，对模型迭代效率将有深远影响。<br><br>第二是**文档AI的生产化落地**。另一篇论文聚焦OCR与LLM pipeline的微服务架构设计，直面学术界重模型创新、轻工程部署的痛点。随着企业级文档智能化需求爆发，将模型封装为可扩展、可维护的微服务，正成为 bridging research and production 的核心工程能力。这提示从业者：LLM价值释放的关键在于工程化封装，而非单点模型精度。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two major trends emerge from today's feed: the shift toward Data-centric AI and the productionization of Document AI.<br><br>On the Data-centric front, the paper "Let's Develop Data Probes" proposes systematic "Data Probes" to quantify how data affects LLMs across training, tuning, alignment, and in-context learning. This signals an industry pivot from model scaling to data quality engineering. Complementing this, the "Learn-by-Wire" paper introduces LBW-Guard, a bounded autonomous control framework that stabilizes training under aggressive learning rates and scale—directly addressing the rising costs and compute waste of large model training. Together, they indicate that the next phase of LLM competition will center on data engineering and training governance.<br><br>On the Document AI front, the paper "Operationalizing Document AI" presents a microservice architecture combining OCR and LLM pipelines for production scale. This aligns with the simultaneous GitHub trending of changedetection.io and containerd: AI applications are moving beyond demos toward sustainable, operations-grade systems, requiring upgrades in both infrastructure and AI service layers.
+    Two key trends stand out. First, the rise of **Data Probes** as a fundamental research methodology. The arXiv paper proposes developing systematic probes to understand how data affects LLM performance across training, fine-tuning, alignment, and in-context learning. This signals a shift from brute-force scaling to scientific, granular understanding of data's role.<br><br>Second, **operationalizing Document AI** through microservice architectures. Another paper addresses the research-to-production gap for OCR+LLM pipelines, emphasizing scalable, maintainable engineering over pure model innovation. As enterprise document AI demand grows, engineering packaging—not just model accuracy—is becoming the critical value driver.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 在LLM训练/微调pipeline中引入数据探针评估环节 — 数据质量将比模型选择更能决定最终效果。<br>2. 将文档处理系统拆分为OCR+LLM微服务 — 生产级Document AI架构已明确，可提升扩展性与容错性。<br>3. 为训练集群配置自动熔断与边界控制机制 — 借鉴LBW-Guard，避免激进调参导致算力浪费。<br>4. 关注医疗垂直领域的个性化数据接口机会 — PHR+LLM案例显示，高质量私有数据壁垒将成AI落地关键。<br>5. 复用changedetection.io监控竞品/监管页面的文本变更 — 低成本自动化获取外部信号。</div>
+  <div>1. 建立数据质量探针评估体系 — 数据探针研究提示，优化数据构成比单纯扩量更能提升模型表现。<br>2. 以微服务架构落地文档AI — 参考论文中的OCR+LLM pipeline设计，降低生产环境耦合度。<br>3. 探索健康领域LLM应用 — PHR研究表明患者数据+LLM可生成个性化健康洞察，医疗AI产品可跟进。<br>4. 部署训练稳定性监控 — LBW-Guard方案证明，在高压训练场景下引入自治边界控制可减少资源浪费。<br>5. 用自动化工具监控竞品动态 — changedetection.io等开源工具可辅助追踪行业网站更新。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Integrate data probe evaluation into your LLM training/fine-tuning pipeline — data quality will increasingly determine outcomes more than model choice.<br>2. Refactor document processing into OCR+LLM microservices — production-grade Document AI architecture is now well-defined and improves scalability.<br>3. Deploy auto-circuit-breakers and boundary controls for training clusters — following LBW-Guard principles to prevent compute waste from aggressive hyperparameters.<br>4. Explore personalized data interfaces in healthcare verticals — the PHR+LLM case shows that high-quality private data barriers are key to AI deployment.<br>5. Repurpose changedetection.io to monitor competitor or regulatory page changes — a low-cost automation for external signal intelligence.
+    1. Build a data quality probe evaluation system — Research suggests optimizing data composition beats brute-force scaling.<br>2. Adopt microservice architecture for document AI — Decouple OCR+LLM pipelines for production reliability.<br>3. Explore LLM applications in healthcare — PHR studies show patient data + LLMs can generate personalized health insights.<br>4. Deploy training stability monitoring — LBW-Guard demonstrates autonomous boundary controls reduce resource waste under stress.<br>5. Use automation tools to monitor competitors — Tools like changedetection.io help track industry website updates efficiently.
   </div>
 </div>
 

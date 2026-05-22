@@ -89,6 +89,6 @@
   },
   {
     "date": "2026-05-22",
-    "summary": "### 执行摘要\n中文：\n1. 数据探针成LLM研究新焦点，探究数据对模型性能的根本影响\n2. 文档AI微服务架构论文发布，弥合科研与生产部署鸿沟\n3. 训练稳定性治理框架问世，为高强度训练提供自动防护\n4. Whisper与Transformers持续热门，语音/多模态生态稳健\n5. 个人健康记录结合LLM，医疗AI个性化应用加速落地\n\nEnglish:\n1. Data probes emerg"
+    "summary": "### 执行摘要\n中文：\n• 数据探针成为理解LLM性能的新方法论\n• 文档AI生产化微服务架构受学术界关注\n• 个人健康记录结合LLM探索个性化医疗\n• 训练稳定性治理技术降低算力浪费风险\n• Whisper与Transformers持续领跑开源生态\n\nEnglish:\n• Data probes emerge as a new methodology to understand LLM per"
   }
 ]
