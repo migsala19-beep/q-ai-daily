@@ -86,5 +86,9 @@
   {
     "date": "2026-05-21",
     "summary": "### 执行摘要\n中文：\n- LLM数据影响机制成基础研究新焦点\n- 文档AI微服务架构推进生产落地\n- 训练稳定性控制技术提升算力效率\n- 微软开源隐私工具强化数据合规\n- 个性化健康AI探索个人医疗记录应用\n\nEnglish:\n- LLM data impact mechanisms draw foundational research focus\n- Document AI microser"
+  },
+  {
+    "date": "2026-05-22",
+    "summary": "### 执行摘要\n中文：\n1. 数据探针成LLM研究新焦点，探究数据对模型性能的根本影响\n2. 文档AI微服务架构论文发布，弥合科研与生产部署鸿沟\n3. 训练稳定性治理框架问世，为高强度训练提供自动防护\n4. Whisper与Transformers持续热门，语音/多模态生态稳健\n5. 个人健康记录结合LLM，医疗AI个性化应用加速落地\n\nEnglish:\n1. Data probes emerg"
   }
 ]
