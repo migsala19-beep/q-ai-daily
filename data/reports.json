@@ -90,5 +90,9 @@
   {
     "date": "2026-05-22",
     "summary": "### 执行摘要\n中文：\n• 数据探针成为理解LLM性能的新方法论\n• 文档AI生产化微服务架构受学术界关注\n• 个人健康记录结合LLM探索个性化医疗\n• 训练稳定性治理技术降低算力浪费风险\n• Whisper与Transformers持续领跑开源生态\n\nEnglish:\n• Data probes emerge as a new methodology to understand LLM per"
+  },
+  {
+    "date": "2026-05-23",
+    "summary": "### 执行摘要\n中文：\n- 自主智能体研究爆发，arXiv连发四篇论文\n- 多智能体协作成热点，AgentCo-op引关注\n- AI工作流工具活跃，MCP生态持续扩张\n- LangChain稳居趋势榜，Agent平台热度不减\n- Whisper长期受关注，语音识别仍是刚需\n\nEnglish:\n- Autonomous agent research surges with 4 new arXiv "
   }
 ]
