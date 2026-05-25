@@ -98,5 +98,9 @@
   {
     "date": "2026-05-24",
     "summary": "### 执行摘要\n中文：\n- LangChain持续热门，Agent开发框架仍是焦点\n- 向量数据库Qdrant受关注，RAG基建需求旺\n- 多Agent进入垂直领域：TO-Agents优化拓扑\n- LLM安全深化：OOD对齐失败监控成热点\n- MindLoom提出组合思维模式合成推理数据\n\nEnglish:\n- LangChain trending: agent frameworks remai"
+  },
+  {
+    "date": "2026-05-25",
+    "summary": "### 执行摘要\n中文：\n- 自托管工具生态持续繁荣，数据主权成核心诉求\n- \"从0重建\"学习法再度登顶，实践驱动成主流\n- 实时流数据可视化组件受关注，AI基建需求旺\n- 开源后端一体化方案持续走红，开发门槛降低\n- 智能家居Matter标准推进，IoT互联互通加速\n\nEnglish:\n- Self-hosted tools thrive as data sovereignty gains pr"
   }
 ]
