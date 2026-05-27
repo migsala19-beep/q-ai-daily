@@ -109,6 +109,6 @@
   },
   {
     "date": "2026-05-27",
-    "summary": "### 执行摘要\n中文：\n1. LLM推理冗余研究引发效率优化新思考。\n2. 置信度校准揭示当前模型\"过度自信\"问题。\n3. 中国FunASR登顶GitHub，语音AI工业化加速。\n4. NangoHQ获关注，AI原生集成成新风口。\n5. \"主动性智能体\"架构挑战传统对话式AI范式。\n\nEnglish:\n1. New research on redundancy in LLM reasoning "
+    "summary": "### 执行摘要\n中文：\n- LLM推理冗余引发效率革命，量化\"思考\"成为新焦点\n- 主动式Agent架构兴起，从被动问答转向目标驱动\n- 自托管开源工具持续火热，Jellyfin/Immich登榜\n- 工业级语音识别突破，FunASR实现170倍实时率\n- LLM置信度校准受关注，模型\"过度自信\"问题浮现\n\nEnglish:\n- LLM reasoning redundancy sparks e"
   }
 ]
