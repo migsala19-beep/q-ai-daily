@@ -113,6 +113,6 @@
   },
   {
     "date": "2026-05-28",
-    "summary": "### 执行摘要\n中文：\n• LLM\"内省\"能力遭质疑，元认知研究需回归严谨\n• Agent长期记忆呼唤新架构，超越传统数据库存储\n• 具身智能走向个性化，长期交互成关键突破口\n• 结构感知Token化实现3D乐高自动建模\n• 约束获取领域缺乏优质基准， datasets 建设是刚需\n\nEnglish:\n• LLM \"introspection\" capabilities questioned; "
+    "summary": "### 执行摘要\n中文：\n- LLM内省能力遭质疑，元认知研究尚处早期\n- Agent记忆范式革新，超越传统数据库存储\n- 具身智能个性化需长期交互数据支撑\n- 3D积木生成技术突破物理约束难题\n\nEnglish:\n- LLM introspection claims challenged by metacognition research\n- Agent memory architecture "
   }
 ]
