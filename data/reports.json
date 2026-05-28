@@ -110,5 +110,9 @@
   {
     "date": "2026-05-27",
     "summary": "### 执行摘要\n中文：\n- LLM推理冗余引发效率革命，量化\"思考\"成为新焦点\n- 主动式Agent架构兴起，从被动问答转向目标驱动\n- 自托管开源工具持续火热，Jellyfin/Immich登榜\n- 工业级语音识别突破，FunASR实现170倍实时率\n- LLM置信度校准受关注，模型\"过度自信\"问题浮现\n\nEnglish:\n- LLM reasoning redundancy sparks e"
+  },
+  {
+    "date": "2026-05-28",
+    "summary": "### 执行摘要\n中文：\n• LLM\"内省\"能力遭质疑，元认知研究需回归严谨\n• Agent长期记忆呼唤新架构，超越传统数据库存储\n• 具身智能走向个性化，长期交互成关键突破口\n• 结构感知Token化实现3D乐高自动建模\n• 约束获取领域缺乏优质基准， datasets 建设是刚需\n\nEnglish:\n• LLM \"introspection\" capabilities questioned; "
   }
 ]
