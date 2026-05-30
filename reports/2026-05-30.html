@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-05-30</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-05-30</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 离线策略强化学习稳定性研究再获突破<br>- 范畴论与认知科学融入306M参数语言模型<br>- 空中机器人系统助力热带森林可持续采伐<br>- 梯度时序差分收敛效率优化成今日焦点<br>- AI跨学科应用向生态保护与林业延伸</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Off-policy RL stability research achieves new breakthroughs<br>- Category theory and cognitive science integrated into 306M LM<br>- Aerial robotics enable sustainable tropical forest logging<br>- Gradient TD convergence optimization is today's focal point<br>- AI interdisciplinary applications expand to ecology and forestry
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日 arXiv 集中涌现出强化学习离线策略（off-policy）预测的两篇深度研究，显示该领域正从"能收敛"向"更快更稳收敛"演进。《Behavior-Induced Mirror-Prox TD》（arXiv:2605.28849）针对辅助变量度量几何进行优化，通过行为诱导的镜像近端方法加速离轨策略预测；同期《Behavior-Aware Auxiliary Corrections》（arXiv:2605.28855）则在单时间尺度递归中进一步正则化协方差修正，有望解决实际业务中离线数据复用导致的训练震荡问题。另一值得关注的是《The Cognitive Categorical Transformer》（arXiv:2605.28864），该研究将范畴论（Category Theory）作为核心归纳偏置植入 306M 参数的 GPT-2 Small 骨干网络，并引入认知科学启发的组件。这标志着 LLM 架构创新正从纯规模竞赛，转向"数学结构+认知理论"驱动的精密设计新范式。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's arXiv sees two deep studies on off-policy RL prediction, showing the field evolving from "can converge" to "converge faster and more stably." Behavior-Induced Mirror-Prox TD (arXiv:2605.28849) optimizes auxiliary-variable metric geometry to accelerate off-policy prediction, while Behavior-Aware Auxiliary Corrections (arXiv:2605.28855) further regularizes covariance correction in single-timescale recursion—potentially resolving training instability from offline data reuse in production. Also notable is The Cognitive Categorical Transformer (arXiv:2605.28864), which implants category-theoretic inductive biases into a 306M-parameter GPT-2 Small backbone with cognitively inspired components. This signals LLM architecture innovation is shifting from pure scaling competition toward precision design driven by mathematical structures and cognitive theory.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- **跟踪 Gradient TD 新进展**：若业务涉及离线数据训练 RL（推荐、广告、机器人），Mirror-Prox 和辅助修正方法可直接改善训练震荡与收敛速度。<br>- **尝试范畴论偏置做架构创新**：LLM 研发者不应只堆参数，可借鉴 CCT 思路，用数学结构（范畴论、拓扑学）作为归纳偏置来提升推理能力。<br>- **关注 AI+生态保护交叉赛道**：URIEL（arXiv:2605.28883）展示了无人机在精准林业中的应用，农林科技、碳汇监测公司可布局类似方案。<br>- **补充数据源**：今日 GitHub Trending、HuggingFace Papers 和大厂博客均为空，建议检查采集链路，避免信息盲区。<br>- **单时间尺度递归适合边缘场景**：行为感知 TD 修正的单时间尺度特性，对需要快速在线学习的端侧/边缘 AI 有直接参考价值。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - **Track Gradient TD advances**: If your business uses offline RL training (recommendation, ads, robotics), Mirror-Prox and auxiliary correction methods can directly improve training stability and convergence.<br>- **Experiment with category-theoretic biases**: LM developers should look beyond scaling—mathematical structures (category theory, topology) as inductive biases can enhance reasoning capabilities.<br>- **Watch the AI+ecology intersection**: URIEL (arXiv:2605.28883) demonstrates drone applications in precision forestry; agtech and carbon monitoring firms should explore similar solutions.<br>- **Fix data pipeline gaps**: Today's GitHub Trending, HuggingFace Papers, and major tech blogs are all empty—verify the collection pipeline to avoid information blind spots.<br>- **Single-timescale recursion for edge AI**: The single-timescale nature of behavior-aware TD corrections offers direct value for edge devices requiring fast online learning.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28849" target="_blank" style="font-weight:600">Behavior-Induced Mirror-Prox Temporal-Difference Learning for Faster Off-Policy Prediction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28849v1 Announce Type: new 
+Gradient temporal-difference methods provide stable off-policy prediction with linear function approximation, but their practical performance is strongly affecte</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28855" target="_blank" style="font-weight:600">Behavior-Aware Auxiliary Corrections for Off-Policy Temporal-Difference Prediction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28855v1 Announce Type: new 
+Temporal-difference learning with function approximation can be unstable under off-policy sampling. TDC stabilizes off-policy TD through an auxiliary covariance </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28864" target="_blank" style="font-weight:600">The Cognitive Categorical Transformer: Category-Theoretic Inductive Biases for Language Modeling</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28864v1 Announce Type: new 
+The Cognitive Categorical Transformer (CCT) is a 306M-parameter architecture that augments a pretrained GPT-2 Small backbone with cognitively grounded components</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28883" target="_blank" style="font-weight:600">Ultra-Reduced-Impact-Encased-Logging (URIEL): propose a new method for selective sustainable logging and post-harvest silvicultural treatment in tropical forest using airborne robotics systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28883v1 Announce Type: new 
+Tropical forests worldwide are under intense deforestation pressure driven by economic and political interests, and scientific evidence suggests this deforestati</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28897" target="_blank" style="font-weight:600">Review Arcade: On the Human Alignment and Gameability of LLM Reviews</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28897v1 Announce Type: new 
+LLM-generated reviews for scientific papers are gaining considerable traction and are even being officially piloted by major conferences. We have to assume that </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2605.28902" target="_blank" style="font-weight:600">Orthogonal Concept Erasure for Diffusion Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2605.28902v1 Announce Type: new 
+Concept erasure has emerged as a promising approach to mitigate undesired or unsafe content in diffusion models, yet existing methods still face significant limi</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-05-30 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

@@ -118,5 +118,9 @@
   {
     "date": "2026-05-29",
     "summary": "### 执行摘要\n中文：\n- 塔吉克语轻量模型Soro发布，适配低资源场景\n- LLM因果推理存局限，干预智能体或成突破口\n- 动态调度基准揭示LLM智能体可观测性悖论\n- 可定制价值观架构推动AI伦理决策落地\n- 合成信息隐写继承研究启发生成内容溯源\n\nEnglish:\n- Lightweight Tajik LLM Soro targets low-resource deployment\n- "
+  },
+  {
+    "date": "2026-05-30",
+    "summary": "### 执行摘要\n中文：\n- 离线策略强化学习稳定性研究再获突破\n- 范畴论与认知科学融入306M参数语言模型\n- 空中机器人系统助力热带森林可持续采伐\n- 梯度时序差分收敛效率优化成今日焦点\n- AI跨学科应用向生态保护与林业延伸\n\nEnglish:\n- Off-policy RL stability research achieves new breakthroughs\n- Category "
   }
 ]
