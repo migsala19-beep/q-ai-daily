@@ -125,6 +125,6 @@
   },
   {
     "date": "2026-05-31",
-    "summary": "### 执行摘要\n中文：\n- 今日所有数据源返回为空，未采集到有效内容\n- GitHub Trending、arXiv、HuggingFace、大厂博客均无数据\n- 建议检查数据采集脚本或网络连接状态\n- 待数据恢复后补发完整日报\n- 可切换至本地回退模式手动获取\n\nEnglish:\n- All data sources returned empty today; no valid content"
+    "summary": "### 执行摘要\n中文：\n- 今日暂未收集到有效AI资讯数据\n- 各数据源返回结果为空，请检查采集链路\n\nEnglish:\n- No valid AI news data collected today\n- All data sources returned empty results, please check the pipeline\n\n### 深度研究报告\n中文：\n今日 GitHub Tre"
   }
 ]

@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日所有数据源返回为空，未采集到有效内容<br>- GitHub Trending、arXiv、HuggingFace、大厂博客均无数据<br>- 建议检查数据采集脚本或网络连接状态<br>- 待数据恢复后补发完整日报<br>- 可切换至本地回退模式手动获取</div>
+  <div>- 今日暂未收集到有效AI资讯数据<br>- 各数据源返回结果为空，请检查采集链路</div>
   <div class="en">
     <div class="en-title">English</div>
-    - All data sources returned empty today; no valid content collected.<br>- GitHub Trending, arXiv, HuggingFace, and big-tech blogs show no data.<br>- Recommend checking the data collection script or network status.<br>- A full briefing will be reissued once data is restored.<br>- Consider switching to local fallback mode for manual fetching.
+    - No valid AI news data collected today<br>- All data sources returned empty results, please check the pipeline
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日未能获取任何有效原始数据，因此无法提供可靠的趋势分析或技术方向研判。空数据可能由以下原因导致：<br>1. 数据采集脚本异常（如 API 限流、网络超时、解析器失效）；<br>2. 目标网站结构变更导致爬虫规则失效；<br>3. 本地网络环境波动或代理配置问题。<br><br>建议先排查 ~/qxia-reports 目录下的采集日志，确认各源头的 HTTP 状态码与返回体大小。若 HuggingFace Papers 和 arXiv 的 RSS/API 正常响应但内容为空，则属于源站本身无更新；若返回非 200 状态码，则需检查认证密钥或请求频率。修复后重新触发采集任务即可生成本期报告。</div>
+  <div>今日 GitHub Trending、arXiv、HuggingFace Papers 及大厂博客四个数据源均未返回有效条目，无法开展趋势分析与技术方向研判。建议优先排查采集脚本的网络连通性、API 配额及解析逻辑，待数据恢复后重新生成报告。</div>
   <div class="en">
     <div class="en-title">English</div>
-    No valid raw data was retrieved today, making reliable trend analysis impossible. Empty datasets usually stem from:<br>1. Collector script failures (API rate limits, timeouts, parser errors).<br>2. Target site structure changes breaking crawler selectors.<br>3. Local network instability or proxy misconfiguration.<br><br>Check the collection logs in ~/qxia-reports for HTTP status codes and response sizes. If sources like HuggingFace Papers and arXiv return 200 OK with zero items, the upstream simply had no updates; otherwise, review API keys or request throttling. Re-run the pipeline after fixing the root cause.
+    All four data sources (GitHub Trending, arXiv, HuggingFace Papers, and major tech blogs) returned no valid entries today, preventing any trend analysis or technical direction assessment. It is recommended to check the scraper's network connectivity, API quotas, and parsing logic first, then regenerate the report once data is restored.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 立即检查采集日志定位故障：因为只有看到具体报错才能判断是源站问题还是脚本问题。<br>- 为采集脚本增加空数据告警：连续 N 次空结果时推送通知（如 QQ 消息或邮件），避免静默失败。<br>- 预备本地回退数据源：当云端 API 不可用时，缓存昨日热门数据或切换至本地文件作为临时填充。<br>- 定期验证爬虫选择器：大厂博客和 HuggingFace 页面改版频繁，建议每周做一次端到端冒烟测试。<br>- 在报告中保留"数据缺失"占位：诚实标注比编造内容更有利于长期可信度。</div>
+  <div>1. 检查采集服务状态 — 数据源全空通常是爬虫或API链路故障<br>2. 验证 API Key 与配额 — 防止因密钥过期或限流导致拉取失败<br>3. 增加空数据告警 — 在自动化流程中加入异常通知，避免静默失败</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Inspect collection logs immediately to isolate the failure (source vs. script issue).<br>- Add empty-data alerts to the scraper: push a notification after N consecutive empty runs to avoid silent failures.<br>- Maintain a local fallback cache: use yesterday's trending data or local files as temporary filler when cloud APIs are down.<br>- Validate crawler selectors regularly: big-tech blogs and HuggingFace change layouts often; run a weekly smoke test.<br>- Preserve a "data missing" placeholder in the report: transparency preserves long-term credibility better than hallucinated content.
+    1. Check scraper service status — empty datasets usually indicate crawler or API pipeline failure<br>2. Verify API keys and quotas — prevent fetch failures from expired keys or rate limits<br>3. Add empty-data alerts — include anomaly notifications in automation to avoid silent failures
   </div>
 </div>
 
