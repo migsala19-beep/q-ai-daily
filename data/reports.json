@@ -122,5 +122,9 @@
   {
     "date": "2026-05-30",
     "summary": "### 执行摘要\n中文：\n- 今日GitHub和HuggingFace无新增热门趋势。\n- arXiv两篇RL论文聚焦off-policy预测稳定性提升。\n- 范畴论注入Transformer，CCT提出新语言建模范式。\n- AI驱动林业机器人URIEL展示跨界环保应用。\n- 整体资讯量偏少，建议关注后续数据更新。\n\nEnglish:\n- No new trending items on GitH"
+  },
+  {
+    "date": "2026-05-31",
+    "summary": "### 执行摘要\n中文：\n- 今日所有数据源返回为空，未采集到有效内容\n- GitHub Trending、arXiv、HuggingFace、大厂博客均无数据\n- 建议检查数据采集脚本或网络连接状态\n- 待数据恢复后补发完整日报\n- 可切换至本地回退模式手动获取\n\nEnglish:\n- All data sources returned empty today; no valid content"
   }
 ]
