@@ -129,6 +129,6 @@
   },
   {
     "date": "2026-06-01",
-    "summary": "### 执行摘要\n中文：\n1. 今日未获取到有效原始数据\n2. 各数据源返回结果均为空\n3. 建议检查爬虫与API状态\n4. 等待数据补充后重新生成\n\nEnglish:\n1. No valid raw data obtained today\n2. All data sources returned empty\n3. Recommend checking scraper and API status"
+    "summary": "### 执行摘要\n中文：\n- 今日各数据源未返回有效内容\n- 暂无新上榜项目或论文可收录\n- 建议核实爬虫与 API 服务状态\n- 等待下一采集周期自动更新\n\nEnglish:\n- No valid content returned from data sources today\n- No new trending repos or papers to report\n- Verify crawle"
   }
 ]

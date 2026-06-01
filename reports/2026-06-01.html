@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>1. 今日未获取到有效原始数据<br>2. 各数据源返回结果均为空<br>3. 建议检查爬虫与API状态<br>4. 等待数据补充后重新生成</div>
+  <div>- 今日各数据源未返回有效内容<br>- 暂无新上榜项目或论文可收录<br>- 建议核实爬虫与 API 服务状态<br>- 等待下一采集周期自动更新</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. No valid raw data obtained today<br>2. All data sources returned empty<br>3. Recommend checking scraper and API status<br>4. Regenerate after data is supplemented
+    - No valid content returned from data sources today<br>- No new trending repos or papers to report<br>- Verify crawler and API service status<br>- Await next scheduled collection cycle
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日提供的 GitHub Trending、arXiv 论文、HuggingFace Papers 及大厂博客四个数据源均为空列表，因此无法基于具体论文、项目或博客文章进行趋势分析。建议排查数据收集脚本的网络连接、API Key 有效性及目标站点反爬策略是否更新，确保明日数据正常入库后再生成深度研究报告。</div>
+  <div>今日 GitHub Trending、arXiv、HuggingFace Papers 及大厂博客均未返回数据，无法开展趋势研判。可能原因包括：网络抓取异常、API 限流、服务配置失效或目标站点结构变更。建议立即查看采集日志，确认各源连通性，并准备降级方案（如手动补充或备用 RSS 源），以避免后续日报持续空缺。</div>
   <div class="en">
     <div class="en-title">English</div>
-    All four data sources provided today (GitHub Trending, arXiv papers, HuggingFace Papers, and big-tech blogs) returned empty lists. Therefore, an in-depth trend analysis based on specific papers, projects, or articles cannot be performed. It is recommended to troubleshoot the data collection scripts for network connectivity, API key validity, and whether target site anti-scraping policies have been updated.
+    All monitored sources returned empty today, making trend analysis impossible. Likely causes include crawling failures, API rate limits, expired configs, or upstream layout changes. Immediate actions should include checking collection logs, verifying source connectivity, and preparing fallback options (manual curation or backup RSS feeds) to prevent future briefings from remaining blank.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 检查数据流水线——数据源为空通常是爬虫故障，需立即排查。<br>2. 验证API密钥——arXiv/HuggingFace接口可能因密钥失效而被限流。<br>3. 增加本地缓存——避免单点故障导致日报完全空白。<br>4. 设置告警机制——数据为空时自动通知管理员干预。</div>
+  <div>- 检查爬虫日志与 API 配额，快速定位空数据根因<br>- 为关键数据源配置备用通道，防止单点故障<br>- 增加空数据自动告警，确保异常第一时间感知<br>- 建立人工兜底机制，在自动采集失败时手动补录</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Check data pipeline — empty sources usually indicate scraper failures.<br>2. Verify API keys — arXiv/HuggingFace may be rate-limited due to expired keys.<br>3. Add local cache — prevent total blank reports from single-point failures.<br>4. Set up alerts — auto-notify admin when data is empty.
+    - Review crawler logs and API quotas to pinpoint the root cause<br>- Configure backup channels for critical sources to avoid single points of failure<br>- Add automated empty-data alerts to catch anomalies immediately<br>- Establish a manual fallback process to fill in key news when automation fails
   </div>
 </div>
 
