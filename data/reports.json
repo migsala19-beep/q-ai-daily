@@ -126,5 +126,9 @@
   {
     "date": "2026-05-31",
     "summary": "### 执行摘要\n中文：\n- 今日暂未收集到有效AI资讯数据\n- 各数据源返回结果为空，请检查采集链路\n\nEnglish:\n- No valid AI news data collected today\n- All data sources returned empty results, please check the pipeline\n\n### 深度研究报告\n中文：\n今日 GitHub Tre"
+  },
+  {
+    "date": "2026-06-01",
+    "summary": "### 执行摘要\n中文：\n1. 今日未获取到有效原始数据\n2. 各数据源返回结果均为空\n3. 建议检查爬虫与API状态\n4. 等待数据补充后重新生成\n\nEnglish:\n1. No valid raw data obtained today\n2. All data sources returned empty\n3. Recommend checking scraper and API status"
   }
 ]
