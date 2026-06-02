@@ -130,5 +130,9 @@
   {
     "date": "2026-06-01",
     "summary": "### 执行摘要\n中文：\n- 今日各数据源未返回有效内容\n- 暂无新上榜项目或论文可收录\n- 建议核实爬虫与 API 服务状态\n- 等待下一采集周期自动更新\n\nEnglish:\n- No valid content returned from data sources today\n- No new trending repos or papers to report\n- Verify crawle"
+  },
+  {
+    "date": "2026-06-02",
+    "summary": "### 执行摘要\n中文：\n• AI+金融量化双星齐亮：Microsoft Qlib 与 OpenBB 同日登榜，AI 赋能投研已成主流。\n• 物理约束成生成式 AI 新门槛：PhyDrawGen 与具身世界模型强调\"物理可行\"而非视觉逼真。\n• Stable Diffusion WebUI 持续火热，开源视觉工具生态稳固。\n• 网络安全工具集关注度攀升：hackingtool 与 hacktric"
   }
 ]
