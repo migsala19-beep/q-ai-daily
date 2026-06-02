@@ -133,6 +133,6 @@
   },
   {
     "date": "2026-06-02",
-    "summary": "### 执行摘要\n中文：\n• AI+金融量化双星齐亮：Microsoft Qlib 与 OpenBB 同日登榜，AI 赋能投研已成主流。\n• 物理约束成生成式 AI 新门槛：PhyDrawGen 与具身世界模型强调\"物理可行\"而非视觉逼真。\n• Stable Diffusion WebUI 持续火热，开源视觉工具生态稳固。\n• 网络安全工具集关注度攀升：hackingtool 与 hacktric"
+    "summary": "### 执行摘要\n\n中文：\n- 量化AI工具链升温，Qlib与OpenBB双双上榜\n- 具身AI强调物理可行，超越纯观测预测\n- 生成模型追求物理正确，PhyDrawGen受关注\n- 不确定性感知RL助力自动驾驶安全决策\n- 金融数据平台加速向AI Agent开放接口\n\nEnglish:\n- Quant AI toolchain heats up: Microsoft Qlib and OpenB"
   }
 ]
