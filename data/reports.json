@@ -137,6 +137,6 @@
   },
   {
     "date": "2026-06-03",
-    "summary": "### 执行摘要\n\n中文：\n- 多Agent协作成研究热点，arXiv连发共识协议与知识管理论文\n- DeepSpeed、FunASR登Trending，AI基础设施与语音工业化受关注\n- Agent应用扩展至科学领域，分子优化引入树形路径协调\n- 决策引擎鲁棒性论文瞄准工业落地中的扰动风险\n- HuggingFace Papers与大厂博客今日无新增数据\n\nEnglish:\n- Multi-ag"
+    "summary": "### 执行摘要\n中文：\n• 多Agent协作审议成为核心研究方向\n• BFT共识机制引入多模型AI系统\n• MILP决策引擎后求解鲁棒性受关注\n• 分子优化采用路径协调新策略\n• Agent知识库治理亟需新协议规范\n\nEnglish:\n• Multi-agent collaborative deliberation emerges as a core research direction\n• B"
   }
 ]
