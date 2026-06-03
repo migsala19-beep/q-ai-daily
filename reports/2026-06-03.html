@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-03</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-03</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 多Agent协作成研究热点，arXiv连发共识协议与知识管理论文<br>- DeepSpeed、FunASR登Trending，AI基础设施与语音工业化受关注<br>- Agent应用扩展至科学领域，分子优化引入树形路径协调<br>- 决策引擎鲁棒性论文瞄准工业落地中的扰动风险<br>- HuggingFace Papers与大厂博客今日无新增数据</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Multi-agent collaboration emerges as a research hotspot, with arXiv papers on consensus protocols and knowledge curation.<br>- DeepSpeed and FunASR hit Trending, highlighting AI infrastructure and industrial speech recognition.<br>- Agent applications expand into science; molecular optimization adopts tree-based path coordination.<br>- A position paper targets perturbation risks in industrial decision engines.<br>- No new entries from HuggingFace Papers or major tech blogs today.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>**方向一：多模型/多Agent协作协议成为新焦点**<br><br>今日arXiv连续出现两篇相关论文，标志AI正从单体模型走向分布式智能。论文 *Emergent Collaborative Deliberation in Multi-Model AI Systems* 提出 Consilium Protocol，借鉴拜占庭容错（BFT）架构，将模型间的分歧视为"认知信号"而非错误，通过为不同语言模型分配工程化认知角色来实现结构化审议。另一篇 *Deliberative Curation* 则聚焦多Agent共享知识生态的治理问题，提出Agent状态无感知特性导致传统平台治理机制失效，需要专门的知识库策展协议。这预示着2026年多Agent系统的核心挑战已从"如何让Agent做事"转向"如何让一群Agent可靠地协作与共识"。<br><br>**方向二：Agent进入科学发现的高维决策场景**<br><br>论文 *Agents on a Tree* 将多Agent协调应用于多目标分子优化——一个在巨大化学空间中面对冲突目标的经典难题。作者指出早期设计决策会强约束后续结果，而现有单策略或固定标量化方法难以应对。通过树形路径协调机制，Agent可在早期探索阶段就考虑下游约束。这与DeepSpeed同时上榜形成呼应：上层需要更智能的Agent协调算法，底层需要更高效的分布式训练框架，两者共同推动AI for Science的工业化落地。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    **Trend 1: Multi-Model/Multi-Agent Collaboration Protocols**<br><br>Two arXiv papers signal a shift from monolithic models to distributed intelligence. The *Consilium Protocol* paper borrows Byzantine Fault Tolerance (BFT) to treat inter-model disagreement as epistemic signal, assigning engineered cognitive personas to language models for structured deliberation. Meanwhile, *Deliberative Curation* addresses governance of shared knowledge ecosystems among stateless agents, arguing that traditional platform mechanisms fail for agent collectives. The core challenge in 2026 is evolving from "how to make an agent act" to "how to make a collective of agents reach reliable consensus."<br><br>**Trend 2: Agents in Scientific Discovery**<br><br>*Agents on a Tree* applies multi-agent coordination to multi-objective molecular optimization, where early design decisions strongly constrain downstream outcomes in vast chemical spaces. Single-policy or fixed scalarization approaches fall short; the proposed tree-based pathwise coordination lets agents account for downstream constraints during early exploration. This pairs with DeepSpeed's presence on Trending: smarter agent coordination at the application layer and efficient distributed training at the infrastructure layer together accelerate industrial AI-for-Science deployment.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>中文：<br>1. **关注BFT式多Agent共识框架** — 模型间分歧处理机制将是构建高可靠AI系统的关键基础设施。<br>2. **评估FunASR替换现有ASR方案** — 170倍实时率+50+语言+说话人分离，工业级语音项目可优先试点。<br>3. **在科学计算pipeline中尝试Agent树搜索** — 早期决策影响后期结果的场景（如药物设计、材料筛选）适合引入路径协调策略。<br>4. **为AI决策模块增加扰动鲁棒性测试** — 参考MILP论文，对成本、需求、资源的小幅扰动进行压力测试，避免上线后计划失效。<br>5. **持续跟踪DeepSpeed新版本动态** — 分布式训练优化库直接影响大模型迭代成本，值得纳入技术雷达。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Watch BFT-style multi-agent consensus frameworks** — Disagreement-handling mechanisms will be critical infrastructure for reliable AI systems.<br>2. **Evaluate FunASR for production ASR replacement** — 170x realtime, 50+ languages, and speaker diarization make it a strong candidate for industrial speech projects.<br>3. **Try agent tree search in scientific pipelines** — Pathwise coordination fits scenarios where early decisions constrain later outcomes, such as drug design or material screening.<br>4. **Add perturbation robustness tests to AI decision modules** — Following the MILP paper, stress-test against small changes in costs, demand, or resources to avoid post-deployment plan failures.<br>5. **Track DeepSpeed release updates** — Distributed training optimization directly impacts large-model iteration costs and belongs on any technical radar.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/FreeRTOS/FreeRTOS-Kernel" target="_blank" style="font-weight:600">FreeRTOS/FreeRTOS-Kernel</a>
+            <span style="color:#888;font-size:13px"> — FreeRTOS kernel files only, submoduled intohttps://github.com/FreeRTOS/FreeRTOSand various other repos.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Z4nzu/hackingtool" target="_blank" style="font-weight:600">Z4nzu/hackingtool</a>
+            <span style="color:#888;font-size:13px"> — ALL IN ONE Hacking Tool For Hackers</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/emmabostian/developer-portfolios" target="_blank" style="font-weight:600">emmabostian/developer-portfolios</a>
+            <span style="color:#888;font-size:13px"> — A list of developer portfolios for your inspiration</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/evcc-io/evcc" target="_blank" style="font-weight:600">evcc-io/evcc</a>
+            <span style="color:#888;font-size:13px"> — solar charging ☀️🚘</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/akullpp/awesome-java" target="_blank" style="font-weight:600">akullpp/awesome-java</a>
+            <span style="color:#888;font-size:13px"> — A curated list of awesome frameworks, libraries and software for the Java programming language.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/deepspeedai/DeepSpeed" target="_blank" style="font-weight:600">deepspeedai/DeepSpeed</a>
+            <span style="color:#888;font-size:13px"> — DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/modelscope/FunASR" target="_blank" style="font-weight:600">modelscope/FunASR</a>
+            <span style="color:#888;font-size:13px"> — Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diarization, emotion detection, streaming, and OpenAI-compatible API.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00002" target="_blank" style="font-weight:600">Position Paper: Post-Solve Robustness in Decision Engines: Feasible Regions and Smoothness Under Perturbations</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00002v1 Announce Type: new 
+Mixed-Integer Linear Programming (MILP) decision engines routinely output nominally optimal plans for high-stakes industrial systems. Yet deployment rarely match</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00005" target="_blank" style="font-weight:600">Emergent Collaborative Deliberation in Multi-Model AI Systems: A BFT-Derived Protocol for Epistemic Synthesis</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00005v1 Announce Type: new 
+We present the Consilium Protocol, a Byzantine Fault Tolerance-derived architecture for structured multi-model AI deliberation that treats inter-model disagreeme</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00007" target="_blank" style="font-weight:600">Deliberative Curation: A Protocol for Multi-Agent Knowledge Bases</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00007v1 Announce Type: new 
+As AI agents transition from isolated tools to collaborative participants in shared knowledge ecosystems, governing collective knowledge curation becomes a criti</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00008" target="_blank" style="font-weight:600">Agents on a Tree: Pathwise Coordination for Multi-Objective Molecular Optimization</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00008v1 Announce Type: new 
+Multi-objective molecular optimization requires searching vast chemical spaces under conflicting objectives, where early design decisions strongly constrain down</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00009" target="_blank" style="font-weight:600">Optimal Transport-based Permutation-Invariant Bayesian Optimization of Offshore Wind Farm Layouts</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00009v1 Announce Type: new 
+Bayesian Optimization (BO) is widely and successfully adopted for solving optimization problems having an expensive-to-evaluate, black-box, and non-convex object</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.00017" target="_blank" style="font-weight:600">MindGames Arena Generalization Track: In2AI Solution with Delayed Per-Step Reward Attribution</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.00017v1 Announce Type: new 
+Training language model agents for multi-agent strategic interaction presents a core difficulty: the quality of any action may depend on future events that never</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-03 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

@@ -134,5 +134,9 @@
   {
     "date": "2026-06-02",
     "summary": "### 执行摘要\n\n中文：\n- 量化AI工具链升温，Qlib与OpenBB双双上榜\n- 具身AI强调物理可行，超越纯观测预测\n- 生成模型追求物理正确，PhyDrawGen受关注\n- 不确定性感知RL助力自动驾驶安全决策\n- 金融数据平台加速向AI Agent开放接口\n\nEnglish:\n- Quant AI toolchain heats up: Microsoft Qlib and OpenB"
+  },
+  {
+    "date": "2026-06-03",
+    "summary": "### 执行摘要\n\n中文：\n- 多Agent协作成研究热点，arXiv连发共识协议与知识管理论文\n- DeepSpeed、FunASR登Trending，AI基础设施与语音工业化受关注\n- Agent应用扩展至科学领域，分子优化引入树形路径协调\n- 决策引擎鲁棒性论文瞄准工业落地中的扰动风险\n- HuggingFace Papers与大厂博客今日无新增数据\n\nEnglish:\n- Multi-ag"
   }
 ]
