@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- FunASR 登顶 GitHub，国产语音 toolkit 达 170 倍实时<br>- AURA 论文提出机器人恒定显存的动作门控记忆机制<br>- ChatHealthAI 推动电子健康记录与大模型临床推理对齐<br>- n8n 与 Plane 领跑开源 AI 自动化与项目管理工具<br>- BehaviorBench 填补真实用户行为决策建模评估空白</div>
+  <div>- 具身智能新架构：恒定显存机器人策略<br>- LLM图结构推理：视觉图脚手架增强逻辑<br>- 工业语音识别：FunASR开源50+语言实时转录<br>- 临床AI推理：ChatHealthAI对齐健康档案<br>- AI工作流自动化：n8n集成400+原生AI能力</div>
   <div class="en">
     <div class="en-title">English</div>
-    - FunASR hits GitHub Trending with 170x real-time industrial speech recognition.<br>- AURA paper introduces constant-VRAM action-gated memory for robot policies.<br>- ChatHealthAI aligns EHR with LLMs for grounded clinical reasoning.<br>- n8n and Plane lead the open-source surge in AI automation and project management.<br>- BehaviorBench bridges the gap in real-world user decision modeling benchmarks.
+    - Embodied AI memory breakthrough: AURA enables constant-VRAM robot policies<br>- Graph scaffolds boost LLM structural reasoning capabilities<br>- Industrial speech recognition: FunASR open-sources 50+ language real-time ASR<br>- Clinical AI advances: ChatHealthAI aligns EHR with LLM reasoning<br>- AI-native workflow automation: n8n trends with 400+ integrations
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日两大趋势值得深度关注。一是语音 AI 基础设施的工业化成熟。ModelScope 的 FunASR 以 170 倍实时率、50+ 语言支持、OpenAI 兼容 API 及说话人分离等特性登上 GitHub Trending，标志着语音识别从实验室走向生产级部署。其开源与标准化接口将加速语音 Agent、实时转写、多语种客服等场景落地。二是具身智能与垂直医疗的专用化突破。AURA 论文针对机器人长 episode 推理提出动作门控记忆机制，在恒定显存下替代传统 KV-cache，直接解决端侧机器人部署的内存瓶颈；同期 ChatHealthAI 探索将电子健康记录表征与大模型对齐，使临床推理具备可解释的医疗依据。两者共同说明：大模型的下一个战场不是通用对话，而是高可靠、低资源、强领域约束的专业场景。</div>
+  <div>聚焦两个方向：<br><br>1. 具身智能的内存架构革新。AURA论文提出"Action-Gated Memory"，直指当前机器人策略的核心痛点——数据中心优化的KV-Cache不适合长周期、不重置的机器人任务。传统注意力缓存假设大量短期请求可批量摊销，而实体智能体需要单条长episode持续推理。AURA通过动作门控机制在恒定显存下管理记忆，为边缘部署和机器人学习提供了关键基础设施。这标志着LLM基础设施正从通用数据中心向专用端侧/具身场景分化。<br><br>2. 图结构驱动的LLM推理增强。"Visual Graph Scaffolds"论文提出新视角：图的价值不仅是测试时的外部知识源，更在于为模型提供结构化推理支架。相比传统将图作为RAG输入，该方法将图结构内化到推理过程中，有望提升复杂逻辑、数学和因果推断能力。这与FunASR在工业语音领域的突破形成呼应——当基础模型能力见顶时，通过领域专用架构（语音的流式处理、推理的图约束）实现差异化优势，正成为AI落地的关键路径。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two trends stand out today. First, industrial-grade speech AI infrastructure is maturing. ModelScope's FunASR reached GitHub Trending with 170x real-time inference, 50+ languages, OpenAI-compatible APIs, and speaker diarization—signaling production-ready voice AI. Its open-source, standardized interface will accelerate voice agents, live transcription, and multilingual support. Second, embodied AI and vertical healthcare are making specialized breakthroughs. The AURA paper proposes action-gated memory at constant VRAM for long robot episodes, replacing the bulky KV-cache to solve on-device memory constraints. Meanwhile, ChatHealthAI aligns electronic health record representations with LLMs to ground clinical reasoning in verifiable medical evidence. Together, they show the next LLM battleground is not general chat, but high-reliability, resource-constrained, domain-specific applications.
+    Two key directions stand out:<br><br>First, memory architecture innovation for embodied AI. The AURA paper introduces "Action-Gated Memory" to address a critical gap: datacenter-optimized KV-caches are ill-suited for long-horizon, non-resetting robot episodes. While datacenter inference amortizes attention across batched short requests, embodied agents require sustained reasoning on single extended episodes. AURA's action-gated mechanism maintains constant VRAM, providing essential infrastructure for edge-deployed robot learning. This signals a broader divergence in LLM infrastructure—moving from general-purpose datacenter stacks toward specialized edge/embodied configurations.<br><br>Second, graph-structured LLM reasoning enhancement. The "Visual Graph Scaffolds" paper offers a paradigm shift: graphs serve not merely as external knowledge sources at test time, but as intrinsic structural scaffolds for reasoning. Rather than simply feeding graph data via RAG, this approach internalizes topological structure into the reasoning process itself, promising advances in complex logic, mathematics, and causal inference. Together with FunASR's industrial speech breakthrough—achieving 170x realtime performance through domain-specific architecture—these developments highlight a maturing trend: as base model capabilities plateau, competitive advantage increasingly comes from specialized structural innovations tailored to domain constraints.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 集成 FunASR 快速搭建语音交互产品 — 开源、OpenAI 兼容、中文效果优异，可直接替换付费语音接口。<br>2. 用 n8n 搭建内部 AI 自动化工作流 — 400+ 集成且原生支持 AI，适合将重复业务逻辑低代码化。<br>3. 医疗/健康赛道参考 ChatHealthAI 做 EHR 对齐 — 让大模型输出可追溯至真实病历，提升合规性与可信度。<br>4. 长上下文应用借鉴 AURA 的动作门控记忆设计 — 对需要持续状态但不允许显存膨胀的 Agent 系统有参考价值。<br>5. 在 CI/CD 中引入 trivy 扫描容器与依赖 — AI 项目同样面临供应链攻击，安全左移成本最低。</div>
+  <div>- 评估n8n+FunASR搭建语音触发自动化工作流：FunASR提供OpenAI兼容API，可无缝接入n8n的400+集成，实现语音指令驱动业务流程。理由是低成本快速构建语音交互原型。<br>- 关注图数据库与LLM结合场景：Visual Graph Scaffolds表明图结构对推理有内在价值，建议在知识图谱问答、供应链分析等结构化场景中尝试引入图脚手架增强LLM表现。<br>- 机器人/边缘AI项目审视内存方案：若涉及长时运行AI Agent或机器人，应参考AURA动作门控思路，避免直接套用KV-Cache导致OOM。理由是端侧显存是硬约束。<br>- 医疗信息化团队跟进ChatHealthAI：EHR与LLM对齐技术可降低临床决策系统幻觉，建议相关团队研读其健康档案表征方法。理由是医疗AI合规与准确性要求极高。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Integrate FunASR to build voice-enabled products — open-source, OpenAI-compatible, and strong in Chinese.<br>2. Adopt n8n for internal AI workflow automation — 400+ integrations and native AI support enable low-code operations.<br>3. Healthcare projects should study ChatHealthAI's EHR alignment — grounding LLM outputs in real records boosts compliance and trust.<br>4. Apply AURA's action-gated memory to long-context agents — keeps state without unbounded VRAM growth.<br>5. Add trivy to CI/CD for container and dependency scanning — AI projects face supply-chain risks too; shift-left security is cheap insurance.
+    - Prototype voice-triggered workflows with n8n + FunASR: FunASR's OpenAI-compatible API plugs directly into n8n's 400+ integrations for low-cost voice automation.<br>- Explore graph scaffolding for structured reasoning: Apply visual graph scaffold concepts to knowledge graph Q&A or supply-chain analysis where topological structure improves LLM logic.<br>- Audit edge AI memory architecture: For long-running agents or robotics, evaluate action-gated memory patterns instead of naive KV-caches to prevent OOM under constant VRAM constraints.<br>- Evaluate EHR-LLM alignment for healthcare teams: ChatHealthAI's grounded clinical reasoning approach can reduce hallucinations in medical decision-support systems.
   </div>
 </div>
 
@@ -125,7 +125,7 @@ Modeling patient trajectories from longitudinal electronic health records (EHRs)
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-06-04 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-06-04 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

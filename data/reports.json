@@ -141,6 +141,6 @@
   },
   {
     "date": "2026-06-04",
-    "summary": "### 执行摘要\n中文：\n- FunASR 登顶 GitHub，国产语音 toolkit 达 170 倍实时\n- AURA 论文提出机器人恒定显存的动作门控记忆机制\n- ChatHealthAI 推动电子健康记录与大模型临床推理对齐\n- n8n 与 Plane 领跑开源 AI 自动化与项目管理工具\n- BehaviorBench 填补真实用户行为决策建模评估空白\n\nEnglish:\n- FunAS"
+    "summary": "### 执行摘要\n中文：\n- 具身智能新架构：恒定显存机器人策略\n- LLM图结构推理：视觉图脚手架增强逻辑\n- 工业语音识别：FunASR开源50+语言实时转录\n- 临床AI推理：ChatHealthAI对齐健康档案\n- AI工作流自动化：n8n集成400+原生AI能力\n\nEnglish:\n- Embodied AI memory breakthrough: AURA enables const"
   }
 ]
