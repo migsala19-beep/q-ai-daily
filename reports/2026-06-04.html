@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-04</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-04</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- FunASR 登顶 GitHub，国产语音 toolkit 达 170 倍实时<br>- AURA 论文提出机器人恒定显存的动作门控记忆机制<br>- ChatHealthAI 推动电子健康记录与大模型临床推理对齐<br>- n8n 与 Plane 领跑开源 AI 自动化与项目管理工具<br>- BehaviorBench 填补真实用户行为决策建模评估空白</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - FunASR hits GitHub Trending with 170x real-time industrial speech recognition.<br>- AURA paper introduces constant-VRAM action-gated memory for robot policies.<br>- ChatHealthAI aligns EHR with LLMs for grounded clinical reasoning.<br>- n8n and Plane lead the open-source surge in AI automation and project management.<br>- BehaviorBench bridges the gap in real-world user decision modeling benchmarks.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日两大趋势值得深度关注。一是语音 AI 基础设施的工业化成熟。ModelScope 的 FunASR 以 170 倍实时率、50+ 语言支持、OpenAI 兼容 API 及说话人分离等特性登上 GitHub Trending，标志着语音识别从实验室走向生产级部署。其开源与标准化接口将加速语音 Agent、实时转写、多语种客服等场景落地。二是具身智能与垂直医疗的专用化突破。AURA 论文针对机器人长 episode 推理提出动作门控记忆机制，在恒定显存下替代传统 KV-cache，直接解决端侧机器人部署的内存瓶颈；同期 ChatHealthAI 探索将电子健康记录表征与大模型对齐，使临床推理具备可解释的医疗依据。两者共同说明：大模型的下一个战场不是通用对话，而是高可靠、低资源、强领域约束的专业场景。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out today. First, industrial-grade speech AI infrastructure is maturing. ModelScope's FunASR reached GitHub Trending with 170x real-time inference, 50+ languages, OpenAI-compatible APIs, and speaker diarization—signaling production-ready voice AI. Its open-source, standardized interface will accelerate voice agents, live transcription, and multilingual support. Second, embodied AI and vertical healthcare are making specialized breakthroughs. The AURA paper proposes action-gated memory at constant VRAM for long robot episodes, replacing the bulky KV-cache to solve on-device memory constraints. Meanwhile, ChatHealthAI aligns electronic health record representations with LLMs to ground clinical reasoning in verifiable medical evidence. Together, they show the next LLM battleground is not general chat, but high-reliability, resource-constrained, domain-specific applications.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 集成 FunASR 快速搭建语音交互产品 — 开源、OpenAI 兼容、中文效果优异，可直接替换付费语音接口。<br>2. 用 n8n 搭建内部 AI 自动化工作流 — 400+ 集成且原生支持 AI，适合将重复业务逻辑低代码化。<br>3. 医疗/健康赛道参考 ChatHealthAI 做 EHR 对齐 — 让大模型输出可追溯至真实病历，提升合规性与可信度。<br>4. 长上下文应用借鉴 AURA 的动作门控记忆设计 — 对需要持续状态但不允许显存膨胀的 Agent 系统有参考价值。<br>5. 在 CI/CD 中引入 trivy 扫描容器与依赖 — AI 项目同样面临供应链攻击，安全左移成本最低。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Integrate FunASR to build voice-enabled products — open-source, OpenAI-compatible, and strong in Chinese.<br>2. Adopt n8n for internal AI workflow automation — 400+ integrations and native AI support enable low-code operations.<br>3. Healthcare projects should study ChatHealthAI's EHR alignment — grounding LLM outputs in real records boosts compliance and trust.<br>4. Apply AURA's action-gated memory to long-context agents — keeps state without unbounded VRAM growth.<br>5. Add trivy to CI/CD for container and dependency scanning — AI projects face supply-chain risks too; shift-left security is cheap insurance.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/psf/black" target="_blank" style="font-weight:600">psf/black</a>
+            <span style="color:#888;font-size:13px"> — The uncompromising Python code formatter</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/rustdesk/rustdesk" target="_blank" style="font-weight:600">rustdesk/rustdesk</a>
+            <span style="color:#888;font-size:13px"> — An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" style="font-weight:600">freeCodeCamp/freeCodeCamp</a>
+            <span style="color:#888;font-size:13px"> — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/modelscope/FunASR" target="_blank" style="font-weight:600">modelscope/FunASR</a>
+            <span style="color:#888;font-size:13px"> — Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diarization, emotion detection, streaming, and OpenAI-compatible API.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/n8n-io/n8n" target="_blank" style="font-weight:600">n8n-io/n8n</a>
+            <span style="color:#888;font-size:13px"> — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nestjs/nest" target="_blank" style="font-weight:600">nestjs/nest</a>
+            <span style="color:#888;font-size:13px"> — A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/makeplane/plane" target="_blank" style="font-weight:600">makeplane/plane</a>
+            <span style="color:#888;font-size:13px"> — 🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02673" target="_blank" style="font-weight:600">Visual Graph Scaffolds for Structural Reasoning in Large Language Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02673v1 Announce Type: new 
+Graphs have been used to enhance large language models (LLMs) for structured reasoning, mostly as external knowledge sources are provided to models at test time.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02775" target="_blank" style="font-weight:600">AURA: Action-Gated Memory for Robot Policies at Constant VRAM</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02775v1 Announce Type: new 
+The KV-cache is the right memory for datacenters but the wrong memory for robots. Datacenter inference batches many short requests and resets them, amortizing an</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02791" target="_blank" style="font-weight:600">Evaluating Transformer and LSTM Frameworks for Prediction in Ungauged Basins</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02791v1 Announce Type: new 
+Watershed networks exhibit convergent topologies in which multiple tributaries merge into downstream channels,integrating diverse upstream hydrological processes</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02798" target="_blank" style="font-weight:600">BehaviorBench: Modeling Real-World User Decisions from Behavioral Traces</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02798v1 Announce Type: new 
+Many decision-support settings require systems that adapt to individual users, but evaluation data for this problem remain limited. Existing benchmarks for user </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02802" target="_blank" style="font-weight:600">ChatHealthAI: Aligning Electronic Health Record Representations with Large Language Models for Grounded Clinical Reasoning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02802v1 Announce Type: new 
+Large language models (LLMs) exhibit strong natural-language reasoning abilities for clinical decision support, but struggle to effectively model structured long</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.02812" target="_blank" style="font-weight:600">Traj-Evolve: A Self-Evolving Multi-Agent System for Patient Trajectory Modeling in Lung Cancer Early Detection</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.02812v1 Announce Type: new 
+Modeling patient trajectories from longitudinal electronic health records (EHRs) requires reasoning over sparse, noisy, and long-context multimodal sequences. Ex</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-04 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

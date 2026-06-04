@@ -138,5 +138,9 @@
   {
     "date": "2026-06-03",
     "summary": "### 执行摘要\n中文：\n• 多Agent协作审议成为核心研究方向\n• BFT共识机制引入多模型AI系统\n• MILP决策引擎后求解鲁棒性受关注\n• 分子优化采用路径协调新策略\n• Agent知识库治理亟需新协议规范\n\nEnglish:\n• Multi-agent collaborative deliberation emerges as a core research direction\n• B"
+  },
+  {
+    "date": "2026-06-04",
+    "summary": "### 执行摘要\n中文：\n- FunASR 登顶 GitHub，国产语音 toolkit 达 170 倍实时\n- AURA 论文提出机器人恒定显存的动作门控记忆机制\n- ChatHealthAI 推动电子健康记录与大模型临床推理对齐\n- n8n 与 Plane 领跑开源 AI 自动化与项目管理工具\n- BehaviorBench 填补真实用户行为决策建模评估空白\n\nEnglish:\n- FunAS"
   }
 ]
