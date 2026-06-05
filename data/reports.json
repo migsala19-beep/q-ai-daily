@@ -142,5 +142,9 @@
   {
     "date": "2026-06-04",
     "summary": "### 执行摘要\n中文：\n- 具身智能新架构：恒定显存机器人策略\n- LLM图结构推理：视觉图脚手架增强逻辑\n- 工业语音识别：FunASR开源50+语言实时转录\n- 临床AI推理：ChatHealthAI对齐健康档案\n- AI工作流自动化：n8n集成400+原生AI能力\n\nEnglish:\n- Embodied AI memory breakthrough: AURA enables const"
+  },
+  {
+    "date": "2026-06-05",
+    "summary": "### 执行摘要\n中文：\n• 企业AI Agent预部署验证框架涌现，填补评测与生产鸿沟\n• SMAC-Talk开源：StarCraft升级为LLM多智能体协作测试平台\n• 研究警示日常AI交互正悄然催生非刻意的情感依赖\n• 金融数据平台OpenBB trending，AI Agent垂直应用加速落地\n\nEnglish:\n• Pre-deployment assurance frameworks "
   }
 ]
