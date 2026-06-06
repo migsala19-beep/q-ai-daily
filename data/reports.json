@@ -146,5 +146,9 @@
   {
     "date": "2026-06-05",
     "summary": "### 执行摘要\n中文：\n- 企业AI Agent部署前信任认证引关注\n- 日常AI交互或致人类情感依赖风险\n- 多智能体语言协作评测框架受关注\n- 开源项目管理与远程桌面工具升温\n- 金融AI平台OpenBB受开发者关注\n\nEnglish:\n- Pre-deployment trust certification for enterprise AI agents gains attention\n"
+  },
+  {
+    "date": "2026-06-06",
+    "summary": "### 执行摘要\n中文：\n• Reddit 秘密 LLM 说服实验引发伦理争议，暴露代理透明度危机。\n• 多智能体系统开始从\"自由对话\"转向\"动作-状态\"结构化通信。\n• 开源自托管生态爆发：Coolify、Plane、Traefik 同日登上 GitHub Trending。\n• 时序基础模型出现推理时上下文优化新方向 GITCO。\n• AI 安全与智能体治理正成为学术与工程的双重焦点。\n\nEn"
   }
 ]
