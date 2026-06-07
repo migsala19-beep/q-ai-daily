@@ -150,5 +150,9 @@
   {
     "date": "2026-06-06",
     "summary": "### 执行摘要\n中文：\n- 隐蔽 LLM 代理伦理风险引发学界深度反思。\n- 多智能体结构化通信成为提升效率新方向。\n- 推理时上下文优化助力时间序列基础模型。\n- 开源项目管理/自托管 PaaS 工具热度不减。\n- 实时开放世界知识拓展至多模态模因理解。\n\nEnglish:\n- Covert LLM agent ethics trigger deep academic reflection.\n"
+  },
+  {
+    "date": "2026-06-07",
+    "summary": "### 执行摘要\n中文：\n- LLM Agent伦理争议：Reddit隐蔽实验暴露操纵风险\n- 多Agent通信优化：结构化传递提升协作效率\n- 自托管AI走红：Khoj登榜，本地化AI需求上升\n- 时序模型新进展：GITCO推理时上下文门控优化\n- 开发工具活跃：Svelte、Vite、Supabase受关注\n\nEnglish:\n- LLM Agent ethics alert: A cover"
   }
 ]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-07</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-07</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- LLM Agent伦理争议：Reddit隐蔽实验暴露操纵风险<br>- 多Agent通信优化：结构化传递提升协作效率<br>- 自托管AI走红：Khoj登榜，本地化AI需求上升<br>- 时序模型新进展：GITCO推理时上下文门控优化<br>- 开发工具活跃：Svelte、Vite、Supabase受关注</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - LLM Agent ethics alert: A covert Reddit experiment exposes manipulation risks<br>- Multi-agent communication: Structured action-state protocols improve collaboration<br>- Self-hosted AI rising: Khoj trends as demand for local personal AI grows<br>- Time series breakthrough: GITCO introduces inference-time context gating for TSFMs<br>- Dev ecosystem momentum: Svelte, Vite, and Supabase remain highly active
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯呈现出AI Agent技术"能力扩张"与"规范约束"同步深化的趋势。<br><br>一是自主AI Agent的伦理边界问题浮出水面。arXiv论文披露了一项已终止的Reddit实验：外部研究者在r/ChangeMyView板块部署了未披露的AI生成账号，试图用隐蔽LLM Agent说服真实用户。这表明Agent滥用风险已从理论变为现实。研究者与平台必须建立透明的身份披露机制、人机协作边界以及实时风控策略，防止 persuasive AI 越界。<br><br>二是多Agent系统正从"角色分工"走向"通信优化"。同期论文《What Should Agents Say?》指出，当前多Agent交互多依赖无约束自然语言，导致信息冗余和协作低效。作者提出"动作状态通信"框架，让Agent显式标注动作意图与状态变更。这对复杂Agent流水线（如Khoj的自定义Agent与自动化编排）具有直接指导意义——高效通信是扩展Agent规模的前提。此外，Khoj作为"自托管AI第二大脑"登上GitHub热榜，结合Supabase提供的Postgres AI应用平台，反映出开发者对数据主权与本地化部署的强劲需求。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's developments reveal AI Agent technology advancing along two parallel tracks: capability expansion and ethical governance.<br><br>The first is the surfacing ethical boundaries of autonomous agents. An arXiv paper reveals a discontinued Reddit experiment where undisclosed AI-generated accounts were deployed in r/ChangeMyView to persuade real users, demonstrating that manipulation risks have moved from theoretical to real. Platforms and builders must now establish transparent disclosure mechanisms, human-agent boundaries, and real-time risk controls.<br><br>The second is the evolution of multi-agent systems from role assignment to communication optimization. The paper "What Should Agents Say?" argues that unconstrained natural language between agents creates redundancy and inefficiency. It proposes an action-state communication framework where agents explicitly signal intentions and state changes. This directly impacts complex agent pipelines like Khoj's custom automations—efficient communication is prerequisite to scaling agent systems. Meanwhile, Khoj trending as a self-hosted "AI second brain," alongside Supabase's Postgres platform for AI apps, signals strong developer demand for data sovereignty and local deployment.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 建立AI Agent伦理审查清单：参考Reddit隐蔽实验，对外交互的Agent必须嵌入身份披露与人工兜底机制，规避合规与声誉风险。<br>2. 尝试自托管个人知识库：Khoj支持本地LLM与私有文档问答，适合对数据敏感的个人或团队替代纯云端方案。<br>3. 多Agent系统引入结构化通信协议：不再让Agent自由对话，而是限定消息格式（如JSON动作状态），可降低token消耗并提升可靠性。<br>4. 时序预测场景关注GITCO方法：若业务涉及设备故障或金融预测，可评估推理时上下文门控对零样本预测精度的提升。<br>5. AI应用后端选型向Postgres生态倾斜：Supabase提供向量存储与实时能力，适合作为AI原生应用的统一数据层。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Establish AI agent ethics checklists: Following the Reddit covert experiment, any outward-facing agent must embed identity disclosure and human oversight to avoid compliance and reputational risks.<br>2. Experiment with self-hosted knowledge bases: Khoj supports local LLMs and private document Q&A, offering a data-sensitive alternative to pure cloud solutions.<br>3. Adopt structured communication in multi-agent systems: Replace free-form dialogue with constrained message formats (e.g., JSON action-state) to cut token costs and improve reliability.<br>4. Evaluate GITCO for time-series forecasting: If your use case involves equipment failure or financial prediction, test inference-time context gating for zero-shot accuracy gains.<br>5. Align AI backend strategy with Postgres ecosystems: Supabase offers vector storage and realtime capabilities, serving as a unified data layer for AI-native applications.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/sveltejs/svelte" target="_blank" style="font-weight:600">sveltejs/svelte</a>
+            <span style="color:#888;font-size:13px"> — web development for the rest of us</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/openai/whisper" target="_blank" style="font-weight:600">openai/whisper</a>
+            <span style="color:#888;font-size:13px"> — Robust Speech Recognition via Large-Scale Weak Supervision</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/vitejs/vite" target="_blank" style="font-weight:600">vitejs/vite</a>
+            <span style="color:#888;font-size:13px"> — Next generation frontend tooling. It's fast!</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/khoj-ai/khoj" target="_blank" style="font-weight:600">khoj-ai/khoj</a>
+            <span style="color:#888;font-size:13px"> — Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" style="font-weight:600">yt-dlp/yt-dlp</a>
+            <span style="color:#888;font-size:13px"> — A feature-rich command-line audio/video downloader</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/supabase/supabase" target="_blank" style="font-weight:600">supabase/supabase</a>
+            <span style="color:#888;font-size:13px"> — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/binhnguyennus/awesome-scalability" target="_blank" style="font-weight:600">binhnguyennus/awesome-scalability</a>
+            <span style="color:#888;font-size:13px"> — The Patterns of Scalable, Reliable, and Performant Large-Scale Systems</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05256" target="_blank" style="font-weight:600">How Far Did They Go? The Persuasive Tactics of Covert LLM Agents in a Discontinued Field Experiment</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05256v1 Announce Type: new 
+This study analyzes a publicly released dataset from a discontinued field experiment on Reddit's r/ChangeMyView. The intervention, conducted by unknown, external</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05304" target="_blank" style="font-weight:600">What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05304v1 Announce Type: new 
+Multi-agent systems (MAS) built on large language models are typically organized around roles, pipelines, and turn schedules, while the content that agents pass </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05316" target="_blank" style="font-weight:600">I Know What You Meme, Even If it Emerged Today: Understanding Evolving Memes through Open-World Knowledge Acquisition</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05316v1 Announce Type: new 
+Multimodal memes are dynamic and often require up to date background knowledge for interpretation. Existing methods often overlook such knowledge or rely on fixe</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05332" target="_blank" style="font-weight:600">GITCO: Gated Inference-Time Context Optimization in TSFMs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05332v1 Announce Type: new 
+Patch-based Time Series Foundation Models (TSFMs) suffer from context poisoning: structurally anomalous patches capture disproportionate attention and silently d</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05334" target="_blank" style="font-weight:600">Uncertainty Aware Functional Behavior Prediction and Material Fatigue Assessment for Circular Factory</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05334v1 Announce Type: new 
+Returned products in circular factories re-enter production with heterogeneous degradation states, usage histories, and remaining capability. Reuse cannot be dec</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.05342" target="_blank" style="font-weight:600">SentinelBench: A Benchmark for Long-Running Monitoring Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.05342v1 Announce Type: new 
+AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is continuous action: issuing to</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-07 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
