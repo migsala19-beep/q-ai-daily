@@ -157,6 +157,6 @@
   },
   {
     "date": "2026-06-13",
-    "summary": "### 执行摘要\n中文：\n• Agent认知架构升级，树搜索成核心推理层\n• 工具知识诊断框架问世，破解检索瓶颈\n• 人机决策角色反转，AI主决策人类支持\n• 形式化证明效率突破，Lean增强降算力门槛\n• 自动驾驶仿真新范式，检索增强VLA类人驾驶\n\nEnglish:\n• Agent cognition advances with tree search as core reasoning la"
+    "summary": "### 执行摘要\n\n中文：\n- 智能体认知架构升级：树搜索与工具诊断成为新焦点（Arbor、ToolSense）\n- AI介入战略决策：人机角色反转重塑决策支持范式\n- 形式证明效率突破：Lean增强框架降低训练推理成本（Pythagoras-Prover）\n- VLA自动驾驶落地：人格化检索增强提升闭环仿真能力（PersonaDrive）\n\nEnglish:\n- Agent cognitive "
   }
 ]
