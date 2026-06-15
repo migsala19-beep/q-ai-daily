@@ -162,5 +162,9 @@
   {
     "date": "2026-06-14",
     "summary": "### 执行摘要\n中文：\n1. GitHub热榜以开发工具为主，未见前沿AI模型项目\n2. Python全栈框架Reflex上榜，利好AI应用快速部署\n3. 自托管方案Immich/Ghostfolio持续升温，隐私需求驱动\n4. 分析引擎StarRocks受关注，AI数据基建获社区重视\n\nEnglish:\n1. GitHub trending dominated by dev tools, no"
+  },
+  {
+    "date": "2026-06-15",
+    "summary": "### 执行摘要\n\n中文：\n- SkyPilot 登顶趋势榜，AI基础设施统一调度受瞩目\n- 纯Python框架Reflex受关注，降低AI应用开发门槛\n- 云原生管理器Meshery上榜，AI部署运维深度融合\n- 开源安全库HackTricks升温，AI安全研究需重视\n- 无新arXiv/HuggingFace论文，学术端今日较平静\n\nEnglish:\n- SkyPilot tops trend"
   }
 ]
