@@ -173,6 +173,6 @@
   },
   {
     "date": "2026-06-17",
-    "summary": "### 执行摘要\n\n中文：\n- 自托管与隐私工具持续领跑GitHub热度榜\n- AI可解释性与代理信任研究成为新焦点\n- LLM标准化工具接口探索取得新进展\n- 去中心化网络与云原生管理关注度上升\n\nEnglish:\n- Self-hosting and privacy tools dominate GitHub trending\n- AI explainability and agent tru"
+    "summary": "### 执行摘要\n中文：\n• 自托管生态爆发：隐私保护型LLM与数据存储方案成GitHub热点\n• 多Agent信任机制受关注：论文首次量化AI代理间信任形成与破裂\n• MCP协议扩展：PrologMCP为LLM Agent接入逻辑推理提供标准接口\n• 因果推理新框架：关系结构因果模型推动AI组合泛化能力\n• 可解释性瓶颈凸显：学界重新定义\"良好解释\"以应对LLM黑箱挑战\n\nEnglish:\n• "
   }
 ]

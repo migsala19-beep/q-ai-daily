@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 自托管与隐私工具持续领跑GitHub热度榜<br>- AI可解释性与代理信任研究成为新焦点<br>- LLM标准化工具接口探索取得新进展<br>- 去中心化网络与云原生管理关注度上升</div>
+  <div>• 自托管生态爆发：隐私保护型LLM与数据存储方案成GitHub热点<br>• 多Agent信任机制受关注：论文首次量化AI代理间信任形成与破裂<br>• MCP协议扩展：PrologMCP为LLM Agent接入逻辑推理提供标准接口<br>• 因果推理新框架：关系结构因果模型推动AI组合泛化能力<br>• 可解释性瓶颈凸显：学界重新定义"良好解释"以应对LLM黑箱挑战</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Self-hosting and privacy tools dominate GitHub trending<br>- AI explainability and agent trust research gains focus<br>- LLM standardized tool interfaces see new progress<br>- Decentralized networking and cloud-native management rise
+    • Self-hosting ecosystem surges: Privacy-preserving LLM & data storage solutions dominate GitHub trending<br>• Multi-agent trust mechanisms gain traction: First behavioral measure for AI-to-AI trust formation & breakage proposed<br>• MCP protocol expansion: PrologMCP standardizes Prolog tool interface for LLM agents' logical reasoning<br>• Causal reasoning advances: Relational Structural Causal Models push AI combinatorial generalization<br>• Explainability bottleneck highlighted: Academia redefines "good explanations" to tackle LLM black-box challenge
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日GitHub趋势揭示"自托管基础设施"与"隐私优先"正成为开发者核心诉求。Immich、ente及Self-Hosting-Guide等项目均指向用户对数据主权的重视——从照片管理到端到端加密存储，从家庭服务器到云原生管理（Meshery），企业级与消费级场景同步爆发。学术层面，两篇关键论文分别探讨"LLM输出的优质解释定义"与"AI代理间信任的形成与破裂"，标志着多代理系统从工程实现走向治理机制研究。随着代理协作普及，可解释性与信任度量将成为系统安全与效能的基石。</div>
+  <div>今日数据揭示两大清晰趋势：隐私优先的自托管基础设施与Agent协作标准化。<br><br>自托管（Self-Hosting）正从极客小众走向主流。GitHub Trending中Self-Hosting-Guide、immich（高性能自托管照片视频管理）、ente（端到端加密云）同时上榜，说明用户对数据主权的诉求强烈。特别值得注意的是Self-Hosting-Guide明确将LLMs列为自托管核心场景，预示本地部署大模型（如Ollama、Llama.cpp）将在下半年持续升温。企业可借鉴此思路，将敏感业务数据保留在私有服务器，通过开源工具链实现"私有化AI"。<br><br>AI Agent互操作性是第二个关键方向。PrologMCP论文将MCP（Model Context Protocol）扩展至Prolog逻辑推理引擎，使LLM Agent能执行结构化规则查询；同期"Trust Between AI Agents"论文提出基于代价验证的信任度量框架，解决多Agent系统中的协作风险。两者结合表明：Agent生态正从"单点能力"迈向"网络协作"，基础设施层（协议+信任机制）成为新战场。</div>
   <div class="en">
     <div class="en-title">English</div>
-    GitHub trends reveal self-hosting infrastructure and privacy-first design are becoming core developer demands. Projects like Immich, ente, and Self-Hosting-Guide reflect growing data sovereignty concerns—from photo management to E2E encrypted storage, from home servers to cloud-native management (Meshery). Academically, two key papers address "good explanations for LLM outputs" and "trust formation/breakage between AI agents," signaling multi-agent systems evolving from engineering to governance. As agent collaboration scales, explainability and trust metrics will underpin system security and efficacy.
+    Two clear trends emerge: privacy-first self-hosting infrastructure and agent collaboration standardization.<br><br>Self-hosting is moving from niche to mainstream. Self-Hosting-Guide, immich, and ente all trend on GitHub, signaling strong demand for data sovereignty. Notably, Self-Hosting-Guide explicitly lists LLMs as a core self-hosting scenario, suggesting local model deployment (e.g., Ollama, Llama.cpp) will accelerate. Enterprises should keep sensitive data on private servers using open-source toolchains for "privatized AI."<br><br>AI agent interoperability is the second key direction. The PrologMCP paper extends MCP to Prolog logic engines, enabling structured rule queries for LLM agents; meanwhile, "Trust Between AI Agents" proposes a cost-based verification trust metric for multi-agent cooperation risks. Together they show the agent ecosystem is shifting from "single-point capabilities" to "networked collaboration," with infrastructure (protocols + trust mechanisms) becoming the new battleground.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 评估团队自托管方案替代SaaS，降低长期数据成本与隐私风险。理由：Immich与ente已成熟，企业可直接迁移。<br>2. 在多代理系统中引入"可验证信任"机制，参考论文中的costly verification模型。理由：预防恶意代理与级联故障。<br>3. 为内部LLM工具链引入标准化接口（如PrologMCP）。理由：降低不同工具集成复杂度，提升代理复用性。<br>4. 关注模块化网络库（iroh）替代传统IP地址方案。理由：移动与边缘场景下连接稳定性更高。</div>
+  <div>中文：<br>1. 评估团队是否需要本地LLM部署 — 自托管指南已成熟，可降低API依赖与数据泄露风险。<br>2. 关注MCP协议并试点Prolog接口 — 若业务涉及规则引擎（如风控、合规），PrologMCP能让LLM直接调用专家系统。<br>3. 在多Agent项目中引入信任评分机制 — 参考论文中的"代价验证"模型，避免Agent链式幻觉放大。<br>4. 审查现有AI产品的可解释性策略 — 随着"良好解释"标准被重新定义，提前对齐可避免合规被动。<br>5. 尝试iroh替代传统P2P网络层 — 其密钥寻址比IP更灵活，适合构建去中心化Agent通信网络。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Evaluate self-hosted alternatives to SaaS for long-term data cost and privacy control. Rationale: Immich and ente are production-ready for enterprise migration.<br>2. Implement verifiable trust mechanisms in multi-agent systems using costly verification models. Rationale: Prevents malicious agents and cascading failures.<br>3. Adopt standardized interfaces like PrologMCP for internal LLM toolchains. Rationale: Reduces integration complexity and improves agent reusability.<br>4. Explore modular networking libraries like iroh over traditional IP addressing. Rationale: Better connectivity stability in mobile and edge environments.
+    1. Evaluate on-premise LLM deployment for your team — self-hosting guides are mature, reducing API dependency and data leakage risks.<br>2. Pilot the Prolog MCP interface if your business uses rule engines (e.g., risk control, compliance) — PrologMCP lets LLMs directly invoke expert systems.<br>3. Introduce trust scoring in multi-agent projects — reference the paper's "costly verification" model to prevent chained hallucination amplification.<br>4. Audit your AI product's explainability strategy — as the standard for "good explanations" is redefined, early alignment prevents compliance gaps.<br>5. Experiment with iroh as a P2P network layer — its key-based addressing is more flexible than IP, ideal for decentralized agent communication networks.
   </div>
 </div>
 
