@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-18</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-18</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agentic搜索突破并行采样瓶颈，多样性查询初始化成新方向<br>- 法律AI实现自进化检索，规则自动适配复杂案例匹配<br>- Rust工程化工具链持续繁荣，覆盖网络与金融基础设施<br>- LLM数学认知边界受关注，研究能否从语言中"发现"零<br>- 技能约束模型预测控制兴起，制造业供应链韧性迎新范式</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agentic search breaks parallel sampling limits via diverse query initialization<br>- Legal AI achieves self-evolving retrieval with auto-adaptive case matching rules<br>- Rust engineering toolchain flourishes across networking and finance infrastructure<br>- LLM mathematical cognition tested on discovering zero concept from language alone<br>- Skill-constrained MPC rises as new paradigm for resilient manufacturing supply chains
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日学术信号清晰指向两个关键趋势。其一，**Agentic搜索的Test-time Scaling正从"暴力并行"转向"智能初始化"**。论文《Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search》明确指出，标准并行采样在扩展搜索广度时收益递减，核心瓶颈在于查询初始化缺乏多样性。这预示着下一代搜索Agent的竞争焦点将从"能搜多少条路径"转向"如何第一条就更聪明"，与GitHub上openai/openai-cookbook持续更新的实践指南形成理论与工程落地的互补。<br><br>其二，**AI正从通用对话深度嵌入专业领域的工作流约束**。法律方向上，《When Rules Learn》提出自进化Agent动态调整检索规则以应对法律语言的复杂性和词汇对齐需求；制造业方向上，两篇论文（SkillChain-Gym、Skill-Constrained MPC）将"人力资源技能衰减"和"再培训耗时"建模为硬约束纳入生产-库存控制。这标志着AI开始处理真实世界的动态资源限制，而非仅提供文本建议。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two key trends emerge from today's signals. First, **agentic search test-time scaling is shifting from brute-force parallelization to intelligent initialization**. The paper "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search" demonstrates that standard parallel sampling yields diminishing returns when scaling search breadth, identifying query diversity as the critical bottleneck. This suggests the next competitive frontier for search agents will be "smarter first steps" rather than "more paths," complementing the practical engineering guidance in openai/openai-cookbook.<br><br>Second, **AI is embedding into professional workflows with real-world constraints rather than remaining general chat**. In legal tech, "When Rules Learn" introduces a self-evolving agent that dynamically adapts retrieval rules to handle complex legal language and precise lexical alignment. In manufacturing, two papers (SkillChain-Gym and Skill-Constrained MPC) model human skill decay and reskilling time as hard constraints within production-inventory control. This signals AI is beginning to optimize under dynamic resource limitations rather than merely generating text recommendations.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. **现有AI搜索系统应审计并行采样策略** — 若扩展路径数量收益递减，可引入多样性查询初始化以提升效率<br>2. **基础设施项目可优先评估Rust生态** — iroh、nautilus_trader等验证了Rust在高性能网络与金融引擎中的工程成熟度<br>3. **垂直领域创业应聚焦"自进化"与"约束建模"** — 法律和制造业论文表明，通用对话已红海，处理领域约束才是壁垒<br>4. **制造业企业可试点技能约束MPC** — 将员工技能证书有效期、再培训耗时纳入生产计划优化模型<br>5. **开发者跟进OpenAI Cookbook最新示例** — 及时掌握API最佳实践，避免在Agent实现中重复踩坑</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Audit parallel sampling in your AI search systems** — If scaling path count shows diminishing returns, introduce diverse query initialization to improve efficiency<br>2. **Evaluate Rust ecosystem for infrastructure projects** — iroh and nautilus_trader demonstrate Rust's engineering maturity in high-performance networking and finance engines<br>3. **Vertical AI startups should prioritize self-evolving capability and constraint modeling** — Legal and manufacturing papers show generic chat is saturated; domain constraint handling builds real moats<br>4. **Manufacturers can pilot skill-constrained MPC** — Incorporate employee certification expiration and reskilling time into production planning optimization models<br>5. **Developers should track latest OpenAI Cookbook examples** — Stay current with API best practices to avoid repeating known pitfalls in Agent implementations
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/n0-computer/iroh" target="_blank" style="font-weight:600">n0-computer/iroh</a>
+            <span style="color:#888;font-size:13px"> — IP addresses break, dial keys instead. Modular networking stack in Rust.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/meshery/meshery" target="_blank" style="font-weight:600">meshery/meshery</a>
+            <span style="color:#888;font-size:13px"> — Meshery, the cloud native manager</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/yairm210/Unciv" target="_blank" style="font-weight:600">yairm210/Unciv</a>
+            <span style="color:#888;font-size:13px"> — Open-source Android/Desktop remake of Civ V</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" style="font-weight:600">freeCodeCamp/freeCodeCamp</a>
+            <span style="color:#888;font-size:13px"> — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" style="font-weight:600">nautechsystems/nautilus_trader</a>
+            <span style="color:#888;font-size:13px"> — Production-grade Rust-native trading engine with deterministic event-driven architecture</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/makeplane/plane" target="_blank" style="font-weight:600">makeplane/plane</a>
+            <span style="color:#888;font-size:13px"> — 🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/openai/openai-cookbook" target="_blank" style="font-weight:600">openai/openai-cookbook</a>
+            <span style="color:#888;font-size:13px"> — Examples and guides for using the OpenAI API</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/fivetran/great_expectations" target="_blank" style="font-weight:600">fivetran/great_expectations</a>
+            <span style="color:#888;font-size:13px"> — Always know what to expect from your data.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17209" target="_blank" style="font-weight:600">Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17209v1 Announce Type: new 
+Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we fo</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17220" target="_blank" style="font-weight:600">When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17220v1 Announce Type: new 
+Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. A</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17266" target="_blank" style="font-weight:600">SkillChain-Gym: A Benchmark for Reskilling-Aware Production-Inventory Control under Disruptions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17266v1 Announce Type: new 
+Production planning increasingly has to treat workforce capability as a decision variable: certifications lapse when skills are not maintained, new products requ</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17269" target="_blank" style="font-weight:600">Skill-Constrained Model Predictive Control for Resilient Manufacturing Supply Chains</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17269v1 Announce Type: new 
+In skill-constrained production-inventory systems, the qualified human capacity available tomorrow depends on training decisions made today: production requires </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17289" target="_blank" style="font-weight:600">Nothing from Something: Can a Language Model Discover 0?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17289v1 Announce Type: new 
+AI systems based on artificial neural networks are being developed with aspirations of pushing the boundary of human mathematical knowledge. A key question for t</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17312" target="_blank" style="font-weight:600">Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17312v1 Announce Type: new 
+Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-18 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
