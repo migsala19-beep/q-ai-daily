@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-19</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-19</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agentic搜索提出多样性查询初始化，突破并行采样瓶颈。<br>- 自进化法律Agent登场，垂直领域检索进入动态规则时代。<br>- 微软开源AI量化平台，强化学习赋能金融策略研发。<br>- 制造业AI引入技能约束MPC，人机协同优化供应链韧性。<br>- 去中心化网络栈iroh受关注，密钥寻址替代传统IP。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agentic search advances with diverse query initialization, breaking parallel sampling limits.<br>- Self-evolving legal agent emerges, bringing dynamic rule learning to vertical retrieval.<br>- Microsoft open-sources AI quant platform, empowering RL-driven financial research.<br>- Manufacturing AI adopts skill-constrained MPC to optimize supply-chain resilience.<br>- Decentralized networking stack iroh gains traction, replacing IPs with cryptographic keys.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯的核心主线是**Agentic AI 从通用对话向深度专业工作流的渗透**，以及**测试时计算（Test-time Compute）的范式扩展**。<br><br>在Agentic搜索方面，arXiv论文《Beyond Parallel Sampling》指出，当前Agent搜索的广度扩展依赖简单的并行采样，已出现边际收益递减。作者提出「多样性查询初始化」机制，通过差异化查询起点而非单纯增加rollout数量来提升搜索效率。这标志着Agent推理正从「堆深度（更多轮次）」或「堆宽度（更多线程）」的粗放模式，转向更精细的搜索空间结构设计。<br><br>在垂直领域落地方面，微软的Qlib平台集成了监督学习、市场动力学建模与强化学习，并引入RD-Agent自动化研发流程，显示AI量化投资进入「端到端自动化」阶段。与此同时，两篇供应链相关论文（SkillChain-Gym与Skill-Constrained MPC）将员工技能衰减、再培训耗时纳入生产-库存控制，填补了传统运筹学忽略人力资本动态演化的空白。法律领域的自进化Agent则进一步证明，结合BM25与动态规则学习的混合架构，在专业检索中优于单一 dense retrieval。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    The dominant theme is **Agentic AI penetrating deep professional workflows**, alongside **structural innovations in test-time compute scaling**.<br><br>The arXiv paper *Beyond Parallel Sampling* reveals that naive breadth scaling via parallel rollouts yields diminishing returns for agentic search. The authors propose *diverse query initialization*—engineering differentiated starting points rather than merely adding threads—to improve search efficiency. This signals a shift from brute-force depth/width scaling toward more sophisticated search-space architecture.<br><br>On the vertical-application front, Microsoft’s Qlib now unifies supervised learning, market dynamics, and RL, while automating R&D with RD-Agent—pushing AI-driven quant research toward end-to-end automation. Meanwhile, two supply-chain papers (SkillChain-Gym and Skill-Constrained MPC) explicitly model workforce skill decay and retraining time within production-inventory control, filling a long-standing gap in operations research. The self-evolving legal agent further demonstrates that hybrid architectures combining BM25 with dynamic rule learning outperform pure dense retrieval in professional domains.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. **尝试多样性Prompt策略替代重复采样**：若你正在构建Agent，不要只增加并发线程，而是设计不同视角的初始查询，以提升搜索覆盖率。<br>   - 理由：论文证明差异化起点比单纯堆量更有效。<br>2. **关注AI量化/金融研究自动化工具链**：Qlib + RD-Agent 的组合提供了从idea到production的完整开源路径，适合量化团队调研。<br>   - 理由：微软已将RL与自动化研发集成，降低了端到端实验门槛。<br>3. **在垂直领域混合经典算法与LLM**：法律Agent的案例说明，BM25等经典检索与动态规则学习结合，效果优于单一dense模型。<br>   - 理由：专业领域数据稀疏，混合架构更稳健。<br>4. **将「人力技能演化」纳入系统优化**：如果你是制造业或SaaS运维管理者，可借鉴Skill-Constrained MPC思路，把人员培训、技能衰减作为约束变量放入调度模型。<br>   - 理由：传统排产忽略人力资本动态，导致计划与现实脱节。<br>5. **评估去中心化网络栈用于IoT/边缘设备**：iroh项目提供密钥寻址的网络层，适合需要NAT穿透、无需固定IP的场景。<br>   - 理由：IP地址管理在移动/边缘场景日益复杂，密钥寻址简化连接。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Use diverse prompt strategies instead of naive repeated sampling.** If building an agent, engineer differentiated initial queries rather than just adding parallel threads.<br>   - Rationale: The paper shows differentiated seeds outperform brute-force scaling.<br>2. **Evaluate AI quant automation toolchains.** The Qlib + RD-Agent stack offers an open-source path from idea to production for quant teams.<br>   - Rationale: Microsoft has integrated RL and automated R&D, lowering end-to-end experiment costs.<br>3. **Combine classical algorithms with LLMs in vertical domains.** The legal-agent case demonstrates that BM25 plus dynamic rule learning outperforms pure dense retrieval.<br>   - Rationale: Hybrid architectures are more robust under sparse professional data.<br>4. **Model workforce skill evolution as an optimization constraint.** Manufacturing or SaaS ops teams can incorporate training and skill decay into scheduling models.<br>   - Rationale: Traditional planning ignores human-capital dynamics, causing execution gaps.<br>5. **Assess decentralized networking stacks for IoT/edge.** Iroh’s key-based addressing suits NAT traversal and mobile scenarios without fixed IPs.<br>   - Rationale: IP management grows complex at the edge; key-based addressing simplifies connectivity.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/n0-computer/iroh" target="_blank" style="font-weight:600">n0-computer/iroh</a>
+            <span style="color:#888;font-size:13px"> — IP addresses break, dial keys instead. Modular networking stack in Rust.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" style="font-weight:600">freeCodeCamp/freeCodeCamp</a>
+            <span style="color:#888;font-size:13px"> — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/makeplane/plane" target="_blank" style="font-weight:600">makeplane/plane</a>
+            <span style="color:#888;font-size:13px"> — 🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/LibreTranslate/LibreTranslate" target="_blank" style="font-weight:600">LibreTranslate/LibreTranslate</a>
+            <span style="color:#888;font-size:13px"> — Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/yairm210/Unciv" target="_blank" style="font-weight:600">yairm210/Unciv</a>
+            <span style="color:#888;font-size:13px"> — Open-source Android/Desktop remake of Civ V</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/qlib" target="_blank" style="font-weight:600">microsoft/qlib</a>
+            <span style="color:#888;font-size:13px"> — Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped withhttps://github.com/microsoft/RD-Agentto automate R&D process.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/meshery/meshery" target="_blank" style="font-weight:600">meshery/meshery</a>
+            <span style="color:#888;font-size:13px"> — Meshery, the cloud native manager</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/openai/openai-cookbook" target="_blank" style="font-weight:600">openai/openai-cookbook</a>
+            <span style="color:#888;font-size:13px"> — Examples and guides for using the OpenAI API</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17209" target="_blank" style="font-weight:600">Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17209v1 Announce Type: new 
+Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we fo</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17220" target="_blank" style="font-weight:600">When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17220v1 Announce Type: new 
+Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. A</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17266" target="_blank" style="font-weight:600">SkillChain-Gym: A Benchmark for Reskilling-Aware Production-Inventory Control under Disruptions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17266v1 Announce Type: new 
+Production planning increasingly has to treat workforce capability as a decision variable: certifications lapse when skills are not maintained, new products requ</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17269" target="_blank" style="font-weight:600">Skill-Constrained Model Predictive Control for Resilient Manufacturing Supply Chains</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17269v1 Announce Type: new 
+In skill-constrained production-inventory systems, the qualified human capacity available tomorrow depends on training decisions made today: production requires </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17289" target="_blank" style="font-weight:600">Nothing from Something: Can a Language Model Discover 0?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17289v1 Announce Type: new 
+AI systems based on artificial neural networks are being developed with aspirations of pushing the boundary of human mathematical knowledge. A key question for t</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.17312" target="_blank" style="font-weight:600">Quantifying Consistency in LLM Logical Reasoning via Structural Uncertainty</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.17312v1 Announce Type: new 
+Large language models can arrive at the same answer through reasoning paths that are unstable, contradictory, or difficult to rank consistently -- a failure mode</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-19 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
