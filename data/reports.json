@@ -190,5 +190,9 @@
   {
     "date": "2026-06-21",
     "summary": "### 执行摘要\n\n中文：\n- 智能体AI运行时治理策略受关注\n- 扩散语言模型实验分析新范式\n- 多智能体审议存在隐性锚点偏差\n- 向量数据库Weaviate受关注\n- 工作流平台n8n原生集成AI能力\n\nEnglish:\n- Runtime governance for agentic AI gains research focus\n- Diffusion language models ch"
+  },
+  {
+    "date": "2026-06-22",
+    "summary": "### 执行摘要\n中文：\n- Activepieces trending，MCP 成 AI Agent 标准接口\n- 底层基础设施 FlatBuffers/Dapr 支撑 AI 应用扩展\n- 今日学术与大厂无新增，焦点转向工程落地\n- AI 工作流自动化平台获开发者高度关注\n\nEnglish:\n- Activepieces trending signals MCP becoming the sta"
   }
 ]
