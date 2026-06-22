@@ -193,6 +193,6 @@
   },
   {
     "date": "2026-06-22",
-    "summary": "### 执行摘要\n中文：\n- Activepieces trending，MCP 成 AI Agent 标准接口\n- 底层基础设施 FlatBuffers/Dapr 支撑 AI 应用扩展\n- 今日学术与大厂无新增，焦点转向工程落地\n- AI 工作流自动化平台获开发者高度关注\n\nEnglish:\n- Activepieces trending signals MCP becoming the sta"
+    "summary": "### 执行摘要\n\n中文：\n• MCP协议成AI Agent互操作标准，生态加速扩张\n• Activepieces集成400+MCP，工作流自动化爆发\n• 开源AI工具转向Agent+集成新范式\n• Dapr为复杂AI Agent部署提供分布式基础\n• 无新论文与HuggingFace更新，行业聚焦落地\n\nEnglish:\n• MCP protocol is becoming the intero"
   }
 ]
