@@ -197,6 +197,6 @@
   },
   {
     "date": "2026-06-23",
-    "summary": "### 执行摘要\n\n中文：\n- 容器安全工具Trivy登顶，安全左移成主流\n- 自托管媒体管理方案immich、seerr获关注\n- 网络流量监控与隐私工具需求持续升温\n- \"从零构建\"学习范式build-your-own-x热度不减\n\nEnglish:\n- Container security tool Trivy tops trending, shift-left security mains"
+    "summary": "### 执行摘要\n中文：\n- 自托管基础设施持续升温，隐私与数据主权成核心诉求\n- 安全扫描工具 Trivy 登顶，DevSecOps 与 AI 容器安全受关注\n- 网络流量监控与零信任组网工具进入开发者视野\n- 通过造轮子学习编程的 build-your-own-x 项目持续高热，AI 工程教育价值凸显\n\nEnglish:\n- Self-hosted infrastructure keeps r"
   }
 ]
