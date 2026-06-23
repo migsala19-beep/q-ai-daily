@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-23</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-23</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 容器安全工具Trivy登顶，安全左移成主流<br>- 自托管媒体管理方案immich、seerr获关注<br>- 网络流量监控与隐私工具需求持续升温<br>- "从零构建"学习范式build-your-own-x热度不减</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Container security tool Trivy tops trending, shift-left security mainstreaming<br>- Self-hosted media managers immich and seerr gaining traction<br>- Privacy and network monitoring tools see sustained demand<br>- Build-your-own-x learning approach remains highly popular
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日GitHub Trending反映出两大趋势。一是安全左移（Shift-left Security）正在渗透开发者日常工具链。Trivy作为容器、Kubernetes、代码仓库及云环境的多合一漏洞扫描工具，代表了将安全检测前置到开发构建阶段的需求。Sniffnet提供轻量级网络流量可视化，Tailscale则简化了基于WireGuard的安全组网，三者共同说明：开发者越来越倾向在基础设施和编码层面主动解决安全问题，而非依赖后期运维修复。<br><br>二是个人数据主权意识驱动自托管方案崛起。Immich（高性能自托管照片视频管理）和Seerr（开源媒体请求与发现管理）同时上榜，显示出用户对中心化云服务的替代方案兴趣浓厚。在数据隐私法规趋严和订阅成本上涨的背景下，"自托管"正从极客行为走向实用工具范畴。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two major trends emerge from today's GitHub Trending. First, shift-left security is deeply integrating into developer toolchains. Trivy exemplifies this by scanning vulnerabilities across containers, Kubernetes, code repos, and cloud environments during the build phase. Sniffnet provides lightweight traffic visualization, while Tailscale simplifies WireGuard-based secure networking. Together, they show developers increasingly prefer solving security at the infrastructure and code level rather than relying on post-deployment fixes.<br><br>Second, self-hosted solutions are rising on growing data sovereignty awareness. Immich (high-performance self-hosted photo/video management) and Seerr (open-source media request manager) both trending indicates strong user interest in alternatives to centralized cloud services. With tightening privacy regulations and rising subscription costs, self-hosting is transitioning from niche geek behavior to practical tooling.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>中文：<br>1. 在CI/CD流水线中集成Trivy扫描，每次构建自动检测容器漏洞 —— 成本低且能提前发现安全问题。<br>2. 部署Immich替代商业云相册，实现照片视频本地私有化管理 —— 满足数据主权且节省长期订阅费用。<br>3. 用Tailscale替代传统VPN/内网穿透方案，为团队或家庭设备建立零信任网络 —— 配置极简且基于WireGuard更安全。<br>4. 跟随build-your-own-x项目列表，选择一项感兴趣的技术（如Git、Shell、Docker）从零实现 —— 深度理解底层原理。<br>5. 使用Sniffnet监控日常网络流量，识别异常连接或高带宽进程 —— 提升本地网络可视性和安全意识。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Integrate Trivy into CI/CD pipelines to auto-scan container vulnerabilities on every build — low cost and catches issues early.<br>2. Deploy Immich to replace commercial cloud albums for local private photo/video management — ensures data sovereignty and saves subscription costs.<br>3. Use Tailscale instead of traditional VPNs for team or home device networking — minimal setup and WireGuard-based security.<br>4. Pick one technology from build-your-own-x (e.g., Git, Shell, Docker) and implement it from scratch — deepens fundamental understanding.<br>5. Use Sniffnet to monitor daily network traffic and spot anomalous or high-bandwidth connections — improves local visibility and security awareness.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/seerr-team/seerr" target="_blank" style="font-weight:600">seerr-team/seerr</a>
+            <span style="color:#888;font-size:13px"> — Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/immich-app/immich" target="_blank" style="font-weight:600">immich-app/immich</a>
+            <span style="color:#888;font-size:13px"> — High performance self-hosted photo and video management solution.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" style="font-weight:600">yt-dlp/yt-dlp</a>
+            <span style="color:#888;font-size:13px"> — A feature-rich command-line audio/video downloader</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/GyulyVGC/sniffnet" target="_blank" style="font-weight:600">GyulyVGC/sniffnet</a>
+            <span style="color:#888;font-size:13px"> — Comfortably monitor your Internet traffic 🕵️‍♂️</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tailscale/tailscale" target="_blank" style="font-weight:600">tailscale/tailscale</a>
+            <span style="color:#888;font-size:13px"> — The easiest, most secure way to use WireGuard and 2FA.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/google/flatbuffers" target="_blank" style="font-weight:600">google/flatbuffers</a>
+            <span style="color:#888;font-size:13px"> — FlatBuffers: Memory Efficient Serialization Library</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-23 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

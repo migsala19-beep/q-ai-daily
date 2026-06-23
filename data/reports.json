@@ -194,5 +194,9 @@
   {
     "date": "2026-06-22",
     "summary": "### 执行摘要\n\n中文：\n• MCP协议成AI Agent互操作标准，生态加速扩张\n• Activepieces集成400+MCP，工作流自动化爆发\n• 开源AI工具转向Agent+集成新范式\n• Dapr为复杂AI Agent部署提供分布式基础\n• 无新论文与HuggingFace更新，行业聚焦落地\n\nEnglish:\n• MCP protocol is becoming the intero"
+  },
+  {
+    "date": "2026-06-23",
+    "summary": "### 执行摘要\n\n中文：\n- 容器安全工具Trivy登顶，安全左移成主流\n- 自托管媒体管理方案immich、seerr获关注\n- 网络流量监控与隐私工具需求持续升温\n- \"从零构建\"学习范式build-your-own-x热度不减\n\nEnglish:\n- Container security tool Trivy tops trending, shift-left security mains"
   }
 ]
