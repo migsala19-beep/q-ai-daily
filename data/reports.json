@@ -205,6 +205,6 @@
   },
   {
     "date": "2026-06-25",
-    "summary": "### 执行摘要\n\n中文：\n• Agentic AI 安全红队测试框架 RIFT-Bench 发布，填补动态评估空白\n• 神经符号结合驱动自动驾驶 VLA 可解释推理成为新热点\n• 自托管开源工具（n8n、nocodb、paperless-ngx）持续领跑 Trending\n• 多智能体安全强化学习取得新进展，强调约束与泛化平衡\n• 提示词管理与开源社区生态活跃，prompts.chat 热度攀升"
+    "summary": "### 执行摘要\n\n中文：\n- Agent安全评测升温，动态红队测试成新方向\n- 多Agent系统强调安全约束与可泛化控制\n- 神经符号推理提升自动驾驶VLA可信度\n- 开源自托管工具链持续受企业青睐\n- RL研究朝向长期有益与价值对齐演进\n\nEnglish:\n- Agent safety evaluation heats up with dynamic red-teaming benchmark"
   }
 ]
