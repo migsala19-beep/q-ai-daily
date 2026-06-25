@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-06-25</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-06-25</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>• Agentic AI 安全红队测试框架 RIFT-Bench 发布，填补动态评估空白<br>• 神经符号结合驱动自动驾驶 VLA 可解释推理成为新热点<br>• 自托管开源工具（n8n、nocodb、paperless-ngx）持续领跑 Trending<br>• 多智能体安全强化学习取得新进展，强调约束与泛化平衡<br>• 提示词管理与开源社区生态活跃，prompts.chat 热度攀升</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    • RIFT-Bench debuts for dynamic red-teaming of Agentic AI systems, filling a key evaluation gap.<br>• Neuro-symbolic approaches for explainable driving VLA reasoning gain momentum.<br>• Self-hosted open-source tools (n8n, nocodb, paperless-ngx) dominate GitHub Trending.<br>• Safe hierarchical multi-agent RL advances with new constraint-manifold methods.<br>• Prompt management and open-source community ecosystems remain highly active.<br><br>---
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯呈现两大核心趋势。第一，Agentic AI 安全评估从"静态测试"向"动态红队"跃迁。RIFT-Bench 提出针对 Agent 系统的动态红队测试框架，揭示 LLM 作为自主决策体时暴露的全新攻击面；与此同时，多智能体安全 RL 研究通过约束流形控制实现安全与泛化的平衡，说明 AI Agent 从实验室走向生产环境时，安全性已成为核心瓶颈。第二，神经符号结合正成为提升大模型可信推理的关键路径。Neuro-Symbolic Drive 将规则约束注入 VLA 模型，解决了 CoT 推理在自动驾驶场景中语义保真不足的问题，使模型推理既保留神经网络感知能力，又具备符号系统的可解释性与规则刚性。这两者共同指向：下一代 AI 系统必须在"能力"与"可控性"之间建立更严格的工程化保障。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two major trends stand out. First, Agentic AI security is shifting from static benchmarks to dynamic red-teaming. RIFT-Bench introduces a dynamic red-teaming framework tailored for autonomous agents, exposing novel attack vectors beyond traditional LLM vulnerabilities. Concurrently, safe hierarchical multi-agent RL research achieves a balance between safety and generalization via constraint-manifold control, underscoring that safety is the critical bottleneck as agents move from lab to production. Second, neuro-symbolic integration is emerging as a key path to trustworthy reasoning. Neuro-Symbolic Drive injects rule constraints into VLA models, addressing the semantic fidelity gap of CoT reasoning in autonomous driving while preserving neural perception and symbolic interpretability. Together, these trends indicate that next-generation AI systems must engineer stricter guarantees between capability and controllability.<br><br>---
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>• 用 n8n 搭建自托管 AI 工作流：将 LLM API 与 400+ 集成节点组合，快速实现无代码自动化，降低业务落地门槛。（理由：n8n 兼顾可视化与代码扩展，且支持私有化部署，符合企业数据安全需求。）<br>• 基于 paperless-ngx 构建本地文档知识库：扫描、OCR 与归档一体化，为后续 RAG 系统提供干净的私有语料。（理由：自托管文档管理是打造可控 AI 知识基础设施的第一步。）<br>• 建立团队提示词资产库：借鉴 prompts.chat 模式，用开源工具自建组织级提示词管理平台，统一输出质量。（理由：提示词是"新的软件接口"，统一管理能显著提升人机协作一致性。）<br>• 在业务 Agent 中引入规则约束层：参考 Neuro-Symbolic Drive 思路，为 LLM 推理增加符号规则校验，防止关键场景幻觉。（理由：纯神经网络在关键任务中可靠性不足，规则层是最轻量的安全保障。）<br>• 使用 Playwright 做 AI 应用 E2E 验收：利用其跨浏览器统一 API，为 Agent 或对话产品编写自动化测试，确保迭代稳定。（理由：AI 产品迭代快，自动化测试是控制回退风险的成本最低手段。）</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    • Build self-hosted AI workflows with n8n: combine LLM APIs with 400+ integrations for rapid no-code automation, lowering the barrier to business adoption. (Rationale: n8n balances visual building with code extensibility and supports private deployment, meeting enterprise data-security requirements.)<br>• Create a local document knowledge base using paperless-ngx: scan, OCR, and archive in one place to provide clean private corpora for future RAG systems. (Rationale: self-hosted document management is the first step toward a controllable AI knowledge infrastructure.)<br>• Establish a team prompt asset library: adopt the prompts.chat model and use open-source tools to build an organizational prompt management platform for consistent output quality. (Rationale: prompts are the "new software interface"; centralized management significantly improves human-AI collaboration consistency.)<br>• Add a rule-based constraint layer to business agents: following the Neuro-Symbolic Drive approach, inject symbolic rule verification into LLM reasoning to prevent hallucinations in critical scenarios. (Rationale: pure neural networks lack reliability in mission-critical tasks; a rule layer is the lightest-weight safety guarantee.)<br>• Use Playwright for end-to-end AI product testing: leverage its unified cross-browser API to write automated acceptance tests for agents or conversational products, ensuring stable iteration. (Rationale: AI products iterate quickly; automated testing is the lowest-cost way to control regression risk.)
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/playwright" target="_blank" style="font-weight:600">microsoft/playwright</a>
+            <span style="color:#888;font-size:13px"> — Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nocodb/nocodb" target="_blank" style="font-weight:600">nocodb/nocodb</a>
+            <span style="color:#888;font-size:13px"> — 🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/paperless-ngx/paperless-ngx" target="_blank" style="font-weight:600">paperless-ngx/paperless-ngx</a>
+            <span style="color:#888;font-size:13px"> — A community-supported supercharged document management system: scan, index and archive all your documents</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/f/prompts.chat" target="_blank" style="font-weight:600">f/prompts.chat</a>
+            <span style="color:#888;font-size:13px"> — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank" style="font-weight:600">IceWhaleTech/CasaOS</a>
+            <span style="color:#888;font-size:13px"> — CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/docker/compose" target="_blank" style="font-weight:600">docker/compose</a>
+            <span style="color:#888;font-size:13px"> — Define and run multi-container applications with Docker</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/FreeRTOS/FreeRTOS-Kernel" target="_blank" style="font-weight:600">FreeRTOS/FreeRTOS-Kernel</a>
+            <span style="color:#888;font-size:13px"> — FreeRTOS kernel files only, submoduled intohttps://github.com/FreeRTOS/FreeRTOSand various other repos.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/n8n-io/n8n" target="_blank" style="font-weight:600">n8n-io/n8n</a>
+            <span style="color:#888;font-size:13px"> — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.23927" target="_blank" style="font-weight:600">RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.23927v1 Announce Type: new 
+Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.23938" target="_blank" style="font-weight:600">Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.23938v1 Announce Type: new 
+Driving VLA models incorporating Chain-of-Thought (CoT) reasoning are attractive because they leverage pretrained VLM representations and expose intermediate dec</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.23991" target="_blank" style="font-weight:600">Critique of Agent Model</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.23991v1 Announce Type: new 
+What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.24010" target="_blank" style="font-weight:600">Safe and Generalizable Hierarchical Multi-Agent RL via Constraint Manifold Control</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.24010v1 Announce Type: new 
+Multi-agent systems are widely used in safety-critical applications that require coordinated behavior under strict safety constraints. Existing approaches face a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.24014" target="_blank" style="font-weight:600">Reinforcement Learning Towards Broadly and Persistently Beneficial Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.24014v1 Announce Type: new 
+As AI systems are deployed across increasingly diverse and high-stakes settings, model alignment must generalize beyond the tasks and domains seen during trainin</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2606.24026" target="_blank" style="font-weight:600">Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2606.24026v1 Announce Type: new 
+Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intens</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-06-25 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
