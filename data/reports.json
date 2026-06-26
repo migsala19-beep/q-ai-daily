@@ -206,5 +206,9 @@
   {
     "date": "2026-06-25",
     "summary": "### 执行摘要\n\n中文：\n- Agent安全评测升温，动态红队测试成新方向\n- 多Agent系统强调安全约束与可泛化控制\n- 神经符号推理提升自动驾驶VLA可信度\n- 开源自托管工具链持续受企业青睐\n- RL研究朝向长期有益与价值对齐演进\n\nEnglish:\n- Agent safety evaluation heats up with dynamic red-teaming benchmark"
+  },
+  {
+    "date": "2026-06-26",
+    "summary": "### 执行摘要\n\n中文：\n- Agentic AI 论文井喷，从理论迈向系统构建\n- 多智能体长程任务可靠性问题引发关注\n- 视觉语言模型注意力机制研究取得新进展\n- 开源生产力与自托管工具持续占据热门\n- 文档 AI 与医疗影像 AI 工具受开发者青睐\n\nEnglish:\n- Agentic AI research surges with end-to-end system-building "
   }
 ]
