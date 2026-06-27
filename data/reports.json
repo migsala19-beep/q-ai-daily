@@ -213,6 +213,6 @@
   },
   {
     "date": "2026-06-27",
-    "summary": "### 执行摘要\n中文：\n- 多篇论文聚焦LLM行为对齐与可控性研究\n- AlgoEvolve探索LLM驱动算法交易程序进化\n- LlamaIndex以文档代理和OCR功能持续领先\n- 隐私通信SimpleX因无标识符设计获关注\n- 基准饱和后需关注模型六维性能评估\n\nEnglish:\n- Multiple papers focus on LLM alignment and behavioral "
+    "summary": "### 执行摘要\n\n中文：\n- 模型行为对齐成热点：谄媚检测与拒绝机制可控性研究并进\n- LLM驱动进化计算突破：从静态代码生成迈向动态算法交易优化\n- 去中心化隐私通信受关注：SimpleX无用户标识符架构引热议\n- 文档智能代理持续演进：LlamaIndex强化OCR与文档理解能力\n- 基准测试方法论反思：准确率饱和后需关注六维综合评估\n\nEnglish:\n- Model alignment "
   }
 ]
