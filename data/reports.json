@@ -234,5 +234,9 @@
   {
     "date": "2026-07-02",
     "summary": "### 执行摘要\n中文：\n- LLM多轮反馈与信念更新研究升温\n- 推理模型早期退出降低调用成本\n- AI辅助模型发现进入仿真领域\n- 开源CV与RL工具链保持活跃\n- 隐私优先自托管知识管理受关注\n\nEnglish:\n- LLM feedback loops and belief updating gain research focus.\n- Early exits in reasoning m"
+  },
+  {
+    "date": "2026-07-03",
+    "summary": "### 执行摘要\n中文：\n• AI 对齐研究从“静态偏好”转向“动态共建”\n• 道德计算提出有界框架，突破固定伦理理论\n• 安全可控 Agent 成数据采集新方向\n• 大模型基础设施 HuggingFace Transformers 持续领跑\n• 开源 PaaS 与开发工具生态热度不减\n\nEnglish:\n• AI alignment research shifts from static pre"
   }
 ]

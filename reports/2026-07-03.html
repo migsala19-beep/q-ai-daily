@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-03</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-03</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>• AI 对齐研究从“静态偏好”转向“动态共建”<br>• 道德计算提出有界框架，突破固定伦理理论<br>• 安全可控 Agent 成数据采集新方向<br>• 大模型基础设施 HuggingFace Transformers 持续领跑<br>• 开源 PaaS 与开发工具生态热度不减</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    • AI alignment research shifts from static preferences to dynamic co-construction.<br>• Bounded Morality framework moves beyond fixed ethical theories.<br>• Safe, verifiable agents emerge for open-web data collection.<br>• HuggingFace Transformers remains the core ML infrastructure.<br>• Open-source PaaS and dev-tool ecosystems stay hot.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯呈现两大关键趋势。第一，AI 对齐与道德计算正从“固定规则”走向“动态、可约束”的建模。arXiv 论文《Constructive Alignment》指出人类偏好并非静态目标，而是在人机交互中逐层建构、动态演化，这要求对齐系统具备持续反馈和自适应机制。同日《Bounded Morality》则提出“有界道德”形式框架，将道德认知从单一伦理理论（义务论、功利主义等）扩展为可计算的有限空间，使道德决策在不确定性中可解释、可验证。该方向对医疗、金融、自动驾驶等高风险场景尤为重要。<br><br>第二，安全可控的 AI Agent 正在成为工程落地焦点。《Making Failure Safe》提出一种受约束、可验证的 Agent 框架，用于开放网页数据采集，解决 LLM 生成爬虫时常见的依赖错误、选择器失效、模式不匹配等问题。与此同时，GitHub Trending 中 coolify（自托管 PaaS）、sqlfluff（SQL 自动检查）、flatbuffers（高效序列化）等工具热度上升，显示出 AI 应用爆发后，对部署、数据治理和工程效率基础设施的强劲需求。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two key trends stand out today. First, AI alignment and moral computation are moving from fixed-rule models toward dynamic, bounded frameworks. The paper "Constructive Alignment" argues human preferences are not static targets but layered and constructed through interaction, calling for adaptive alignment mechanisms. "Bounded Morality" further proposes a formal, bounded space for moral computation, replacing monolithic ethical theories with computationally tractable, verifiable moral reasoning. This is critical for high-stakes domains like healthcare, finance, and autonomous systems.<br><br>Second, safe and verifiable AI agents are becoming an engineering priority. "Making Failure Safe" introduces a constrained agent framework for open-web data collection, addressing dependency errors, broken selectors, and schema mismatches in LLM-generated scrapers. On the tooling side, GitHub Trending highlights coolify, sqlfluff, and flatbuffers, reflecting strong demand for deployment, data governance, and performance infrastructure as AI applications scale.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 关注偏好动态建模：在推荐或对话产品中引入用户反馈循环，而非一次性对齐。<br>   理由：静态偏好假设已过时，持续迭代能提升长期用户满意度。<br><br>2. 为高 stakes 场景引入“有界道德”审查层。<br>   理由：医疗、金融等决策需要在可解释、可审计的伦理框架下运行。<br><br>3. 用受约束 Agent 替代裸 LLM 爬虫。<br>   理由：可降低依赖错误和数据结构变更带来的失败率。<br><br>4. 评估 Coolify 部署自托管 AI 服务。<br>   理由：降低云平台成本，提高模型服务可控性。<br><br>5. 在数据管道中加入 SQL 自动检查（如 sqlfluff）。<br>   理由：提升数据质量，减少 AI 训练/分析阶段的脏数据风险。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Model user preferences dynamically with feedback loops in recommender or chat products.<br>   Rationale: Static preference assumptions are outdated; continuous iteration improves long-term satisfaction.<br><br>2. Add a "bounded morality" review layer for high-stakes decisions.<br>   Rationale: Healthcare and finance need explainable, auditable ethical frameworks.<br><br>3. Replace raw LLM scrapers with constrained, verifiable agents.<br>   Rationale: Reduces failure rates from dependency errors and page structure changes.<br><br>4. Evaluate Coolify for self-hosting AI services.<br>   Rationale: Cuts cloud costs and increases control over model serving.<br><br>5. Add SQL linting (e.g., sqlfluff) to data pipelines.<br>   Rationale: Improves data quality and reduces dirty-data risks in AI training/analysis.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/psf/black" target="_blank" style="font-weight:600">psf/black</a>
+            <span style="color:#888;font-size:13px"> — The uncompromising Python code formatter</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/huggingface/transformers" target="_blank" style="font-weight:600">huggingface/transformers</a>
+            <span style="color:#888;font-size:13px"> — 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" style="font-weight:600">freeCodeCamp/freeCodeCamp</a>
+            <span style="color:#888;font-size:13px"> — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/google/flatbuffers" target="_blank" style="font-weight:600">google/flatbuffers</a>
+            <span style="color:#888;font-size:13px"> — FlatBuffers: Memory Efficient Serialization Library</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/trekhleb/javascript-algorithms" target="_blank" style="font-weight:600">trekhleb/javascript-algorithms</a>
+            <span style="color:#888;font-size:13px"> — 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/coollabsio/coolify" target="_blank" style="font-weight:600">coollabsio/coolify</a>
+            <span style="color:#888;font-size:13px"> — An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/Web-Dev-For-Beginners" target="_blank" style="font-weight:600">microsoft/Web-Dev-For-Beginners</a>
+            <span style="color:#888;font-size:13px"> — 24 Lessons, 12 Weeks, Get Started as a Web Developer</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sqlfluff/sqlfluff" target="_blank" style="font-weight:600">sqlfluff/sqlfluff</a>
+            <span style="color:#888;font-size:13px"> — A modular SQL linter and auto-formatter with support for multiple dialects and templated code.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00001" target="_blank" style="font-weight:600">Constructive Alignment: Governing Preference Dynamics in Human-AI Interaction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00001v1 Announce Type: new 
+Most approaches to AI alignment treat human preferences as fixed targets to be inferred and optimized. This assumption conflicts with extensive empirical evidenc</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00002" target="_blank" style="font-weight:600">Bounded Morality: Defining the Space of Moral Computation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00002v1 Announce Type: new 
+Moral cognition has traditionally been modeled as adherence to fixed ethical theories--deontology, consequentialism, virtue ethics--implemented as static rules o</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00032" target="_blank" style="font-weight:600">The MMM Data Model -- A Normative Specification for Knowledge Interoperability in a Decentralisable Knowledge Commons</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00032v1 Announce Type: new 
+Many information systems are built around documents: self-contained units optimised for print production and linear reading. While effective for large-scale diss</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00035" target="_blank" style="font-weight:600">Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00035v1 Announce Type: new 
+LLMs and agents can generate web scrapers from natural-language requirements, but direct generation remains unreliable because of dependency errors, broken selec</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00064" target="_blank" style="font-weight:600">Solution space path planning for supporting en-route air traffic control</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00064v1 Announce Type: new 
+As technology advances, many path-planning algorithms have been proposed for Air Traffic Management, yet their operational adoption in tactical control remains l</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.00147" target="_blank" style="font-weight:600">RareDxR1: Autonomous Medical Reasoning for Rare Disease Diagnosis Beyond Human Annotation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.00147v1 Announce Type: new 
+Rare disease differential diagnosis is a critical yet arduous clinical task, requiring physicians to identify precise phenotypes from complex, unstructured patie</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-03 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
