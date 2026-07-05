@@ -245,6 +245,6 @@
   },
   {
     "date": "2026-07-05",
-    "summary": "### 执行摘要\n\n中文：\n- 自托管 AI 应用生态升温，照片/笔记管理工具受追捧。\n- 数据安全与隐私工具（Trivy）成为基础设施标配。\n- 开发框架向\"快速构建内部工具\"方向演进。\n- 今日无重磅模型或论文发布，工具链与落地成焦点。\n- 边缘化、本地化部署趋势进一步明朗。\n\nEnglish:\n- Self-hosted AI app ecosystem heats up; photo/no"
+    "summary": "### 执行摘要\n中文：\n- 今日AI资讯稀疏，多为通用开发工具\n- 自托管照片管理 Immich 反映本地化AI\n- Rust量化引擎 Nautilus Trader 受关注\n- 开发工具链活跃，支撑AI应用落地\n\nEnglish:\n- Today's AI-specific news is sparse; GitHub trending is mostly general dev tools."
   }
 ]
