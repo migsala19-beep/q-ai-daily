@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-06</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-06</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- OpenAI Whisper 及 C++ 移植版 whisper.cpp 同时上榜，端侧语音识别持续升温。<br>- 自托管照片管理 Immich 与 Supabase 数据库平台走红，AI 基础设施受关注。<br>- 今日 arXiv、HuggingFace Papers 与大厂博客无新数据，需检查抓取管道。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - OpenAI Whisper and its C++ port whisper.cpp both trended, signaling continued interest in on-device speech recognition.<br>- Self-hosted photo manager Immich and Supabase Postgres platform gained traction, highlighting AI app infrastructure demand.<br>- No new entries from arXiv, HuggingFace Papers, or big tech blogs today; source pipelines may need checking.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日 GitHub Trending 中，AI 相关项目集中在「语音转文本」与「AI 应用基础设施」两个方向。<br><br>1. 端侧语音识别：OpenAI Whisper 与 ggml-org/whisper.cpp 同时上榜。whisper.cpp 使用 C/C++ 重新实现 Whisper，支持 CPU、GPU 及移动设备，适合离线、低延迟、隐私优先的语音场景。这代表大模型部署正从云端向端侧迁移，C++ 轻量化实现是重要技术路径。<br><br>2. AI 应用基础设施：supabase/supabase 提供 Postgres 数据库与向量扩展，支持 AI 应用存储与检索；immich-app/immich 则是自托管照片/视频管理方案，可结合本地 AI 做人脸聚类、相似图搜索。两者说明开发者对“可控、自托管、低成本 AI 底座”的需求上升。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two directions stand out: on-device speech recognition and AI application infrastructure.<br><br>1. On-device ASR: OpenAI Whisper and ggml-org/whisper.cpp both trended. whisper.cpp re-implements Whisper in C/C++, running on CPU/GPU and mobile devices, enabling offline, low-latency, privacy-first transcription. This shows large-model deployment shifting toward edge devices, with lightweight C++ ports as a key enabler.<br><br>2. AI infrastructure: supabase/supabase offers Postgres plus vector extensions for AI storage and retrieval; immich-app/immich is a self-hosted photo/video manager that can leverage local AI for face clustering and similarity search. Together they reflect rising demand for controllable, self-hosted, cost-effective AI backends.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 尝试 whisper.cpp：在 Mac mini 本地部署，构建私有语音转文字工作流。理由：离线、不依赖 API，保护隐私。<br>- 用 Supabase 做 AI 应用后端：结合 pgvector 存储嵌入向量，降低自建向量库成本。理由：成熟 Postgres 生态，减少运维负担。<br>- 关注 Immich 本地图库：可搭配本地模型做照片分类与搜索。理由：自托管方案避免云端数据泄露风险。<br>- 检查数据源管道：今日 arXiv/HuggingFace 为空，排查抓取任务是否异常。理由：避免日报信息源长期缺位。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Try whisper.cpp locally on Mac mini for private speech-to-text. Reason: offline, no API dependency, privacy-preserving.<br>- Use Supabase as an AI app backend with pgvector for embeddings. Reason: leverages mature Postgres ecosystem and reduces ops overhead.<br>- Watch Immich for self-hosted photo libraries with local AI categorization. Reason: avoids cloud data exposure risks.<br>- Audit data-source pipelines: arXiv/HuggingFace returned empty today, so check scrapers. Reason: prevent persistent gaps in the daily briefing.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/immich-app/immich" target="_blank" style="font-weight:600">immich-app/immich</a>
+            <span style="color:#888;font-size:13px"> — High performance self-hosted photo and video management solution.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/helix-editor/helix" target="_blank" style="font-weight:600">helix-editor/helix</a>
+            <span style="color:#888;font-size:13px"> — A post-modern modal text editor.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nlohmann/json" target="_blank" style="font-weight:600">nlohmann/json</a>
+            <span style="color:#888;font-size:13px"> — JSON for Modern C++</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ggml-org/whisper.cpp" target="_blank" style="font-weight:600">ggml-org/whisper.cpp</a>
+            <span style="color:#888;font-size:13px"> — Port of OpenAI's Whisper model in C/C++</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/openai/whisper" target="_blank" style="font-weight:600">openai/whisper</a>
+            <span style="color:#888;font-size:13px"> — Robust Speech Recognition via Large-Scale Weak Supervision</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/supabase/supabase" target="_blank" style="font-weight:600">supabase/supabase</a>
+            <span style="color:#888;font-size:13px"> — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tdlib/td" target="_blank" style="font-weight:600">tdlib/td</a>
+            <span style="color:#888;font-size:13px"> — Cross-platform library for building Telegram clients</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-06 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
