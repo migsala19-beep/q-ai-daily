@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- OpenAI Whisper 及 C++ 移植版 whisper.cpp 同时上榜，端侧语音识别持续升温。<br>- 自托管照片管理 Immich 与 Supabase 数据库平台走红，AI 基础设施受关注。<br>- 今日 arXiv、HuggingFace Papers 与大厂博客无新数据，需检查抓取管道。</div>
+  <div>- 端侧语音 AI 受捧：Whisper C++ 移植上榜。<br>- 自托管平台持续火热：Immich、Supabase 领跑。<br>- 开发者工具栈进化：Helix、json 库流行。<br>- 多语言基础设施仍是开源核心。<br>- 今日论文来源为空，GitHub 信号主导。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - OpenAI Whisper and its C++ port whisper.cpp both trended, signaling continued interest in on-device speech recognition.<br>- Self-hosted photo manager Immich and Supabase Postgres platform gained traction, highlighting AI app infrastructure demand.<br>- No new entries from arXiv, HuggingFace Papers, or big tech blogs today; source pipelines may need checking.
+    - On-device speech AI gains traction: Whisper C++ port trends.<br>- Self-hosted platforms stay hot: Immich and Supabase lead.<br>- Dev tooling stack keeps evolving: Helix and JSON libraries rise.<br>- Multi-language infrastructure remains core to open source.<br>- No arXiv/HF papers today; GitHub signals dominate.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日 GitHub Trending 中，AI 相关项目集中在「语音转文本」与「AI 应用基础设施」两个方向。<br><br>1. 端侧语音识别：OpenAI Whisper 与 ggml-org/whisper.cpp 同时上榜。whisper.cpp 使用 C/C++ 重新实现 Whisper，支持 CPU、GPU 及移动设备，适合离线、低延迟、隐私优先的语音场景。这代表大模型部署正从云端向端侧迁移，C++ 轻量化实现是重要技术路径。<br><br>2. AI 应用基础设施：supabase/supabase 提供 Postgres 数据库与向量扩展，支持 AI 应用存储与检索；immich-app/immich 则是自托管照片/视频管理方案，可结合本地 AI 做人脸聚类、相似图搜索。两者说明开发者对“可控、自托管、低成本 AI 底座”的需求上升。</div>
+  <div>端侧 AI 部署正成为今日 GitHub 趋势的核心信号。whisper.cpp 将 OpenAI Whisper 模型用 C/C++ 重写，支持在本地 CPU、嵌入式设备甚至手机上运行语音识别，代表“去云端化”的 AI 落地路径。与此同时，openai/whisper 本身仍在榜单前列，说明语音基础模型仍具持续热度。与之呼应的是自托管应用 Immich 和高性能 Postgres 平台 Supabase 的走红，二者共同为 AI 应用提供隐私可控、成本透明的数据与媒体基础设施。另一关键方向是 AI 工具链的多语言化：nlohmann/json 作为 C++ 数据序列化的事实标准上榜，提示高性能 AI 系统并不止于 Python，扎实的数据工程层同样重要。这些项目共同勾勒出“本地推理 + 自托管数据 + 多语言基础设施”的 AI 落地组合。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two directions stand out: on-device speech recognition and AI application infrastructure.<br><br>1. On-device ASR: OpenAI Whisper and ggml-org/whisper.cpp both trended. whisper.cpp re-implements Whisper in C/C++, running on CPU/GPU and mobile devices, enabling offline, low-latency, privacy-first transcription. This shows large-model deployment shifting toward edge devices, with lightweight C++ ports as a key enabler.<br><br>2. AI infrastructure: supabase/supabase offers Postgres plus vector extensions for AI storage and retrieval; immich-app/immich is a self-hosted photo/video manager that can leverage local AI for face clustering and similarity search. Together they reflect rising demand for controllable, self-hosted, cost-effective AI backends.
+    On-device AI deployment is the strongest signal in today's GitHub trending. whisper.cpp ports OpenAI Whisper to C/C++, enabling local speech recognition on CPU, embedded devices, and even mobile phones—clear evidence of the "cloud-minimal" deployment trend. Meanwhile, openai/whisper remains on the list, confirming continued interest in robust speech foundation models. This aligns with the rise of self-hosted photo manager Immich and the Postgres platform Supabase, which together provide privacy-first, cost-transparent data and media backends for AI applications. A second notable direction is the polyglot AI toolchain: nlohmann/json, a de facto C++ serialization library, appears alongside these projects, reminding us that high-performance AI systems still depend on solid data-engineering layers beyond Python. Together, these trends sketch a practical AI stack: local inference, self-hosted data, and multi-language infrastructure.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 尝试 whisper.cpp：在 Mac mini 本地部署，构建私有语音转文字工作流。理由：离线、不依赖 API，保护隐私。<br>- 用 Supabase 做 AI 应用后端：结合 pgvector 存储嵌入向量，降低自建向量库成本。理由：成熟 Postgres 生态，减少运维负担。<br>- 关注 Immich 本地图库：可搭配本地模型做照片分类与搜索。理由：自托管方案避免云端数据泄露风险。<br>- 检查数据源管道：今日 arXiv/HuggingFace 为空，排查抓取任务是否异常。理由：避免日报信息源长期缺位。</div>
+  <div>- 试用 whisper.cpp 本地转录：CPU 可跑、无需联网，适合会议与播客隐私场景。<br>- 用 Supabase 作为 AI 应用后端：已集成向量数据库、实时订阅与认证，降低基建成本。<br>- 评估 Helix 替代传统 Vim/Neovim：现代化模态编辑，提升长代码处理效率。<br>- 在 Immich 中尝试 AI 图像索引：自托管照片库可配合本地模型做人脸与场景识别。<br>- 关注跨语言高性能模型部署：whisper.cpp 证明 Python 之外也能实现高效推理。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Try whisper.cpp locally on Mac mini for private speech-to-text. Reason: offline, no API dependency, privacy-preserving.<br>- Use Supabase as an AI app backend with pgvector for embeddings. Reason: leverages mature Postgres ecosystem and reduces ops overhead.<br>- Watch Immich for self-hosted photo libraries with local AI categorization. Reason: avoids cloud data exposure risks.<br>- Audit data-source pipelines: arXiv/HuggingFace returned empty today, so check scrapers. Reason: prevent persistent gaps in the daily briefing.
+    - Try whisper.cpp for local transcription: it runs on CPU offline, ideal for private meetings and podcasts.<br>- Build AI app backends on Supabase: it combines vector DB, realtime, and auth, reducing infrastructure overhead.<br>- Evaluate Helix as a daily editor: modern modal editing improves efficiency on long code sessions.<br>- Add AI image indexing to Immich: self-hosted photo libraries can run local face/scene recognition.<br>- Watch cross-language high-performance model deployment: whisper.cpp proves efficient inference is possible beyond Python.
   </div>
 </div>
 

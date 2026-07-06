@@ -249,6 +249,6 @@
   },
   {
     "date": "2026-07-06",
-    "summary": "### 执行摘要\n中文：\n- OpenAI Whisper 及 C++ 移植版 whisper.cpp 同时上榜，端侧语音识别持续升温。\n- 自托管照片管理 Immich 与 Supabase 数据库平台走红，AI 基础设施受关注。\n- 今日 arXiv、HuggingFace Papers 与大厂博客无新数据，需检查抓取管道。\n\nEnglish:\n- OpenAI Whisper and its"
+    "summary": "### 执行摘要\n中文：\n- 端侧语音 AI 受捧：Whisper C++ 移植上榜。\n- 自托管平台持续火热：Immich、Supabase 领跑。\n- 开发者工具栈进化：Helix、json 库流行。\n- 多语言基础设施仍是开源核心。\n- 今日论文来源为空，GitHub 信号主导。\n\nEnglish:\n- On-device speech AI gains traction: Whisper "
   }
 ]
