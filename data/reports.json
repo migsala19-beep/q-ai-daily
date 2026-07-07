@@ -250,5 +250,9 @@
   {
     "date": "2026-07-06",
     "summary": "### 执行摘要\n中文：\n- 端侧语音 AI 受捧：Whisper C++ 移植上榜。\n- 自托管平台持续火热：Immich、Supabase 领跑。\n- 开发者工具栈进化：Helix、json 库流行。\n- 多语言基础设施仍是开源核心。\n- 今日论文来源为空，GitHub 信号主导。\n\nEnglish:\n- On-device speech AI gains traction: Whisper "
+  },
+  {
+    "date": "2026-07-07",
+    "summary": "### 执行摘要\n\n中文：\n- GitHub 今日热榜以工具与平台类项目为主，AI 含量偏低。\n- 微软 Qlib 将量化投资与 AI/RL/RD-Agent 深度整合，值得持续关注。\n- 自托管与隐私工具（Immich、Dashy、Prompts.chat）仍是热门方向。\n- arXiv、HuggingFace Papers、大厂博客今日无新增数据，信息面偏窄。\n\nEnglish:\n- Toda"
   }
 ]
