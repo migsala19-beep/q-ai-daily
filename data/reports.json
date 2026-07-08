@@ -254,5 +254,9 @@
   {
     "date": "2026-07-07",
     "summary": "### 执行摘要\n中文：\n- 微软开源AI量化投资平台\n- 自托管工具持续升温\n- 提示词社区生态活跃\n\nEnglish:\n- Microsoft open-sources AI quant investment platform\n- Self-hosting tools gain traction\n- Prompt engineering community stays active\n\n### "
+  },
+  {
+    "date": "2026-07-08",
+    "summary": "### 执行摘要\n中文：\n- 具身智能升温：讯飞发布通用多模态具身代理技术报告。\n- 多智能体协作：SwarmResearch 推动开放式代码发现新方向。\n- 工作流自动化：n8n、LangChain 持续占据 GitHub 趋势榜。\n- 科学数据就绪：大规模科研数据准备成为 AI 基础设施焦点。\n- 安全与 OSINT：blackbird、hackingtool 等工具热度不减。\n\nEnglis"
   }
 ]
