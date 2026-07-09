@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-09</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-09</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 端侧语音落地：whisper.cpp 持续引领本地 AI。<br>- 安全与可观测性工具栈受追捧。<br>- Agent 自动生成科研论文成为热点。<br>- 小模型教育场景应用潜力凸显。<br>- CAD 与创意写作进入基础模型时代。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Edge speech AI: whisper.cpp remains a local AI leader.<br>- Security and observability tool stacks are gaining traction.<br>- Agentic research paper generation is heating up.<br>- Small models show strong potential in education.<br>- Foundation models are entering CAD and creative writing.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日两大趋势值得关注。一是“AI for Science / Agentic Research”。arXiv 论文《Prompt-to-Paper: Agentic AI System for Bioinformatics》提出端到端自动化手稿生成，并强调生成结论必须可验证地锚定文献，解决了大模型在科研写作中“幻觉”与“引用不可靠”的核心痛点。这预示着 Agent 不仅能写代码，还可能承担文献综述、实验设计与论文初稿的助手角色。<br><br>二是“端侧与垂直场景的小模型”。GitHub Trending 的 whisper.cpp 把 OpenAI Whisper 用 C/C++ 移植到本地，证明轻量模型在语音转写、隐私设备上的可行性；arXiv 的《CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming》则聚焦 K-12 图形化编程辅导，指出小模型在隐私、成本、可控性上优于大模型。两者共同说明：大模型不是唯一答案，面向具体场景的轻量化、本地化模型同样具备商业价值。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out today. First, “AI for Science / Agentic Research.” The arXiv paper *Prompt-to-Paper: Agentic AI System for Bioinformatics* proposes an end-to-end automated manuscript generation system, with a focus on deterministically grounding claims in verifiable literature. This addresses the core hallucination and citation reliability issues of LLMs in scientific writing, suggesting agents could soon assist in literature review, experimental design, and first-draft generation.<br><br>Second, “on-device and vertical small models.” On GitHub, *whisper.cpp* ports OpenAI’s Whisper to C/C++ for local inference, proving lightweight models can power privacy-preserving speech transcription. On arXiv, *CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming* evaluates small models for K-12 block-based coding tutoring, showing advantages in privacy, cost, and controllability over large proprietary models. Together, they show that big models are not the only answer—lightweight, domain-specific, local models also hold significant commercial value.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 在 Mac/边缘设备部署 whisper.cpp：本地语音识别可避免上传敏感音频，适合会议记录、播客转写。<br>- 用 Prompt-to-Paper 类工作流辅助科研写作：先让 Agent 整理文献、生成初稿，再由人校验引用，提升学术产出效率。<br>- 关注教育场景的小模型产品化：图形化编程辅导、作业批改等低算力需求场景，可用小模型降低成本。<br>- 把安全与可观测性工具纳入 MLOps 流水线：trivy、signoz、nuclei 可用于扫描模型镜像、API 与基础设施风险。<br>- 探索 CAD/小说创作的基础模型应用：自动生成参数化设计或长篇故事记忆，可能成为创意产业新工具。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Deploy whisper.cpp on Mac/edge devices for local speech recognition, avoiding sensitive audio uploads—ideal for meeting notes and podcast transcription.<br>- Adopt a Prompt-to-Paper-style workflow for research writing: let agents organize literature and draft content, then have humans verify citations.<br>- Productize small models for education: tutoring and homework feedback in block-based coding are low-compute, high-value use cases.<br>- Integrate security and observability tools into MLOps: trivy, signoz, and nuclei can scan model containers, APIs, and infrastructure risks.<br>- Explore foundation models for CAD and fiction: parametric design generation and long-form narrative memory could become new creative-industry tools.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/ggml-org/whisper.cpp" target="_blank" style="font-weight:600">ggml-org/whisper.cpp</a>
+            <span style="color:#888;font-size:13px"> — Port of OpenAI's Whisper model in C/C++</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/SigNoz/signoz" target="_blank" style="font-weight:600">SigNoz/signoz</a>
+            <span style="color:#888;font-size:13px"> — SigNoz is an open-source observability platform native to OpenTelemetry with logs, traces and metrics in a single application. An open-source alternative to DataDog, NewRelic, etc. 🔥 🖥. 👉 Open source Application Performance Monitoring (APM) & Observability tool</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tailscale/tailscale" target="_blank" style="font-weight:600">tailscale/tailscale</a>
+            <span style="color:#888;font-size:13px"> — The easiest, most secure way to use WireGuard and 2FA.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/projectdiscovery/nuclei" target="_blank" style="font-weight:600">projectdiscovery/nuclei</a>
+            <span style="color:#888;font-size:13px"> — Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/p1ngul1n0/blackbird" target="_blank" style="font-weight:600">p1ngul1n0/blackbird</a>
+            <span style="color:#888;font-size:13px"> — An OSINT tool to search for accounts by username and email in social networks.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank" style="font-weight:600">IceWhaleTech/CasaOS</a>
+            <span style="color:#888;font-size:13px"> — CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05456" target="_blank" style="font-weight:600">Prompt-to-Paper: Agentic AI System for Bioinformatics</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05456v1 Announce Type: new 
+While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies:</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05563" target="_blank" style="font-weight:600">From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05563v1 Announce Type: new 
+Interpretable explanation methods in Artificial Intelligence aim to uncover the underlying causes and their effects, enabling a deeper understanding of why a sys</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05571" target="_blank" style="font-weight:600">CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05571v1 Announce Type: new 
+Large language models are increasingly explored as AI tutors, yet deploying them in K-12 settings raises concerns around privacy, cost, and reliance on proprieta</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05573" target="_blank" style="font-weight:600">Foundation Models for Automatic CAD Generation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05573v1 Announce Type: new 
+Recent advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) enable the automatic generation of parametric 3D designs from natural-language </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05577" target="_blank" style="font-weight:600">Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05577v1 Announce Type: new 
+Long-form fiction writers need memory that answers multi-hop questions about evolving story state: who knows a secret and when they learned it, whether an event </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.05682" target="_blank" style="font-weight:600">FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.05682v1 Announce Type: new 
+LLM systems for scientific discovery increasingly assist with ideation, literature synthesis, experiment planning, and report generation, but the first research </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-09 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
