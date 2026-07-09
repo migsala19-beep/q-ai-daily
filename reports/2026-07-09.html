@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 端侧语音落地：whisper.cpp 持续引领本地 AI。<br>- 安全与可观测性工具栈受追捧。<br>- Agent 自动生成科研论文成为热点。<br>- 小模型教育场景应用潜力凸显。<br>- CAD 与创意写作进入基础模型时代。</div>
+  <div>- 智能体驱动科学写作兴起，文献可验证性成焦点。<br>- 小语言模型教育应用受关注，隐私与成本优势明显。<br>- 基础模型开始渗透 CAD 设计自动化领域。<br>- 开源安全与可观测工具（Trivy、SigNoz、Nuclei）持续热门。<br>- 边缘语音转录（whisper.cpp）与 OSINT 工具仍保持高关注度。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Edge speech AI: whisper.cpp remains a local AI leader.<br>- Security and observability tool stacks are gaining traction.<br>- Agentic research paper generation is heating up.<br>- Small models show strong potential in education.<br>- Foundation models are entering CAD and creative writing.
+    - Agentic scientific writing gains traction, with verifiable citations as a key focus.<br>- Small language models are emerging as practical AI tutors for K-12 education.<br>- Foundation models are beginning to automate CAD generation workflows.<br>- Open-source security and observability tools (Trivy, SigNoz, Nuclei) remain trending.<br>- Edge speech transcription (whisper.cpp) and OSINT tools keep drawing strong interest.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日两大趋势值得关注。一是“AI for Science / Agentic Research”。arXiv 论文《Prompt-to-Paper: Agentic AI System for Bioinformatics》提出端到端自动化手稿生成，并强调生成结论必须可验证地锚定文献，解决了大模型在科研写作中“幻觉”与“引用不可靠”的核心痛点。这预示着 Agent 不仅能写代码，还可能承担文献综述、实验设计与论文初稿的助手角色。<br><br>二是“端侧与垂直场景的小模型”。GitHub Trending 的 whisper.cpp 把 OpenAI Whisper 用 C/C++ 移植到本地，证明轻量模型在语音转写、隐私设备上的可行性；arXiv 的《CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming》则聚焦 K-12 图形化编程辅导，指出小模型在隐私、成本、可控性上优于大模型。两者共同说明：大模型不是唯一答案，面向具体场景的轻量化、本地化模型同样具备商业价值。</div>
+  <div>今日 arXiv 与 GitHub 资讯共同指向两个关键趋势：「科学智能体」与「教育专用小模型」。<br><br>「科学智能体」强调确定性证据链。论文《Prompt-to-Paper: Agentic AI System for Bioinformatics》直接批评现有端到端手稿生成系统的三大缺陷：生成声明无法被可验证文献确定性地支撑、实验流程不透明、以及事实性难以审计。其解决方案是在写作过程中把每一步声明与文献条目强制绑定，让 AI 不再只是生成文本，而是生成可被同行验证的论证。这对生物医药、法律、金融等高风险领域尤其重要。<br><br>另一个趋势是面向教育场景的小语言模型（SLM）。论文《CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming》指出，K-12 课堂部署大模型面临隐私、成本与依赖闭源三大问题，而 SLM 可在本地或边缘运行，提供个性化编程辅导。该基准聚焦积木式编程，为教育科技创业者提供了可量化的选型工具。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two trends stand out today. First, “AI for Science / Agentic Research.” The arXiv paper *Prompt-to-Paper: Agentic AI System for Bioinformatics* proposes an end-to-end automated manuscript generation system, with a focus on deterministically grounding claims in verifiable literature. This addresses the core hallucination and citation reliability issues of LLMs in scientific writing, suggesting agents could soon assist in literature review, experimental design, and first-draft generation.<br><br>Second, “on-device and vertical small models.” On GitHub, *whisper.cpp* ports OpenAI’s Whisper to C/C++ for local inference, proving lightweight models can power privacy-preserving speech transcription. On arXiv, *CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming* evaluates small models for K-12 block-based coding tutoring, showing advantages in privacy, cost, and controllability over large proprietary models. Together, they show that big models are not the only answer—lightweight, domain-specific, local models also hold significant commercial value.
+    Two converging trends stand out: agentic systems for science and small language models for education.<br><br>The paper "Prompt-to-Paper: Agentic AI System for Bioinformatics" critiques end-to-end manuscript generators for failing to deterministically ground claims in verifiable literature. Its approach binds every assertion to source literature, producing auditable arguments rather than merely fluent text. This is especially relevant for biomedicine, law, and finance, where hallucinated citations carry serious consequences.<br><br>Separately, "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming" highlights SLMs as viable AI tutors for K-12 settings. Unlike large proprietary models, SLMs can run locally, protect student privacy, and reduce cost. The benchmark focuses on block-based programming, giving ed-tech builders a concrete evaluation framework for choosing and tuning models.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 在 Mac/边缘设备部署 whisper.cpp：本地语音识别可避免上传敏感音频，适合会议记录、播客转写。<br>- 用 Prompt-to-Paper 类工作流辅助科研写作：先让 Agent 整理文献、生成初稿，再由人校验引用，提升学术产出效率。<br>- 关注教育场景的小模型产品化：图形化编程辅导、作业批改等低算力需求场景，可用小模型降低成本。<br>- 把安全与可观测性工具纳入 MLOps 流水线：trivy、signoz、nuclei 可用于扫描模型镜像、API 与基础设施风险。<br>- 探索 CAD/小说创作的基础模型应用：自动生成参数化设计或长篇故事记忆，可能成为创意产业新工具。</div>
+  <div>1. 在科研写作产品中加入「引用可验证」机制。理由：降低幻觉风险，满足生物医药等强监管领域需求。<br>2. 教育产品优先评估本地 SLM，而非默认调用大模型 API。理由：保护学生隐私、降低调用成本、提升合规性。<br>3. 关注 CAD 基础模型，探索设计自动化 PoC。理由：自然语言生成参数化 3D 模型可缩短工业设计迭代周期。<br>4. 将开源安全工具（Trivy/Nuclei）纳入 DevOps 流水线。理由：今日安全类仓库占据 Trending 前列，社区活跃度与威胁覆盖面同步提升。<br>5. 在边缘设备集成 whisper.cpp 做实时语音转录。理由：C/C++ 实现轻量高效，适合离线场景与隐私敏感业务。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Deploy whisper.cpp on Mac/edge devices for local speech recognition, avoiding sensitive audio uploads—ideal for meeting notes and podcast transcription.<br>- Adopt a Prompt-to-Paper-style workflow for research writing: let agents organize literature and draft content, then have humans verify citations.<br>- Productize small models for education: tutoring and homework feedback in block-based coding are low-compute, high-value use cases.<br>- Integrate security and observability tools into MLOps: trivy, signoz, and nuclei can scan model containers, APIs, and infrastructure risks.<br>- Explore foundation models for CAD and fiction: parametric design generation and long-form narrative memory could become new creative-industry tools.
+    1. Add citation-verification safeguards to scientific-writing products. Rationale: reduces hallucination risk in regulated fields like biomedicine.<br>2. Evaluate local SLMs before defaulting to large-model APIs for education apps. Rationale: protects student privacy, cuts costs, and simplifies compliance.<br>3. Prototype CAD foundation models for design automation. Rationale: natural-language-to-parametric-3D can shorten industrial design iteration cycles.<br>4. Integrate open-source security scanners (Trivy/Nuclei) into DevOps pipelines. Rationale: security tools dominate today's trending list, reflecting strong community momentum.<br>5. Deploy whisper.cpp on edge devices for real-time transcription. Rationale: its C/C++ port is lightweight and works offline, ideal for privacy-sensitive use cases.
   </div>
 </div>
 
@@ -125,7 +125,7 @@ LLM systems for scientific discovery increasingly assist with ideation, literatu
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-07-09 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-07-09 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
