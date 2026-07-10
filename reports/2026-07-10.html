@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AgentLens 提出轨迹级评估，突破单一通过/失败指标。<br>- In-Context Search 研究为推理型 LLM 提供采样复杂度理论支撑。<br>- LLM 与 Agent-Based Modeling 结合，增强政策仿真实时适应能力。<br>- 开发工具链（fzf、Bun、Trivy）热度上升，AI 工程化基础设施受关注。</div>
+  <div>- AgentLens 关注代码智能体轨迹评估<br>- 上下文搜索理论揭示推理采样复杂度<br>- LLM 驱动智能体建模增强政策仿真动态性<br>- 低成本代理在 ARC-AGI 获进展<br>- 身份安全基座与 AI 工程化工具受关注</div>
   <div class="en">
     <div class="en-title">English</div>
-    - AgentLens introduces trajectory-level evaluation, moving beyond pass/fail metrics.<br>- In-Context Search research provides theoretical support for reasoning LLMs.<br>- LLM-powered reasoning enhances real-time adaptability in agent-based modeling.<br>- Developer tooling (fzf, Bun, Trivy) is trending, reflecting AI engineering infrastructure growth.<br><br>---
+    - AgentLens introduces a trajectory-based benchmark for code agents.<br>- In-context search theory highlights sampling-complexity trade-offs in reasoning.<br>- LLM-powered agent-based modeling gains traction for dynamic policy simulation.<br>- Cost-effective agents advance abstract reasoning on ARC-AGI-1.<br>- Identity and security infrastructure tools dominate GitHub Trending, signaling AI readiness.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日最值得关注的趋势是**AI Agent 评估从结果导向转向过程导向**。传统代码 Agent 基准通常只判断任务是否完成，而 AgentLens 提出基于生产环境的轨迹评估，关注 Agent 如何规划、失败、修正。这一方向更贴近真实使用体验，有助于提升 Agent 的可解释性和可靠性。<br><br>另一个方向是**推理增强型 LLM 的理论基础**。论文 "When Does In-Context Search Help?" 用采样复杂度分析模型如何在上下文中迭代生成、批判和修正答案。这意味着未来的 LLM 可能在搜索与反思机制上更可控，为复杂决策应用提供理论依据。<br><br>GitHub 热榜中 fzf、Bun、Trivy 等工具也反映了 AI 工程化基础设施的需求：快速搜索、运行时性能、安全扫描将成为 Agent 和 LLM 应用部署的标配能力。</div>
+  <div>今日资讯的核心趋势是：代码智能体评估正从“结果导向”转向“过程导向”。传统基准通常只返回任务是否通过，但 AgentLens 论文强调，生产环境中真正决定用户体验的是智能体的完整轨迹——包括工具调用、错误恢复、用户交互与中间状态。这种视角推动行业重新思考：一个能跑通的 demo 并不等同于可落地的系统，开发者需要可审计、可解释、可回滚的代理工作流。结合 GitHub Trending 中 Trivy、Zitadel 等安全与身份基础设施的走红，可以预见：AI 应用越深入生产，底层可信基座的重要性就越突出。<br><br>另一值得关注的方向是 LLM 推理与领域仿真的融合。arXiv 论文《LLM-powered reasoning in agent-based modeling》提出用 LLM 为智能体模型赋予动态先验，使政策模拟能实时适应外部变化。这对城市规划、公共卫生、市场行为等复杂系统建模具有启发意义：传统静态规则难以刻画非线性反馈和突发行为，而 LLM 驱动的智能体可以模拟更贴近人类的决策过程。不过，这也带来计算成本、可复现性和验证机制的新挑战，需要与理论工作（如上下文搜索的采样复杂度分析）结合，才能找到性能与开销的平衡。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The key trend is the shift from **outcome-based to process-based AI Agent evaluation**. Traditional benchmarks reduce Agent runs to a single pass/fail bit, while AgentLens proposes production-assessed trajectory reviews, examining how agents plan, fail, and recover. This aligns better with real-world user experience and can improve Agent interpretability and reliability.<br><br>Another important direction is the **theoretical foundation of reasoning-enhanced LLMs**. The paper "When Does In-Context Search Help?" uses sampling complexity theory to model how LLMs iteratively generate, critique, and revise solutions in context. This suggests future LLMs may have more controllable search and reflection mechanisms, providing theoretical grounding for complex decision-making applications.<br><br>The GitHub trending tools like fzf, Bun, and Trivy also reflect the growing infrastructure needs of AI engineering: fast search, runtime performance, and security scanning are becoming essential for deploying Agent and LLM applications.<br><br>---
+    A key trend is the shift from outcome-only to trajectory-based evaluation of coding agents. AgentLens argues that production value depends on the full agent path—tool usage, error recovery, and user interaction—not just a final pass/fail bit. This pushes the field to treat demo success and production readiness as distinct goals, demanding auditable, interpretable, and reversible agent workflows. The prominence of security and identity tools like Trivy and Zitadel in GitHub Trending reinforces that trust infrastructure becomes critical as AI systems move into real environments.<br><br>Another important direction is the fusion of LLM reasoning with domain simulation. The arXiv paper on LLM-powered agent-based modeling replaces static priors with dynamic, LLM-driven reasoning, enabling policy simulations that adapt to real-time changes. This can improve urban planning, public health, and market dynamics modeling by capturing nonlinear feedback and emergent behaviors that rule-based models miss. However, it also raises issues of computational cost, reproducibility, and validation, which must be balanced using theoretical insights such as sampling-complexity trade-offs in in-context search.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 在设计 Agent 时，记录并分析完整执行轨迹，便于后续优化和调试。理由：AgentLens 显示过程评估比单一结果更有价值。<br>- 为高复杂度 LLM 应用引入反思-修正循环，提升推理准确率。理由：In-Context Search 理论支持迭代式推理架构。<br>- 将安全扫描（如 Trivy）集成到 LLM 应用 CI/CD 流程中。理由：AI 工程化基础设施安全要求日益提高。<br>- 关注 Bun 等高性能运行时，可降低 LLM 服务端推理与中间件延迟。理由：运行时效率直接影响 Agent 响应体验。<br>- 用 LLM 增强传统仿真模型，实现政策决策的动态推演。理由：LLM-powered ABM 论文展示了实时适应潜力。</div>
+  <div>1. 部署代码智能体时建立“轨迹审计”checklist，检查错误恢复、工具调用链与中间状态，而非只看最终通过率。理由：生产失败多源于不可控的中间步骤。<br>2. 在供应链、市场行为或公共政策模拟中试点 LLM 驱动的智能体建模。理由：动态先验可捕捉传统静态模型忽略的非线性反馈。<br>3. 为高成本推理任务设计低成本代理组合，参考 ARC-AGI-1 的轻量方案。理由：成本是智能体规模化落地的关键瓶颈。<br>4. 将安全扫描（Trivy）和身份管理（Zitadel）纳入 MLOps/AgentOps 流水线。理由：AI 系统越自治，可信基座越重要。<br>5. 评估自反思与上下文搜索机制时，结合采样复杂度分析权衡延迟与预算。理由：理论指导有助于避免盲目增加推理轮数。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Design Agents to log and analyze full execution trajectories for later optimization. Rationale: AgentLens shows process evaluation is more valuable than binary outcomes.<br>- Add reflection-and-revision loops in complex LLM applications to improve reasoning accuracy. Rationale: In-Context Search theory supports iterative reasoning architectures.<br>- Integrate security scanners like Trivy into LLM application CI/CD pipelines. Rationale: Security is becoming critical in AI engineering infrastructure.<br>- Consider high-performance runtimes like Bun to reduce LLM service-side and middleware latency. Rationale: Runtime efficiency directly impacts Agent response experience.<br>- Use LLMs to enhance traditional simulation models for dynamic policy decision-making. Rationale: LLM-powered ABM research demonstrates real-time adaptability potential.
+    1. Adopt a trajectory-audit checklist when deploying coding agents, reviewing error recovery, tool chains, and intermediate states—not just final success. Rationale: Production failures often stem from uncontrolled intermediate steps.<br>2. Pilot LLM-driven agent-based models for internal simulations such as supply chains, market dynamics, or public policy. Rationale: Dynamic priors can capture nonlinear feedback that static models miss.<br>3. Build lightweight agent ensembles for high-cost reasoning tasks, inspired by ARC-AGI-1 cost-effective harnesses. Rationale: Cost is a major scaling bottleneck.<br>4. Integrate security scanners (Trivy) and identity infrastructure (Zitadel) into MLOps/AgentOps pipelines. Rationale: More autonomous AI systems require a trustworthy foundation.<br>5. Evaluate self-reflection and in-context search mechanisms using sampling-complexity analysis to trade off latency and budget. Rationale: Theory helps avoid blindly increasing reasoning steps.
   </div>
 </div>
 
@@ -125,7 +125,7 @@ Recent advances in AI for Mathematics have focused largely on autoformalization 
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-07-10 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-07-10 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

@@ -265,6 +265,6 @@
   },
   {
     "date": "2026-07-10",
-    "summary": "### 执行摘要\n\n中文：\n- AgentLens 提出轨迹级评估，突破单一通过/失败指标。\n- In-Context Search 研究为推理型 LLM 提供采样复杂度理论支撑。\n- LLM 与 Agent-Based Modeling 结合，增强政策仿真实时适应能力。\n- 开发工具链（fzf、Bun、Trivy）热度上升，AI 工程化基础设施受关注。\n\nEnglish:\n- AgentLens"
+    "summary": "### 执行摘要\n中文：\n- AgentLens 关注代码智能体轨迹评估\n- 上下文搜索理论揭示推理采样复杂度\n- LLM 驱动智能体建模增强政策仿真动态性\n- 低成本代理在 ARC-AGI 获进展\n- 身份安全基座与 AI 工程化工具受关注\n\nEnglish:\n- AgentLens introduces a trajectory-based benchmark for code agents."
   }
 ]
