@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI Agent评估从结果论转向过程评估<br>- 上下文搜索驱动推理能力突破<br>- 企业安全工具链持续高热<br>- 本地AI部署生态保持活跃</div>
+  <div>中文：<br>- 代码智能体评估从“是否通过”转向全流程轨迹质量<br>- 理论研究揭示上下文搜索与反思机制的适用边界<br>- 大模型驱动复杂系统仿真进入政策决策视野<br>- 低成本 ARC-AGI 智能体方案成为关注焦点<br>- 开源工具生态持续繁荣（Bun/Tailscale/Vite/whisper.cpp）</div>
   <div class="en">
     <div class="en-title">English</div>
-    - AI agent evaluation shifts from pass/fail to trajectory review<br>- In-context search drives reasoning breakthroughs<br>- Enterprise security tooling remains highly active<br>- Local AI deployment ecosystem stays vibrant
+    - Code agent evaluation shifts from pass/fail to full-trajectory quality<br>- Theoretical work clarifies when in-context search and reflection help<br>- LLM-powered agent-based modeling gains policy relevance<br>- Cost-efficient ARC-AGI agent designs draw attention<br>- Open-source tooling ecosystem stays vibrant (Bun, Tailscale, Vite, whisper.cpp)
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日最值得关注的趋势是 AI Agent 的"过程化评估"与"推理能力升级"两条主线。  <br>其一，AgentLens 提出对编码 Agent 应评估整条交互轨迹，而非仅看最终是否通过。这反映了业界痛点：生产环境中用户实际体验的是 Agent 逐步推理、纠错的完整过程，单一结果指标无法捕捉幻觉、循环、低质量交互等问题。  <br>其二，"When Does In-Context Search Help?" 从采样复杂度理论切入，研究 LLM 如何通过迭代生成、批判、修正来完成推理。这意味着未来模型不必一味依赖更大规模训练，而可通过更好的上下文搜索策略提升复杂任务表现。两者结合，Agent 不仅要做对，还要"想得清楚、过程可解释"。</div>
+  <div>中文：<br>今日 arXiv 论文共同指向“智能体可靠性”与“推理效率”两条主线。AgentLens 提出对交互式代码智能体进行“生产级轨迹评估”，不再只看任务是否通过，而是审查整个执行路径中的决策质量、错误恢复与用户交互体验。这标志着代码智能体评估从单一结果指标走向全流程质量审计，对工程落地至关重要。另一方面，When Does In-Context Search Help? 从采样复杂度角度建立反思驱动推理的理论模型，说明上下文搜索在哪些任务上真正有效、哪些只是增加成本。该理论有助于开发者合理设计多轮推理与自我修正策略，避免盲目堆叠反思步骤。GitHub 上 whisper.cpp 持续活跃，显示端侧语音 AI 仍是开发者关注重点；Bun、Vite 等基础设施工具则反映 JavaScript 运行时与前端构建性能仍是工程热点。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two key trends stand out today: process-oriented AI agent evaluation and advanced reasoning capabilities.  <br>AgentLens argues that coding agents should be assessed across the entire interaction trajectory, not just final pass/fail outcomes. This addresses a real production gap: users experience how agents reason, recover, and communicate, which single-bit metrics miss.  <br>Meanwhile, "When Does In-Context Search Help?" offers a theoretical framework for reflection-driven reasoning, showing how iterative generation, critique, and revision can improve performance without simply scaling training. Together, these directions push agents toward both better outcomes and more transparent, interpretable reasoning.
+    Today's arXiv papers converge on two themes: agent reliability and reasoning efficiency. AgentLens introduces production-assessed trajectory reviews for interactive coding agents, moving beyond binary pass/fail to audit decision quality, error recovery, and user experience along the entire trajectory. This signals a maturation from outcome-only metrics to full-process quality assurance. Meanwhile, "When Does In-Context Search Help?" offers a sampling-complexity theory of reflection-driven reasoning, clarifying when iterative search and self-critique genuinely help and when they merely increase cost. This can guide developers in designing multi-step reasoning and self-correction strategies. On GitHub, whisper.cpp remains active, underscoring continued interest in on-device speech AI; Bun and Vite reflect ongoing focus on JavaScript runtime and frontend build performance.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 为内部 AI Agent 建立"轨迹评分"机制：只看结果会掩盖真实体验问题，参考 AgentLens 增加步骤质量、错误恢复维度。<br>- 在产品中尝试"反思-修正"式推理链：结合上下文搜索，可在客服、代码审查等场景降低错误率。<br>- 评估安全扫描工具 Trivy/Nuclei 的接入：两者在 GitHub 高热，说明 DevSecOps 自动化需求旺盛。<br>- 关注本地推理方案如 whisper.cpp：端侧运行成本低，适合隐私敏感场景。<br>- 跟踪 ARC-AGI 低成本 Agent 方案：有助于探索企业场景中的经济高效推理路径。</div>
+  <div>中文：<br>- 在评估内部 AI Coding Agent 时引入轨迹审计指标，不只关注单测通过率<br>- 设计反思/重试策略前先进行理论成本分析，避免无效循环<br>- 关注端侧语音 AI（whisper.cpp）在客服、会议纪要等场景的落地<br>- 用 Bun/Vite 等现代工具重构前端构建流程，提升开发体验<br>- 跟踪 ARC-AGI 低成本方案，评估自家 Agent 在抽象推理任务的投入产出</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Build a trajectory-scoring framework for internal AI agents: final metrics hide real UX issues; add step quality and recovery dimensions like AgentLens suggests.<br>- Experiment with reflection-and-revision reasoning chains in products: in-context search can reduce errors in support, code review, and other interactive workflows.<br>- Evaluate integrating Trivy or Nuclei into CI/CD: their trending status reflects strong demand for DevSecOps automation.<br>- Watch local inference options like whisper.cpp: on-device deployment lowers cost and protects privacy.<br>- Follow cost-efficient ARC-AGI agent approaches: they may reveal frugal reasoning paths for enterprise use cases.
+    - Audit your AI coding agent by full-trajectory metrics, not just test pass rate<br>- Model the cost of reflection/retry loops before adding self-correction<br>- Pilot on-device speech AI (whisper.cpp) for customer service or meeting notes<br>- Modernize frontend build pipelines with Bun/Vite to improve developer experience<br>- Monitor cost-effective ARC-AGI approaches to calibrate abstraction-reasoning investments
   </div>
 </div>
 
