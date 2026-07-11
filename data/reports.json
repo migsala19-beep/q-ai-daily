@@ -266,5 +266,9 @@
   {
     "date": "2026-07-10",
     "summary": "### 执行摘要\n中文：\n- AgentLens 关注代码智能体轨迹评估\n- 上下文搜索理论揭示推理采样复杂度\n- LLM 驱动智能体建模增强政策仿真动态性\n- 低成本代理在 ARC-AGI 获进展\n- 身份安全基座与 AI 工程化工具受关注\n\nEnglish:\n- AgentLens introduces a trajectory-based benchmark for code agents."
+  },
+  {
+    "date": "2026-07-11",
+    "summary": "### 执行摘要\n中文：\n- AI Agent评估从结果论转向过程评估\n- 上下文搜索驱动推理能力突破\n- 企业安全工具链持续高热\n- 本地AI部署生态保持活跃\n\nEnglish:\n- AI agent evaluation shifts from pass/fail to trajectory review\n- In-context search drives reasoning breakth"
   }
 ]

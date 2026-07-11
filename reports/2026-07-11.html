@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-11</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-11</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- AI Agent评估从结果论转向过程评估<br>- 上下文搜索驱动推理能力突破<br>- 企业安全工具链持续高热<br>- 本地AI部署生态保持活跃</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - AI agent evaluation shifts from pass/fail to trajectory review<br>- In-context search drives reasoning breakthroughs<br>- Enterprise security tooling remains highly active<br>- Local AI deployment ecosystem stays vibrant
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日最值得关注的趋势是 AI Agent 的"过程化评估"与"推理能力升级"两条主线。  <br>其一，AgentLens 提出对编码 Agent 应评估整条交互轨迹，而非仅看最终是否通过。这反映了业界痛点：生产环境中用户实际体验的是 Agent 逐步推理、纠错的完整过程，单一结果指标无法捕捉幻觉、循环、低质量交互等问题。  <br>其二，"When Does In-Context Search Help?" 从采样复杂度理论切入，研究 LLM 如何通过迭代生成、批判、修正来完成推理。这意味着未来模型不必一味依赖更大规模训练，而可通过更好的上下文搜索策略提升复杂任务表现。两者结合，Agent 不仅要做对，还要"想得清楚、过程可解释"。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two key trends stand out today: process-oriented AI agent evaluation and advanced reasoning capabilities.  <br>AgentLens argues that coding agents should be assessed across the entire interaction trajectory, not just final pass/fail outcomes. This addresses a real production gap: users experience how agents reason, recover, and communicate, which single-bit metrics miss.  <br>Meanwhile, "When Does In-Context Search Help?" offers a theoretical framework for reflection-driven reasoning, showing how iterative generation, critique, and revision can improve performance without simply scaling training. Together, these directions push agents toward both better outcomes and more transparent, interpretable reasoning.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 为内部 AI Agent 建立"轨迹评分"机制：只看结果会掩盖真实体验问题，参考 AgentLens 增加步骤质量、错误恢复维度。<br>- 在产品中尝试"反思-修正"式推理链：结合上下文搜索，可在客服、代码审查等场景降低错误率。<br>- 评估安全扫描工具 Trivy/Nuclei 的接入：两者在 GitHub 高热，说明 DevSecOps 自动化需求旺盛。<br>- 关注本地推理方案如 whisper.cpp：端侧运行成本低，适合隐私敏感场景。<br>- 跟踪 ARC-AGI 低成本 Agent 方案：有助于探索企业场景中的经济高效推理路径。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Build a trajectory-scoring framework for internal AI agents: final metrics hide real UX issues; add step quality and recovery dimensions like AgentLens suggests.<br>- Experiment with reflection-and-revision reasoning chains in products: in-context search can reduce errors in support, code review, and other interactive workflows.<br>- Evaluate integrating Trivy or Nuclei into CI/CD: their trending status reflects strong demand for DevSecOps automation.<br>- Watch local inference options like whisper.cpp: on-device deployment lowers cost and protects privacy.<br>- Follow cost-efficient ARC-AGI agent approaches: they may reveal frugal reasoning paths for enterprise use cases.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/oven-sh/bun" target="_blank" style="font-weight:600">oven-sh/bun</a>
+            <span style="color:#888;font-size:13px"> — Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tailscale/tailscale" target="_blank" style="font-weight:600">tailscale/tailscale</a>
+            <span style="color:#888;font-size:13px"> — The easiest, most secure way to use WireGuard and 2FA.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/juanfont/headscale" target="_blank" style="font-weight:600">juanfont/headscale</a>
+            <span style="color:#888;font-size:13px"> — An open source, self-hosted implementation of the Tailscale control server</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/projectdiscovery/nuclei" target="_blank" style="font-weight:600">projectdiscovery/nuclei</a>
+            <span style="color:#888;font-size:13px"> — Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ggml-org/whisper.cpp" target="_blank" style="font-weight:600">ggml-org/whisper.cpp</a>
+            <span style="color:#888;font-size:13px"> — Port of OpenAI's Whisper model in C/C++</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nestjs/nest" target="_blank" style="font-weight:600">nestjs/nest</a>
+            <span style="color:#888;font-size:13px"> — A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/vitejs/vite" target="_blank" style="font-weight:600">vitejs/vite</a>
+            <span style="color:#888;font-size:13px"> — Next generation frontend tooling. It's fast!</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06624" target="_blank" style="font-weight:600">AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06624v1 Announce Type: new 
+We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06720" target="_blank" style="font-weight:600">When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06720v1 Announce Type: new 
+Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06757" target="_blank" style="font-weight:600">LLM-powered reasoning in agent-based modeling</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06757v1 Announce Type: new 
+Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have trad</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06760" target="_blank" style="font-weight:600">QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06760v1 Announce Type: new 
+Autonomous systems under partial observability act on beliefs, not raw sensor events. QANTIS treats the quantum processor as a calibrated belief-update service i</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06764" target="_blank" style="font-weight:600">Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06764v1 Announce Type: new 
+Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, e</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.06820" target="_blank" style="font-weight:600">Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.06820v1 Announce Type: new 
+Recent advances in AI for Mathematics have focused largely on autoformalization and theorem proving, leaving the role of Computer Algebra Systems (CAS) in agenti</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-11 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
