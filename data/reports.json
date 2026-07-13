@@ -277,6 +277,6 @@
   },
   {
     "date": "2026-07-13",
-    "summary": "### 执行摘要\n中文：\n- 今日提供的四项数据源均为空，无法生成真实摘要。\n- 资讯采集链路可能出现中断，需优先检查爬虫/接口状态。\n- 建议立即排查 GitHub / arXiv / HuggingFace / 大厂博客的拉取任务。\n- 在数据恢复前，不应基于空数据输出具体趋势判断。\n- 可启动本地回退模式或手动补录，避免日报空转。\n\nEnglish:\n- All four provided "
+    "summary": "### 执行摘要\n中文：\n- 所有数据源为空，今日暂无重要 AI 动态可汇总。\n- 请检查 GitHub / arXiv / HuggingFace / 大厂博客采集状态。\n- 数据补充后将重新生成完整执行摘要。\n\nEnglish:\n- All data sources are empty; no major AI developments to summarize today.\n- Please"
   }
 ]
