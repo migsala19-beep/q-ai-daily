@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-13</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-13</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 今日提供的四项数据源均为空，无法生成真实摘要。<br>- 资讯采集链路可能出现中断，需优先检查爬虫/接口状态。<br>- 建议立即排查 GitHub / arXiv / HuggingFace / 大厂博客的拉取任务。<br>- 在数据恢复前，不应基于空数据输出具体趋势判断。<br>- 可启动本地回退模式或手动补录，避免日报空转。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - All four provided data sources are empty; no real summary can be generated.<br>- The news collection pipeline likely broke; check crawler/API status first.<br>- Investigate pull jobs for GitHub, arXiv, HuggingFace, and big-tech blogs.<br>- Do not issue specific trend judgments based on empty data.<br>- Activate local fallback or manual input to avoid an empty daily report.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>当前无法形成深度分析，因为 GitHub Trending、arXiv 论文、HuggingFace Papers 和大厂博客四个来源返回的数据均为空。深度研究的前提是具体案例、论文标题、项目链接和量化指标。在空数据状态下，任何趋势判断都可能沦为臆测。建议的排查方向：检查爬虫调度是否超时、API 密钥是否过期、网络代理是否被风控、RSS/Atom 源是否变更。恢复采集后，优先复盘多源交叉验证机制，确保单点失败不会导致整份日报为空。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    No in-depth analysis can be produced because GitHub Trending, arXiv papers, HuggingFace Papers, and big-tech blogs all returned empty. Solid research requires concrete cases, paper titles, project links, and metrics. Drawing trends from empty data would be speculation. Recommended checks: crawler schedule timeout, expired API keys, proxy/risk-control blocks, and changed RSS/Atom feeds. Once collection is restored, review cross-source validation so a single point of failure does not blank the entire report.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 数据源健康告警：日报系统应增加空数据检测与告警，避免发布无内容报告。理由：空发会损害报告站的可信度。<br>- 采集链路自检：为每个来源编写独立状态检查脚本，失败时快速定位。理由：多源并行时单点故障难以人工排查。<br>- 引入本地回退机制：无网络数据时，可读取缓存或等待用户手动补录。理由：保证日报流程不空转。<br>- 关键 Key 自动化巡检：Kimi API、GitHub Token、HuggingFace 凭证定时检查有效期。理由：空数据常见原因是凭证过期。<br>- 输出审核开关：正式生成前校验非空字段，空数据时自动拦截并提示。理由：防止低质量内容发布到 domiai.com.cn。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Add empty-data alerts to the daily pipeline so empty reports are not published. Rationale: publishing blanks hurts report credibility.<br>- Write per-source health-check scripts to pinpoint failures quickly. Rationale: with multiple parallel sources, single-point failures are hard to trace manually.<br>- Introduce a local fallback that reads cached data or waits for manual input. Rationale: keeps the daily workflow from running empty.<br>- Auto-audit critical keys: Kimi API, GitHub token, HuggingFace credentials. Rationale: expired credentials are a common cause of empty data.<br>- Add an output gate that validates non-empty fields before publishing. Rationale: prevents low-quality content from reaching domiai.com.cn.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-13 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
