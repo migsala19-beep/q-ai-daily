@@ -278,5 +278,9 @@
   {
     "date": "2026-07-13",
     "summary": "### 执行摘要\n中文：\n- 所有数据源为空，今日暂无重要 AI 动态可汇总。\n- 请检查 GitHub / arXiv / HuggingFace / 大厂博客采集状态。\n- 数据补充后将重新生成完整执行摘要。\n\nEnglish:\n- All data sources are empty; no major AI developments to summarize today.\n- Please"
+  },
+  {
+    "date": "2026-07-14",
+    "summary": "### 执行摘要\n中文：\n- LLM Agent规划能力成研究焦点，新范式不断涌现\n- AI安全与可解释性受重视，形式化方法重新升温\n- 提示词工程开源生态活跃，社区协作持续繁荣\n- 自托管与隐私优先工具热度上升，开发者关注数据主权\n- 长程终端任务基准推动Agent能力边界拓展\n\nEnglish:\n- LLM Agent planning remains a top research front"
   }
 ]

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-14</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-14</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- LLM Agent规划能力成研究焦点，新范式不断涌现<br>- AI安全与可解释性受重视，形式化方法重新升温<br>- 提示词工程开源生态活跃，社区协作持续繁荣<br>- 自托管与隐私优先工具热度上升，开发者关注数据主权<br>- 长程终端任务基准推动Agent能力边界拓展</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - LLM Agent planning remains a top research frontier<br>- AI safety and formal verification regain attention<br>- Open-source prompt engineering ecosystem stays active<br>- Self-hosting and privacy-first tools gain traction<br>- Long-horizon terminal benchmarks push agent limits
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯呈现出两条清晰主线。其一，推理时控制（Inference-time Control）正在成为提升LLM系统可靠性的关键路径。CogniConsole提出将推理时控制形式化为独立抽象层，挑战了“可靠性仅取决于模型能力”的固有假设，意味着未来LLM应用架构可能向更模块化、可插拔的控制层演进。其二，Agent规划与长程任务评估同步深化。GATS通过图增强树搜索结合分层世界模型，降低规划过程中的LLM调用成本与随机性；Long-Horizon-Terminal-Bench则以密集奖励评分机制，测试Agent在长时间终端任务中的持续决策能力。两者共同推动AI Agent从完成短平快任务，向复杂、长程、可评估的自主工作流演进。此外，arXiv上关于多层感知机区间认证与Mean-Field理论的形式化研究，也显示AI安全与可解释性正吸引更多理论投入。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out. First, inference-time control is emerging as a critical path for LLM reliability. The CogniConsole paper externalizes this control as a formal abstraction, suggesting that reliability depends not just on model capability but on the computational layer governing task execution. This could shift LLM application design toward more modular, controllable architectures. Second, agent planning and long-horizon evaluation are advancing together. GATS combines graph-augmented tree search with layered world models to reduce cost and stochasticity, while Long-Horizon-Terminal-Bench uses dense reward-based grading to test agents on extended terminal tasks. Together they push agents from short tasks toward complex, sustained decision-making.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 在LLM应用中加入显式控制层：参考CogniConsole，将业务规则、约束校验与模型推理解耦，提升系统可控性。<br>- 关注本地/自托管部署方案：Coolify与Prompts.chat均支持私有化，适合数据敏感或合规要求高的场景。<br>- 评估现有Agent是否适合长程任务：借鉴Long-Horizon-Terminal-Bench，重新审视内部自动化流程的连续性与稳定性。<br>- 建立企业级提示词知识库：借鉴Prompts.chat的社区协作模式，沉淀高价值提示词模板。<br>- 为AI安全预留形式化验证预算：对抗鲁棒性与可解释性相关研究应纳入技术路线图。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Add explicit control layers to LLM apps, separating business rules from model inference.<br>- Evaluate self-hosted tooling like Coolify and Prompts.chat for sensitive data scenarios.<br>- Audit whether current agents can handle long-horizon tasks using the new benchmark.<br>- Build an internal prompt knowledge base inspired by Prompts.chat's community model.<br>- Allocate budget for formal verification and safety research as AI systems scale.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/f/prompts.chat" target="_blank" style="font-weight:600">f/prompts.chat</a>
+            <span style="color:#888;font-size:13px"> — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/termux/termux-packages" target="_blank" style="font-weight:600">termux/termux-packages</a>
+            <span style="color:#888;font-size:13px"> — A package build system for Termux.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" style="font-weight:600">NationalSecurityAgency/ghidra</a>
+            <span style="color:#888;font-size:13px"> — Ghidra is a software reverse engineering (SRE) framework</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/coollabsio/coolify" target="_blank" style="font-weight:600">coollabsio/coolify</a>
+            <span style="color:#888;font-size:13px"> — An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/make-all/tuya-local" target="_blank" style="font-weight:600">make-all/tuya-local</a>
+            <span style="color:#888;font-size:13px"> — Local support for Tuya devices in Home Assistant</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Leantime/leantime" target="_blank" style="font-weight:600">Leantime/leantime</a>
+            <span style="color:#888;font-size:13px"> — Leantime is a goals focused project management system for non-project managers. Building with ADHD, Autism, and dyslexia in mind.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/authelia/authelia" target="_blank" style="font-weight:600">authelia/authelia</a>
+            <span style="color:#888;font-size:13px"> — The Single Sign-On Multi-Factor portal for web apps, now OpenID Certified™</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.08773" target="_blank" style="font-weight:600">Interval Certifications for Multilayered Perceptrons via Lattice Traversal</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.08773v1 Announce Type: new 
+In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.08774" target="_blank" style="font-weight:600">CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.08774v1 Announce Type: new 
+Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is s</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.08894" target="_blank" style="font-weight:600">GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.08894v1 Announce Type: new 
+Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.08964" target="_blank" style="font-weight:600">Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.08964v1 Announce Type: new 
+AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.08986" target="_blank" style="font-weight:600">A Formalization of the Mean-Field Derivation of the Vlasov Equation: AI-Assisted Lean Formalization as a Strategy Game</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.08986v1 Announce Type: new 
+We formalize a research result in the Lean 4 proof assistant by having a mathematician direct an AI system, and frame the activity as a formalization game. The o</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.09059" target="_blank" style="font-weight:600">ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.09059v1 Announce Type: new 
+We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-14 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
