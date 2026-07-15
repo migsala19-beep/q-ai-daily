@@ -285,6 +285,6 @@
   },
   {
     "date": "2026-07-15",
-    "summary": "### 执行摘要\n中文：\n- 大模型格式敏感性影响评测公平性\n- 多跳Agent消息格式需分层设计\n- 医疗AI借论证模型提升可解释性\n- OCR与混合搜索工具持续受关注\n- 分布式运行时与数据平台热度高\n\nEnglish:\n- LLM prompt-format sensitivity threatens benchmark fairness.\n- Multi-hop agent message"
+    "summary": "### 执行摘要\n\n中文：\n- 纯 JS OCR 引擎 Tesseract.js 上榜，端侧文档识别受关注。\n- Meilisearch 强调 AI 混合搜索，检索增强体验成基础设施。\n- arXiv 多篇论文聚焦 LLM 提示格式与代理可靠性。\n- Dapr 与 PostHog 受开发者青睐，AI 应用工程化成趋势。\n- 诊断辅助结合论证模型，医疗 AI 可解释性有新思路。\n\nEnglish:\n"
   }
 ]

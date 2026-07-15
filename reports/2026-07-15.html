@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 大模型格式敏感性影响评测公平性<br>- 多跳Agent消息格式需分层设计<br>- 医疗AI借论证模型提升可解释性<br>- OCR与混合搜索工具持续受关注<br>- 分布式运行时与数据平台热度高</div>
+  <div>- 纯 JS OCR 引擎 Tesseract.js 上榜，端侧文档识别受关注。<br>- Meilisearch 强调 AI 混合搜索，检索增强体验成基础设施。<br>- arXiv 多篇论文聚焦 LLM 提示格式与代理可靠性。<br>- Dapr 与 PostHog 受开发者青睐，AI 应用工程化成趋势。<br>- 诊断辅助结合论证模型，医疗 AI 可解释性有新思路。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - LLM prompt-format sensitivity threatens benchmark fairness.<br>- Multi-hop agent message formats need tier-aware design.<br>- Medical AI adopts argumentation models for interpretability.<br>- OCR and hybrid search tools remain trending.<br>- Distributed runtimes and data platforms gain traction.
+    - Pure JS OCR engine Tesseract.js trends, edge document recognition gains attention.<br>- Meilisearch highlights AI hybrid search, retrieval-augmented experience becomes infrastructure.<br>- arXiv papers focus on LLM prompt formatting and agent reliability.<br>- Dapr and PostHog gain traction as AI application engineering matures.<br>- Diagnostic assistance combined with argumentation model improves medical AI interpretability.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯最突出的趋势是**大模型可靠性、可解释性与评估方法**。arXiv 多篇论文共同指向一个核心问题：LLM 不仅对任务内容敏感，也对提示格式、消息格式和中间推理表示高度敏感。例如，《Format Sensitivity Index》提出 FSI 指标，量化提示包装格式对模型得分的影响，揭示排行榜结果可能因格式差异而翻转；《Faithful, Not Corrective》则发现多跳 Agent 之间的信息传递格式对不同能力层级的模型影响不同，简单强制结构化可能反而降低可靠性。另一条主线是**AI 在垂直场景的落地与可解释性**。《From ML Predictions to Informed Diagnostic Assistance》将 Toulmin 论证模型引入医学影像诊断，把预测拆解为 claim、grounds、warrant 等要素，提升医生对 AI 判断的信任。工程层面，tesseract.js 让浏览器端 OCR 更易用，meilisearch 将 AI 混合搜索推向应用，PostHog 和 Dapr 则继续完善开发者数据与分布式基础设施。</div>
+  <div>中文：<br>今日 GitHub Trending 与 arXiv 呈现出两条清晰主线：AI 能力的"端侧普惠化"与"系统可靠性工程化"。<br><br>第一，端侧 OCR 与本地搜索成为落地热点。Tesseract.js 作为纯 JavaScript OCR 库进入热榜，意味着文档理解能力可以无需后端直接在浏览器或 Node 环境中运行；CasaOS 则代表个人云与本地数据管理的复兴，二者结合有望让"本地知识库 + 本地识别"成为小型团队和个人用户的主流方案。<br><br>第二，LLM 系统的提示格式与代理协作鲁棒性进入研究深水区。arXiv 上《Format Sensitivity Index》提出用 token 控制协议评估提示包装器对榜单结论的影响；《Faithful, Not Corrective》则指出多跳代理间信息传递时，消息格式对准确率的层级依赖性。这意味着在构建复杂 AI 流水线时，不能仅关注模型能力，还必须把提示 schema、消息协议和代理接口当作工程资产来测试和版本化。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The strongest trend today is **LLM reliability, interpretability, and evaluation methodology**. Multiple arXiv papers show that LLMs are sensitive not only to task content but also to prompt format, message format, and intermediate reasoning representations. The *Format Sensitivity Index* paper introduces FSI to quantify how prompt wrappers alter benchmark scores enough to flip leaderboard conclusions. *Faithful, Not Corrective* finds that structured message formats in multi-hop agent relays affect models differently across capability tiers, so blanket formatting can hurt reliability. A second trend is **AI-powered vertical applications with explainability**. The Toulmin-model paper decomposes medical image diagnosis into claims, grounds, and warrants to improve clinical trust. On the engineering side, tesseract.js brings browser-based OCR, meilisearch advances AI hybrid search, and PostHog plus Dapr continue strengthening developer data and distributed infrastructure.
+    Two main threads emerge today: democratization of edge AI capabilities and engineering for system reliability.<br><br>First, on-device OCR and local search are becoming practical hotspots. Tesseract.js trending as a pure JavaScript OCR library shows document understanding can run directly in browsers or Node environments without backends. CasaOS reflects the revival of personal cloud and local data management. Together, they point toward "local knowledge base + local recognition" as a mainstream pattern for small teams and individuals.<br><br>Second, LLM prompt formatting and agent collaboration robustness are entering deeper research territory. The arXiv paper on Format Sensitivity Index proposes token-controlled protocols to evaluate how prompt wrappers affect benchmark conclusions. Another paper on multi-hop agent relays shows message format effects are tier-dependent. When building complex AI pipelines, prompts, message schemas, and agent interfaces must be treated as versioned engineering assets, not just model inputs.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 自建 AI 搜索体验：用 meilisearch 的混合搜索能力升级产品检索，理由：降低用户找信息成本，快速见效。<br>- 审视提示工程评估：上线大模型功能前测试不同 prompt 格式，理由：格式差异可能导致指标虚高或误判。<br>- 多 Agent 接力设计：根据模型能力分层选择消息格式，理由：强制结构化可能在弱模型上降低信息保真度。<br>- 医疗/金融等高风险场景引入论证结构：用 claim-grounds-warrant 拆解 AI 决策，理由：提升可解释性，便于人工复核。<br>- 浏览器端 OCR 接入：用 tesseract.js 实现前端文档识别，理由：减少服务端依赖，降低隐私合规风险。</div>
+  <div>中文：<br>1. 在浏览器/小程序里直接集成 Tesseract.js 做身份证、合同 OCR，可减少服务端依赖与延迟。<br>2. 用 Meilisearch 替换传统搜索，为 RAG 应用提供语义 + 关键词混合检索，提升召回率。<br>3. 参考 Format Sensitivity Index 建立提示格式测试集，避免同一模型因包装不同导致效果波动。<br>4. 在多代理系统中统一消息 schema，像管理 API 版本一样管理代理间协议。<br>5. 关注医疗诊断论文中的 Toulmin 论证模型，可为高风险 AI 决策输出增加可解释结构。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Upgrade product search with meilisearch's hybrid AI search to reduce user friction.<br>- Test multiple prompt formats before deploying LLM features to avoid inflated metrics.<br>- Choose agent message formats based on model capability tiers to preserve fidelity.<br>- Use claim-grounds-warrant structures in high-stakes domains to improve explainability.<br>- Embed client-side OCR with tesseract.js to cut server costs and privacy risks.
+    1. Integrate Tesseract.js directly in browsers or mini-programs for ID or contract OCR to reduce server dependency and latency.<br>2. Replace traditional search with Meilisearch to provide hybrid semantic + keyword retrieval for RAG applications and improve recall.<br>3. Build a prompt-format test suite inspired by the Format Sensitivity Index to avoid performance variance caused by different wrappers.<br>4. Standardize message schemas in multi-agent systems and version inter-agent protocols like APIs.<br>5. Explore the Toulmin argumentation model from the medical diagnosis paper to add interpretable structure to high-stakes AI decision outputs.
   </div>
 </div>
 
