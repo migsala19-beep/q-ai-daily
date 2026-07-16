@@ -289,6 +289,6 @@
   },
   {
     "date": "2026-07-16",
-    "summary": "### 执行摘要\n中文：\n- 多模态 AI 数据湖格式 Lance 持续升温，向量检索与版本化成基建刚需。\n- LLM 评测进入\"格式敏感\"新维度，提示模板差异可颠覆排行榜结论。\n- 多跳智能体消息格式并非越结构化越好，需按任务层级选型。\n- 医疗诊断引入 Toulmin 论证模型，让模型预测具备可解释推理链。\n- 低代码/自托管后端工具（PocketBase、NocoDB）仍是开发者热捧方向。\n"
+    "summary": "### 执行摘要\n\n中文：\n- LLM 提示格式敏感性成新评估热点\n- 多模态 AI 数据湖格式 Lance 走红\n- 医疗诊断引入论证模型提升可解释性\n- 多智能体消息格式影响推理准确性\n- AI 产品集成与数据分析工具持续热门\n\nEnglish:\n- LLM prompt-format sensitivity becomes a new evaluation focus\n- Multimoda"
   }
 ]
