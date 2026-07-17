@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-17</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-17</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- AI可观测性成为Agent工程新基建。<br>- 训练数据溯源细化到记录与Token级。<br>- Agentic AI加速渗透机器人与物理系统。<br>- LLM思维链可信度审计方法涌现。<br>- HuggingFace与大厂博客今日无更新。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - AI observability becomes core infrastructure for agent engineering.<br>- Training data provenance advances to record and token level.<br>- Agentic AI accelerates into robots and physical systems.<br>- LLM chain-of-thought reliability auditing gains attention.<br>- HuggingFace and major tech blogs had no updates today.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯呈现两大趋势。其一是 **Agent 工程化与可观测性** 的加速成熟。PostHog 将自己定位为“自驱产品”平台，集中提供 AI 可观测性、会话回放、实验、错误追踪与日志等工具，本质上是在解决 Agent 系统失败时“黑箱不可诊断”的痛点。随着 Agent 从 demo 走向生产，能捕获全链路上下文、支持从 Slack/MCP 等入口介入的观测平台，将成为工程团队标配。其二是 **LLM 可信度与数据治理**。OriginBlame 将数据溯源粒度从文件/数据集级下沉到记录与 Token 级，直接回应数据贡献者删除请求与模型“遗忘”需求；Interventional Grounding Audits 则通过谓词替换干预，检验 CoT 推理是否真正依赖其声称的前提，这对发现“看似合理实则幻觉”的推理链至关重要。两者共同指向一个更严谨、可审计的 AI 生产范式。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out today. First, **Agent engineering and observability** are maturing rapidly. PostHog positions itself as a platform for self-driving products, consolidating AI observability, session replay, error tracking, and logging—tools that address the black-box diagnostic failure of agent systems. As agents move from demos to production, observability platforms capturing full context and supporting intervention via Slack or MCP will become standard. Second, **LLM trustworthiness and data governance** are gaining focus. OriginBlame pushes data provenance from file/dataset level down to record and token level, enabling precise unlearning and data-deletion requests. Interventional Grounding Audits test whether chain-of-thought reasoning truly depends on its stated premises by substituting predicates, exposing plausible but ungrounded reasoning. Together, these point toward a more rigorous, auditable AI production paradigm.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 建立 Agent 可观测性基线：参考 PostHog 聚合日志/回放/实验，统一追踪 Agent 决策路径，便于线上问题定位。<br>- 为训练数据引入溯源台账：借鉴 OriginBlame，记录每条数据到贡献者与 Token 的映射，提前应对删除与合规请求。<br>- 对关键 LLM 输出做推理审计：使用干预式前提替换测试，判断 CoT 是真实推理还是事后包装。<br>- 关注具身智能部署工具链：SPINE 提示大脑到物理平台仍有“脊髓鸿沟”，相关中间件与校准工具有机会。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Establish agent observability baselines: follow PostHog's approach of unifying logs, replay, and experiments to trace agent decision paths and speed up incident diagnosis.<br>- Add provenance tracking to training data: inspired by OriginBlame, map records and tokens to contributors to prepare for deletion and compliance requests.<br>- Audit LLM reasoning on critical outputs: use intervention-based premise substitution to check whether chain-of-thought is genuine reasoning or post-hoc justification.<br>- Watch embodied-AI deployment tooling: SPINE highlights the "spinal cord gap" between foundation-model brains and physical platforms, creating opportunities for middleware and calibration tools.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/PostHog/posthog" target="_blank" style="font-weight:600">PostHog/posthog</a>
+            <span style="color:#888;font-size:13px"> — 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/pocketbase/pocketbase" target="_blank" style="font-weight:600">pocketbase/pocketbase</a>
+            <span style="color:#888;font-size:13px"> — Open Source realtime backend in 1 file</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ripienaar/free-for-dev" target="_blank" style="font-weight:600">ripienaar/free-for-dev</a>
+            <span style="color:#888;font-size:13px"> — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/lima-vm/lima" target="_blank" style="font-weight:600">lima-vm/lima</a>
+            <span style="color:#888;font-size:13px"> — Linux virtual machines, with a focus on running containers</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/dapr/dapr" target="_blank" style="font-weight:600">dapr/dapr</a>
+            <span style="color:#888;font-size:13px"> — Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/OpenAPITools/openapi-generator" target="_blank" style="font-weight:600">OpenAPITools/openapi-generator</a>
+            <span style="color:#888;font-size:13px"> — OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13037" target="_blank" style="font-weight:600">OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13037v1 Announce Type: new 
+When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13049" target="_blank" style="font-weight:600">SPINE: Bridging the Cyber-Physical Gap with Agentic AI</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13049v1 Announce Type: new 
+Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands ted</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13069" target="_blank" style="font-weight:600">Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13069v1 Announce Type: new 
+Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce int</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13073" target="_blank" style="font-weight:600">Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13073v1 Announce Type: new 
+Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of int</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13104" target="_blank" style="font-weight:600">Self-Improvements in Modern Agentic Systems: A Survey</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13104v1 Announce Type: new 
+Self-improving autonomous agents are moving from research prototypes to deployed systems. The primary goal is controllable evolution, or adaptation, from experie</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.13115" target="_blank" style="font-weight:600">Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.13115v1 Announce Type: new 
+Small language models (SLMs) have shown promise for zero-shot molecular property prediction from SMILES strings, yet they often suffer from structural blindness </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-17 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

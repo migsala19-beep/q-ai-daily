@@ -290,5 +290,9 @@
   {
     "date": "2026-07-16",
     "summary": "### 执行摘要\n\n中文：\n- LLM 提示格式敏感性成新评估热点\n- 多模态 AI 数据湖格式 Lance 走红\n- 医疗诊断引入论证模型提升可解释性\n- 多智能体消息格式影响推理准确性\n- AI 产品集成与数据分析工具持续热门\n\nEnglish:\n- LLM prompt-format sensitivity becomes a new evaluation focus\n- Multimoda"
+  },
+  {
+    "date": "2026-07-17",
+    "summary": "### 执行摘要\n\n中文：\n- AI可观测性成为Agent工程新基建。\n- 训练数据溯源细化到记录与Token级。\n- Agentic AI加速渗透机器人与物理系统。\n- LLM思维链可信度审计方法涌现。\n- HuggingFace与大厂博客今日无更新。\n\nEnglish:\n- AI observability becomes core infrastructure for agent engin"
   }
 ]
