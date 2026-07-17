@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI可观测性成为Agent工程新基建。<br>- 训练数据溯源细化到记录与Token级。<br>- Agentic AI加速渗透机器人与物理系统。<br>- LLM思维链可信度审计方法涌现。<br>- HuggingFace与大厂博客今日无更新。</div>
+  <div>- AI 可观测性工具 PostHog 受关注，强化 Agent 诊断能力。<br>- arXiv 聚焦数据溯源、机器人代理与推理可解释性。<br>- 自主智能体自我改进成为研究热点。<br>- 开发者学习资源 build-your-own-x 持续流行。<br>- 云原生与分布式开发工具保持活跃。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - AI observability becomes core infrastructure for agent engineering.<br>- Training data provenance advances to record and token level.<br>- Agentic AI accelerates into robots and physical systems.<br>- LLM chain-of-thought reliability auditing gains attention.<br>- HuggingFace and major tech blogs had no updates today.
+    - AI observability tool PostHog gains traction for agent diagnostics.<br>- arXiv papers focus on data provenance, robotic agents, and reasoning interpretability.<br>- Self-improvement in autonomous agents emerges as a hot topic.<br>- Developer learning resource build-your-own-x remains popular.<br>- Cloud-native and distributed dev tools stay active.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯呈现两大趋势。其一是 **Agent 工程化与可观测性** 的加速成熟。PostHog 将自己定位为“自驱产品”平台，集中提供 AI 可观测性、会话回放、实验、错误追踪与日志等工具，本质上是在解决 Agent 系统失败时“黑箱不可诊断”的痛点。随着 Agent 从 demo 走向生产，能捕获全链路上下文、支持从 Slack/MCP 等入口介入的观测平台，将成为工程团队标配。其二是 **LLM 可信度与数据治理**。OriginBlame 将数据溯源粒度从文件/数据集级下沉到记录与 Token 级，直接回应数据贡献者删除请求与模型“遗忘”需求；Interventional Grounding Audits 则通过谓词替换干预，检验 CoT 推理是否真正依赖其声称的前提，这对发现“看似合理实则幻觉”的推理链至关重要。两者共同指向一个更严谨、可审计的 AI 生产范式。</div>
+  <div>今日趋势可归纳为两点：一是 AI Agent 的可观测性与可靠性，二是具身智能与神经符号推理的融合。<br><br>PostHog 作为领先的自驱产品平台，整合了 AI 可观测性、会话回放、实验和日志等功能，帮助开发者诊断 Agent 问题。这反映了当前 Agent 系统从"能跑"向"可监控、可审计"演进的趋势。随着多 Agent 系统复杂化，对调用链、错误追踪和性能分析的需求将持续增长。<br><br>在学术侧，SPINE 论文探讨如何用 Agentic AI 弥合网络物理鸿沟，将基础模型决策能力部署到实体机器人；而 OriginBlame 则提出记录与 token 级别的数据溯源方案，解决模型遗忘集定位难题。两者分别对应"Agent 如何安全落地物理世界"与"训练数据如何被追溯与治理"两大关键问题。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two trends stand out today. First, **Agent engineering and observability** are maturing rapidly. PostHog positions itself as a platform for self-driving products, consolidating AI observability, session replay, error tracking, and logging—tools that address the black-box diagnostic failure of agent systems. As agents move from demos to production, observability platforms capturing full context and supporting intervention via Slack or MCP will become standard. Second, **LLM trustworthiness and data governance** are gaining focus. OriginBlame pushes data provenance from file/dataset level down to record and token level, enabling precise unlearning and data-deletion requests. Interventional Grounding Audits test whether chain-of-thought reasoning truly depends on its stated premises by substituting predicates, exposing plausible but ungrounded reasoning. Together, these point toward a more rigorous, auditable AI production paradigm.
+    Two trends stand out. First, AI observability and reliability are maturing. PostHog exemplifies this by combining AI observability, session replay, experiments, and logging to help developers diagnose agent issues, reflecting the shift from "works" to "monitored and auditable" agent systems.<br><br>Second, embodied intelligence and neuro-symbolic reasoning are converging. The SPINE paper explores how Agentic AI can bridge the cyber-physical gap by deploying foundation models onto physical robots. Meanwhile, OriginBlame introduces record- and token-level data provenance to locate training records for model unlearning, addressing data governance and traceability.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 建立 Agent 可观测性基线：参考 PostHog 聚合日志/回放/实验，统一追踪 Agent 决策路径，便于线上问题定位。<br>- 为训练数据引入溯源台账：借鉴 OriginBlame，记录每条数据到贡献者与 Token 的映射，提前应对删除与合规请求。<br>- 对关键 LLM 输出做推理审计：使用干预式前提替换测试，判断 CoT 是真实推理还是事后包装。<br>- 关注具身智能部署工具链：SPINE 提示大脑到物理平台仍有“脊髓鸿沟”，相关中间件与校准工具有机会。</div>
+  <div>1. 为 Agent 项目接入可观测性平台（如 PostHog），记录调用链与错误日志，便于快速定位问题。<br>2. 关注数据溯源方案，为训练数据集建立作者级记录，提前应对合规与遗忘请求。<br>3. 评估具身智能应用落地场景，优先选择标准化、可控的物理环境。<br>4. 用 build-your-own-x 类项目锻炼团队底层工程能力，降低技术栈黑盒风险。<br>5. 引入推理审计机制，定期验证 CoT 是否真正依赖前提假设。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Establish agent observability baselines: follow PostHog's approach of unifying logs, replay, and experiments to trace agent decision paths and speed up incident diagnosis.<br>- Add provenance tracking to training data: inspired by OriginBlame, map records and tokens to contributors to prepare for deletion and compliance requests.<br>- Audit LLM reasoning on critical outputs: use intervention-based premise substitution to check whether chain-of-thought is genuine reasoning or post-hoc justification.<br>- Watch embodied-AI deployment tooling: SPINE highlights the "spinal cord gap" between foundation-model brains and physical platforms, creating opportunities for middleware and calibration tools.
+    1. Integrate observability platforms like PostHog into agent projects to trace calls and errors.<br>2. Adopt data provenance practices to track authorship-level records and prepare for compliance requests.<br>3. Evaluate embodied AI use cases in standardized, controllable physical environments first.<br>4. Use build-your-own-x projects to strengthen team fundamentals and reduce black-box risks.<br>5. Add reasoning audit mechanisms to verify whether chain-of-thought genuinely depends on premises.
   </div>
 </div>
 
