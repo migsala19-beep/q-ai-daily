@@ -297,6 +297,6 @@
   },
   {
     "date": "2026-07-18",
-    "summary": "### 执行摘要\n中文：\n- GitHub热门：低代码自动化与开发者工具持续升温。\n- n8n与PostHog受关注，AI可观测性与工作流成主线。\n- 论文聚焦：数据溯源、具身智能与Agent自提升。\n- 训练数据溯源（OriginBlame）回应版权与遗忘需求。\n- 神经符号与干预审计推进LLM可解释性研究。\n\nEnglish:\n- GitHub trending: low-code autom"
+    "summary": "### 执行摘要\n中文：\n- 今日 GitHub Trending 以开发者工具、自动化与可观测性为主。\n- PostHog 与 n8n 持续体现 AI Agent 与可视化工作流的融合趋势。\n- arXiv 多篇论文聚焦 Agentic AI、机器人与数据溯源。\n- 数据血缘（Data Provenance）和模型可解释性成为研究热点。\n- 动手实践类学习资源（build-your-own-x）"
   }
 ]
