@@ -294,5 +294,9 @@
   {
     "date": "2026-07-17",
     "summary": "### 执行摘要\n中文：\n- AI 可观测性工具 PostHog 受关注，强化 Agent 诊断能力。\n- arXiv 聚焦数据溯源、机器人代理与推理可解释性。\n- 自主智能体自我改进成为研究热点。\n- 开发者学习资源 build-your-own-x 持续流行。\n- 云原生与分布式开发工具保持活跃。\n\nEnglish:\n- AI observability tool PostHog gains "
+  },
+  {
+    "date": "2026-07-18",
+    "summary": "### 执行摘要\n中文：\n- GitHub热门：低代码自动化与开发者工具持续升温。\n- n8n与PostHog受关注，AI可观测性与工作流成主线。\n- 论文聚焦：数据溯源、具身智能与Agent自提升。\n- 训练数据溯源（OriginBlame）回应版权与遗忘需求。\n- 神经符号与干预审计推进LLM可解释性研究。\n\nEnglish:\n- GitHub trending: low-code autom"
   }
 ]
