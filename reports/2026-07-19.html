@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI 可观测性成 GitHub 热点，MCP 集成加速。<br>- PostHog、SigNoz 双雄并起，争抢 AI Agent 监控赛道。<br>- 端到端加密云 ente 上榜，隐私安全需求升温。<br>- 自学编程项目 build-your-own-x 持续高热，AI 教育工具受关注。<br>- 大厂博客与论文今日无新增，需警惕数据盲区。</div>
+  <div>- AI 可观测性工具崛起，PostHog 与 SigNoz 领跑<br>- 大模型 Agent 可观测性成为开发者刚需<br>- "从零造轮子"教育项目持续热门，强化基础<br>- 端到端加密云存储（Ente）受隐私驱动<br>- 跨平台 UI 与本地虚拟化仍具活跃生态</div>
   <div class="en">
     <div class="en-title">English</div>
-    - AI observability dominates GitHub Trending, with MCP integration accelerating.<br>- PostHog and SigNoz emerge as key players in AI Agent monitoring.<br>- End-to-end encrypted cloud ente trends, signaling rising privacy demand.<br>- build-your-own-x stays hot, highlighting continued interest in AI-assisted education.<br>- Big-tech blogs and arXiv are empty today, creating a data gap.
+    - AI observability tooling rises, led by PostHog and SigNoz<br>- LLM-agent observability becomes a developer must-have<br>- "Build your own X" education projects remain highly popular<br>- End-to-end encrypted cloud (Ente) gains privacy-driven traction<br>- Cross-platform UI and local virtualization ecosystems stay active
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日 GitHub Trending 最突出的方向是「AI 可观测性（AI Observability）」。PostHog 与 SigNoz 同时上榜，两者都在传统日志、指标、追踪之外，强调为 AI Agent 提供上下文丰富的诊断能力。PostHog 将 AI 可观测性、会话回放、实验、错误追踪整合为「self-driving products」的开发者工具栈，并支持通过 MCP 从 Slack 或桌面端调用。SigNoz 则走 OpenTelemetry 原生路线，提供 logs、metrics、traces 一体化，并配套 SigNoz MCP 与云端 AI teammate。这反映出一个趋势：随着 AI Agent 从原型进入生产环境，开发者迫切需要「Agent 做了什么、为什么失败、如何修复」的可观测闭环。MCP 作为标准化接口，正在成为连接可观测性平台与 LLM/Agent 的默认协议。另一个值得注意的方向是隐私基础设施：ente 以端到端加密云上榜，表明在 AI 时代数据集中化风险加剧的背景下，隐私优先的存储与协作工具正在获得开发者关注。</div>
+  <div>今日 GitHub Trending 中最突出的是 AI 可观测性（AI Observability）赛道。PostHog 与 SigNoz 同时上榜，均强调为 AI Agent 提供日志、指标、追踪、错误分析等上下文能力，并通过 MCP 与 Slack 等协作工具集成。这一趋势反映：随着 LLM Agent 进入生产环境，"可观测"正从传统 APM 升级为 Agent 推理链、工具调用、成本与反馈的端到端追踪。PostHog 以产品分析+实验+会话回放起家，SigNoz 以 OpenTelemetry-native 开源可观测平台切入，两者都在把原有能力包装成 Agent 友好的诊断接口。另一个方向是"造轮子学习"——build-your-own-x 长期热门，说明开发者在 AI 代码生成时代反而更重视底层原理，以对抗黑箱依赖。建议关注：PostHog 的 MCP 集成、SigNoz 的 OpenTelemetry 链路、以及 LLM Tracing 在成本归因上的落地。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The clearest trend in today's GitHub Trending is AI observability. Both PostHog and SigNoz climbed the list by positioning themselves around monitoring AI agents, not just traditional applications. PostHog bundles AI observability, session replay, experiments, and error tracking into a "self-driving products" stack, accessible via MCP from Slack or desktop. SigNoz takes an OpenTelemetry-native approach, unifying logs, metrics, and traces, plus SigNoz MCP and a cloud AI teammate. This signals a broader shift: as AI agents move from prototypes to production, developers need closed-loop observability showing what agents did, why they failed, and how to fix them. MCP is becoming the default protocol linking observability platforms to LLMs and agents. A secondary trend is privacy infrastructure: ente's end-to-end encrypted cloud trending shows developer interest in privacy-first storage amid growing concerns about AI-era data centralization.
+    The standout trend in today's GitHub Trending is AI observability. PostHog and SigNoz both rank, each emphasizing logs, metrics, traces, and error analysis for AI agents, integrated via MCP and Slack. This reflects a shift: as LLM agents move to production, observability is evolving from traditional APM to end-to-end tracing of agent reasoning chains, tool calls, costs, and feedback. PostHog brings product analytics, experiments, and session replay; SigNoz brings an OpenTelemetry-native open-source observability stack. Both are repackaging their core capabilities into agent-friendly diagnostic interfaces. A second direction is "build your own X" education: despite AI code generation, developers value understanding fundamentals to avoid black-box dependence. Watch PostHog's MCP integration, SigNoz's OpenTelemetry pipelines, and LLM tracing for cost attribution.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 在 AI Agent 项目中接入 OpenTelemetry 与 MCP，提前建立可观测性基线。理由：生产级 Agent 必须可追溯、可调试。<br>- 评估 PostHog 或 SigNoz 作为产品分析+AI 可观测性的统一平台。理由：两者已覆盖日志、指标、追踪、实验，可减少工具碎片化。<br>- 关注端到端加密方案，为处理敏感数据的 AI 应用准备隐私合规能力。理由：ente 上榜说明隐私已成差异化卖点。<br>- 用 build-your-own-x 类项目训练团队底层理解力。理由：AI 辅助编码时代，基础原理反而更重要。<br>- 补齐数据源监控，避免 arXiv/HuggingFace/大厂博客为空时误判行业热度。理由：今日数据明显偏斜 GitHub。</div>
+  <div>- 给 AI Agent 项目接入 OpenTelemetry/SigNoz 追踪，实现推理链可观测<br>- 在产品中内嵌用户反馈与实验开关，参考 PostHog 的 Feature Flags<br>- 用 build-your-own-x 选题训练团队底层工程能力，减少黑箱依赖<br>- 关注 MCP 协议，把内部工具封装成 Agent 可调用的标准接口<br>- 评估端到端加密方案（如 Ente）用于敏感数据资产存储</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Integrate OpenTelemetry and MCP into AI Agent projects early to establish observability baselines. Rationale: production agents must be traceable and debuggable.<br>- Evaluate PostHog or SigNoz as unified analytics and AI observability platforms. Rationale: both cover logs, metrics, traces, and experiments, reducing tool fragmentation.<br>- Consider end-to-end encryption for AI applications handling sensitive data. Rationale: ente trending shows privacy is becoming a competitive differentiator.<br>- Use build-your-own-x style projects to strengthen team fundamentals. Rationale: in the age of AI-assisted coding, core principles matter more than ever.<br>- Diversify data sources to avoid skewing industry heat when arXiv/HuggingFace/big-tech blogs are empty. Rationale: today's data is heavily GitHub-biased.
+    - Add OpenTelemetry/SigNoz tracing to AI agent projects for observable reasoning chains<br>- Embed user feedback and feature flags in products, following PostHog's approach<br>- Use build-your-own-x topics to train team fundamentals and reduce black-box dependence<br>- Watch the MCP protocol and expose internal tools as standard agent-callable interfaces<br>- Evaluate end-to-end encrypted storage like Ente for sensitive data assets
   </div>
 </div>
 
