@@ -298,5 +298,9 @@
   {
     "date": "2026-07-18",
     "summary": "### 执行摘要\n中文：\n- 今日 GitHub Trending 以开发者工具、自动化与可观测性为主。\n- PostHog 与 n8n 持续体现 AI Agent 与可视化工作流的融合趋势。\n- arXiv 多篇论文聚焦 Agentic AI、机器人与数据溯源。\n- 数据血缘（Data Provenance）和模型可解释性成为研究热点。\n- 动手实践类学习资源（build-your-own-x）"
+  },
+  {
+    "date": "2026-07-19",
+    "summary": "### 执行摘要\n中文：\n- AI 可观测性成 GitHub 热点，MCP 集成加速。\n- PostHog、SigNoz 双雄并起，争抢 AI Agent 监控赛道。\n- 端到端加密云 ente 上榜，隐私安全需求升温。\n- 自学编程项目 build-your-own-x 持续高热，AI 教育工具受关注。\n- 大厂博客与论文今日无新增，需警惕数据盲区。\n\nEnglish:\n- AI observa"
   }
 ]

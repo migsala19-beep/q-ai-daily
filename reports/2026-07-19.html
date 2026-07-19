@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-19</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-19</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- AI 可观测性成 GitHub 热点，MCP 集成加速。<br>- PostHog、SigNoz 双雄并起，争抢 AI Agent 监控赛道。<br>- 端到端加密云 ente 上榜，隐私安全需求升温。<br>- 自学编程项目 build-your-own-x 持续高热，AI 教育工具受关注。<br>- 大厂博客与论文今日无新增，需警惕数据盲区。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - AI observability dominates GitHub Trending, with MCP integration accelerating.<br>- PostHog and SigNoz emerge as key players in AI Agent monitoring.<br>- End-to-end encrypted cloud ente trends, signaling rising privacy demand.<br>- build-your-own-x stays hot, highlighting continued interest in AI-assisted education.<br>- Big-tech blogs and arXiv are empty today, creating a data gap.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日 GitHub Trending 最突出的方向是「AI 可观测性（AI Observability）」。PostHog 与 SigNoz 同时上榜，两者都在传统日志、指标、追踪之外，强调为 AI Agent 提供上下文丰富的诊断能力。PostHog 将 AI 可观测性、会话回放、实验、错误追踪整合为「self-driving products」的开发者工具栈，并支持通过 MCP 从 Slack 或桌面端调用。SigNoz 则走 OpenTelemetry 原生路线，提供 logs、metrics、traces 一体化，并配套 SigNoz MCP 与云端 AI teammate。这反映出一个趋势：随着 AI Agent 从原型进入生产环境，开发者迫切需要「Agent 做了什么、为什么失败、如何修复」的可观测闭环。MCP 作为标准化接口，正在成为连接可观测性平台与 LLM/Agent 的默认协议。另一个值得注意的方向是隐私基础设施：ente 以端到端加密云上榜，表明在 AI 时代数据集中化风险加剧的背景下，隐私优先的存储与协作工具正在获得开发者关注。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    The clearest trend in today's GitHub Trending is AI observability. Both PostHog and SigNoz climbed the list by positioning themselves around monitoring AI agents, not just traditional applications. PostHog bundles AI observability, session replay, experiments, and error tracking into a "self-driving products" stack, accessible via MCP from Slack or desktop. SigNoz takes an OpenTelemetry-native approach, unifying logs, metrics, and traces, plus SigNoz MCP and a cloud AI teammate. This signals a broader shift: as AI agents move from prototypes to production, developers need closed-loop observability showing what agents did, why they failed, and how to fix them. MCP is becoming the default protocol linking observability platforms to LLMs and agents. A secondary trend is privacy infrastructure: ente's end-to-end encrypted cloud trending shows developer interest in privacy-first storage amid growing concerns about AI-era data centralization.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 在 AI Agent 项目中接入 OpenTelemetry 与 MCP，提前建立可观测性基线。理由：生产级 Agent 必须可追溯、可调试。<br>- 评估 PostHog 或 SigNoz 作为产品分析+AI 可观测性的统一平台。理由：两者已覆盖日志、指标、追踪、实验，可减少工具碎片化。<br>- 关注端到端加密方案，为处理敏感数据的 AI 应用准备隐私合规能力。理由：ente 上榜说明隐私已成差异化卖点。<br>- 用 build-your-own-x 类项目训练团队底层理解力。理由：AI 辅助编码时代，基础原理反而更重要。<br>- 补齐数据源监控，避免 arXiv/HuggingFace/大厂博客为空时误判行业热度。理由：今日数据明显偏斜 GitHub。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Integrate OpenTelemetry and MCP into AI Agent projects early to establish observability baselines. Rationale: production agents must be traceable and debuggable.<br>- Evaluate PostHog or SigNoz as unified analytics and AI observability platforms. Rationale: both cover logs, metrics, traces, and experiments, reducing tool fragmentation.<br>- Consider end-to-end encryption for AI applications handling sensitive data. Rationale: ente trending shows privacy is becoming a competitive differentiator.<br>- Use build-your-own-x style projects to strengthen team fundamentals. Rationale: in the age of AI-assisted coding, core principles matter more than ever.<br>- Diversify data sources to avoid skewing industry heat when arXiv/HuggingFace/big-tech blogs are empty. Rationale: today's data is heavily GitHub-biased.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/PostHog/posthog" target="_blank" style="font-weight:600">PostHog/posthog</a>
+            <span style="color:#888;font-size:13px"> — 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/darkroomengineering/lenis" target="_blank" style="font-weight:600">darkroomengineering/lenis</a>
+            <span style="color:#888;font-size:13px"> — Smooth scroll as it should be</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ente/ente" target="_blank" style="font-weight:600">ente/ente</a>
+            <span style="color:#888;font-size:13px"> — 💚 End-to-end encrypted cloud for everything.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/SigNoz/signoz" target="_blank" style="font-weight:600">SigNoz/signoz</a>
+            <span style="color:#888;font-size:13px"> — SigNoz is an open-source, OpenTelemetry-native observability platform for your team and their AI agents. Get logs, metrics, and traces in one tool with features like APM, distributed tracing, log management, infra monitoring, etc. Combined with SigNoz MCP and a native AI teammate (in SigNoz Cloud) it helps you build more resilient apps.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/microsoft-ui-xaml" target="_blank" style="font-weight:600">microsoft/microsoft-ui-xaml</a>
+            <span style="color:#888;font-size:13px"> — WinUI: a modern UI framework with a rich set of controls and styles to build dynamic and high-performing Windows applications.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Expensify/App" target="_blank" style="font-weight:600">Expensify/App</a>
+            <span style="color:#888;font-size:13px"> — Welcome to New Expensify: a complete re-imagination of financial collaboration, centered around chat. Help us build the next generation of Expensify by sharing feedback and contributing to the code.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/lima-vm/lima" target="_blank" style="font-weight:600">lima-vm/lima</a>
+            <span style="color:#888;font-size:13px"> — Linux virtual machines, with a focus on running containers</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-19 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
