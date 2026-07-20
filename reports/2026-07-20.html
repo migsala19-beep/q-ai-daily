@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- PostHog 与 SigNoz 双双指向 AI 可观测性基建<br>- MCP 协议正成为观测工具与 Agent 的连接器<br>- GitHub 热点回归工程效率与底层工具<br>- 论文、HuggingFace 与大厂博客今日为空<br>- 建议明日补充多源数据以避免信息偏斜</div>
+  <div>- PostHog 与 SigNoz 引领 AI 可观测性趋势。<br>- 两大平台均原生支持 AI Agent 与 MCP。<br>- “自驱动产品”成为产品工程新目标。<br>- 可观测性工具从监控转向智能诊断与修复。<br>- 开源可观测性生态正与 AI 工作流深度融合。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - PostHog and SigNoz both signal AI observability infrastructure<br>- MCP protocol is becoming the connector between observability tools and agents<br>- GitHub trends shift back to engineering efficiency and foundational tools<br>- arXiv, HuggingFace, and big tech blogs are empty today<br>- Supplement multi-source data tomorrow to avoid information bias
+    - PostHog and SigNoz lead the AI observability trend.<br>- Both platforms natively support AI agents and MCP.<br>- "Self-driving products" emerges as a new engineering goal.<br>- Observability shifts from monitoring to intelligent diagnosis and fixes.<br>- Open-source observability is merging deeply with AI workflows.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日 GitHub Trending 最突出的 AI 相关信号是 Agent 可观测性。PostHog 与 SigNoz 同时上榜，且两者描述都明确提到 AI observability、MCP 集成与 AI Agent 支持。这反映一个关键趋势：随着 LLM Agent 从原型走向生产，"可观测性"正成为 AI 工程的新瓶颈——没有 trace、log、metric 与会话回放，Agent 的幻觉、失败与性能退化难以被定位。PostHog 提供分析、回放、错误追踪、日志等一体化套件，让 Agent 能够自我诊断；SigNoz 则基于 OpenTelemetry，通过 MCP 与 AI 队友协作，降低分布式追踪门槛。两者共同指向"可观测性即 Agent 基础设施"的方向。此外，vlang/v、Swift、NixOS 等语言/包管理工具上榜，说明开发者仍在追求高性能、可维护的底层工程能力，而非只追逐应用层热点。</div>
+  <div>中文：<br>今日 GitHub Trending 中，AI 可观测性（AI Observability）与“自驱动产品”（Self-Driving Products）是两条最值得关注的主线。PostHog 将自己定位为构建自驱动产品的领先平台，其开发者工具集涵盖 AI 可观测性、分析、会话回放、实验、错误追踪和日志等，目标是让 AI Agent 拥有诊断问题、发现机会并发布修复所需的完整上下文。更值得注意是，其支持通过 Slack、Web、桌面以及 MCP 进行统一控制，这意味着它正从一个分析平台进化为 AI Agent 的“操作中枢”。<br><br>另一条主线由 SigNoz 代表。作为开源、OpenTelemetry 原生的可观测性平台，SigNoz 不仅提供日志、指标和链路追踪，还强调其 MCP 和原生 AI 队友能力，帮助团队构建更具韧性的 AI 应用。PostHog 与 SigNoz 共同说明：可观测性不再只是“事后查看”，而是成为 AI Agent 实时决策与自动化修复的基础设施。这一趋势对希望用 AI 提升产品可靠性、加速迭代周期的工程团队具有直接参考价值。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The strongest AI-related signal in today's GitHub Trending is agent observability. PostHog and SigNoz both trended, and their descriptions explicitly mention AI observability, MCP integration, and AI Agent support. This reflects a key trend: as LLM Agents move from prototypes to production, observability is becoming the new bottleneck in AI engineering. Without traces, logs, metrics, and session replay, it is hard to pinpoint agent hallucinations, failures, and performance degradation. PostHog offers an integrated suite of analytics, replay, error tracking, and logs to enable self-diagnosis. SigNoz, built on OpenTelemetry, collaborates with AI teammates via MCP to lower the barrier to distributed tracing. Together, they point to "observability as agent infrastructure." Meanwhile, repos like vlang/v, Swift, and NixOS trending indicate developers remain focused on high-performance, maintainable foundational engineering tools rather than just application-layer hype.
+    Today's GitHub Trending highlights two key trends: AI observability and "self-driving products." PostHog positions itself as the leading platform for self-driving products, offering a suite of developer tools including AI observability, analytics, session replay, experiments, error tracking, and logs. Its goal is to give AI agents full context to diagnose problems, uncover opportunities, and ship fixes. The support for Slack, web, desktop, and MCP control indicates it is evolving from an analytics platform into an AI agent operations hub.<br><br>SigNoz represents the second trend. As an open-source, OpenTelemetry-native observability platform, SigNoz provides logs, metrics, and traces while emphasizing MCP integration and a native AI teammate to help teams build more resilient AI applications. Together, PostHog and SigNoz show that observability is shifting from passive monitoring to active infrastructure for AI agent decision-making and automated remediation. Engineering teams aiming to improve reliability and accelerate iteration with AI should closely monitor this direction.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 接入 OpenTelemetry + MCP 做 Agent 观测：理由：生产级 Agent 必须有 trace/log/metric 才能定位幻觉与失败。<br>2. 评估 PostHog 或 SigNoz 作为统一观测后端：理由：两者已支持 AI 场景，可减少自建成本。<br>3. 用 build-your-own-x 复现核心系统加深理解：理由：从底层实现学习比单纯调 API 更稳固。<br>4. 关注 NixOS/Swift 等工程工具以降低维护成本：理由：长期项目依赖可复现、可维护的环境。<br>5. 补充 arXiv/HuggingFace/大厂博客作为固定信源：理由：今日这些信源为空，单一数据源会遗漏重要研究。</div>
+  <div>中文：<br>1. 评估现有可观测性栈是否支持 AI Agent 上下文注入。理由：未来 AI 修复依赖完整上下文。<br>2. 在 PostHog/SigNoz 中试点 MCP 接入，让 AI Agent 能直接查询产品数据。理由：MCP 正成为 AI 工具连接标准。<br>3. 为产品建立“自驱动”指标看板，从监控迈向自动诊断。理由：PostHog 的“自驱动产品”代表新工程目标。<br>4. 引入 OpenTelemetry 埋点，统一日志、指标与链路。理由：SigNoz 证明 OTel 是 AI 可观测性的基础。<br>5. 让 AI Agent 拥有错误追踪与实验数据访问权限。理由：这能缩短从发现问题到发布修复的周期。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Adopt OpenTelemetry + MCP for agent observability: Reason: Production-grade agents need traces, logs, and metrics to diagnose hallucinations and failures.<br>2. Evaluate PostHog or SigNoz as a unified observability backend: Reason: Both already support AI scenarios and reduce in-house build costs.<br>3. Use build-your-own-x to recreate core systems for deeper understanding: Reason: Learning from implementations is more solid than just calling APIs.<br>4. Watch engineering tools like NixOS and Swift to reduce maintenance costs: Reason: Long-term projects benefit from reproducible, maintainable environments.<br>5. Supplement arXiv, HuggingFace, and major tech blogs as fixed sources: Reason: These sources are empty today, and relying on a single data source misses important research.
+    1. Assess whether your current observability stack supports AI agent context injection. Rationale: future AI remediation relies on full context.<br>2. Pilot MCP integration in PostHog or SigNoz so AI agents can query product data directly. Rationale: MCP is becoming the standard for AI tool connectivity.<br>3. Build a "self-driving" metrics dashboard for your product, moving from monitoring to automated diagnosis. Rationale: PostHog's "self-driving products" signals a new engineering goal.<br>4. Adopt OpenTelemetry instrumentation to unify logs, metrics, and traces. Rationale: SigNoz shows OTel is the foundation of AI observability.<br>5. Grant AI agents access to error tracking and experiment data. Rationale: this shortens the cycle from issue detection to shipped fix.
   </div>
 </div>
 
