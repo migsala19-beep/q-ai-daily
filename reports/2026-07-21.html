@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-21</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-21</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>1. 多智能体诊断与因果推理成新热点<br>2. 本地隐私优先AI助手加速落地<br>3. AI可观测性工具PostHog热度居首<br>4. 医疗专用模型Cura 1T引发关注<br>5. 全栈与后端开源工具持续活跃</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Multi-agent diagnosis and causal reasoning gain momentum.<br>2. Local, privacy-first AI assistants are accelerating.<br>3. PostHog leads AI observability and product analytics.<br>4. Healthcare-focused models like Cura 1T draw attention.<br>5. Full-stack and backend open-source tools stay active.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯最显著的趋势是**多智能体医疗诊断与可解释因果推理**的融合。GraphDx提出成本感知、知识增强的多智能体序列诊断框架，试图弥合大模型医学知识与临床推理之间的鸿沟；Causal-Audit则通过目标感知因果链构建，让模型在干预式问答中给出可审计的图推理路径，这对高风险的医疗和金融决策尤为重要。Cura 1T作为面向医疗的专用模型，进一步说明垂直领域需要更懂患者沟通、临床推理与影像理解的Agent。<br><br>另一个值得关注的方向是**本地隐私优先AI助手**。AnovaX展示了一款完全运行在用户电脑上的多智能体语音助手，采用LLM规划、类型化执行器和自适应恢复机制，无需将音频上传云端。这与近期对数据隐私和边缘算力的关注高度契合，也为企业本地知识库助手提供了新思路。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's data highlights two converging trends: **multi-agent medical diagnosis and explainable causal reasoning**. GraphDx introduces a cost-aware, knowledge-enhanced multi-agent framework for sequential diagnosis, bridging the gap between LLM medical knowledge and clinical reasoning. Causal-Audit builds target-aware causal chains to make intervention-based QA auditable via graph reasoning—critical for high-stakes healthcare and financial decisions. Meanwhile, Cura 1T demonstrates the need for domain-specific healthcare models capable of patient consultation, clinical reasoning, and image understanding.<br><br>A second key direction is **local, privacy-first AI assistants**. AnovaX is a fully on-device multi-agent voice assistant using LLM planning, typed executors, and adaptive recovery, avoiding cloud audio upload. This aligns with growing privacy concerns and edge-computing demand, offering a blueprint for enterprise on-premise knowledge assistants.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. **评估PostHog做AI产品可观测性基建**：它整合会话回放、实验、错误追踪和日志，能帮AI产品团队快速定位Agent失效环节。<br>2. **跟踪医疗多智能体与因果推理进展**：GraphDx和Causal-Audit代表的可解释诊断，适合作为医疗AI落地的风控参考。<br>3. **尝试本地语音/助手方案**：AnovaX的思路可用于构建企业内网知识助手，避免敏感数据上云。<br>4. **用build-your-own-x补底层认知**：AI工程师可通过重写经典系统来理解模型、编译器和数据库等核心机制。<br>5. **pocketbase或dioxus适合快速做MVP**：单文件后端加Rust全栈框架，能以低复杂度验证AI应用原型。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Evaluate PostHog for AI product observability**: its unified session replay, experiments, error tracking, and logs help diagnose agent failures quickly.<br>2. **Monitor multi-agent medical diagnosis and causal reasoning**: GraphDx and Causal-Audit offer reference architectures for safer, explainable healthcare AI.<br>3. **Experiment with local voice-assistant stacks**: AnovaX's approach fits on-premise enterprise knowledge assistants, keeping sensitive data off the cloud.<br>4. **Use build-your-own-x to deepen fundamentals**: rebuilding classic systems improves understanding of models, compilers, and databases.<br>5. **Prototype with pocketbase or dioxus**: a single-file backend plus a Rust full-stack framework lowers the complexity of validating AI app ideas.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/PostHog/posthog" target="_blank" style="font-weight:600">PostHog/posthog</a>
+            <span style="color:#888;font-size:13px"> — 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/pocketbase/pocketbase" target="_blank" style="font-weight:600">pocketbase/pocketbase</a>
+            <span style="color:#888;font-size:13px"> — Open Source realtime backend in 1 file</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/DioxusLabs/dioxus" target="_blank" style="font-weight:600">DioxusLabs/dioxus</a>
+            <span style="color:#888;font-size:13px"> — Fullstack app framework for web, desktop, and mobile.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/PaperMC/Paper" target="_blank" style="font-weight:600">PaperMC/Paper</a>
+            <span style="color:#888;font-size:13px"> — The most widely used, high performance Minecraft server that aims to fix gameplay and mechanics inconsistencies</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/seerr-team/seerr" target="_blank" style="font-weight:600">seerr-team/seerr</a>
+            <span style="color:#888;font-size:13px"> — Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Jackett/Jackett" target="_blank" style="font-weight:600">Jackett/Jackett</a>
+            <span style="color:#888;font-size:13px"> — API Support for your favorite torrent trackers</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/frappe/books" target="_blank" style="font-weight:600">frappe/books</a>
+            <span style="color:#888;font-size:13px"> — Free Accounting Software</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15280" target="_blank" style="font-weight:600">GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15280v1 Announce Type: new 
+Sequential diagnosis requires balancing diagnostic accuracy against resource costs through iterative information gathering. Existing Large Language Model (LLM) a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15281" target="_blank" style="font-weight:600">Causal-Audit: Explicit and Auditable Graph-based Reasoning via Target-Aware Causal Chain Construction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15281v1 Announce Type: new 
+Causal and intervention-based question answering is fundamental to advancing large language models (LLMs) toward reasoning beyond surface-level correlations and </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15314" target="_blank" style="font-weight:600">Cura 1T: Specialized Model for Agentic Healthcare</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15314v1 Announce Type: new 
+Healthcare spans high-stakes communication, expert reasoning, and workflow execution, yet specialized LLMs that cover these use cases together remain limited. A </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15367" target="_blank" style="font-weight:600">AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15367v1 Announce Type: new 
+Desktop voice assistants are still dominated by cloud pipelines that ship raw audio off the machine and expose a fixed set of skills. We describe AnovaX, a small</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15388" target="_blank" style="font-weight:600">Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15388v1 Announce Type: new 
+Many math- and science-oriented agent systems use hierarchical designs with specialized reviewer roles, assuming that a dedicated review stage should help turn w</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.15418" target="_blank" style="font-weight:600">DrawingVQA: A Real-World Benchmark for Multi-Depth Visual-Textual Reasoning on Construction Drawings</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.15418v1 Announce Type: new 
+We introduce DrawingVQA, the first benchmark designed to evaluate multimodal large language models (MLLMs) on real-world construction drawings -- a core media in</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-21 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

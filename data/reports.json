@@ -306,5 +306,9 @@
   {
     "date": "2026-07-20",
     "summary": "### 执行摘要\n中文：\n- PostHog 与 SigNoz 引领 AI 可观测性趋势。\n- 两大平台均原生支持 AI Agent 与 MCP。\n- “自驱动产品”成为产品工程新目标。\n- 可观测性工具从监控转向智能诊断与修复。\n- 开源可观测性生态正与 AI 工作流深度融合。\n\nEnglish:\n- PostHog and SigNoz lead the AI observability tr"
+  },
+  {
+    "date": "2026-07-21",
+    "summary": "### 执行摘要\n中文：\n1. 多智能体诊断与因果推理成新热点\n2. 本地隐私优先AI助手加速落地\n3. AI可观测性工具PostHog热度居首\n4. 医疗专用模型Cura 1T引发关注\n5. 全栈与后端开源工具持续活跃\n\nEnglish:\n1. Multi-agent diagnosis and causal reasoning gain momentum.\n2. Local, privacy-"
   }
 ]
