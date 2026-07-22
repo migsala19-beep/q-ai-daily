@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>• RLHF 数据标注者心理状态会污染偏好标签，需审计框架纠偏。<br>• 部分大语言模型表现出稳定的风险态度，影响高 stakes 决策可信度。<br>• 多智能体 LLM 系统在规划阶段易受提示注入攻击。<br>• 大厂博客与 HuggingFace 今日无新数据，可观察性受限。</div>
+  <div>- 多智能体LLM安全威胁引关注（PlanFlip）<br>- RLHF标注者状态偏差被新框架揭示<br>- 大模型风险态度呈现一致性与决策偏向<br>- 开源AI基建持续活跃（Megatron、模型动物园）<br>- GNN链路预测综述提供系统技术图谱</div>
   <div class="en">
     <div class="en-title">English</div>
-    • Rater state bias in RLHF preference data calls for audit frameworks.<br>• Some LLMs show consistent risk attitudes, affecting high-stakes decision reliability.<br>• Multi-agent LLM systems are vulnerable to planning-phase prompt injection.<br>• Big-tech blogs and HuggingFace returned no new items today, limiting visibility.
+    - Multi-agent LLM security risks gain attention (PlanFlip)<br>- RLHF rater state bias uncovered by a new audit framework<br>- LLMs exhibit consistent risk attitudes in decision-making<br>- Open-source AI infrastructure stays active (Megatron, PINTO model zoo)<br>- New survey maps the GNN-based link prediction landscape
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯最集中的方向是“大模型对齐与安全评估”。arXiv 论文《Rater State Bias in RLHF Preference Data: An Audit Framework》指出，RLHF 偏好标注不仅反映回答质量，也受标注者持续压力或情绪状态污染，这会导致奖励模型学到混杂信号，是现有对齐流程的结构性盲点。另一篇《Some Large Language Models Exhibit Consistent Risk Attitudes》则发现部分 LLM 在面对风险选择时呈现系统性倾向，这对金融、医疗、自动驾驶等开放场景的应用是重要预警。GitHub 上 NVIDIA/Megatron-LM 持续更新大规模 Transformer 训练代码，显示预训练基础设施仍是社区焦点；PINTO_model_zoo 则提供跨框架模型转换资源，降低边缘部署门槛。综合来看，前沿研究开始更关注“人在回路中的不可控因素”与“模型决策心理属性”，而工程侧仍在推进训练与部署效率。</div>
+  <div>今日arXiv论文揭示两个关键方向。一是多智能体LLM系统的安全风险加剧。PlanFlip提出在规划阶段注入提示攻击，可在协作代理中篡改任务目标。这提醒：随着AutoGPT、Devin等代理框架落地，"代理间通信"成为新的攻击面，需在设计阶段加入输入验证与意图对齐。二是RLHF数据质量隐患。Rater State Bias研究指出，标注者的情绪、压力状态会系统性污染偏好标签，导致模型学到"人的状态偏差"而非真实质量差异。案例显示，即便相同回答对，不同情绪状态下标注结果可能不一致。这意味着依赖人工偏好的对齐流程需要更严格的审计框架与状态控制，否则模型可能在关键决策中放大人类非理性。两大方向共同指向：AI系统越复杂，其"社会-技术"层面的脆弱性越需要被前置治理。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today's strongest theme is "LLM alignment and safety evaluation." The arXiv paper "Rater State Bias in RLHF Preference Data: An Audit Framework" shows that preference labels are not only shaped by response quality but also by annotators' sustained stress or emotional states, creating a structural confound in reward modeling. Separately, "Some Large Language Models Exhibit Consistent Risk Attitudes" finds that certain LLMs display systematic risk preferences, which has implications for high-stakes domains like finance, healthcare, and autonomous systems. On GitHub, NVIDIA/Megatron-LM continues to advance large-scale Transformer training, while PINTO_model_zoo supports cross-framework model conversion for edge deployment. Overall, frontier research is increasingly focusing on human-in-the-loop contamination and the psychological properties of model decisions, while engineering efforts remain centered on training and deployment efficiency.
+    Two directions stand out. First, multi-agent LLM security is becoming critical. The PlanFlip paper demonstrates planning-phase prompt injection that can subvert collaborative agents' goals. As frameworks like AutoGPT and coding agents deploy in production, inter-agent communication becomes a new attack surface. Defenders must validate planning inputs and align agent intent early. Second, RLHF data quality is under scrutiny. The Rater State Bias paper shows that annotators' emotional or stress states systematically contaminate preference labels, making models learn human-state artifacts rather than true quality differences. Even identical response pairs can receive different labels depending on rater mood. This implies that alignment pipelines relying on human preference need rigorous audit frameworks and state controls, otherwise models may amplify human irrationality in high-stakes decisions. Together, these trends suggest that as AI systems grow more complex, their socio-technical vulnerabilities require proactive governance.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>中文：<br>1. 在 RLHF 项目中引入标注者状态问卷，降低偏好标签噪声。  <br>   理由：心理状态会系统性偏置奖励模型，早期审计成本远低于事后修复。<br>2. 对用于高风险决策的 LLM 增加风险倾向测试。  <br>   理由：模型若对风险有稳定偏好，会放大业务决策偏差。<br>3. 为多智能体 Agent 系统设计规划阶段输入隔离。  <br>   理由：PlanFlip 证明攻击可在规划阶段污染任务目标，隔离能降低影响面。<br>4. 关注 NVIDIA Megatron-LM 的分布式训练最佳实践。  <br>   理由：大规模训练仍是核心瓶颈，复用官方代码可节省工程试错。<br>5. 用 PINTO_model_zoo 做模型格式转换与边缘部署原型。  <br>   理由：跨框架转换库能降低从 PyTorch 到 ONNX/EdgeTPU 的迁移成本。</div>
+  <div>- 多智能体产品应增加规划层输入校验：PlanFlip证明规划阶段是攻击入口，需在Agent执行前过滤异常指令。<br>- 引入RLHF标注者状态监控：记录标注时情绪、疲劳度，建立偏好数据质量审计机制。<br>- 评估自家LLM的风险偏好一致性：参考LLM风险态度论文，测试模型在医疗、金融等场景决策是否稳定。<br>- 关注GNN链路预测在推荐/风控落地：新综述为图神经网络应用提供系统性选型参考。<br>- 跟踪开源训练与部署工具链：NVIDIA Megatron和PINTO模型动物园可降低大模型训练与边缘部署成本。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Add annotator-state questionnaires in RLHF projects to reduce preference-label noise.  <br>   Rationale: Rater states systematically bias reward models, and early auditing is cheaper than retrospective fixes.<br>2. Run risk-preference tests for LLMs used in high-stakes decisions.  <br>   Rationale: Stable risk attitudes in models can amplify business decision biases.<br>3. Design input isolation for the planning phase of multi-agent systems.  <br>   Rationale: PlanFlip shows that planning-stage injection can corrupt task objectives, and isolation limits blast radius.<br>4. Follow NVIDIA Megatron-LM's distributed training best practices.  <br>   Rationale: Large-scale training remains a core bottleneck; reusing official code saves engineering trial and error.<br>5. Use PINTO_model_zoo for model format conversion and edge-deployment prototypes.  <br>   Rationale: Cross-framework conversion lowers migration costs from PyTorch to ONNX/EdgeTPU.
+    - Add planning-layer input validation for multi-agent products: PlanFlip shows the planning phase is a vulnerable attack surface.<br>- Monitor annotator state in RLHF pipelines: track mood and fatigue to audit preference data quality.<br>- Audit your LLM's risk attitude consistency: test whether model decisions remain stable across medical or financial scenarios.<br>- Explore GNN link prediction for recommendations/fraud detection: the new survey provides a systematic map for application choices.<br>- Watch open-source training and deployment stacks: NVIDIA Megatron and PINTO model zoo can lower costs for large-model training and edge deployment.
   </div>
 </div>
 

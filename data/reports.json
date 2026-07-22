@@ -313,6 +313,6 @@
   },
   {
     "date": "2026-07-22",
-    "summary": "### 执行摘要\n\n中文：\n• RLHF 数据标注者心理状态会污染偏好标签，需审计框架纠偏。\n• 部分大语言模型表现出稳定的风险态度，影响高 stakes 决策可信度。\n• 多智能体 LLM 系统在规划阶段易受提示注入攻击。\n• 大厂博客与 HuggingFace 今日无新数据，可观察性受限。\n\nEnglish:\n• Rater state bias in RLHF preference data"
+    "summary": "### 执行摘要\n中文：\n- 多智能体LLM安全威胁引关注（PlanFlip）\n- RLHF标注者状态偏差被新框架揭示\n- 大模型风险态度呈现一致性与决策偏向\n- 开源AI基建持续活跃（Megatron、模型动物园）\n- GNN链路预测综述提供系统技术图谱\n\nEnglish:\n- Multi-agent LLM security risks gain attention (PlanFlip)\n- "
   }
 ]
