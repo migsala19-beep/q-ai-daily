@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-22</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-22</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>• RLHF 数据标注者心理状态会污染偏好标签，需审计框架纠偏。<br>• 部分大语言模型表现出稳定的风险态度，影响高 stakes 决策可信度。<br>• 多智能体 LLM 系统在规划阶段易受提示注入攻击。<br>• 大厂博客与 HuggingFace 今日无新数据，可观察性受限。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    • Rater state bias in RLHF preference data calls for audit frameworks.<br>• Some LLMs show consistent risk attitudes, affecting high-stakes decision reliability.<br>• Multi-agent LLM systems are vulnerable to planning-phase prompt injection.<br>• Big-tech blogs and HuggingFace returned no new items today, limiting visibility.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯最集中的方向是“大模型对齐与安全评估”。arXiv 论文《Rater State Bias in RLHF Preference Data: An Audit Framework》指出，RLHF 偏好标注不仅反映回答质量，也受标注者持续压力或情绪状态污染，这会导致奖励模型学到混杂信号，是现有对齐流程的结构性盲点。另一篇《Some Large Language Models Exhibit Consistent Risk Attitudes》则发现部分 LLM 在面对风险选择时呈现系统性倾向，这对金融、医疗、自动驾驶等开放场景的应用是重要预警。GitHub 上 NVIDIA/Megatron-LM 持续更新大规模 Transformer 训练代码，显示预训练基础设施仍是社区焦点；PINTO_model_zoo 则提供跨框架模型转换资源，降低边缘部署门槛。综合来看，前沿研究开始更关注“人在回路中的不可控因素”与“模型决策心理属性”，而工程侧仍在推进训练与部署效率。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's strongest theme is "LLM alignment and safety evaluation." The arXiv paper "Rater State Bias in RLHF Preference Data: An Audit Framework" shows that preference labels are not only shaped by response quality but also by annotators' sustained stress or emotional states, creating a structural confound in reward modeling. Separately, "Some Large Language Models Exhibit Consistent Risk Attitudes" finds that certain LLMs display systematic risk preferences, which has implications for high-stakes domains like finance, healthcare, and autonomous systems. On GitHub, NVIDIA/Megatron-LM continues to advance large-scale Transformer training, while PINTO_model_zoo supports cross-framework model conversion for edge deployment. Overall, frontier research is increasingly focusing on human-in-the-loop contamination and the psychological properties of model decisions, while engineering efforts remain centered on training and deployment efficiency.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>中文：<br>1. 在 RLHF 项目中引入标注者状态问卷，降低偏好标签噪声。  <br>   理由：心理状态会系统性偏置奖励模型，早期审计成本远低于事后修复。<br>2. 对用于高风险决策的 LLM 增加风险倾向测试。  <br>   理由：模型若对风险有稳定偏好，会放大业务决策偏差。<br>3. 为多智能体 Agent 系统设计规划阶段输入隔离。  <br>   理由：PlanFlip 证明攻击可在规划阶段污染任务目标，隔离能降低影响面。<br>4. 关注 NVIDIA Megatron-LM 的分布式训练最佳实践。  <br>   理由：大规模训练仍是核心瓶颈，复用官方代码可节省工程试错。<br>5. 用 PINTO_model_zoo 做模型格式转换与边缘部署原型。  <br>   理由：跨框架转换库能降低从 PyTorch 到 ONNX/EdgeTPU 的迁移成本。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Add annotator-state questionnaires in RLHF projects to reduce preference-label noise.  <br>   Rationale: Rater states systematically bias reward models, and early auditing is cheaper than retrospective fixes.<br>2. Run risk-preference tests for LLMs used in high-stakes decisions.  <br>   Rationale: Stable risk attitudes in models can amplify business decision biases.<br>3. Design input isolation for the planning phase of multi-agent systems.  <br>   Rationale: PlanFlip shows that planning-stage injection can corrupt task objectives, and isolation limits blast radius.<br>4. Follow NVIDIA Megatron-LM's distributed training best practices.  <br>   Rationale: Large-scale training remains a core bottleneck; reusing official code saves engineering trial and error.<br>5. Use PINTO_model_zoo for model format conversion and edge-deployment prototypes.  <br>   Rationale: Cross-framework conversion lowers migration costs from PyTorch to ONNX/EdgeTPU.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/hyprwm/Hyprland" target="_blank" style="font-weight:600">hyprwm/Hyprland</a>
+            <span style="color:#888;font-size:13px"> — Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/DioxusLabs/dioxus" target="_blank" style="font-weight:600">DioxusLabs/dioxus</a>
+            <span style="color:#888;font-size:13px"> — Fullstack app framework for web, desktop, and mobile.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/schollz/croc" target="_blank" style="font-weight:600">schollz/croc</a>
+            <span style="color:#888;font-size:13px"> — Easily and securely send things from one computer to another 🐊 📦</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ClickHouse/ClickHouse" target="_blank" style="font-weight:600">ClickHouse/ClickHouse</a>
+            <span style="color:#888;font-size:13px"> — ClickHouse® is a real-time analytics database management system</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/formbricks/formbricks" target="_blank" style="font-weight:600">formbricks/formbricks</a>
+            <span style="color:#888;font-size:13px"> — Open Source Qualtrics Alternative</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/coollabsio/coolify" target="_blank" style="font-weight:600">coollabsio/coolify</a>
+            <span style="color:#888;font-size:13px"> — An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" style="font-weight:600">NVIDIA/Megatron-LM</a>
+            <span style="color:#888;font-size:13px"> — Ongoing research training transformer models at scale</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/PINTO0309/PINTO_model_zoo" target="_blank" style="font-weight:600">PINTO0309/PINTO_model_zoo</a>
+            <span style="color:#888;font-size:13px"> — A repository for storing models that have been inter-converted between various frameworks. Supported frameworks are TensorFlow, PyTorch, ONNX, OpenVINO, TFJS, TFTRT, TensorFlowLite (Float32/16/INT8), EdgeTPU, CoreML.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16195" target="_blank" style="font-weight:600">Rater State Bias in RLHF Preference Data: An Audit Framework</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16195v1 Announce Type: new 
+We identify a structured confound in Reinforcement Learning from Human Feedback (RLHF). Pairwise preference labels are intended to reflect the compared outputs, </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16196" target="_blank" style="font-weight:600">Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16196v1 Announce Type: new 
+Soft, sensorized companions offer a physically safe and emotionally intuitive interface for socially assistive technologies, yet their deformability and multicha</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16197" target="_blank" style="font-weight:600">Some Large Language Models Exhibit Consistent Risk Attitudes</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16197v1 Announce Type: new 
+As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated in</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16198" target="_blank" style="font-weight:600">A Survey on GNN-based Link Prediction: Techniques, Applications, and Challenges</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16198v1 Announce Type: new 
+Graph Neural Networks (GNNs) have emerged as the leading paradigm for link prediction, enabling the inference of missing connections and the anticipation of pote</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16199" target="_blank" style="font-weight:600">PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16199v1 Announce Type: new 
+Multi-agent LLM systems increasingly rely on a Planner to decompose goals into sub-task sequences that downstream Executor and Critic agents execute and audit. W</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.16200" target="_blank" style="font-weight:600">Deterministic Replay for AI Agent Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.16200v1 Announce Type: new 
+AI agent systems that couple large language models (LLMs) with external tools and APIs are inherently non-deterministic: LLM sampling variance, external API stat</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-22 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

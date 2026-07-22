@@ -310,5 +310,9 @@
   {
     "date": "2026-07-21",
     "summary": "### 执行摘要\n中文：\n- 医疗多智能体诊断成为新热点\n- 因果推理审计提升模型可解释性\n- 本地语音助手强调隐私优先\n- AI可观测性工具受开发者关注\n- 全栈开发框架持续演进\n\nEnglish:\n- Multi-agent medical diagnosis is emerging as a hot trend\n- Causal reasoning audit improves model "
+  },
+  {
+    "date": "2026-07-22",
+    "summary": "### 执行摘要\n\n中文：\n• RLHF 数据标注者心理状态会污染偏好标签，需审计框架纠偏。\n• 部分大语言模型表现出稳定的风险态度，影响高 stakes 决策可信度。\n• 多智能体 LLM 系统在规划阶段易受提示注入攻击。\n• 大厂博客与 HuggingFace 今日无新数据，可观察性受限。\n\nEnglish:\n• Rater state bias in RLHF preference data"
   }
 ]
