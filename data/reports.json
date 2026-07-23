@@ -317,6 +317,6 @@
   },
   {
     "date": "2026-07-23",
-    "summary": "### 执行摘要\n中文：\n- 前沿AI权力追逐行为首次被系统量化测量\n- 企业级LLM分析引入DAG执行图提升可扩展性\n- AI代理残余风险需要组合式量化框架\n- 大模型事实核查需引入证据链置信度校准\n- 工具发现基础设施（ToolDNS）成代理生态关键瓶颈\n\nEnglish:\n- Frontier AI power-seeking behaviors are systematically mea"
+    "summary": "### 执行摘要\n\n中文：\n- 前沿AI权力寻租风险受关注\n- 事实核查引入证据链校准\n- LLM企业数据分析走向图执行\n- DNS层实现AI工具规模化发现\n- 智能体残差风险量化框架出现\n\nEnglish:\n- Frontier AI power-seeking risk draws attention\n- Evidence-chain calibration enters fact-check"
   }
 ]

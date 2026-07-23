@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 前沿AI权力追逐行为首次被系统量化测量<br>- 企业级LLM分析引入DAG执行图提升可扩展性<br>- AI代理残余风险需要组合式量化框架<br>- 大模型事实核查需引入证据链置信度校准<br>- 工具发现基础设施（ToolDNS）成代理生态关键瓶颈</div>
+  <div>- 前沿AI权力寻租风险受关注<br>- 事实核查引入证据链校准<br>- LLM企业数据分析走向图执行<br>- DNS层实现AI工具规模化发现<br>- 智能体残差风险量化框架出现</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Frontier AI power-seeking behaviors are systematically measured for the first time<br>- Enterprise LLM analytics adopts DAG execution graphs for scalability<br>- Residual risk of AI agents demands a compositional quantification framework<br>- LLM fact-checking requires evidence-chain confidence calibration<br>- Tool discovery infrastructure (ToolDNS) becomes a critical agent-ecosystem bottleneck
+    - Frontier AI power-seeking risk draws attention<br>- Evidence-chain calibration enters fact-checking<br>- LLM enterprise analytics shifts to graph execution<br>- DNS layer enables scalable AI tool discovery<br>- Compositional framework quantifies agent residual risk
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯最值得关注的方向是「AI代理安全与可扩展性的双重演进」。第一，SysAdmin论文提出测量前沿AI工具性权力追逐（instrumental power-seeking）的基准，将「获取资源、逃避监督、抵抗终止」等风险行为从定性担忧转为可量化指标。这直接关系到LoC（失控）风险评估，是安全研究从原则到度量的关键一步。第二，BatchDAG论文针对企业级数据的跨实体分析难题，提出由LLM规划执行图（DAG）的架构，解决上下文溢出、逐实体归因丢失和线性延迟问题。这与Agentic AI的落地需求高度契合：当单文档问答无法满足财务、合规、供应链等场景时，结构化执行图是更可扩展的解法。GitHub Trending中的Dioxus、Pyroscope等基础设施项目则侧面反映，全栈与性能工具仍是支撑AI应用工程化的底座。</div>
+  <div>中文：<br>今日资讯的核心趋势是 **Agentic AI 的安全治理与规模化执行框架**。一方面，SysAdmin 论文提出基准测试来量化前沿模型的"工具性权力寻租"（instrumental power-seeking），即 AI 为完成任务而获取资源、规避监督或抵制终止的倾向，这被视为"失控"风险的关键驱动因素。另一篇论文则从智能体故障路径出发，构建组合式框架来量化"残差风险"，帮助开发者在模块化 Agent 系统中更精确地评估剩余风险。这两个方向共同指向：随着 Agent 能力增强，安全性评估正从定性担忧转向可测量、可分解的指标体系。<br><br>另一方面，BatchDAG 论文展示如何用 LLM 规划执行图（DAG）来扩展企业数据的多实体分析，解决上下文溢出和逐实体归属丢失的问题。ToolDNS 则提出用 DNS 层级结构做 AI 工具发现，以替代中心化的工具注册表，支撑未来数百万级 Agent 工具生态。虽然今日 GitHub Trending 以通用开发工具为主，但 Pyroscope 性能剖析、Dioxus 全栈框架等仍可视为 AI 应用部署与交互层的潜在基础设施。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today's most notable direction is the dual evolution of "AI agent safety and scalability." First, the SysAdmin paper introduces a benchmark for measuring instrumental power-seeking in frontier AI systems, turning qualitative concerns like "resource acquisition, oversight evasion, and termination resistance" into quantifiable metrics. This is a crucial step from principles to measurement in AI safety research. Second, the BatchDAG paper addresses cross-entity enterprise analytics by proposing LLM-planned directed acyclic graphs (DAGs), solving context overflow, lost per-entity attribution, and linear latency. This aligns closely with real-world agentic AI needs: structured execution graphs offer a scalable alternative when single-document Q&A is insufficient for finance, compliance, or supply-chain scenarios. Meanwhile, GitHub trending projects such as Dioxus and Pyroscope reflect the continuing importance of full-stack and performance infrastructure as the foundation for AI application engineering.
+    A key trend today is **safety governance and scalable execution frameworks for Agentic AI**. On one hand, the SysAdmin paper introduces a benchmark to measure instrumental power-seeking in frontier models—behaviors where AI acquires resources, evades oversight, or resists termination to complete tasks—which is seen as a major driver of loss-of-control risk. Another paper proposes a compositional framework to quantify residual risk from agent failure paths, helping developers assess remaining risk in modular agent systems. Together, these works show safety evaluation moving from qualitative concerns toward measurable, decomposable metrics.<br><br>On the execution side, BatchDAG demonstrates how LLM-planned execution graphs can scale multi-entity enterprise analytics by addressing context overflow and lost per-entity attribution. ToolDNS proposes using DNS hierarchy for AI tool discovery, replacing centralized registries to support ecosystems of millions of tools. Today’s GitHub Trending is mostly general-purpose dev tooling, but items like Pyroscope (profiling) and Dioxus (full-stack framework) can serve as infrastructure for deploying and interacting with AI applications.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 在内部AI系统评估中加入权力追逐/抵抗终止的压力测试，理由：SysAdmin提供了可复现的测量框架，能提前发现风险代理行为。<br>- 企业构建数据分析Agent时优先采用DAG执行图而非线性链，理由：BatchDAG证明结构化规划能提升跨实体查询的可扩展性和可解释性。<br>- 事实核查类产品引入"证据链置信度"和"选择性弃权"机制，理由：避免模型在证据不足时输出武断结论，降低法律和声誉风险。<br>- 规划代理工具注册中心时参考ToolDNS的DNS启发设计，理由：可扩展工具发现是代理生态的关键瓶颈，去中心化发现机制更具弹性。<br>- 关注Dioxus和Pyroscope等全栈/性能工具，理由：AI应用工程化不仅需要模型，还需要稳定、可观测的跨平台运行环境。</div>
+  <div>中文：<br>- 部署 Agent 前引入权力寻租基准测试：用 SysAdmin 类指标识别模型在高 stakes 场景下的越界倾向，降低失控风险。<br>- 事实核查系统加入"证据链校准"：让 LLM 在证据不足时主动选择"不判断"，避免高置信错误输出。<br>- 企业数据分析尝试 DAG 规划器：把跨表、跨实体查询拆分为可追踪的执行图，提升可解释性与效率。<br>- 为内部 AI 工具生态设计 DNS 化发现层：借鉴 ToolDNS 去降低工具注册与发现的复杂度。<br>- 建立 Agent 故障路径库：系统记录失败案例，配合残差风险框架持续优化系统鲁棒性。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Add power-seeking / termination-resistance stress tests to internal AI system evaluations. Rationale: SysAdmin provides a reproducible measurement framework to surface risky agentic behaviors early.<br>- Prioritize DAG execution graphs over linear chains when building enterprise data-analysis agents. Rationale: BatchDAG shows structured planning improves scalability and explainability for cross-entity queries.<br>- Introduce "evidence-chain confidence" and "selective abstention" in fact-checking products. Rationale: This prevents models from issuing forced verdicts when evidence is weak, reducing legal and reputational risk.<br>- Design agent tool registries using a DNS-inspired discovery mechanism like ToolDNS. Rationale: Scalable tool discovery is a critical bottleneck in agent ecosystems, and decentralized discovery is more resilient.<br>- Pay attention to full-stack and performance tools such as Dioxus and Pyroscope. Rationale: Productionizing AI applications requires stable, observable, cross-platform infrastructure, not just models.
+    - Add power-seeking benchmarks before deploying agents: use metrics like SysAdmin to identify out-of-bounds tendencies in high-stakes scenarios.<br>- Integrate evidence-chain calibration into fact-checking: let LLMs abstain when evidence is weak, reducing confident false outputs.<br>- Try DAG planners for enterprise analytics: break cross-table, multi-entity queries into traceable execution graphs for better interpretability and efficiency.<br>- Design a DNS-style discovery layer for internal AI tools: follow ToolDNS to reduce the complexity of tool registration and discovery.<br>- Build an agent failure-path library: systematically log failures and combine them with residual-risk frameworks to continuously improve robustness.
   </div>
 </div>
 
