@@ -322,5 +322,9 @@
   {
     "date": "2026-07-24",
     "summary": "### 执行摘要\n中文：\n- SysAdmin 首次系统评测前沿 AI \"权力寻求\" 风险\n- BatchDAG 用 LLM 执行图提升企业级即席分析规模\n- ToolDNS 借 DNS 实现去中心化百万级 AI 工具发现\n- SkyPilot 持续热门，统一碎片化 AI 算力成基础设施焦点\n- 大模型事实核查转向证据链校准，降低高置信误判\n\nEnglish:\n- SysAdmin introdu"
+  },
+  {
+    "date": "2026-07-25",
+    "summary": "### 执行摘要\n中文：\n1. 分布式AI计算工具受追捧：SkyPilot、Petals聚焦降本。\n2. 多智能体系统进入软件测试：AINTMA推进自主QA。\n3. LLM垂直应用落地：医学水印、标题党检测齐头并进。\n4. 图神经网络基础设施持续热门：PyG保持高活跃度。\n5. AI人才市场升温：2026暑期实习岗位每日更新。\n\nEnglish:\n1. Distributed AI compute"
   }
 ]
