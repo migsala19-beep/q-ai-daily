@@ -325,6 +325,6 @@
   },
   {
     "date": "2026-07-25",
-    "summary": "### 执行摘要\n中文：\n1. 分布式AI计算工具受追捧：SkyPilot、Petals聚焦降本。\n2. 多智能体系统进入软件测试：AINTMA推进自主QA。\n3. LLM垂直应用落地：医学水印、标题党检测齐头并进。\n4. 图神经网络基础设施持续热门：PyG保持高活跃度。\n5. AI人才市场升温：2026暑期实习岗位每日更新。\n\nEnglish:\n1. Distributed AI compute"
+    "summary": "### 执行摘要\n中文：\n- Agentic AI 进入软件测试管理\n- 医疗 LLM 水印可靠性受关注\n- 分布式 LLM 推理 Petals 上榜\n- 图神经网络库 PyG 持续热门\n- SkyPilot 统一 AI 算力资源\n\nEnglish:\n- Agentic AI enters software test management\n- LLM watermarking reliabilit"
   }
 ]
