@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-26</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-26</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- n8n 领跑 GitHub，AI 工作流自动化持续升温。<br>- Buzz 上榜，本地离线语音转录仍是刚需场景。<br>- 数据/安全工具（Superset、Trivy）与 AI 基础设施协同受关注。<br>- 今日无新增 arXiv 与 HuggingFace 论文。<br>- 企业博客无更新，行业处于工具落地静默期。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - n8n tops GitHub, showing AI workflow automation remains hot.<br>- Buzz trends, proving local offline speech transcription is still a strong need.<br>- Data/security tools (Superset, Trivy) gain traction alongside AI infrastructure.<br>- No new arXiv or HuggingFace papers today.<br>- Big-tech blogs are quiet, indicating a consolidation phase for AI tooling.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>1. AI 原生工作流自动化进入“自托管 + 可视化”阶段<br>n8n 作为一款 fair-code 工作流平台，支持 400+ 集成并内置 AI 能力，代表企业在 LLM 落地时更倾向“低代码编排 + 可私有化部署”的混合方案。相比纯 SaaS 的 Zapier/Make，n8n 的 self-host 模式更契合中国企业对数据合规和成本控制的需求，适合把大模型调用、RAG 检索、审批流等封装成可复用节点。<br><br>2. 端侧/离线语音处理仍是 AI 普惠的关键入口<br>Buzz 基于 OpenAI Whisper 实现本地离线转录与翻译，切中隐私敏感场景（会议、访谈、医疗）。随着 Apple Silicon 与端侧 NPU 普及，像 Whisper 这样的模型在本地运行体验持续提升，未来可与个人知识库、Agent 助理深度结合。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. AI-native workflow automation is shifting toward “self-hosted + visual”<br>n8n, a fair-code workflow platform with 400+ integrations and native AI, reflects enterprises favoring low-code orchestration plus private deployment. Compared to SaaS tools like Zapier/Make, n8n’s self-host model better fits data compliance and cost control needs, ideal for packaging LLM calls, RAG retrieval, and approval flows into reusable nodes.<br><br>2. Edge/offline speech processing remains a key gateway for AI adoption<br>Buzz uses OpenAI Whisper for local offline transcription and translation, targeting privacy-sensitive scenarios such as meetings, interviews, and healthcare. With Apple Silicon and edge NPUs becoming mainstream, models like Whisper deliver increasingly smooth local experiences and can soon integrate tightly with personal knowledge bases and agent assistants.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 搭建内部 AI Agent 工作流：用 n8n 将 Kimi/大模型 API、飞书/钉钉、知识库串联成自动化节点，降低重复沟通成本。<br>- 部署本地语音转录工具：尝试 Buzz 处理会议录音，避免云端上传敏感音频，保护隐私。<br>- 关注安全扫描自动化：Trivy 可检测代码仓库中的密钥泄露，适合纳入 CI/CD 防止 AI 项目误提交 API Key。<br>- 用 Superset 做 AI 数据看板：把模型调用日志、成本、效果指标可视化，辅助决策。<br>- 今日论文与企业博客空白，可将时间用于复盘上周报告，更新数据 pipeline。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Build internal AI agent workflows: Use n8n to connect Kimi/LLM APIs, Lark/DingTalk, and knowledge bases into automated nodes, reducing repetitive communication.<br>- Deploy local speech transcription: Try Buzz for meeting recordings to avoid uploading sensitive audio to the cloud and protect privacy.<br>- Integrate security scanning: Trivy detects secrets in code repositories; add it to CI/CD to prevent accidental API key commits in AI projects.<br>- Use Superset for AI dashboards: Visualize model call logs, costs, and performance metrics to support decision-making.<br>- With no new papers or blogs today, spend the time reviewing last week’s reports and updating the data pipeline.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/jellyfin/jellyfin" target="_blank" style="font-weight:600">jellyfin/jellyfin</a>
+            <span style="color:#888;font-size:13px"> — The Free Software Media System - Server Backend & API</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/n8n-io/n8n" target="_blank" style="font-weight:600">n8n-io/n8n</a>
+            <span style="color:#888;font-size:13px"> — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/apache/superset" target="_blank" style="font-weight:600">apache/superset</a>
+            <span style="color:#888;font-size:13px"> — Apache Superset is a Data Visualization and Data Exploration Platform</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/lukasz-madon/awesome-remote-job" target="_blank" style="font-weight:600">lukasz-madon/awesome-remote-job</a>
+            <span style="color:#888;font-size:13px"> — A curated list of awesome remote jobs and resources. Inspired byhttps://github.com/vinta/awesome-python</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/kubernetes-sigs/kubespray" target="_blank" style="font-weight:600">kubernetes-sigs/kubespray</a>
+            <span style="color:#888;font-size:13px"> — Deploy a Production Ready Kubernetes Cluster</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/chidiwilliams/buzz" target="_blank" style="font-weight:600">chidiwilliams/buzz</a>
+            <span style="color:#888;font-size:13px"> — Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-26 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

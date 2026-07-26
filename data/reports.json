@@ -326,5 +326,9 @@
   {
     "date": "2026-07-25",
     "summary": "### 执行摘要\n中文：\n- Agentic AI 进入软件测试管理\n- 医疗 LLM 水印可靠性受关注\n- 分布式 LLM 推理 Petals 上榜\n- 图神经网络库 PyG 持续热门\n- SkyPilot 统一 AI 算力资源\n\nEnglish:\n- Agentic AI enters software test management\n- LLM watermarking reliabilit"
+  },
+  {
+    "date": "2026-07-26",
+    "summary": "### 执行摘要\n中文：\n- n8n 领跑 GitHub，AI 工作流自动化持续升温。\n- Buzz 上榜，本地离线语音转录仍是刚需场景。\n- 数据/安全工具（Superset、Trivy）与 AI 基础设施协同受关注。\n- 今日无新增 arXiv 与 HuggingFace 论文。\n- 企业博客无更新，行业处于工具落地静默期。\n\nEnglish:\n- n8n tops GitHub, showi"
   }
 ]
