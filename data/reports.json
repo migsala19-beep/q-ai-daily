@@ -330,5 +330,9 @@
   {
     "date": "2026-07-26",
     "summary": "### 执行摘要\n\n中文：\n- n8n 登顶趋势榜，AI 原生工作流自动化受追捧。\n- Buzz（离线 Whisper）上榜，端侧隐私 AI 需求上升。\n- Apache Superset 回归，数据可视化与 AI 分析融合受关注。\n- Trivy、Kubespray 入榜，AI 基础设施与供应链安全并重。\n- 远程工作资源库活跃，AI 工具驱动分布式协作。\n\nEnglish:\n- n8n top"
+  },
+  {
+    "date": "2026-07-27",
+    "summary": "### 执行摘要\n中文：\n- Supabase 获关注，利好 AI 应用后端\n- paperless-ngx 上榜，文档智能化需求上升\n- SimpleX Chat 强调隐私，零标识符通讯受关注\n- NestJS/Fastify 稳定，AI 服务工程化基础成熟\n- Sn1per 热度上升，AI 安全与攻防自动化受关注\n\nEnglish:\n- Supabase trending benefits A"
   }
 ]
