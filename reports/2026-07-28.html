@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-28</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-28</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 自托管开源工具（Immich、Paperless）持续热门。<br>- 智能体工作流自进化（FlowEvo）成新方向。<br>- 多模态安全与内部信息分解受关注。<br>- 系统延迟预测可迁移性研究出现。<br>- 安全扫描与漏洞工具 Nuclei 上榜。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Self-hosted open-source tools (Immich, Paperless) remain hot.<br>- Agent workflow self-evolution (FlowEvo) is a rising direction.<br>- Multimodal AI security via internal information decomposition gains attention.<br>- Transferable latency prediction emerges as a research topic.<br>- Security scanner Nuclei appears on GitHub Trending.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>中文：<br>今日 GitHub Trending 反映了两个明显趋势：一是自托管数字生活基础设施（Immich 照片视频管理、Paperless-ngx 文档归档、Dashy 个人仪表板、Tailscale 安全组网）持续受到开发者青睐，表明"去中心化私有云服务"正从小众需求走向主流工程实践；二是 DevOps 与安全工具（Nuclei 漏洞扫描、Google 微服务 Demo）热度不减，说明在云原生与 AI 结合场景下，可观测性、安全性和基础设施即代码仍是高优先级。<br><br>学术方面，arXiv 的 FlowEvo 论文最值得关注：它提出让大模型智能体通过"工作流"与"可执行技能"共同进化，将推理过程中发现的临时策略沉淀为可复用技能。这与传统 RAG 或固定 Agent 框架不同，它强调执行经验的持续积累与自我改进，可能推动智能体从"单次任务求解"走向"长期能力进化"。另一篇多模态安全论文则从内部信息分解角度检测跨模态攻击，为当前多模态大模型的安全护栏提供了新的理论工具。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out in GitHub Trending. First, self-hosted digital-life infrastructure (Immich, Paperless-ngx, Dashy, Tailscale) remains highly popular, signaling that "decentralized private cloud services" are moving from niche to mainstream engineering practice. Second, DevOps and security tools (Nuclei, Google's microservices demo) stay relevant, showing that observability, security, and infrastructure-as-code remain top priorities in cloud-native and AI-integrated contexts.<br><br>On the research side, the FlowEvo paper is particularly notable. It proposes letting LLM agents co-evolve workflows and executable skills, turning transient reasoning strategies discovered during execution into reusable capabilities. Unlike traditional RAG or fixed agent frameworks, this emphasizes continuous accumulation and self-improvement of execution experience, potentially shifting agents from one-shot task solving toward long-term capability evolution. The multimodal security paper also offers a new theoretical tool for detecting cross-modal attacks through internal information decomposition.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>中文：<br>- 搭建私有 Immich/Paperless 服务，替代云端相册和网盘，保护家庭数据隐私。<br>  理由：自托管工具成熟，GitHub 热度高，部署成本已大幅下降。<br>- 在 AI 产品中引入"可执行技能沉淀"机制，记录 Agent 成功的工作流并复用。<br>  理由：FlowEvo 方向显示，自进化能力将是下一代 Agent 的核心差异点。<br>- 对多模态应用增加跨模态一致性校验，降低提示注入与恶意内容风险。<br>  理由：相关论文提供了新的安全检测思路，可提前布局。<br>- 将 Nuclei 或类似扫描工具纳入 CI/CD 流程，自动发现 API 与云配置漏洞。<br>  理由：安全左移是工程团队的低成本高回报实践。<br>- 评估使用 Dashy 或 Tailscale 构建个人/团队统一入口与零信任网络。<br>  理由：提升访问便利性的同时减少暴露面。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Set up a private Immich/Paperless stack to replace cloud albums and document storage, protecting family data privacy.<br>  Rationale: Self-hosted tools are mature and trending, and deployment costs have dropped significantly.<br>- Add "executable skill accumulation" to AI products: record successful agent workflows for reuse.<br>  Rationale: FlowEvo shows self-evolution capability will be a key differentiator for next-generation agents.<br>- Introduce cross-modal consistency checks in multimodal applications to reduce prompt-injection and malicious-content risks.<br>  Rationale: The related paper offers a new security detection approach worth adopting early.<br>- Integrate Nuclei or similar scanners into CI/CD to automatically find API and cloud-config vulnerabilities.<br>  Rationale: Shifting security left is a low-cost, high-return practice for engineering teams.<br>- Evaluate Dashy or Tailscale to build a personal/team unified portal and zero-trust network.<br>  Rationale: This improves access convenience while reducing attack surface.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/GoogleCloudPlatform/microservices-demo" target="_blank" style="font-weight:600">GoogleCloudPlatform/microservices-demo</a>
+            <span style="color:#888;font-size:13px"> — Sample cloud-first application with 10 microservices showcasing Kubernetes, Istio, and gRPC.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/immich-app/immich" target="_blank" style="font-weight:600">immich-app/immich</a>
+            <span style="color:#888;font-size:13px"> — High performance self-hosted photo and video management solution.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/paperswithbacktest/awesome-systematic-trading" target="_blank" style="font-weight:600">paperswithbacktest/awesome-systematic-trading</a>
+            <span style="color:#888;font-size:13px"> — A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/paperless-ngx/paperless-ngx" target="_blank" style="font-weight:600">paperless-ngx/paperless-ngx</a>
+            <span style="color:#888;font-size:13px"> — A community-supported supercharged document management system: scan, index and archive all your documents</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/projectdiscovery/nuclei" target="_blank" style="font-weight:600">projectdiscovery/nuclei</a>
+            <span style="color:#888;font-size:13px"> — Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/seerr-team/seerr" target="_blank" style="font-weight:600">seerr-team/seerr</a>
+            <span style="color:#888;font-size:13px"> — Open-source media request and discovery manager for Jellyfin, Plex, and Emby.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tailscale/tailscale" target="_blank" style="font-weight:600">tailscale/tailscale</a>
+            <span style="color:#888;font-size:13px"> — The easiest, most secure way to use WireGuard and 2FA.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/lissy93/dashy" target="_blank" style="font-weight:600">lissy93/dashy</a>
+            <span style="color:#888;font-size:13px"> — 🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21596" target="_blank" style="font-weight:600">FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21596v1 Announce Type: new 
+Large language model agents increasingly solve complex tasks by constructing inference-time workflows that combine reasoning, tool use, and code execution. While</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21597" target="_blank" style="font-weight:600">Risk Is Not the Target: A Monotonic Framework for Evaluating Wildfire Operational Risk Signals</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21597v1 Announce Type: new 
+Evaluating wildfire risk systems using standard machine-learning metrics such as F1-score or IoU is fundamentally flawed: these metrics assess event prediction a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21600" target="_blank" style="font-weight:600">Securing Multimodal AI through Internal Information Decomposition</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21600v1 Announce Type: new 
+Multimodal large language models introduce attack surfaces absent in unimodal systems: adversaries can distribute malicious intent across modalities to evade uni</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21601" target="_blank" style="font-weight:600">From Frame-Level Recognition to Event-Level Confirmation: Repair Traces and Runtime Failure Analysis of Public-Space Gesture Interaction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21601v1 Announce Type: new 
+Public-space gesture interaction is often evaluated as a frame-level recognition problem, but deployed systems expose a different failure boundary. In scenic kio</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21602" target="_blank" style="font-weight:600">Transferable Latency Prediction for Fast LLM Screening on Heterogeneous Edge Devices</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21602v1 Announce Type: new 
+Accurate latency prediction is critical for deploying large language models (LLMs) on heterogeneous edge devices, where inference latency is affected by model ar</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.21604" target="_blank" style="font-weight:600">AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.21604v1 Announce Type: new 
+Memory-augmented LLM agents maintain context across hundreds of interactions through agentic memory systems that actively curate retrieved content with LLM-gener</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-28 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
