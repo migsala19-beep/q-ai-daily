@@ -337,6 +337,6 @@
   },
   {
     "date": "2026-07-28",
-    "summary": "### 执行摘要\n中文：\n- 自托管开源工具（Immich、Paperless）持续热门。\n- 智能体工作流自进化（FlowEvo）成新方向。\n- 多模态安全与内部信息分解受关注。\n- 系统延迟预测可迁移性研究出现。\n- 安全扫描与漏洞工具 Nuclei 上榜。\n\nEnglish:\n- Self-hosted open-source tools (Immich, Paperless) remain"
+    "summary": "### 执行摘要\n中文：\n- FlowEvo 提出智能体自进化工作流\n- 多模态 AI 安全需跨模态一致性检测\n- GitHub 热点聚焦自托管与私有化部署\n- 安全工具 Nuclei/Tailscale 持续受关注\n- 可迁移延迟预测助力高效推理\n\nEnglish:\n- FlowEvo proposes self-evolving agents co-evolving workflows and"
   }
 ]
