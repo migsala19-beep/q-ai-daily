@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 智能体自进化论文引关注<br>- 多模态AI安全新框架<br>- 语音Whisper热度持续<br>- 微服务与基础设施开源活跃<br>- 可落地工具项目受追捧</div>
+  <div>- 自进化智能体：工作流与可执行技能协同演化<br>- 多模态安全：内部信息分解防御跨模态攻击<br>- Whisper 持续领跑开源语音识别生态<br>- 今日 HuggingFace 论文与大厂博客无新增</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Self-evolving AI agents gain research attention<br>- Multimodal AI security framework emerges<br>- Open-source speech recognition stays hot<br>- Microservices and dev tools trend upward<br>- Productivity infrastructure projects dominate
+    - Self-evolving agents: co-evolving workflows and executable skills<br>- Multimodal AI safety via internal information decomposition<br>- Whisper remains a leading open-source speech recognition model<br>- No new HuggingFace papers or big-tech blog updates today
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日最强信号是智能体自进化架构。FlowEvo 论文提出工作流与可执行技能的协同演化，让 LLM Agent 在执行过程中发现并沉淀可复用程序，从静态提示工程转向动态自我改进系统。与此同时，多模态 AI 安全论文指出：攻击者可将恶意意图分散到文本、图像、音频等模态，单一模态防护会被绕过，跨模态一致性检测成为必要。Whisper 与 microservices-demo 则表明，可靠的语音基础设施和云原生模式仍是生产级 AI 的关键底座。</div>
+  <div>今日两个核心方向值得关注。一是“智能体自进化”。arXiv 论文 FlowEvo 提出让大模型智能体在执行复杂任务时，同步演化推理工作流与可执行技能，使“推理—工具调用—代码执行”不再是静态模板，而是能在运行中自我改进的活系统。这标志着 Agent 开发正从“人工编排流程”走向“自动沉淀并复用程序性知识”。二是“多模态 AI 安全”。论文《Securing Multimodal AI through Internal Information Decomposition》指出，攻击者可将恶意意图拆分到文本、图像等不同模态，绕过单一模态护栏；作者建议对模型内部信息进行分解，以跨模态一致性作为异常检测信号。结合 GitHub 上 OpenAI Whisper 的持续热度，语音、文本、视觉的融合正在同步放大机会与攻击面，未来的多模态系统必须在能力扩展的同时配套动态安全机制。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The dominant trend is self-evolving agent architectures. FlowEvo introduces co-evolution of workflows and executable skills, enabling LLM agents to discover reusable procedures during execution rather than relying on fixed prompts. This shifts focus from static engineering to dynamic, self-improving systems. At the same time, multimodal AI security research warns that attacks can distribute malicious intent across text, image, and audio, requiring cross-modal consistency checks rather than isolated per-modality filters. Complementing these advances, Whisper and GoogleCloudPlatform/microservices-demo indicate that reliable speech infrastructure and cloud-native patterns remain critical enablers for production AI systems.
+    Two key trends stand out: self-evolving agents and multimodal AI safety. The arXiv paper FlowEvo proposes co-evolving inference-time workflows and executable skills, turning agents from manually orchestrated pipelines into systems that discover and reuse procedural knowledge during execution. This could reduce hand-crafted prompt engineering and improve task generalization. On the safety side, "Securing Multimodal AI through Internal Information Decomposition" argues that multimodal threats can distribute adversarial intent across text, image, and other modalities, evading unimodal safeguards. The authors recommend decomposing internal model information and using cross-modal consistency as a detection signal. Together with Whisper's continued popularity in open-source ASR, the message is clear: as voice, text, and vision converge, agent capabilities will grow alongside attack surfaces, making runtime workflow evolution and cross-modal safety monitoring essential design priorities.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 跟踪 FlowEvo 技能进化思路，把高频任务沉淀为可复用工具库（提升 agent 长期效率）<br>- 在多模态产品中加入跨模态一致性校验（降低恶意内容绕过风险）<br>- 用 Whisper 作为语音输入基础能力（成熟、开源、成本低）<br>- 参考 microservices-demo 拆分 AI 服务模块（便于独立扩展与维护）<br>- 关注 cal.diy 等调度工具与 AI 工作流结合（自动化预约/触发场景）</div>
+  <div>1. 在 Agent 中增加“工作流—技能”双循环：让成功执行轨迹自动沉淀为可复用技能，降低人工编排成本。<br>2. 为 multimodal 产品加入跨模态一致性校验：将文本、图像、语音的内部表征对齐分数作为风控输入，防御分布式对抗提示。<br>3. 用 Whisper 等开源 ASR 快速搭建语音交互入口：降低多语言客服与智能硬件原型门槛。<br>4. 自建 arXiv/GitHub Trending 监控流：每日筛选自进化 Agent 与多模态安全论文，形成团队知识库。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Adopt FlowEvo's skill-evolution idea by extracting reusable tools from repeated agent tasks.<br>- Add cross-modal consistency checks in multimodal products to reduce bypass risks.<br>- Use Whisper as a baseline voice-input capability; it is mature and cost-effective.<br>- Follow microservices-demo patterns to decompose AI services for independent scaling.<br>- Combine scheduling tools like cal.diy with AI workflows for automated appointment and trigger scenarios.
+    1. Add a workflow-skill co-evolution loop to agent products so successful runs automatically become reusable skills, reducing manual orchestration costs.<br>2. Introduce cross-modal consistency checks in multimodal products by using internal representation alignment scores as risk signals to defend against distributed adversarial prompts.<br>3. Rapidly prototype voice interfaces with open-source ASR like Whisper to lower barriers for multilingual support and smart hardware projects.<br>4. Build a lightweight arXiv/GitHub Trending monitor to curate papers on self-evolving agents and multimodal safety into a team knowledge base.
   </div>
 </div>
 
@@ -125,7 +125,7 @@ Memory-augmented LLM agents maintain context across hundreds of interactions thr
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-07-29 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-07-29 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
