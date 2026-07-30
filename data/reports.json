@@ -342,5 +342,9 @@
   {
     "date": "2026-07-29",
     "summary": "### 执行摘要\n中文：\n- 自进化智能体：工作流与可执行技能协同演化\n- 多模态安全：内部信息分解防御跨模态攻击\n- Whisper 持续领跑开源语音识别生态\n- 今日 HuggingFace 论文与大厂博客无新增\n\nEnglish:\n- Self-evolving agents: co-evolving workflows and executable skills\n- Multimodal "
+  },
+  {
+    "date": "2026-07-30",
+    "summary": "### 执行摘要\n中文：\n- LLM Agent 渗入工程与知识协作深水区\n- 模型对齐造假风险引发评估新课题\n- GPU 异构共享（HAMi）成 AI  infra 热点\n- LangChain 持续占据 Agent 工程平台 C 位\n- 扩散语言模型评估方法进入精细化阶段\n\nEnglish:\n- LLM agents are penetrating deep engineering and k"
   }
 ]

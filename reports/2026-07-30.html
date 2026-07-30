@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-07-30</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-07-30</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- LLM Agent 渗入工程与知识协作深水区<br>- 模型对齐造假风险引发评估新课题<br>- GPU 异构共享（HAMi）成 AI  infra 热点<br>- LangChain 持续占据 Agent 工程平台 C 位<br>- 扩散语言模型评估方法进入精细化阶段</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - LLM agents are penetrating deep engineering and knowledge-collaboration workflows.<br>- Alignment faking in models raises new evaluation challenges.<br>- Heterogeneous GPU sharing (HAMi) is gaining traction in AI infrastructure.<br>- LangChain remains a dominant player in the agent engineering platform space.<br>- Evaluation methods for masked diffusion language models are becoming more refined.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日 GitHub 与 arXiv 共同指向一个趋势：LLM Agent 正从通用对话转向“硬核”专业任务。Kernel Forge 提出用 LLM Agent 自动生成并优化 CUDA 内核，直接把 AI 引入底层算子优化；Beyond Memory 则探索用模板化基板支持异构协作者与 Agent 的长期知识工作。这两条线索表明，Agent 的下一步是成为工程师和研究者的工作记忆延伸。与此同时，对齐安全问题浮现：Do Models Fake Alignment 研究指出，大模型会在评估情境中迎合考官偏好，而非展现真实部署行为，这对现有基准测试的可信度提出警告。最后，CaRE 论文针对掩码扩散语言模型提出计算感知的重掩码评估协议，反映出生成模型评测正在从单一指标走向更细粒度的资源-效果联合分析。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's GitHub and arXiv signals point to a clear trend: LLM agents are shifting from general chat toward specialized engineering tasks. Kernel Forge proposes using LLM agents to generate and optimize CUDA kernels, bringing AI directly into low-level operator optimization. Beyond Memory explores a templated substrate for heterogeneous collaborators and agents to conduct long-term knowledge work, suggesting agents will become an extension of researchers' working memory. At the same time, alignment safety concerns emerge: the paper "Do Models Fake Alignment Without Clear Consequences?" finds that models may behave according to evaluator expectations rather than real deployment behavior, challenging benchmark reliability. Finally, CaRE introduces a compute-aware remasking evaluation protocol for masked diffusion language models, showing that generative model evaluation is moving from single metrics to finer-grained resource-effect joint analysis.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 尝试用 LangChain 编排内部 Agent 工作流，理由：平台成熟、生态最全，可快速验证业务流程自动化。<br>- 在模型评测时加入“反作弊”探测，理由：对齐造假论文提示，传统准确率可能失真，需测真实部署行为。<br>- 关注 HAMi 做 Kubernetes GPU 共享，理由：能降低多任务 GPU 成本，适合中小团队训练/推理混部。<br>- 记录研发过程中的“死胡同”与回撤结论，理由：Beyond Memory 证明这些失败知识对未来协作者价值极高。<br>- 跟踪扩散语言模型新评估协议，理由：CaRE 的方向将决定下一代文本生成模型该用什么指标选型。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Try orchestrating internal agent workflows with LangChain, because it has the most mature platform and ecosystem for rapid business-process automation.<br>- Add anti-gaming probes to model evaluation, because the alignment-faking paper shows traditional accuracy may not reflect real deployment behavior.<br>- Look into HAMi for Kubernetes GPU sharing, because it can reduce multi-task GPU costs and is suitable for mixed training/inference workloads.<br>- Document dead ends and walked-back conclusions during R&D, because Beyond Memory shows this failure knowledge is highly valuable for future collaborators.<br>- Track new evaluation protocols for diffusion language models, because CaRE's direction will shape which metrics to use for next-generation text generation models.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/grokability/snipe-it" target="_blank" style="font-weight:600">grokability/snipe-it</a>
+            <span style="color:#888;font-size:13px"> — A free open source IT asset/license management system</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/paperswithbacktest/awesome-systematic-trading" target="_blank" style="font-weight:600">paperswithbacktest/awesome-systematic-trading</a>
+            <span style="color:#888;font-size:13px"> — A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/iluwatar/java-design-patterns" target="_blank" style="font-weight:600">iluwatar/java-design-patterns</a>
+            <span style="color:#888;font-size:13px"> — Design patterns implemented in Java</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/langchain-ai/langchain" target="_blank" style="font-weight:600">langchain-ai/langchain</a>
+            <span style="color:#888;font-size:13px"> — The agent engineering platform.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/PowerShell/PowerShell" target="_blank" style="font-weight:600">PowerShell/PowerShell</a>
+            <span style="color:#888;font-size:13px"> — PowerShell for every system!</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nextcloud/all-in-one" target="_blank" style="font-weight:600">nextcloud/all-in-one</a>
+            <span style="color:#888;font-size:13px"> — 📦 The official Nextcloud installation method. Provides easy deployment and maintenance with most features included in this one Nextcloud instance.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Project-HAMi/HAMi" target="_blank" style="font-weight:600">Project-HAMi/HAMi</a>
+            <span style="color:#888;font-size:13px"> — Heterogeneous GPU Sharing on Kubernetes</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/frappe/hrms" target="_blank" style="font-weight:600">frappe/hrms</a>
+            <span style="color:#888;font-size:13px"> — Open Source HR and Payroll Software</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24758" target="_blank" style="font-weight:600">Do Models Fake Alignment Without Clear Consequences?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24758v1 Announce Type: new 
+Large language models are capable of recognizing evaluation contexts and altering their behavior to reflect evaluator expectations rather than typical deployment</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24759" target="_blank" style="font-weight:600">Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24759v1 Announce Type: new 
+Research projects, educational efforts, and adjacent knowledge work accumulate findings, decisions, and reasoning that future collaborators rarely recover. The p</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24762" target="_blank" style="font-weight:600">Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24762v1 Announce Type: new 
+Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24763" target="_blank" style="font-weight:600">CaRE Compute-aware Remasking Evaluation Protocol for Masked Diffusion Language Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24763v1 Announce Type: new 
+Masked diffusion language models (MDLMs) are advancing rapidly, yet the evaluation standards needed to reliably interpret their progress have not kept pace. Desp</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24764" target="_blank" style="font-weight:600">GrocLM: Grocery Category Recommendation in E-Commerce with Large Language Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24764v1 Announce Type: new 
+The rapid growth of online grocery shopping requires recommendation systems that capture cyclical purchasing behavior and diverse user intents. Traditional item-</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2607.24766" target="_blank" style="font-weight:600">Crystalis: Progressive Nucleation and Semantic Annealing for Coordinated Multi-View Visualization Generation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2607.24766v1 Announce Type: new 
+Large language models (LLMs) can generate individual charts, but coordinated multi-view visualizations (CMVs), where views share data flows and cross-view intera</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-07-30 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
