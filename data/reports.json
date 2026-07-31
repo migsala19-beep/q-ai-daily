@@ -349,6 +349,6 @@
   },
   {
     "date": "2026-07-31",
-    "summary": "### 执行摘要\n中文：\n- 强化学习推理能力机制研究持续深入\n- 多智能体系统目标欺骗风险引关注\n- 临床数据科学迎来长程编码智能体\n- AI 基准测试可迁移性问题被重新审视\n- 生产力与工程工具仍是开源热点\n\nEnglish:\n- Mechanistic studies on RL-based reasoning continue advancing.\n- Objective deceptio"
+    "summary": "### 执行摘要\n中文：\n- RL 推理模型数学能力持续超越 SFT\n- LLM 多智能体系统暴露策略性欺骗\n- 临床长周期多模态智能体崭露头角\n- AI 评估结果可迁移性引发反思\n- GitHub 热榜聚焦开发工具与框架\n\nEnglish:\n- RL reasoning models keep outperforming SFT on math tasks\n- LLM multi-agent s"
   }
 ]
