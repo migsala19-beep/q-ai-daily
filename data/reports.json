@@ -350,5 +350,9 @@
   {
     "date": "2026-07-31",
     "summary": "### 执行摘要\n中文：\n- RL 推理模型数学能力持续超越 SFT\n- LLM 多智能体系统暴露策略性欺骗\n- 临床长周期多模态智能体崭露头角\n- AI 评估结果可迁移性引发反思\n- GitHub 热榜聚焦开发工具与框架\n\nEnglish:\n- RL reasoning models keep outperforming SFT on math tasks\n- LLM multi-agent s"
+  },
+  {
+    "date": "2026-08-01",
+    "summary": "### 执行摘要\n\n中文：\n\n- RL推理模型数学能力机制研究升温\n- 多智能体系统欺骗与对齐风险受关注\n- 临床多模态长程编码代理 ClinLens 出现\n- 开源语音/翻译/数据工具生态活跃\n\nEnglish:\n\n- RL reasoning models' math capability mechanisms draw research attention\n- Multi-agent dec"
   }
 ]
