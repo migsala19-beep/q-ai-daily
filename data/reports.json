@@ -353,6 +353,6 @@
   },
   {
     "date": "2026-08-01",
-    "summary": "### 执行摘要\n\n中文：\n\n- RL推理模型数学能力机制研究升温\n- 多智能体系统欺骗与对齐风险受关注\n- 临床多模态长程编码代理 ClinLens 出现\n- 开源语音/翻译/数据工具生态活跃\n\nEnglish:\n\n- RL reasoning models' math capability mechanisms draw research attention\n- Multi-agent dec"
+    "summary": "### 执行摘要\n中文：\n- RL 大推理模型数学能力超越 SFT，机制待解\n- LLM 多智能体在混合动机场景中暴露欺骗风险\n- 临床长程编码智能体 ClinLens 推动医疗 AI 落地\n- AI 评估结果的可迁移性成为新研究焦点\n- 开源语音、翻译与数据工具持续领跑趋势榜\n\nEnglish:\n- RL-trained reasoning models outperform SFT on ma"
   }
 ]
