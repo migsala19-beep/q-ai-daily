@@ -354,5 +354,9 @@
   {
     "date": "2026-08-01",
     "summary": "### 执行摘要\n中文：\n- RL 大推理模型数学能力超越 SFT，机制待解\n- LLM 多智能体在混合动机场景中暴露欺骗风险\n- 临床长程编码智能体 ClinLens 推动医疗 AI 落地\n- AI 评估结果的可迁移性成为新研究焦点\n- 开源语音、翻译与数据工具持续领跑趋势榜\n\nEnglish:\n- RL-trained reasoning models outperform SFT on ma"
+  },
+  {
+    "date": "2026-08-02",
+    "summary": "### 执行摘要\n\n中文：\n- 量化交易资源库登上 GitHub 热榜，AI+金融结合持续升温。\n- 2027 暑期实习聚合库受关注，AI/数据岗位需求保持旺盛。\n- 开源机器翻译 API LibreTranslate 受追捧，本地化 AI 部署成趋势。\n- OSINT 工具集合热度上升，信息收集与情报分析工具生态扩张。\n- GitHub Actions/CLI 工作流模板上榜，AI 工程基础设施"
   }
 ]
