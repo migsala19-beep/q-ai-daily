@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-09-26</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-09-26</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- TW3Cast时序预测登GIFT-Eval第三<br>- 预测智能体"何时推理"成新课题<br>- Pistis发布27B/9B多模态模型<br>- Agent框架进军DNA测序自动化<br>- Qdrant向量库与Qlib量化受关注</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - TW3Cast ranks #3 on GIFT-Eval for time-series forecasting<br>- New research asks when forecasting agents should reason<br>- Pistis releases 27B/9B multimodal models on Qwen bases<br>- Agentic AI enters DNA sequencing pipelines<br>- Qdrant vector DB and Qlib quant platform gain traction
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>趋势一：时序预测走向"精打细算"的智能体化。TW3Cast在GIFT-Eval基准130个参赛系统中排名第三（截至2026-09-14），其架构并非重型agentic pipeline，而是"冻结路由层+轻量微调基础模型"——路由层参数不更新，仅少量微调协调多个基础模型，排其前面的两个系统均为多步骤agentic方案。这说明精巧的模型组合策略可以低成本逼近复杂agent系统。另一篇论文进一步提出"可靠性路由"概念：预测智能体混合了推理、检索、集成、校准等多种行为，但"何时该信任哪种行为"缺乏系统研究，作者用行为压力测试回答"何时该让智能体推理"。两篇工作共同揭示工程共识：竞争力不在于堆推理步骤，而在于精准判断何时推理、何时检索、何时直接预测。<br><br>趋势二：多模态开源模型进入后训练工程化阶段。Pistis技术报告发布27B/9B多模态大模型，分别基于Qwen3.6和Qwen3.5，核心贡献是一套通用可扩展的后训练框架——先建强基础能力，再对齐多模态表现。基座能力趋同下，差异化主要来自后训练流程设计，团队可基于Qwen等开源基座+自定义后训练，快速构建垂直领域多模态模型，无需从头预训练。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Trend 1: Time-series forecasting is maturing toward "precision reasoning." TW3Cast ranks #3 of 130 on GIFT-Eval not as a heavy agentic pipeline but as a frozen router over lightly fine-tuned foundation models — the two systems above it are full agentic stacks. Meanwhile, "When Should Forecasting Agents Reason?" introduces behavioral stress tests for reliability routing, asking when to trust reasoning, retrieval, ensembling, or calibration. Together they signal an engineering consensus: competitive advantage is shifting from stacking more reasoning steps to knowing precisely when to reason, retrieve, or predict directly.<br><br>Trend 2: Open multimodal models are entering the post-training era. The Pistis report releases 27B and 9B multimodal LLMs built on Qwen3.6/3.5, emphasizing a general, scalable post-training framework. As base models converge in capability, differentiation increasingly comes from post-training design — meaning teams can build domain-specific multimodal models on open bases like Qwen without pretraining from scratch.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 审计现有AI应用的"过度推理"——参考可靠性路由思路，为查询分级（简单直连、复杂才推理），可显著降本增效。<br>2. 尝试"冻结路由+轻量微调"范式——TW3Cast证明其能以极低训练成本接近agentic效果，适合预算有限的中小团队。<br>3. RAG向量存储选型评估Qdrant——高性能、可自托管、带云服务，满足数据主权要求。<br>4. 隐私场景用LibreTranslate替代第三方翻译API——开源自托管、离线可用，敏感文本不出内网。<br>5. AI量化研究从Qlib起步——微软开源，支持监督学习、市场动态建模与强化学习。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Audit your AI apps for "over-reasoning" — adopt reliability-routing style tiered handling (direct answers for simple queries, reasoning only for complex ones) to cut cost and latency.<br>2. Explore the "frozen router + light fine-tuning" paradigm — TW3Cast shows near-agentic results at a fraction of training cost, ideal for budget-conscious teams.<br>3. Evaluate Qdrant for RAG/vector storage — high-performance, self-hostable, with cloud options; fits data-sovereignty requirements.<br>4. Use LibreTranslate for privacy-sensitive translation — open-source, self-hosted, offline-capable; keeps sensitive text off third-party APIs.<br>5. Start AI quant research with Qlib — Microsoft open-source platform supporting supervised learning, market dynamics modeling, and RL.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" style="font-weight:600">codecrafters-io/build-your-own-x</a>
+            <span style="color:#888;font-size:13px"> — Master programming by recreating your favorite technologies from scratch.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/openai/openai-cookbook" target="_blank" style="font-weight:600">openai/openai-cookbook</a>
+            <span style="color:#888;font-size:13px"> — Examples and guides for using the OpenAI API</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/LibreTranslate/LibreTranslate" target="_blank" style="font-weight:600">LibreTranslate/LibreTranslate</a>
+            <span style="color:#888;font-size:13px"> — Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ophub/amlogic-s9xxx-armbian" target="_blank" style="font-weight:600">ophub/amlogic-s9xxx-armbian</a>
+            <span style="color:#888;font-size:13px"> — Supports running Armbian on Amlogic, Allwinner, and Rockchip devices. Support a311d, s922x, s905x3, s905x2, s912, s905d, s905x, s905w, s905, s905l, rk3588, rk3568, rk3399, rk3328, h6, etc.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ripienaar/free-for-dev" target="_blank" style="font-weight:600">ripienaar/free-for-dev</a>
+            <span style="color:#888;font-size:13px"> — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/qdrant/qdrant" target="_blank" style="font-weight:600">qdrant/qdrant</a>
+            <span style="color:#888;font-size:13px"> — Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloudhttps://cloud.qdrant.io/</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/qlib" target="_blank" style="font-weight:600">microsoft/qlib</a>
+            <span style="color:#888;font-size:13px"> — Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped withhttps://github.com/microsoft/RD-Agentto automate R&D process.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28475" target="_blank" style="font-weight:600">When Should Forecasting Agents Reason? Behavioral Stress Tests for Reliability Routing</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28475v1 Announce Type: new 
+Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be tru</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28506" target="_blank" style="font-weight:600">TW3Cast: A Frozen Router of Lightly Fine-Tuned Foundation Models for Time-Series Forecasting on GIFT-Eval, Selected Entirely on the Training Split</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28506v1 Announce Type: new 
+TW3Cast is a time-series forecasting system that reaches position 3 of 130 entries on the GIFT-Eval benchmark by mean MASE rank, as of 2026-09-14. The two entrie</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28547" target="_blank" style="font-weight:600">PAWS: Policy-driven Agentic World Simulation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28547v1 Announce Type: new 
+Policy interventions propagate through public communication, institutional decisions, and stakeholder responses, yet datasets for financial multi-agent simulatio</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28554" target="_blank" style="font-weight:600">Pistis Technical Report</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28554v1 Announce Type: new 
+We introduce the Pistis model family, comprising 27B- and 9B-parameter multimodal large language models built on Qwen3.6 and Qwen3.5, respectively, and developed</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28557" target="_blank" style="font-weight:600">BaseCamp --- An Agentic AI Framework for Automating DNA Sequencing Data Pipelines</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28557v1 Announce Type: new 
+DNA sequencing pipelines, spanning quality control, alignment, variant calling, and annotation, are now reliably executed by workflow management systems that orc</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.28570" target="_blank" style="font-weight:600">DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.28570v1 Announce Type: new 
+Reinforcement learning (RL) is widely used to sharpen reasoning in multimodal large language models (MLLMs), yet its effect on hallucination is uneven. We trace </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-09-26 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

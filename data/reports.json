@@ -358,5 +358,9 @@
   {
     "date": "2026-08-02",
     "summary": "### 执行摘要\n中文：\n- 开源量化交易资源升温，AI金融加速融合\n- 2027暑期实习库上线，AI岗位需求扩大\n- 开源翻译工具受关注，本地化部署需求上升\n- OSINT工具热度走高，AI情报分析成趋势\n\nEnglish:\n- Open-source systematic trading resources heat up as AI-finance convergence accelerat"
+  },
+  {
+    "date": "2026-09-26",
+    "summary": "### 执行摘要\n\n中文：\n- TW3Cast时序预测登GIFT-Eval第三\n- 预测智能体\"何时推理\"成新课题\n- Pistis发布27B/9B多模态模型\n- Agent框架进军DNA测序自动化\n- Qdrant向量库与Qlib量化受关注\n\nEnglish:\n- TW3Cast ranks #3 on GIFT-Eval for time-series forecasting\n- New re"
   }
 ]
