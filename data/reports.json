@@ -362,5 +362,9 @@
   {
     "date": "2026-09-26",
     "summary": "### 执行摘要\n中文：\n- 预测智能体\"何时推理\"成研究热点\n- 轻量模型路由问鼎时序预测榜\n- Pistis 发布 9B/27B 多模态模型\n- 智能体落地基因测序与金融仿真\n- GitHub 热点：AI 基础设施与学习资源\n\nEnglish:\n- When should forecasting agents reason? Reliability routing heats up\n- Lig"
+  },
+  {
+    "date": "2026-09-27",
+    "summary": "### 执行摘要\n中文：\n- GitHub 今日聚焦开发者工具与基建项目\n- Bun 高速 JS 运行时持续受关注\n- 内容驱动框架 Astro、Svelte 上榜\n- 以太坊 Rust 客户端 reth 热度上升\n- 今日无 arXiv 与 HuggingFace 论文更新\n\nEnglish:\n- GitHub Trending today centers on dev tools and in"
   }
 ]
