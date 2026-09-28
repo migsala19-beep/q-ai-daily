@@ -369,6 +369,6 @@
   },
   {
     "date": "2026-09-28",
-    "summary": "### 执行摘要\n中文：\n- 今日仅 GitHub Trending 有数据，AI 论文源空缺\n- Trending 榜首为免费编程教育项目 freeCodeCamp\n- build-your-own-x 教程项目持续高热，自学需求旺盛\n- 隐私笔记 Joplin、复古引擎 Pyxel 上榜，工具类受关注\n- 无新增 AI 模型/论文动态，建议明日补充抓取\n\nEnglish:\n- Only Git"
+    "summary": "### 执行摘要\n中文：\n- AI 专源清淡，GitHub 硬技术霸榜\n- 工程基建回温：Bun、FlatBuffers 走高\n- “造轮子”学习法成 AI 时代护城河\n- 隐私本地化受捧：Joplin、KernelSU\n- Agent 集成面成通用产品分水岭\n\nEnglish:\n- Thin AI-native news; GitHub skews hard-tech.\n- Infra heat"
   }
 ]
