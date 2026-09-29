@@ -370,5 +370,9 @@
   {
     "date": "2026-09-28",
     "summary": "### 执行摘要\n中文：\n- AI 专源清淡，GitHub 硬技术霸榜\n- 工程基建回温：Bun、FlatBuffers 走高\n- “造轮子”学习法成 AI 时代护城河\n- 隐私本地化受捧：Joplin、KernelSU\n- Agent 集成面成通用产品分水岭\n\nEnglish:\n- Thin AI-native news; GitHub skews hard-tech.\n- Infra heat"
+  },
+  {
+    "date": "2026-09-29",
+    "summary": "### 执行摘要\n中文：\n- 智能体安全成焦点：越权与级联攻击受关注\n- 连接主义+符号主义融合推动自主系统落地\n- 多智能体代码评审存在\"无依据乱判\"缺陷\n- MCP协议成为企业数据空间与Agent桥接方案\n- 今日开源与博客源数据为空，信号偏弱\n\nEnglish:\n- Agent safety in focus: out-of-scope actions and cascading attac"
   }
 ]
