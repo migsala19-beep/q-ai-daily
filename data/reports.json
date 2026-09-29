@@ -373,6 +373,6 @@
   },
   {
     "date": "2026-09-29",
-    "summary": "### 执行摘要\n中文：\n- 智能体安全成焦点：越权与级联攻击受关注\n- 连接主义+符号主义融合推动自主系统落地\n- 多智能体代码评审存在\"无依据乱判\"缺陷\n- MCP协议成为企业数据空间与Agent桥接方案\n- 今日开源与博客源数据为空，信号偏弱\n\nEnglish:\n- Agent safety in focus: out-of-scope actions and cascading attac"
+    "summary": "### 执行摘要\n中文：\n- 多智能体可信度成为今日研究焦点\n- 代码评审智能体会\"无据自信\"，需防误判\n- 新攻击面：技能级联攻击威胁多Agent系统\n- MCP协议打通LLM Agent与数据空间\n- 连接主义+符号AI融合，迈向自治系统\n\nEnglish:\n- Multi-agent trustworthiness emerges as today's research focus\n- Co"
   }
 ]
