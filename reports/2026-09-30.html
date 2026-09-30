@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- Agentic AI 深入 ICU 临床决策，隐私保护成刚需<br>- 模型溯源技术可判定开源权重模型"谁先谁后"<br>- AI Agent 开始接管材料模拟工程全流程<br>- VLA 模型面对矛盾指令的行为首次被系统基准评测<br>- 人机协作设计框架成为新研究热点</div>
+  <div>- 智能体进入临床与科研高危场景<br>- 隐私保护成医疗Agent落地前提<br>- 开源模型血缘审计需求凸显<br>- VLA机器人冲突应对受检验<br>- 人机协作设计框架趋向成熟</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Agentic AI enters ICU clinical decision support, with privacy as a hard requirement<br>- New model-provenance method can tell which open-weight checkpoint came first<br>- AI agents now orchestrate full crystal-plasticity simulation workflows<br>- First systematic benchmark of VLA models under conflicting task premises<br>- Human-AI collaboration design frameworks gain research momentum
+    - Agentic AI moves into clinical and scientific high-stakes workflows<br>- Privacy preservation becomes a prerequisite for medical agents<br>- Provenance auditing gains urgency for open-weight model families<br>- VLA robots' conflict-handling behavior goes under benchmark<br>- Human-AI collaboration design frameworks mature
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：Agentic AI 正在向高合规、高风险的垂直行业渗透。SMARtCARE 论文指出，ICU 监护中的长上下文临床 AI 容易遗漏历史入院记录，导致早期生命体征漂移被误判。该工作提出"有界自治"（bounded-autonomy）的隐私保护 Agent 架构，让 AI 在明确权限边界内辅助临床决策。这说明 Agent 的落地瓶颈已从"能力"转向"可信与合规"，医疗、金融等强监管行业将成为下一个主战场。<br><br>趋势二：开源模型的"血缘审计"成为新刚需。Witness Overlap 提出定向溯源方法，能判断同一家族开源模型中哪个 checkpoint 发布在先——这对模型合并、微调、再发布的合规审计至关重要。随着 Llama、Qwen 等衍生模型爆炸式增长，模型供应链的可追溯性将催生新的工具与商业机会。</div>
+  <div>趋势一：智能体向安全攸关领域渗透，"护栏内置"成为标配。今日 arXiv 多篇论文指向同一方向：SMARtCARE 提出有界自主（bounded-autonomy）的临床决策智能体，通过隐私保护架构让 ICU 监测 AI 利用完整病史，避免长上下文窗口外的既往恶化模式被误判为"非特异性"体征；CP-Agent 则将智能体工程化方法引入晶体塑性仿真，自动完成异构工具配置、多步数据管道编排与参数标定。共同信号是：Agent 正从开放域对话走向出错代价高的专业流程，隐私、权限与流程护栏成为论文核心设计议题，而非事后补丁。<br><br>趋势二：模型"来源审计"与"行为评测"双线并进，构成 AI 供应链基础设施。Witeness Overlap 实现开源权重模型的方向性溯源——不仅判断 checkpoint 是否相关，还能判定谁先谁后，回应"微调-合并-再发布"链条日益拉长的审计难题；ConflictVLA-Bench 则指出任务失败本身无法区分"指令前提矛盾"与"模型能力不足"，需要专门的行为评测。随着开源生态复杂化，溯源审计 + 前提冲突测试将成模型发布与采购的常规动作。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1 — Agentic AI is penetrating highly regulated verticals. SMARtCARE identifies that long-context clinical AI in ICU monitoring misses prior admissions, causing early vital-sign drift to look nonspecific. Its solution: a privacy-preserving, bounded-autonomy agent architecture. The bottleneck for agents is shifting from capability to trust and compliance, making healthcare and finance the next battlegrounds.<br><br>Trend 2 — Provenance auditing of open-weight models is becoming essential. Witness Overlap introduces a directional method to determine which checkpoint in a model family came first, critical for auditing fine-tuning, merging, and re-release chains. As Llama/Qwen derivatives proliferate, model supply-chain traceability will create new tooling and business opportunities.
+    Trend 1: Agentic AI is penetrating safety-critical domains, with guardrails designed in from day one. SMARtCARE introduces a privacy-preserving, bounded-autonomy agent for clinical decision support—letting ICU monitoring AI reason over complete patient history so early vital-sign drift resembling a prior deterioration pattern is not dismissed as nonspecific. CP-Agent targets a different frontier: a harness-engineered agent that automates tool configuration, multi-step data pipelines, and constitutive-parameter calibration for crystal plasticity simulation. Both signal that agents are moving from open-domain chat into professional workflows where errors are costly, making privacy, permissions, and process guardrails first-class design concerns rather than afterthoughts.<br><br>Trend 2: Model provenance auditing and behavioral benchmarking are converging as AI supply-chain infrastructure. Witeness Overlap enables directional provenance inside open-weight model families—answering not merely whether checkpoints are related, but which came first, addressing the lengthening fine-tune/merge/re-release chain. ConflictVLA-Bench shows terminal task failure cannot distinguish invalid task premises from genuine capability gaps in vision-language-action models. As open ecosystems grow more complex, lineage audits plus premise-conflict behavior tests will become standard practice for model release and procurement.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 做 Agent 产品时先定义"权限边界"再写代码：SMARtCARE 的有界自治思路可直接借鉴，避免事后补合规。<br>- 关注模型溯源赛道：若你维护开源衍生模型，尽早建立 checkpoint 血缘档案，未来合规检查会用得上。<br>- 评估自家多模态系统是否"会拒绝矛盾指令"：参考 ConflictVLA-Bench 设计对抗性前提测试用例。<br>- 工程类 Agent 可复制 CP-Agent 的"harness-engineered"思路：把工具编排、参数校准流程固化进 Agent 骨架，而非依赖模型临场发挥。<br>- 今日 GitHub/HF/大厂博客为空，建议明日重跑采集脚本或检查超时配置。</div>
+  <div>1. 高危场景Agent前置设计权限分级与人工确认点——参考SMARtCARE的bounded-autonomy架构，比事后打补丁更稳妥。<br>2. 科研/工程多步流程是Agent落地蓝海——CP-Agent的harness-engineered思路可复用到材料、化工、生物信息等领域。<br>3. 为开源模型微调建立血缘台账——记录基座版本与派生关系，未来溯源审计可能成为合规要求。<br>4. 评测集加入"反常输入"用例——只看任务成功率不够，参考ConflictVLA-Bench测前提矛盾下的行为。<br>5. 做人机协作产品先画设计框架再写代码——Working with AI的方法论适合直接嵌入PRD评审环节。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Define your agent's authority boundaries before coding — SMARtCARE's bounded-autonomy pattern is a reusable design template.<br>- Track model provenance early: if you ship fine-tuned derivatives, keep checkpoint lineage records for future compliance audits.<br>- Stress-test your VLA/LLM systems against conflicting premises using ConflictVLA-Bench-style adversarial cases.<br>- Adopt CP-Agent's "harness-engineered" approach: encode tool orchestration and calibration workflows into the agent harness rather than relying on improvisation.<br>- GitHub/HF/blog sources came back empty today — re-run the scraper or check timeout settings tomorrow.
+    1. Design permission tiers and human checkpoints up front for high-stakes agents—SMARtCARE's bounded-autonomy architecture is safer than retrofitted patches.<br>2. Multi-step scientific/engineering pipelines are a blue ocean for agents—CP-Agent's harness-engineered approach transfers to materials, chemistry, and bioinformatics.<br>3. Keep a lineage ledger for open-weight fine-tunes—logging base versions and derivatives prepares you for future provenance-audit compliance.<br>4. Add abnormal-input cases to your eval suite—task success rate alone is insufficient; benchmark premise-conflict behavior as ConflictVLA-Bench does.<br>5. Draft the human-AI collaboration framework before coding—Working with AI's methodology fits naturally into PRD review cycles.
   </div>
 </div>
 
@@ -101,7 +101,7 @@ Evaluating VLM-based autonomous driving remains difficult because driving compet
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-09-30 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-09-30 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
