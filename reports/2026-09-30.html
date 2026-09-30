@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-09-30</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-09-30</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agentic AI 深入 ICU 临床决策，隐私保护成刚需<br>- 模型溯源技术可判定开源权重模型"谁先谁后"<br>- AI Agent 开始接管材料模拟工程全流程<br>- VLA 模型面对矛盾指令的行为首次被系统基准评测<br>- 人机协作设计框架成为新研究热点</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agentic AI enters ICU clinical decision support, with privacy as a hard requirement<br>- New model-provenance method can tell which open-weight checkpoint came first<br>- AI agents now orchestrate full crystal-plasticity simulation workflows<br>- First systematic benchmark of VLA models under conflicting task premises<br>- Human-AI collaboration design frameworks gain research momentum
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>趋势一：Agentic AI 正在向高合规、高风险的垂直行业渗透。SMARtCARE 论文指出，ICU 监护中的长上下文临床 AI 容易遗漏历史入院记录，导致早期生命体征漂移被误判。该工作提出"有界自治"（bounded-autonomy）的隐私保护 Agent 架构，让 AI 在明确权限边界内辅助临床决策。这说明 Agent 的落地瓶颈已从"能力"转向"可信与合规"，医疗、金融等强监管行业将成为下一个主战场。<br><br>趋势二：开源模型的"血缘审计"成为新刚需。Witness Overlap 提出定向溯源方法，能判断同一家族开源模型中哪个 checkpoint 发布在先——这对模型合并、微调、再发布的合规审计至关重要。随着 Llama、Qwen 等衍生模型爆炸式增长，模型供应链的可追溯性将催生新的工具与商业机会。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Trend 1 — Agentic AI is penetrating highly regulated verticals. SMARtCARE identifies that long-context clinical AI in ICU monitoring misses prior admissions, causing early vital-sign drift to look nonspecific. Its solution: a privacy-preserving, bounded-autonomy agent architecture. The bottleneck for agents is shifting from capability to trust and compliance, making healthcare and finance the next battlegrounds.<br><br>Trend 2 — Provenance auditing of open-weight models is becoming essential. Witness Overlap introduces a directional method to determine which checkpoint in a model family came first, critical for auditing fine-tuning, merging, and re-release chains. As Llama/Qwen derivatives proliferate, model supply-chain traceability will create new tooling and business opportunities.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 做 Agent 产品时先定义"权限边界"再写代码：SMARtCARE 的有界自治思路可直接借鉴，避免事后补合规。<br>- 关注模型溯源赛道：若你维护开源衍生模型，尽早建立 checkpoint 血缘档案，未来合规检查会用得上。<br>- 评估自家多模态系统是否"会拒绝矛盾指令"：参考 ConflictVLA-Bench 设计对抗性前提测试用例。<br>- 工程类 Agent 可复制 CP-Agent 的"harness-engineered"思路：把工具编排、参数校准流程固化进 Agent 骨架，而非依赖模型临场发挥。<br>- 今日 GitHub/HF/大厂博客为空，建议明日重跑采集脚本或检查超时配置。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Define your agent's authority boundaries before coding — SMARtCARE's bounded-autonomy pattern is a reusable design template.<br>- Track model provenance early: if you ship fine-tuned derivatives, keep checkpoint lineage records for future compliance audits.<br>- Stress-test your VLA/LLM systems against conflicting premises using ConflictVLA-Bench-style adversarial cases.<br>- Adopt CP-Agent's "harness-engineered" approach: encode tool orchestration and calibration workflows into the agent harness rather than relying on improvisation.<br>- GitHub/HF/blog sources came back empty today — re-run the scraper or check timeout settings tomorrow.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31763" target="_blank" style="font-weight:600">SMARtCARE: Privacy-Preserving Agentic AI Systems for Bounded-Autonomy Clinical Decision Support</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31763v1 Announce Type: new 
+Long-context clinical AI systems can miss relevant patient history when prior admissions fall outside the active reasoning context. In ICU monitoring, this can c</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31784" target="_blank" style="font-weight:600">Witeness Overlap: Directional Provenance Inside Open-Weight Model Families</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31784v1 Announce Type: new 
+Open-weight models are often released, fine-tuned, aligned, merged, and re-released, making provenance audits ask not only whether checkpoints are related, but a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31790" target="_blank" style="font-weight:600">CP-Agent: A Harness-Engineered Agent for Crystal Plasticity Simulation Workflows</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31790v1 Announce Type: new 
+Crystal plasticity (CP) simulations predict the mechanical behavior of polycrystalline metals, yet their routine use is hindered by the manual effort of configur</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31792" target="_blank" style="font-weight:600">ConflictVLA-Bench: Benchmarking Behavioral Responses of Vision-Language-Action Models to Premise Conflicts</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31792v1 Announce Type: new 
+While Vision-Language-Action (VLA) models perform strongly on manipulation tasks, their responses to invalid task premises remain underexplored. Existing evaluat</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31793" target="_blank" style="font-weight:600">Working with AI: A Design Framework for Human-AI Collaboration</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31793v1 Announce Type: new 
+Artificial Intelligence (AI), particularly GenAI, is becoming an increasingly important part of modern work. In industrial settings, AI can support decision-maki</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2609.31814" target="_blank" style="font-weight:600">DriveHierarchy: A Benchmark for Diagnosing VLM Driving Capabilities from Open-Loop Understanding to Closed-Loop Execution</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2609.31814v1 Announce Type: new 
+Evaluating VLM-based autonomous driving remains difficult because driving competence is composite, where a capable system must ground traffic participants and ha</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-09-30 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

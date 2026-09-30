@@ -374,5 +374,9 @@
   {
     "date": "2026-09-29",
     "summary": "### 执行摘要\n中文：\n- 多智能体可信度成为今日研究焦点\n- 代码评审智能体会\"无据自信\"，需防误判\n- 新攻击面：技能级联攻击威胁多Agent系统\n- MCP协议打通LLM Agent与数据空间\n- 连接主义+符号AI融合，迈向自治系统\n\nEnglish:\n- Multi-agent trustworthiness emerges as today's research focus\n- Co"
+  },
+  {
+    "date": "2026-09-30",
+    "summary": "### 执行摘要\n中文：\n- Agentic AI 深入 ICU 临床决策，隐私保护成刚需\n- 模型溯源技术可判定开源权重模型\"谁先谁后\"\n- AI Agent 开始接管材料模拟工程全流程\n- VLA 模型面对矛盾指令的行为首次被系统基准评测\n- 人机协作设计框架成为新研究热点\n\nEnglish:\n- Agentic AI enters ICU clinical decision support,"
   }
 ]
