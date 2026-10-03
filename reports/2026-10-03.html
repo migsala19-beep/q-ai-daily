@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-03</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-03</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agent 记忆与「世界模型」成为研究热点，多篇论文聚焦长程 Agent 的认知架构<br>- 「提案-执行-验证」治理框架 Praxa 推动 Agent 安全可控落地<br>- n8n 登顶 GitHub Trending，可视化工作流+AI 能力成为自动化主流路径<br>- PostHog 发力 AI 可观测性，MCP 接入产品工具链<br>- 小模型（SLM）在 Agent 子任务中的适用性边界成为成本优化新课题</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agent memory and "world models" dominate research, with multiple papers on long-horizon agent cognition<br>- Praxa introduces a proposal-execution-verification governance harness for safe agent deployment<br>- n8n tops GitHub Trending, proving visual workflow + AI is the mainstream automation path<br>- PostHog expands AI observability, integrating via MCP<br>- SLM eligibility for agent microtasks emerges as a cost-optimization research topic
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>趋势一：长程 Agent 的「记忆治理」正从附属模块升级为独立研究方向。论文《Heavy-Tailed Memory Traces in Long-Horizon Language Agents》指出，当前记忆系统仅以任务成功率和 token 成本评判，缺乏对记忆使用形态（"shape of memory use"）的刻画——重尾分布表明 Agent 严重依赖极少数关键记忆，这为设计「关键记忆优先」的压缩与检索策略提供了量化依据。论文《When Do Causal World Models Help Modular LLM Agents》则揭示：在订单、支付、库存、物流等模块化系统中，常规世界模型只拟合观测轨迹，无法捕捉模块间的因果约束；引入因果世界模型才能正确预测跨模块动作的有效性。<br><br>趋势二：Agent 的工程化治理框架走向成熟。Praxa 论文将「提案、授权、派发、已验证外部效果、服务升级」五个状态显式区分，通过确定性 harness 实现证据绑定执行——这正是企业部署 Agent 最缺的审计能力。这与 n8n 的走红（可视化编排+400+集成+自托管）形成呼应：行业同时需要「放得心的治理框架」和「看得见的工作流编排」。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Trend 1: Memory governance for long-horizon agents is becoming a standalone research field. The heavy-tailed memory paper shows agents depend heavily on a tiny set of critical memories, motivating priority-based memory compression. The causal world model paper demonstrates that standard world models fitting observational traces fail in modular systems (orders, payments, inventory), where causal world models are needed to predict cross-module action validity.<br><br>Trend 2: Agent governance frameworks are maturing. Praxa explicitly separates proposal, authority, dispatch, verified external effect, and promotion states via a deterministic, evidence-bound harness — exactly the auditability enterprises need. This resonates with n8n's rise (visual orchestration, 400+ integrations, self-hosting): the industry needs both trustworthy governance frameworks and transparent workflow orchestration.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 自建 Agent 时按「提案/授权/验证」分离执行权限——理由：Praxa 框架证明状态显式化是 Agent 安全审计的关键，可避免 LLM 直接产生不可逆副作用。<br>2. 用 n8n 搭建团队自动化流水线——理由：fair-code 许可+自托管+AI 原生能力，是低代码接入 LLM 的最短路径。<br>3. 接入 PostHog 做 AI 产品可观测性——理由：会话回放+日志+MCP 集成，能快速定位 Agent 线上故障。<br>4. 评估任务前先测「SLM 是否够用」——理由：microtask eligibility 研究提示，简单子任务用 SLM 可大幅降低推理成本。<br>5. 为 Agent 记忆系统加入用量统计——理由：重尾分布意味着 80% 价值来自 20% 记忆，按使用频率优化检索。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Separate agent execution into propose/authorize/verify stages — Praxa shows explicit state separation is key to auditable, safe agents.<br>2. Build team automation on n8n — fair-code license, self-hosting, and native AI make it the shortest path to LLM-powered low-code workflows.<br>3. Adopt PostHog for AI observability — session replay, logs, and MCP integration help pinpoint agent failures in production fast.<br>4. Test "is an SLM enough" before assigning microtasks — the eligibility-gap research suggests simple subtasks can cut inference costs dramatically.<br>5. Add usage analytics to your agent memory system — heavy-tailed distribution means 80% of value comes from 20% of memories; optimize retrieval by frequency.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/n8n-io/n8n" target="_blank" style="font-weight:600">n8n-io/n8n</a>
+            <span style="color:#888;font-size:13px"> — Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/PostHog/posthog" target="_blank" style="font-weight:600">PostHog/posthog</a>
+            <span style="color:#888;font-size:13px"> — 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/rustdesk/rustdesk" target="_blank" style="font-weight:600">rustdesk/rustdesk</a>
+            <span style="color:#888;font-size:13px"> — An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" style="font-weight:600">NationalSecurityAgency/ghidra</a>
+            <span style="color:#888;font-size:13px"> — Ghidra is a software reverse engineering (SRE) framework</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/grokability/snipe-it" target="_blank" style="font-weight:600">grokability/snipe-it</a>
+            <span style="color:#888;font-size:13px"> — A free open source IT asset/license management system</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/OCA/server-tools" target="_blank" style="font-weight:600">OCA/server-tools</a>
+            <span style="color:#888;font-size:13px"> — Tools for Odoo Administrators to improve some technical features on Odoo.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/OWASP/wstg" target="_blank" style="font-weight:600">OWASP/wstg</a>
+            <span style="color:#888;font-size:13px"> — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web applications and web services.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/PowerShell/PowerShell" target="_blank" style="font-weight:600">PowerShell/PowerShell</a>
+            <span style="color:#888;font-size:13px"> — PowerShell for every system!</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00010" target="_blank" style="font-weight:600">Heavy-Tailed Memory Traces in Long-Horizon Language Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00010v1 Announce Type: new 
+Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00012" target="_blank" style="font-weight:600">When Do Causal World Models Help Modular LLM Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00012v1 Announce Type: new 
+LLM agents increasingly act through modular systems, such as order, payment, inventory, and shipment services, where actions in one module change which transitio</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00015" target="_blank" style="font-weight:600">From Proposal to Verified Effect: Praxa, an Evidence-Bound Harness for Governed AI Agent Execution</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00015v1 Announce Type: new 
+Large-language-model agents can propose and execute actions, but proposal, authority, dispatch, verified external effect, and serving promotion are different cla</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00018" target="_blank" style="font-weight:600">What Do Rationales Communicate? A Message-Intervention Study in Role-Specialized QA</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00018v1 Announce Type: new 
+Role-specialized QA pipelines increasingly pass rationales from a reasoner to a verifier, but it is unclear what this message actually buys: better answers, stro</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00025" target="_blank" style="font-weight:600">Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00025v1 Announce Type: new 
+Agent harnesses increasingly want to run small language models (SLMs) on the microtasks around a frontier large language model (LLM) planner: auto-approving shel</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.00047" target="_blank" style="font-weight:600">Characterizing a Configuration Where Inference-Time PRM-Pruned Fragment Grafting Is Inert: Evidence from Three Reasoning LMs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.00047v1 Announce Type: new 
+Diversity collapse in parallel chain-of-thought has motivated inference-time interventions built on a natural design: when a process reward model (PRM) prunes a </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-03 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
