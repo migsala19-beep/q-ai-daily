@@ -393,6 +393,6 @@
   },
   {
     "date": "2026-10-04",
-    "summary": "### 执行摘要\n\n中文：\n* 数据源受限，仅 GitHub Trending 有数据\n* PostHog 上榜，AI 应用可观测性升温\n* ClickHouse、Airflow 等数据基建持续活跃\n* 开发者工具链占据榜单主导地位\n* arXiv、HuggingFace 今日无新论文\n\nEnglish:\n* Limited data sources; only GitHub Trending a"
+    "summary": "### 执行摘要\n中文：\n- 今日 AI 论文与大厂动态空缺，风向标在 GitHub 工程侧\n- PostHog 首推 AI 可观测性，成产品自驾驶新标配\n- ClickHouse/Airflow/sqlfluff 同榜，数据底座成焦点\n- Trivy/meshery 上榜，安全与云原生治理持续升温\n- 信号：AI 落地重心正从模型转向生产化基础设施\n\nEnglish:\n- No new arXi"
   }
 ]
