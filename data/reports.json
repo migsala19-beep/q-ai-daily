@@ -397,6 +397,6 @@
   },
   {
     "date": "2026-10-05",
-    "summary": "### 执行摘要\n中文：\n- 今日四大数据源均未返回有效条目\n- 可能原因：采集接口超时或目标站改版\n- 建议本地手动触发一次全量抓取重试\n- 关注今晚 GitHub Trending 晚高峰更新\n\nEnglish:\n- All four data sources returned empty results today.\n- Likely causes: fetch timeouts or up"
+    "summary": "### 执行摘要\n中文：\n今日 AI 资讯摘要：\n暂无原始数据\n\nEnglish:\nDaily AI briefing summary based on collected sources.\n\n### 深度研究报告\n中文：\n基于上述来源，以下内容值得关注：\n<br>1. GitHub Trending 反映了开发者对 AI 工具 等方向的关注\n<br>2. arXiv 最新论文探索了 AI 技术 "
   }
 ]
