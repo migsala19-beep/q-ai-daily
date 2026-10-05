@@ -394,5 +394,9 @@
   {
     "date": "2026-10-04",
     "summary": "### 执行摘要\n中文：\n- 今日 AI 论文与大厂动态空缺，风向标在 GitHub 工程侧\n- PostHog 首推 AI 可观测性，成产品自驾驶新标配\n- ClickHouse/Airflow/sqlfluff 同榜，数据底座成焦点\n- Trivy/meshery 上榜，安全与云原生治理持续升温\n- 信号：AI 落地重心正从模型转向生产化基础设施\n\nEnglish:\n- No new arXi"
+  },
+  {
+    "date": "2026-10-05",
+    "summary": "### 执行摘要\n中文：\n- 今日四大数据源均未返回有效条目\n- 可能原因：采集接口超时或目标站改版\n- 建议本地手动触发一次全量抓取重试\n- 关注今晚 GitHub Trending 晚高峰更新\n\nEnglish:\n- All four data sources returned empty results today.\n- Likely causes: fetch timeouts or up"
   }
 ]
