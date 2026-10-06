@@ -398,5 +398,9 @@
   {
     "date": "2026-10-05",
     "summary": "### 执行摘要\n中文：\n今日 AI 资讯摘要：\n暂无原始数据\n\nEnglish:\nDaily AI briefing summary based on collected sources.\n\n### 深度研究报告\n中文：\n基于上述来源，以下内容值得关注：\n<br>1. GitHub Trending 反映了开发者对 AI 工具 等方向的关注\n<br>2. arXiv 最新论文探索了 AI 技术 "
+  },
+  {
+    "date": "2026-10-06",
+    "summary": "### 执行摘要\n中文：\n- Flow Matching 约束采样新方法 MintFlow 发布\n- LLM Agent  harness 引入 System-1 快速决策模型\n- 文本生图全局安全机制 CALM 暴露几何缺陷\n- AI 风险披露可通过年报大规模量化分析\n- 今日 GitHub 趋势以工具类项目为主，AI 论文为重头\n\nEnglish:\n- MintFlow proposes mi"
   }
 ]

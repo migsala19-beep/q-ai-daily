@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-06</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-06</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Flow Matching 约束采样新方法 MintFlow 发布<br>- LLM Agent  harness 引入 System-1 快速决策模型<br>- 文本生图全局安全机制 CALM 暴露几何缺陷<br>- AI 风险披露可通过年报大规模量化分析<br>- 今日 GitHub 趋势以工具类项目为主，AI 论文为重头</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - MintFlow proposes minimal intervention for constrained flow matching<br>- System-1 fast decision models evaluated for LLM agent harnesses<br>- CALM analysis reveals geometric flaws in global text-to-image safety<br>- AI risk disclosures measurable via LLM-processed annual reports<br>- GitHub trending dominated by tools; arXiv papers carry today's AI signal
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日值得关注的第一个方向是「生成模型的约束控制」。MintFlow 论文针对 flow matching 模型的约束采样问题提出最小轨迹干预方法，突破了现有方法在观测约束与物理定律之间"顾此失彼"的权衡。这对工业仿真、分子生成等需要"生成结果必须满足硬约束"的场景意义重大，意味着生成模型可以更可靠地嵌入工程 pipeline，而不必事后筛选。<br><br>第二个方向是「Agent 基础设施的快速决策层」。论文《Fast Models, Slow Evidence》对 System-1 决策模型（单次前向传播即可判断"该调哪个模型、该用哪个工具、检索文本是否相关、输入是否含注入"）做了配对自审计评估。随着 Agent 每秒要做数十个小型决策，在 harness 层引入轻量决策模型来降低成本和延迟，是一个被低估但即将爆发的工程方向。值得注意的是，今日 arXiv 还有一篇用 LLM 批量分析上市公司年报中的 AI 风险披露，说明"用 LLM 做大规模文本社会学研究"的方法论正在成熟。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends stand out today. First, constrained control for generative models: MintFlow introduces minimal trajectory intervention for constrained flow matching, breaking the trade-off existing constrained samplers face between observed measurements and physical laws. This matters for industrial simulation and molecular generation, where samples must satisfy hard constraints natively rather than being filtered post-hoc. Second, a fast decision layer for agent infrastructure: "Fast Models, Slow Evidence" provides a paired, self-audited evaluation of System-1 decision models that answer agent-harness micro-decisions (model selection, tool choice, retrieval relevance, injection detection) in a single forward pass. As agents make dozens of small typed decisions per task, lightweight decision models at the harness layer are an underrated but emerging engineering direction. Meanwhile, the AI Risk Observatory paper shows LLM-powered large-scale analysis of corporate annual reports is maturing as a methodology.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 评估自家 Agent 是否所有决策都走大模型——可尝试用小型分类模型承担工具选择、注入检测等 System-1 决策，降本增效。<br>2. 若业务涉及约束性生成（如合规文案、物理仿真），关注 MintFlow 类方法，避免"生成+过滤"的低效模式。<br>3. 文本生图安全方案选型时，谨慎依赖全局不安全子空间方法——CALM 证明其存在几何盲区，建议叠加逐 prompt 检测。<br>4. 投资/研究视角：年报 AI 风险披露可作为量化信号，可用 LLM pipeline 自建监测工具，属于低竞争的差异化数据源。<br>5. 报告站数据源健康度预警：今日 HuggingFace Papers 与大厂博客均为空，建议为这两个源增加超时重试或备用抓取路径。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Audit your agent: not every decision needs a large model — route tool selection and injection detection to lightweight System-1 classifiers to cut cost and latency.<br>2. If your product involves constrained generation (compliant copy, physics-aware design), track MintFlow-style methods instead of inefficient generate-then-filter pipelines.<br>3. When selecting text-to-image safety mechanisms, be cautious with global unsafe-subspace approaches — CALM demonstrates geometric blind spots; layer per-prompt detection on top.<br>4. Investment/research angle: AI risk disclosures in annual reports are a low-competition quantifiable signal — an LLM pipeline can turn this into a proprietary monitoring tool.<br>5. Data-source health alert: HuggingFace Papers and big-tech blogs returned empty today — add timeout retries or fallback fetchers for these sources.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/caddyserver/caddy" target="_blank" style="font-weight:600">caddyserver/caddy</a>
+            <span style="color:#888;font-size:13px"> — Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/dortania/OpenCore-Legacy-Patcher" target="_blank" style="font-weight:600">dortania/OpenCore-Legacy-Patcher</a>
+            <span style="color:#888;font-size:13px"> — Experience macOS just like before</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tiann/KernelSU" target="_blank" style="font-weight:600">tiann/KernelSU</a>
+            <span style="color:#888;font-size:13px"> — A Kernel based root solution for Android</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/1N3/Sn1per" target="_blank" style="font-weight:600">1N3/Sn1per</a>
+            <span style="color:#888;font-size:13px"> — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 600+ exploits, 90+ integrations, 10K+ detections.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/termux/termux-packages" target="_blank" style="font-weight:600">termux/termux-packages</a>
+            <span style="color:#888;font-size:13px"> — A package build system for Termux.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" style="font-weight:600">yt-dlp/yt-dlp</a>
+            <span style="color:#888;font-size:13px"> — A feature-rich command-line audio/video downloader</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/hrydgard/ppsspp" target="_blank" style="font-weight:600">hrydgard/ppsspp</a>
+            <span style="color:#888;font-size:13px"> — A PSP emulator for Android, Windows, Mac, Linux and iOS, written in C++. Want to contribute? Join us on Discord athttps://discord.gg/5NJB6dDor just send pull requests / issues.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/Zettlr/Zettlr" target="_blank" style="font-weight:600">Zettlr/Zettlr</a>
+            <span style="color:#888;font-size:13px"> — Your One-Stop Publication Workbench</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02260" target="_blank" style="font-weight:600">MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02260v1 Announce Type: new 
+Flow matching models excel at generative modeling, and many downstream applications require their samples to satisfy prescribed constraints, such as observed mea</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02267" target="_blank" style="font-weight:600">Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02267v1 Announce Type: new 
+Agent harnesses make many small, typed decisions per task: which model to call, which tool to use, whether retrieved text is relevant, whether an input carries a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02281" target="_blank" style="font-weight:600">The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02281v1 Announce Type: new 
+Societal resilience research relies on access to useful and actionable data, which motivates our main research question: Can annual reports, processed at scale w</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02300" target="_blank" style="font-weight:600">Keep It CALM: Analyzing the Limits of Global Unsafety in Text-to-Image Generation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02300v1 Announce Type: new 
+Training-free safeguards for text-to-image generation often rely on a reusable safety signal, such as an unsafe direction or global toxic subspace, applied broad</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02330" target="_blank" style="font-weight:600">Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02330v1 Announce Type: new 
+Large language models (LLMs) rely on long-horizon tool invocation sequences for complex tasks, where each invocation can alter the task state and condition subse</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.02331" target="_blank" style="font-weight:600">World Editing: Intervening on Executable Worlds at Increasing Depth</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.02331v1 Announce Type: new 
+Interactive world models are increasingly capable of generating environments and acting within them, yet deliberately editing an existing executable world remain</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-06 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
