@@ -401,6 +401,6 @@
   },
   {
     "date": "2026-10-06",
-    "summary": "### 执行摘要\n中文：\n- Flow Matching 约束采样新方法 MintFlow 发布\n- LLM Agent  harness 引入 System-1 快速决策模型\n- 文本生图全局安全机制 CALM 暴露几何缺陷\n- AI 风险披露可通过年报大规模量化分析\n- 今日 GitHub 趋势以工具类项目为主，AI 论文为重头\n\nEnglish:\n- MintFlow proposes mi"
+    "summary": "### 执行摘要\n中文：\n- 今日大厂与HF论文信号缺位\n- 安全治理成为arXiv主线\n- Agent harness评估走向自审计\n- 约束生成开始面向物理一致\n- Trending偏系统安全非AI原生\n\nEnglish:\n- Major lab and HuggingFace signals are absent today.\n- Safety governance is the main "
   }
 ]
