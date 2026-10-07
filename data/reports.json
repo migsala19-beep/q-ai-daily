@@ -402,5 +402,9 @@
   {
     "date": "2026-10-06",
     "summary": "### 执行摘要\n中文：\n- 今日大厂与HF论文信号缺位\n- 安全治理成为arXiv主线\n- Agent harness评估走向自审计\n- 约束生成开始面向物理一致\n- Trending偏系统安全非AI原生\n\nEnglish:\n- Major lab and HuggingFace signals are absent today.\n- Safety governance is the main "
+  },
+  {
+    "date": "2026-10-07",
+    "summary": "### 执行摘要\n中文：\n- 今日数据源大部分为空，仅arXiv有5篇新论文\n- LLM智能体工具调用安全漏洞引关注（拒绝失效+代理审计）\n- 黑盒LLM可用代理置信度进行错误审计\n- AI向科学计算深水区渗透：数值求解器与海洋化学重建\n- 开源模拟芯片基准问世，检验模型真实电路能力\n\nEnglish:\n- Most sources returned empty today; only arXiv"
   }
 ]

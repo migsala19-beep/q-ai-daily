@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-07</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-07</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 今日数据源大部分为空，仅arXiv有5篇新论文<br>- LLM智能体工具调用安全漏洞引关注（拒绝失效+代理审计）<br>- 黑盒LLM可用代理置信度进行错误审计<br>- AI向科学计算深水区渗透：数值求解器与海洋化学重建<br>- 开源模拟芯片基准问世，检验模型真实电路能力</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Most sources returned empty today; only arXiv yielded 5 new papers<br>- LLM agent safety under the spotlight: refusal failures and proxy auditing<br>- Black-box LLMs can be audited via surrogate log-probabilities<br>- AI deepens into scientific computing: numerical solvers and ocean chemistry<br>- Open-source analog circuit benchmark tests real transferable skills
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日最值得关注的方向是 **LLM 智能体的可信度与审计**。两篇论文形成呼应：其一，《MLLMs Fail to Refuse when Using Tools Agentically》揭示多模态大模型在以智能体方式使用工具时会"忘记拒绝"，在有害请求面前仍执行操作，这对部署中的 Agent 系统是重大安全隐患；其二，《Proxy Confidence》提出用代理模型的 log-probability 审计黑盒 LLM 智能体的输出，实验显示前沿聊天 API 自带的置信度对错误的判别力" barely beats chance"，而代理置信度能显著提前暴露错误的工具调用。另一个方向是 **AI for Science 的算法自我改进**：《Training Numerical Intelligence》让智能体通过执行反馈自动诊断数值求解器性能问题并发现改进技能，标志着 AI 从"写代码"走向"改进算法本身"；《REACT》则用 AI 重建全球海洋pH分布，服务海洋酸化监测。整体信号明确：Agent 能力越强，安全审计与自我纠错的基础设施越成为刚需。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two papers converge on **LLM agent trustworthiness and auditing**. First, "MLLMs Fail to Refuse when Using Tools Agentically" shows multimodal models lose their refusal ability when acting agentically -- a serious deployment risk. Second, "Proxy Confidence" demonstrates that surrogate model log-probabilities can audit black-box LLM agents, since frontier APIs' own confidence signals barely beat chance at catching erroneous tool calls. A second trend is **AI for Science moving toward self-improving algorithms**: "Training Numerical Intelligence" lets agents auto-diagnose and repair numerical solver performance via execution feedback, while "REACT" reconstructs global sea-surface pH for ocean acidification monitoring. The clear signal: as agents grow more capable, safety auditing and self-correction infrastructure becomes essential.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 若你在做 Agent 产品，加入"工具调用前拒绝检查"层——论文证实原生模型在此场景不可靠。<br>2. 用一个小型开源模型做置信度代理，为黑盒 API 的关键调用加一层廉价审计。<br>3. 数值/科学计算团队可借鉴"执行反馈+自动诊断"范式，让 AI 优化既有算法而非重写代码。<br>4. 芯片/硬件方向关注 SGAnalog 基准，可作为评估模型电路设计能力的标尺。<br>5. 数据源今日大面积为空，建议检查爬虫超时配置（可设为60s）并重跑采集。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. If building agent products, add a pre-tool-call refusal check -- native models are proven unreliable in this regime.<br>2. Use a small open-source model as a confidence proxy to cheaply audit black-box API calls.<br>3. Scientific computing teams can adopt the "execution feedback + auto-diagnosis" pattern to let AI improve existing algorithms.<br>4. Hardware teams should watch the SGAnalog benchmark as a yardstick for circuit-design capabilities.<br>5. Most data sources returned empty today -- check scraper timeout settings (raise to 60s) and re-run collection.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03872" target="_blank" style="font-weight:600">Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03872v1 Announce Type: new 
+AI agents are becoming increasingly capable of generating scientific code, but generating code is not the same as improving the algorithms behind it. For numeric</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03888" target="_blank" style="font-weight:600">REACT: Physically and Chemically Consistent Reconstruction of Marine Active Tracers</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03888v1 Announce Type: new 
+Reconstructing global sea surface pH from sparse observations is critical for monitoring ocean acidification and understanding marine carbon cycling. Traditional</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03894" target="_blank" style="font-weight:600">Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03894v1 Announce Type: new 
+A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hid</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03934" target="_blank" style="font-weight:600">SGAnalog: An End-to-End Circuit Benchmark from Open-Source Silicon Tapeouts</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03934v1 Announce Type: new 
+Existing analog integrated circuit design benchmarks make two questions hard to answer: whether a model has learned transferable circuit skills rather than recal</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03938" target="_blank" style="font-weight:600">MLLMs Fail to Refuse when Using Tools Agentically</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03938v1 Announce Type: new 
+Agentic multimodal large language models (MLLMs) have recently pushed the frontier of visual reasoning by calling tools such as zooming and tagging. Despite the </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03948" target="_blank" style="font-weight:600">Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03948v1 Announce Type: new 
+Autonomous driving decision systems must balance safety, efficiency, and social norms in complex traffic interactions. Philosophical and ethical considerations h</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-07 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
