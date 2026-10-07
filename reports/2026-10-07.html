@@ -35,36 +35,60 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日数据源大部分为空，仅arXiv有5篇新论文<br>- LLM智能体工具调用安全漏洞引关注（拒绝失效+代理审计）<br>- 黑盒LLM可用代理置信度进行错误审计<br>- AI向科学计算深水区渗透：数值求解器与海洋化学重建<br>- 开源模拟芯片基准问世，检验模型真实电路能力</div>
+  <div>- Agent 可靠性成焦点：置信度审计与拒答失效<br>- 科学代码 Agent 转向“自我诊断+技能发现”<br>- 模拟电路设计迎来端到端开源基准 SGAnalog<br>- MLLM 在工具调用场景更易“该拒不停”<br>- GitHub 热点偏安全基建：gitleaks/trivy/ghidra</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Most sources returned empty today; only arXiv yielded 5 new papers<br>- LLM agent safety under the spotlight: refusal failures and proxy auditing<br>- Black-box LLMs can be audited via surrogate log-probabilities<br>- AI deepens into scientific computing: numerical solvers and ocean chemistry<br>- Open-source analog circuit benchmark tests real transferable skills
+    - Agent reliability is the focus: confidence auditing and refusal failures<br>- Scientific-code agents shift to auto-diagnosis + skill discovery<br>- Analog IC design gets an end-to-end open benchmark, SGAnalog<br>- MLLMs are more likely to miss refusals during tool use<br>- GitHub trending leans security infra: gitleaks/trivy/ghidra
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日最值得关注的方向是 **LLM 智能体的可信度与审计**。两篇论文形成呼应：其一，《MLLMs Fail to Refuse when Using Tools Agentically》揭示多模态大模型在以智能体方式使用工具时会"忘记拒绝"，在有害请求面前仍执行操作，这对部署中的 Agent 系统是重大安全隐患；其二，《Proxy Confidence》提出用代理模型的 log-probability 审计黑盒 LLM 智能体的输出，实验显示前沿聊天 API 自带的置信度对错误的判别力" barely beats chance"，而代理置信度能显著提前暴露错误的工具调用。另一个方向是 **AI for Science 的算法自我改进**：《Training Numerical Intelligence》让智能体通过执行反馈自动诊断数值求解器性能问题并发现改进技能，标志着 AI 从"写代码"走向"改进算法本身"；《REACT》则用 AI 重建全球海洋pH分布，服务海洋酸化监测。整体信号明确：Agent 能力越强，安全审计与自我纠错的基础设施越成为刚需。</div>
+  <div>今日信号指向同一条主线：Agent 越强，越需要“可审计的可靠性”。《Proxy Confidence》针对黑盒 LLM Agent 的关键痛点——工具调用、查询、代码可能“静默出错”，等错误暴露时动作已执行；由于前沿聊天 API 隐藏 token 概率，Agent 自述置信度仅略高于随机。作者用替代模型的 log-probabilities 做审计，提供了在不访问内部概率的情况下评估黑盒 Agent 风险的路径。与之呼应，《MLLMs Fail to Refuse when Using Tools Agentically》进一步指出：多模态大模型在 agentic 工具使用场景下，更容易在该拒绝时继续执行，风险被工具链放大。<br><br>第二条线是“从生成代码到改进算法”。《Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery》指出，执行反馈能暴露数值求解器性能差，却很少揭示根因；工作通过自动诊断与技能发现训练数值智能，逼近算法层面的改进。SGAnalog 则补上了评估缺口：用开源硅 tapeout 构建端到端电路基准，检验模型学到的是可迁移电路技能，而非背题。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two papers converge on **LLM agent trustworthiness and auditing**. First, "MLLMs Fail to Refuse when Using Tools Agentically" shows multimodal models lose their refusal ability when acting agentically -- a serious deployment risk. Second, "Proxy Confidence" demonstrates that surrogate model log-probabilities can audit black-box LLM agents, since frontier APIs' own confidence signals barely beat chance at catching erroneous tool calls. A second trend is **AI for Science moving toward self-improving algorithms**: "Training Numerical Intelligence" lets agents auto-diagnose and repair numerical solver performance via execution feedback, while "REACT" reconstructs global sea-surface pH for ocean acidification monitoring. The clear signal: as agents grow more capable, safety auditing and self-correction infrastructure becomes essential.
+    The clear theme today is auditable reliability for stronger agents. “Proxy Confidence” targets black-box LLM agents whose tool calls, queries, and code can fail silently; by the time an error surfaces, the action has already run. Because frontier chat APIs hide token probabilities, stated agent confidence barely beats chance. The paper audits agents using a surrogate model’s log-probabilities, offering a practical way to estimate risk without API-side internals. “MLLMs Fail to Refuse when Using Tools Agentically” sharpens the concern: multimodal models are more prone to keep acting when they should refuse, and tool chains amplify the blast radius.<br><br>A second thread is moving from code generation to algorithm improvement. “Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery” argues that execution feedback can show a numerical solver is slow but rarely why; auto-diagnosis plus skill discovery is proposed to train transferable numerical competence. SGAnalog closes the evaluation gap with an end-to-end analog circuit benchmark built from open-source silicon tapeouts, testing whether models learn transferable circuit skills rather than recall familiar examples.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 若你在做 Agent 产品，加入"工具调用前拒绝检查"层——论文证实原生模型在此场景不可靠。<br>2. 用一个小型开源模型做置信度代理，为黑盒 API 的关键调用加一层廉价审计。<br>3. 数值/科学计算团队可借鉴"执行反馈+自动诊断"范式，让 AI 优化既有算法而非重写代码。<br>4. 芯片/硬件方向关注 SGAnalog 基准，可作为评估模型电路设计能力的标尺。<br>5. 数据源今日大面积为空，建议检查爬虫超时配置（可设为60s）并重跑采集。</div>
+  <div>- 给高危 Agent 操作加“第二意见”审计：用代理置信度/log-prob 在写库、发请求、执行代码前拦截，理由是可降低黑盒模型静默错误成本。<br>- 为工具调用链建立拒绝策略测试集：覆盖“该拒不停”的多模态场景，理由是今日两篇论文都指向 agentic 工具使用会放大失效。<br>- 数值/科学代码别只跑单测：采集性能反馈做自动诊断，理由是执行反馈 rarely reveals root cause。<br>- 把 gitleaks/trivy 接入 CI：与 AI 生成代码审查并行，理由是 Trending 显示秘密扫描与供应链安全仍是高频刚需。<br>- 跟踪 SGAnalog 这类领域基准：评估模型“可迁移技能”而非背题能力，理由是通用榜单不足以证明真实工程能力。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. If building agent products, add a pre-tool-call refusal check -- native models are proven unreliable in this regime.<br>2. Use a small open-source model as a confidence proxy to cheaply audit black-box API calls.<br>3. Scientific computing teams can adopt the "execution feedback + auto-diagnosis" pattern to let AI improve existing algorithms.<br>4. Hardware teams should watch the SGAnalog benchmark as a yardstick for circuit-design capabilities.<br>5. Most data sources returned empty today -- check scraper timeout settings (raise to 60s) and re-run collection.
+    - Add a second-opinion auditor before high-risk agent actions (DB writes, API calls, code exec) using proxy confidence/log-probs; black-box agents can fail silently and late.<br>- Build refusal-behavior test sets for tool-calling chains, including multimodal “should-refuse” cases; agentic tool use can amplify missed refusals.<br>- Don’t rely on unit tests alone for numerical/scientific code; capture performance feedback for auto-diagnosis, because slowdowns rarely reveal root causes.<br>- Wire gitleaks/trivy into CI alongside AI-generated code review; secret scanning and supply-chain security remain high-frequency needs.<br>- Track domain benchmarks like SGAnalog that measure transferable skills, since generic leaderboards can reward recall over capability.
   </div>
 </div>
 
 <div class="card">
   <h2>💬 原始资讯</h2>
 
-  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
-  <ul><li class="empty">暂无数据</li></ul>
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/caddyserver/caddy" target="_blank" style="font-weight:600">caddyserver/caddy</a>
+            <span style="color:#888;font-size:13px"> — Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/gitleaks/gitleaks" target="_blank" style="font-weight:600">gitleaks/gitleaks</a>
+            <span style="color:#888;font-size:13px"> — Find secrets with Gitleaks 🔑</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/dortania/OpenCore-Legacy-Patcher" target="_blank" style="font-weight:600">dortania/OpenCore-Legacy-Patcher</a>
+            <span style="color:#888;font-size:13px"> — Experience macOS just like before</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" style="font-weight:600">NationalSecurityAgency/ghidra</a>
+            <span style="color:#888;font-size:13px"> — Ghidra is a software reverse engineering (SRE) framework</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aquasecurity/trivy" target="_blank" style="font-weight:600">aquasecurity/trivy</a>
+            <span style="color:#888;font-size:13px"> — Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/sindresorhus/awesome" target="_blank" style="font-weight:600">sindresorhus/awesome</a>
+            <span style="color:#888;font-size:13px"> — 😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/rui314/mold" target="_blank" style="font-weight:600">rui314/mold</a>
+            <span style="color:#888;font-size:13px"> — mold 🦠: A Modern Linker in Rust 🦀</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/rustdesk/rustdesk" target="_blank" style="font-weight:600">rustdesk/rustdesk</a>
+            <span style="color:#888;font-size:13px"> — An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</span>
+        </li></ul>
 
   <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
   <ul><li style="margin:12px 0">

@@ -405,6 +405,6 @@
   },
   {
     "date": "2026-10-07",
-    "summary": "### 执行摘要\n中文：\n- 今日数据源大部分为空，仅arXiv有5篇新论文\n- LLM智能体工具调用安全漏洞引关注（拒绝失效+代理审计）\n- 黑盒LLM可用代理置信度进行错误审计\n- AI向科学计算深水区渗透：数值求解器与海洋化学重建\n- 开源模拟芯片基准问世，检验模型真实电路能力\n\nEnglish:\n- Most sources returned empty today; only arXiv"
+    "summary": "### 执行摘要\n中文：\n- Agent 可靠性成焦点：置信度审计与拒答失效\n- 科学代码 Agent 转向“自我诊断+技能发现”\n- 模拟电路设计迎来端到端开源基准 SGAnalog\n- MLLM 在工具调用场景更易“该拒不停”\n- GitHub 热点偏安全基建：gitleaks/trivy/ghidra\n\nEnglish:\n- Agent reliability is the focus: c"
   }
 ]
