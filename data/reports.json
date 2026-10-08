@@ -409,6 +409,6 @@
   },
   {
     "date": "2026-10-08",
-    "summary": "### 执行摘要\n中文：\n- AI 数值算法自我诊断训练成为新方向\n- 黑盒 LLM Agent 可靠性审计方法受关注\n- 开源芯片电路基准测试建立端到端标准\n- 工具调用型多模态模型暴露拒答失效风险\n- 海洋碳循环 AI 重建助力气候监测研究\n\nEnglish:\n- Self-diagnosing numerical algorithm training emerges as a new dir"
+    "summary": "### 执行摘要\n中文：\n- 智能体工具使用安全成焦点\n- 黑盒模型可用代理置信审计\n- 科学计算转向可诊断技能发现\n- 领域基准强调物理一致可复现\n\nEnglish:\n- Agentic tool-use safety moves center stage\n- Surrogate log-probs can audit black-box agents\n- Numerical AI shifts"
   }
 ]

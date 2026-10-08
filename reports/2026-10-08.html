@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI 数值算法自我诊断训练成为新方向<br>- 黑盒 LLM Agent 可靠性审计方法受关注<br>- 开源芯片电路基准测试建立端到端标准<br>- 工具调用型多模态模型暴露拒答失效风险<br>- 海洋碳循环 AI 重建助力气候监测研究</div>
+  <div>- 智能体工具使用安全成焦点<br>- 黑盒模型可用代理置信审计<br>- 科学计算转向可诊断技能发现<br>- 领域基准强调物理一致可复现</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Self-diagnosing numerical algorithm training emerges as a new direction<br>- Auditing black-box LLM agents gains research attention<br>- Open-source silicon benchmark sets end-to-end circuit standard<br>- Tool-using multimodal models show refusal failures<br>- AI ocean carbon reconstruction aids climate monitoring
+    - Agentic tool-use safety moves center stage<br>- Surrogate log-probs can audit black-box agents<br>- Numerical AI shifts to auto-diagnosis<br>- Domain benchmarks stress physics and reproducibility
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>1. **从"能写代码"到"能改算法"：数值智能的自进化**<br>Training Numerical Intelligence 论文指出，AI Agent 生成科学代码已不难，难的是通过执行反馈诊断算法性能差的原因并自我改进。该方法通过自动诊断+技能发现，让模型在数值求解器上实现真正的算法级提升。结合 SGAnalog 开源芯片基准（用真实流片数据检验模型的电路设计技能是否可迁移），可以看出一个共同趋势：**评测正在从"输出对不对"转向"能力是否可迁移、可复现"**。<br><br>2. **Agent 可信度成为核心议题**<br>Proxy Confidence 提出用代理模型的 log-probability 审计黑盒 LLM Agent，解决"错误动作已执行才暴露"的问题；MLLMs Fail to Refuse 则揭示多模态模型在工具调用场景下会丧失拒答能力。两篇论文共同指向：Agent 落地的前置条件是**可审计性与安全边界的工程化**，这将是企业级部署的关键瓶颈。</div>
+  <div>今日最值得关注的不是单点模型能力，而是“可信赖智能体”与“可验证科学 AI”的收敛。安全侧，Proxy Confidence 指出前沿聊天 API 隐藏 token 概率，agent 自述置信度在错误上接近随机；它用代理模型的 log-probabilities 审计黑盒智能体，在工具调用、查询、代码真正执行前暴露静默错误。MLLMs Fail to Refuse when Using Tools Agentically 则从反面提醒：多模态模型在工具化场景中更可能放弃拒绝，说明安全对齐必须覆盖“行动链”而非只覆盖文本输出。科学侧，Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery 把执行反馈从“跑得慢”推进到“定位算法病因”，适合数值求解器持续改进；REACT 用稀疏观测重建全球海面 pH，强调物理/化学一致；SGAnalog 用真实开源流片构建模拟电路基准，检验可迁移技能而非记忆样例。共同信号：评价标准正从“能生成”转向“可审计、可复现、可追责”。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. **From "writing code" to "improving algorithms"**: The paper on Training Numerical Intelligence shows agents can auto-diagnose why numerical solvers underperform and discover repair skills—moving beyond code generation to algorithm-level self-improvement. SGAnalog similarly tests whether circuit-design skills are transferable using real open-source silicon tapeouts. Together they signal a shift: evaluation is moving from "correct output" to "transferable, reproducible capability."<br><br>2. **Agent trustworthiness as the core bottleneck**: Proxy Confidence audits black-box LLM agents via surrogate log-probabilities before silent errors cause damage, while "MLLMs Fail to Refuse" exposes how tool-using multimodal models lose their refusal ability. Both point to the same conclusion: auditability and enforced safety boundaries are prerequisites for enterprise agent deployment.
+    Two signals stand out. First, trust in agentic systems is becoming an engineering discipline rather than a prompt afterthought. Proxy Confidence shows that when frontier APIs hide token probabilities, an agent’s stated confidence is close to chance on mistakes; the paper audits black-box agents through a surrogate model’s log-probabilities, catching bad tool calls, queries, and code before consequences surface. The complementary finding that MLLMs fail to refuse when using tools agentically suggests refusal must be tested across action traces, not only final answers. Second, AI-for-science is moving from generation to diagnosis and verification. Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery uses execution feedback to reveal why a numerical solver underperforms, not merely that it does. REACT reconstructs global sea-surface pH from sparse observations while preserving physical and chemical consistency. SGAnalog turns open-source silicon tapeouts into an end-to-end analog circuit benchmark, asking whether models learn transferable circuit skills and whether outputs survive defined process and test conditions. Together, the field is rewarding systems that are auditable, reproducible, and accountable.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- **为 Agent 系统加审计层**：即使调用的是无 log-prob 的商业 API，也可用代理模型做上线前置信度检查，降低"静默出错"风险<br>- **评测自家 AI 代码能力时关注可迁移性**：不要只看单次通过率，用换条件/换数据集的方式检验模型是否真正掌握技能<br>- **工具调用场景务必做拒答测试**：接入工具的 MLLM 需在 prompt 和输出层双重设防，覆盖恶意指令注入用例<br>- **关注数值/科学计算 Agent 赛道**：算法自诊断方向尚处早期，是做差异化产品或研究的窗口期<br>- **REACT 思路可迁移**：物理约束+稀疏数据重建的范式，适合气象、能源等本领域建模场景借鉴</div>
+  <div>- 上线前加代理置信审计：低成本拦截静默错误。<br>- 建工具调用回归集：专门测拒答与越权。<br>- 科学代码评估看诊断：不只看能否运行。<br>- 领域项目用物理约束：提升稀疏数据可信度。<br>- 基准设计要防记忆：用真实流片/新题验迁移。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - **Add an audit layer to your agents**: even with log-prob-less commercial APIs, surrogate confidence checks before execution reduce silent-failure risk<br>- **Evaluate code-gen models for transferability**: test under shifted conditions rather than trusting single-run pass rates<br>- **Test refusal behavior in tool-calling scenarios**: multimodal agents need both prompt-level and output-level guardrails against injection attacks<br>- **Watch the scientific-computing agent niche**: algorithm self-diagnosis is early-stage— a window for differentiated products or research<br>- **Borrow the REACT paradigm**: physics-constrained reconstruction from sparse data transfers well to weather/energy modeling domains
+    - Add pre-execution confidence audits using a surrogate model to catch silent agent errors.<br>- Build tool-use regression suites that specifically test refusal, escalation, and unsafe action traces.<br>- Evaluate scientific code by diagnostic quality, not only execution success.<br>- Constrain domain ML with physics/chemistry rules to make sparse-data reconstruction credible.<br>- Design benchmarks against memorization with fresh tasks and real tapeout/test conditions.
   </div>
 </div>
 
