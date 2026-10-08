@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-08</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-08</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- AI 数值算法自我诊断训练成为新方向<br>- 黑盒 LLM Agent 可靠性审计方法受关注<br>- 开源芯片电路基准测试建立端到端标准<br>- 工具调用型多模态模型暴露拒答失效风险<br>- 海洋碳循环 AI 重建助力气候监测研究</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Self-diagnosing numerical algorithm training emerges as a new direction<br>- Auditing black-box LLM agents gains research attention<br>- Open-source silicon benchmark sets end-to-end circuit standard<br>- Tool-using multimodal models show refusal failures<br>- AI ocean carbon reconstruction aids climate monitoring
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>1. **从"能写代码"到"能改算法"：数值智能的自进化**<br>Training Numerical Intelligence 论文指出，AI Agent 生成科学代码已不难，难的是通过执行反馈诊断算法性能差的原因并自我改进。该方法通过自动诊断+技能发现，让模型在数值求解器上实现真正的算法级提升。结合 SGAnalog 开源芯片基准（用真实流片数据检验模型的电路设计技能是否可迁移），可以看出一个共同趋势：**评测正在从"输出对不对"转向"能力是否可迁移、可复现"**。<br><br>2. **Agent 可信度成为核心议题**<br>Proxy Confidence 提出用代理模型的 log-probability 审计黑盒 LLM Agent，解决"错误动作已执行才暴露"的问题；MLLMs Fail to Refuse 则揭示多模态模型在工具调用场景下会丧失拒答能力。两篇论文共同指向：Agent 落地的前置条件是**可审计性与安全边界的工程化**，这将是企业级部署的关键瓶颈。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **From "writing code" to "improving algorithms"**: The paper on Training Numerical Intelligence shows agents can auto-diagnose why numerical solvers underperform and discover repair skills—moving beyond code generation to algorithm-level self-improvement. SGAnalog similarly tests whether circuit-design skills are transferable using real open-source silicon tapeouts. Together they signal a shift: evaluation is moving from "correct output" to "transferable, reproducible capability."<br><br>2. **Agent trustworthiness as the core bottleneck**: Proxy Confidence audits black-box LLM agents via surrogate log-probabilities before silent errors cause damage, while "MLLMs Fail to Refuse" exposes how tool-using multimodal models lose their refusal ability. Both point to the same conclusion: auditability and enforced safety boundaries are prerequisites for enterprise agent deployment.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- **为 Agent 系统加审计层**：即使调用的是无 log-prob 的商业 API，也可用代理模型做上线前置信度检查，降低"静默出错"风险<br>- **评测自家 AI 代码能力时关注可迁移性**：不要只看单次通过率，用换条件/换数据集的方式检验模型是否真正掌握技能<br>- **工具调用场景务必做拒答测试**：接入工具的 MLLM 需在 prompt 和输出层双重设防，覆盖恶意指令注入用例<br>- **关注数值/科学计算 Agent 赛道**：算法自诊断方向尚处早期，是做差异化产品或研究的窗口期<br>- **REACT 思路可迁移**：物理约束+稀疏数据重建的范式，适合气象、能源等本领域建模场景借鉴</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - **Add an audit layer to your agents**: even with log-prob-less commercial APIs, surrogate confidence checks before execution reduce silent-failure risk<br>- **Evaluate code-gen models for transferability**: test under shifted conditions rather than trusting single-run pass rates<br>- **Test refusal behavior in tool-calling scenarios**: multimodal agents need both prompt-level and output-level guardrails against injection attacks<br>- **Watch the scientific-computing agent niche**: algorithm self-diagnosis is early-stage— a window for differentiated products or research<br>- **Borrow the REACT paradigm**: physics-constrained reconstruction from sparse data transfers well to weather/energy modeling domains
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03872" target="_blank" style="font-weight:600">Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03872v1 Announce Type: new 
+AI agents are becoming increasingly capable of generating scientific code, but generating code is not the same as improving the algorithms behind it. For numeric</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03888" target="_blank" style="font-weight:600">REACT: Physically and Chemically Consistent Reconstruction of Marine Active Tracers</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03888v1 Announce Type: new 
+Reconstructing global sea surface pH from sparse observations is critical for monitoring ocean acidification and understanding marine carbon cycling. Traditional</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03894" target="_blank" style="font-weight:600">Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03894v1 Announce Type: new 
+A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hid</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03934" target="_blank" style="font-weight:600">SGAnalog: An End-to-End Circuit Benchmark from Open-Source Silicon Tapeouts</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03934v1 Announce Type: new 
+Existing analog integrated circuit design benchmarks make two questions hard to answer: whether a model has learned transferable circuit skills rather than recal</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03938" target="_blank" style="font-weight:600">MLLMs Fail to Refuse when Using Tools Agentically</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03938v1 Announce Type: new 
+Agentic multimodal large language models (MLLMs) have recently pushed the frontier of visual reasoning by calling tools such as zooming and tagging. Despite the </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.03948" target="_blank" style="font-weight:600">Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.03948v1 Announce Type: new 
+Autonomous driving decision systems must balance safety, efficiency, and social norms in complex traffic interactions. Philosophical and ethical considerations h</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-08 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
