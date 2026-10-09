@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 开源与博客端今日缺位，信号集中 arXiv 5 篇<br>- 企业 Agent 转向“可评估、自适应、可治理”<br>- 推理新范式：Route-Verify-Vote 混合域自洽<br>- 浮点 SMT 提速，利好验证与编译器测试<br>- AI 文明风险失败模式分析进入主流视野</div>
+  <div>- 数据稀疏：GitHub/HuggingFace/大厂博客今日为空，仅 arXiv 可读<br>- Agent 技能复用遭实证质疑：有技能≠提性能<br>- 自我一致性升级：Route-Verify-Vote 强化混合域推理<br>- 企业自动化呼唤认知架构，对抗非稳态环境<br>- AI 文明风险获系统性失败模式分析</div>
   <div class="en">
     <div class="en-title">English</div>
-    - GitHub/HF/blog quiet today; signal concentrated in 5 arXiv papers<br>- Enterprise agents shift toward evaluable, adaptive, governable systems<br>- New reasoning pattern: Route-Verify-Vote for mixed-domain self-consistency<br>- Faster floating-point SMT aids verification and compiler testing<br>- Failure-mode analysis of civilizational AI risk gains attention
+    - Sparse feed today: GitHub Trending, HuggingFace, and big-tech blogs came back empty; arXiv is the only usable source.<br>- Agent skill reuse is empirically challenged: having a skill does not equal better performance.<br>- Self-consistency evolves: Route-Verify-Vote strengthens mixed-domain reasoning.<br>- Enterprise automation needs cognitive architectures for non-stationary settings.<br>- Civilizational AI risk gets a systematic failure-mode analysis.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日工程热点缺位，价值信号集中在 arXiv 的“慢变量”。第一条主线是企业级 Agent 的可靠性化：Adaptive Workflow Intelligence（arXiv:2610.08793）直面非平稳环境、策略演化与延迟反馈，提出情境驱动的认知架构；An Empirical Study of Agent Skills' Downstream Utility（arXiv:2610.08875）进一步给 hype 降温——“有相关 Skill 并不等于提升表现”，关键在于效用机制可解释、可归因。这共同指向：企业落地 Agent 的瓶颈已从“能不能跑”转为“如何评测—归因—迭代”的闭环。第二条主线是推理与验证基础设施：Route-Verify-Vote（arXiv:2610.08814）以“过程条件化”的自洽投票提升 SCoRE 2026 混合域组合泛化；Accelerating Floating-Point Satisfiability via Gradient Normalization（arXiv:2610.08808）加速 QF_FP 求解，直接利好软件验证与编译器测试。再叠加 How Could AI Eliminate Humanity? 的失败模式分析，说明“让模型可信”与“给失败建模”正在合流。</div>
+  <div>今日最值得关注的，是 LLM Agent 从"能跑"走向"可信、可评估"的两条并行线索。其一，"技能复用"进入冷静期。《An Empirical Study of Agent Skills' Downstream Utility》（arXiv:2610.08875）针对当下火热的 Agent Skills 给出反直觉结论：技能包封装了流程指导与资源，但"相关技能"未必提升任务表现；它解释了效用如何随任务、环境与调用方式变化。这与《Adaptive Workflow Intelligence》（2610.08793）形成呼应——后者主张用上下文驱动的认知架构，让工作流在非平稳条件、策略演变与延迟反馈下保持稳健。其二，推理可靠性被程序条件化。《Route-Verify-Vote: Procedure-Conditioned Self-Consistency for Mixed-Domain Reasoning》（2610.08814）在 SCoRE 2026 上检验组合泛化：将自我一致性从"多数投票"升级为"按程序条件路由—验证—投票"，让模型把熟悉的推理算子重组到陌生领域。背景里，《How Could AI Eliminate Humanity?》对文明级风险做失败模式拆解，提醒 Agent 工程必须与风险评估同频。落到商业视角：能证明"技能何时有用、如何调用才有效"的评估工具与代理平台，会成为下一个高价值环节。</div>
   <div class="en">
     <div class="en-title">English</div>
-    With GitHub/HF/blogs quiet, the signal sits in arXiv’s slow variables. Trend one is the reliability turn of enterprise agents: Adaptive Workflow Intelligence (arXiv:2610.08793) targets non-stationary environments, evolving policies, and delayed feedback via a context-driven cognitive architecture, while An Empirical Study of Agent Skills' Downstream Utility (arXiv:2610.08875) cautions that a relevant Skill does not guarantee better task performance—utility must be explained and attributed. Together they imply the bottleneck has moved from “can it run” to a closed loop of evaluation, attribution, and iteration. Trend two is reasoning and verification infrastructure: Route-Verify-Vote (arXiv:2610.08814) uses procedure-conditioned self-consistency to improve compositional generalization on SCoRE 2026, and gradient-normalized floating-point SMT (arXiv:2610.08808) speeds QF_FP solving for software verification and compiler testing. Read alongside the civilizational-risk failure-mode paper, the message is convergence: making models trustworthy and modeling failure are becoming one discipline.
+    Two threads show LLM agents maturing from "works" to "trustworthy and evaluable." First, skill reuse is entering a sober phase: An Empirical Study of Agent Skills' Downstream Utility (arXiv:2610.08875) finds that packaging procedural guidance into skills does not reliably lift performance; utility depends on task, context, and invocation—echoing Adaptive Workflow Intelligence (2610.08793), which argues for context-driven cognitive architectures to keep enterprise automation robust under non-stationary policies and delayed feedback. Second, reliability is being procedure-conditioned: Route-Verify-Vote (2610.08814), evaluated on SCoRE 2026, upgrades self-consistency from plain majority voting to route–verify–vote conditioned on the procedure, enabling compositional generalization across unfamiliar mixed domains. Contextually, How Could AI Eliminate Humanity? catalogs civilizational failure modes, signaling that agent engineering must stay coupled to risk analysis. Business takeaway: tools and platforms that can prove when skills help—and how to invoke them—are the next high-value layer.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1) 给 Agent 建“离线评测集＋线上 A/B＋延迟反馈归因”闭环——两篇企业 Agent 论文的共同指向。<br>2) 关键链路用“路由-校验-投票”替代单次采样——Route-Verify-Vote 在分布外更稳。<br>3) 自建 SCoRE-like 混合域评测集——避免在熟悉组合上虚高得分。<br>4) 把 QF_FP/SMT 与梯度归一化纳入编译器与浮点单元测试——验证成本更低、覆盖更全。<br>5) 发布前做失效树/FMEA 式红队与预案——把“文明风险”论文思路工程化到模型上线门禁。</div>
+  <div>- 最佳实践：为 Agent 技能建立"上线前 A/B 评测"，直接采纳 2610.08875 的教训，避免盲目堆技能。<br>- 操作指导：把多步任务改写为"路由—验证—投票"模板，落地 Route-Verify-Vote，低成本提升跨域推理稳定性。<br>- 应用案例：在企业自动化 PoC 中显式建模"策略变更/延迟反馈"场景，参考 2610.08793 检验架构韧性。<br>- AI 商业机会：做"技能效用评估/可观测性"工具或 SaaS，定位为 Agent 时代的质量与合规层。<br>- 工程行动：修复抓取超时并做并行化与源冗余，避免日报再次被单点空源"掏空"。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1) Build an offline eval + online A/B + delayed-feedback attribution loop for agents—the shared lesson of the two enterprise-agent papers.<br>2) Replace single-shot sampling with route-verify-vote on critical paths—more robust out-of-distribution.<br>3) Create SCoRE-like mixed-domain eval sets to avoid inflated scores on familiar compositions.<br>4) Fold QF_FP/SMT with gradient normalization into compiler and floating-point unit testing for cheaper, broader verification.<br>5) Run FMEA/fault-tree red-teaming and playbooks before release—engineering the civilizational-risk paper into launch gates.
+    - Best practice: gate every agent skill behind an A/B evaluation before rollout—heeding arXiv:2610.08875 instead of stacking skills blindly.<br>- How-to: restructure multi-step tasks into a route–verify–vote template to gain cheap, robust cross-domain reasoning.<br>- Applied case: in enterprise automation PoCs, explicitly model policy drift and delayed feedback to test architecture resilience per 2610.08793.<br>- Business opportunity: build skill-utility evaluation/observability tooling as the quality-and-compliance layer of the agent era.<br>- Engineering action: fix scraper timeouts with parallelism and redundant sources so the briefing is not hollowed out by one empty feed.
   </div>
 </div>
 
@@ -102,7 +102,7 @@ Agentic coding makes code generation cheap, but reliable completion remains diff
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-10-09 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-10-09 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
