@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-11</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-11</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 智能体上下文管理成新热点，"可控遗忘"降本增效<br>- 企业数据合成突破：模拟交互训练工具调用智能体<br>- 智能体自我验证机制存在根本性局限，需理性看待<br>- 表格语义理解新框架，提升知识图谱数据质量<br>- 智能体治理趋严，"Harness 合规"受关注</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agent context management heats up: "controlled forgetting" cuts cost<br>- Enterprise data synthesis via simulated agent-system interaction<br>- Self-verification in agentic AI has fundamental limits<br>- New header-centric framework improves KG data quality<br>- Agent governance tightens: "compliance harness" gains attention
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯聚焦智能体（Agent）基础设施的深层问题。其一，**上下文工程成为 Agent 落地的关键瓶颈**。"Agent-Controlled Forgetting" 论文指出，工具调用 Agent 反复携带的观测内容中有效信息往往远小于原始负载，让模型自主替换旧工具结果为简短备注，可显著压缩上下文且可逆。其二，**训练数据合规获取**催生新范式。"Synthesis Through Simulation" 通过多智能体系统交互模拟，规模化生成连贯的企业数据（含数据库 Schema），绕开商业与法律限制，为工具调用 Agent 的训练和评估提供燃料。其三，**自我改进的边界**被清醒界定："Verification and Self-Improvement in Agentic AI" 用隐藏终止条件的有限验证实验证明，性能分数无法区分"搜索更久""外部支持""改进提案与验证方式"三种机制，提示行业勿盲目迷信 Agent 自我进化。整体来看，Agent 生态正从"能力演示"转向"工程化治理"，包括数据质量（表格语义理解框架）、上下文经济与合规 Harness。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's feeds spotlight deep infrastructure issues for agents. First, **context engineering** is becoming the key bottleneck: "Agent-Controlled Forgetting" shows tool-using agents carry observations whose useful content is far smaller than the payload — letting the model replace old tool results with short reversible notes sharply compresses context. Second, **compliant training data** is driving a new paradigm: "Synthesis Through Simulation" generates coherent enterprise data (including DB schemas) via multi-agent system interaction, bypassing business/legal restrictions to fuel tool-calling agent training and evaluation. Third, **limits of self-improvement** are soberly defined: the verification paper proves performance scores cannot distinguish between searching longer, external support, or better proposal/verification loops — a warning against blind faith in agent self-evolution. Overall, the agent ecosystem is shifting from capability demos toward engineering governance: data quality (header-centric STI), context economy, and compliance harnesses.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 给自研 Agent 加"上下文遗忘"层——用摘要替换过期工具返回，可降 Token 成本 50%+（依据 forgetting 论文思路）。<br>2. 企业内测 Agent 时用模拟数据代替真实库——参考 Simulation 合成法，避免触碰生产数据合规红线。<br>3. 评估 Agent 别只看分数——区分"算力堆叠"与"验证机制改进"，建立分层指标（受 Verification 论文启发）。<br>4. 处理表格/数据库元数据时关注表头语义——Header-Centric STI 框架可嵌入 ETL 流水线提升入库质量。<br>5. 关注 Agent Harness 合规面——"唯一可变面"思路适合设计企业级 Agent 管控边界。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Add a context-forgetting layer to your agents — replace stale tool outputs with summaries to cut token costs 50%+.<br>2. Use simulated/synthetic enterprise data for internal agent testing to avoid production-data compliance risks.<br>3. Don't judge agents by scores alone — separate "more compute" from "better verification" with layered metrics.<br>4. Embed header-centric table interpretation in ETL pipelines to improve KG/data-warehouse ingestion quality.<br>5. Design compliance boundaries via the "harness as the only mutable surface" principle for enterprise agent governance.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10541" target="_blank" style="font-weight:600">An Explainable Header-Centric Framework for Large-Scale Semantic Table Interpretation and Data Quality Assessment</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10541v1 Announce Type: new 
+Knowledge Graph (KG) quality depends not only on downstream graph validation, but also on the quality of tabular metadata used before integration. In metadata-on</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10549" target="_blank" style="font-weight:600">Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10549v1 Announce Type: new 
+Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restri</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10590" target="_blank" style="font-weight:600">Agent-Controlled Forgetting for Tool-Using Agents: Reversible Context Curation in Practice</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10590v1 Announce Type: new 
+Tool-using agents repeatedly carry observations whose useful content can be much smaller than their original payload. We study agent-controlled forgetting: the a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10611" target="_blank" style="font-weight:600">Verification and Self-Improvement in Agentic AI: Foundations and Limits</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10611v1 Announce Type: new 
+Agentic AI systems can improve by searching longer, receiving additional support, or modifying how they propose and verify outputs. A performance score does not </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10629" target="_blank" style="font-weight:600">The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents in Credit Pipelines, with a Measured Admission Gate</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10629v1 Announce Type: new 
+Self-improving LLM agents can adapt a credit pipeline to a changed rule, but an agent that rewrites itself destroys the artefact a supervisor reviews: a named ch</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.10635" target="_blank" style="font-weight:600">Speaking the Navigator's Language: Trajectory-Grounded Instruction Translation for Frozen Aerial VLN Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.10635v1 Announce Type: new 
+Aerial vision-and-language navigation (VLN) agents are typically trained on detail-rich, trajectory-aligned commands, whereas users issue short, intent-driven in</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-11 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
