@@ -421,6 +421,6 @@
   },
   {
     "date": "2026-10-11",
-    "summary": "### 执行摘要\n中文：\n- 智能体上下文管理成新热点，\"可控遗忘\"降本增效\n- 企业数据合成突破：模拟交互训练工具调用智能体\n- 智能体自我验证机制存在根本性局限，需理性看待\n- 表格语义理解新框架，提升知识图谱数据质量\n- 智能体治理趋严，\"Harness 合规\"受关注\n\nEnglish:\n- Agent context management heats up: \"controlled for"
+    "summary": "### 执行摘要\n中文：\n- 智能体\"自我验证\"成研究热点\n- 上下文主动遗忘机制兴起，可节省大量Token\n- 企业级合成数据模拟Agent交互训练\n- 表格语义理解新框架提升数据质量\n- 今日GitHub/HuggingFace源为空，arXiv为主\n\nEnglish:\n- Self-verification in agentic AI emerges as a hot research fr"
   }
 ]
