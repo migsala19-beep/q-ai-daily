@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>1. Transformers 框架持续领跑开源热榜<br>2. Prompt 工程走向平台化与团队化<br>3. 数据库加速向 AI Agent 场景演进<br>4. AI 基础设施层成为开源新热点</div>
+  <div>- Transformers 稳居 AI 模型框架榜首<br>- 实时分析数据库竞逐 AI Agent 负载<br>- 开发者工具链项目集体升温<br>- 提示词工程转向私有化自托管</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Transformers framework continues to dominate open-source trending<br>2. Prompt engineering is becoming platform-oriented and team-driven<br>3. Databases are rapidly evolving for AI Agent workloads<br>4. AI infrastructure layer emerges as a new open-source hotspot
+    - Transformers remains the de facto AI model framework<br>- Real-time analytics databases race to serve AI agents<br>- Developer toolchain projects are gaining momentum<br>- Prompt engineering shifts toward private self-hosting
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>**趋势一：数据基础设施与 AI Agent 深度融合**<br>Apache Doris 明确将自身定位为"面向 AI Agent 的实时分析和混合搜索数据库"，标志着数据库正从传统 BI 分析向 AI 原生架构演进。向量检索、混合搜索（全文 + 语义）正成为新一代数据库的标配能力。ClickHouse 持续热门也印证企业对高性能实时数据处理的需求不减。AI 应用对数据层的"语义理解"能力提出了全新要求。<br><br>**趋势二：Prompt 工程从个人技巧走向团队基础设施**<br>f/prompts.chat（原 Awesome ChatGPT Prompts）的流行表明，Prompt 管理正从个人经验演变为可共享、可治理的团队资产。该项目支持自托管并强调隐私保护，契合企业级 AI 应用的合规需求。结合 Transformers 框架的持续活跃可以看出：AI 应用的工程化、规范化、资产化正在全面加速。</div>
+  <div>今日最值得关注的信号是「数据库向 AI Agent 原生演进」。Apache Doris 在简介中直接定位为「real-time analytics and hybrid search database for AI agents」，ClickHouse 也同时上榜，说明向量检索与标量分析正在融合为一体化负载，服务 Agent 的记忆存取、RAG 检索与工具调用日志分析。这预示 RAG 架构会从「外挂向量库」回归「统一分析引擎」，降低数据一致性与运维成本。<br><br>第二个方向是「AI 工程化的隐形基建」。Transformers 持续霸榜，标志模型定义层已高度标准化；而 bun、UniGetUI、sniffnet、Ghidra 等开发/安全工具同屏出现，反映 AI 应用落地正在拉动周边工具链——更快的 JS 运行时、包管理 GUI、网络流量审计、逆向分析。Ghidra 的上榜尤其值得警惕：AI 辅助逆向与安全分析可能正在酝酿新一波能力。</div>
   <div class="en">
     <div class="en-title">English</div>
-    **Trend 1: Data Infrastructure Is Deeply Merging with AI Agent Scenarios**<br>Apache Doris explicitly positions itself as a "real-time analytics and hybrid search database for AI agents," marking a shift from traditional BI to AI-native architecture. Vector retrieval and hybrid search (full-text + semantic) are becoming standard features. ClickHouse's continued popularity confirms sustained enterprise demand for high-performance real-time analytics. AI applications now demand semantic understanding from the data layer.<br><br>**Trend 2: Prompt Engineering Is Evolving from Personal Skill to Team Infrastructure**<br>The popularity of f/prompts.chat signals that prompt management is transforming from individual experience into shareable, governable team assets. With self-hosting support and privacy protection, it meets enterprise compliance requirements. Combined with the sustained activity of the Transformers framework, it is clear that engineering standardization and assetization of AI applications are accelerating.
+    The clearest signal today is the agent-native evolution of databases. Apache Doris now brands itself as a "real-time analytics and hybrid search database for AI agents," while ClickHouse also trends, showing that vector search and scalar analytics are converging into one engine to serve agent memory, RAG retrieval, and tool-call logging. RAG architectures may shift from bolt-on vector stores back to unified analytics engines, cutting consistency and ops overhead.<br><br>A second thread is the "invisible infrastructure" of AI engineering. Transformers trending again confirms the model-definition layer is standardized; meanwhile bun, UniGetUI, sniffnet, and Ghidra signal that real AI deployment is pulling in adjacent toolchains — faster runtimes, package management, traffic auditing, and reverse engineering. Ghidra's appearance is notable: AI-assisted reverse engineering and security analysis may be the next capability wave.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 关注混合向量检索能力 —— AI 应用对语义搜索的需求正在爆发，传统数据库已快速集成向量搜索。<br>2. 建立团队 Prompt 管理规范 —— Prompt 是低成本高回报的 AI 资产，避免重复造轮子。<br>3. 评估现有数据库的 AI 适配性 —— 向量能力正在从"加分项"变为"必选项"。<br>4. 跟踪 Transformers 生态更新 —— 模型定义框架仍是 AI 工程的核心底座。</div>
+  <div>- 评估 Doris/ClickHouse 的混合查询能力替换现有「向量库+业务库」双写架构，简化 RAG 检索链路。<br>- 用 prompts.chat 的自托管模式搭建组织级私有提示词库，避免核心业务 prompt 外泄。<br>- 试点 bun 替代 Node 运行 AI 服务脚本与内部 CLI，一体化工具链可显著降低构建耗时。<br>- 引入 sniffnet 对内网 AI 服务做流量审计，快速定位异常 API 调用与潜在数据外泄。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Adopt hybrid vector search — semantic retrieval demand is surging as traditional databases rapidly integrate vector capabilities.<br>2. Build team prompt management standards — prompts are low-cost, high-return AI assets; avoid reinventing the wheel.<br>3. Assess your database's AI readiness — vector capability is shifting from "nice-to-have" to "must-have."<br>4. Track the Transformers ecosystem — the model-definition framework remains the core foundation of AI engineering.
+    - Evaluate Doris/ClickHouse hybrid query to replace dual "vector DB + business DB" writes, simplifying RAG pipelines.<br>- Self-host prompts.chat as an org-private prompt library to protect core business prompts.<br>- Pilot bun over Node for AI service scripts and internal CLIs to cut build time.<br>- Use sniffnet for intranet AI traffic audits to spot abnormal API calls and data leaks.
   </div>
 </div>
 
