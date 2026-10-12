@@ -422,5 +422,9 @@
   {
     "date": "2026-10-11",
     "summary": "### 执行摘要\n中文：\n- 智能体\"自我验证\"成研究热点\n- 上下文主动遗忘机制兴起，可节省大量Token\n- 企业级合成数据模拟Agent交互训练\n- 表格语义理解新框架提升数据质量\n- 今日GitHub/HuggingFace源为空，arXiv为主\n\nEnglish:\n- Self-verification in agentic AI emerges as a hot research fr"
+  },
+  {
+    "date": "2026-10-12",
+    "summary": "### 执行摘要\n中文：\n1. Transformers 框架持续领跑开源热榜\n2. Prompt 工程走向平台化与团队化\n3. 数据库加速向 AI Agent 场景演进\n4. AI 基础设施层成为开源新热点\n\nEnglish:\n1. Transformers framework continues to dominate open-source trending\n2. Prompt engine"
   }
 ]
