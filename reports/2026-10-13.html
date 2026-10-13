@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 可解释AI评测体系遭质疑，特征重要性指标结构性失准<br>- LLM驱动的程序搜索新突破：EliteTable自改进控制策略<br>- HuggingFace Transformers 稳居热榜，多模态仍是主线<br>- Agent数据合成兴起，闭环学习成LLM进化新路径<br>- 提示工程平台化：prompts.chat 支持私有化部署</div>
+  <div>- LLM引导程序搜索新突破<br>- Agent闭环数据合成升温<br>- XAI可解释性度量遭质疑<br>- Rust高性能引擎持续走热<br>- 提示词工程社区活跃</div>
   <div class="en">
     <div class="en-title">English</div>
-    - XAI faithfulness metrics under fire — structural misalignment in feature attribution<br>- EliteTable: self-improving LLM-guided program search for control policies<br>- HuggingFace Transformers back on trending — multimodal remains the mainline<br>- Agentic data synthesis emerges as new LLM improvement loop<br>- Prompt engineering goes enterprise: prompts.chat offers self-hosted private deployment
+    - LLM-guided program search advances via elite-table caching<br>- Agentic closed-loop data synthesis gains traction<br>- XAI faithfulness metrics face structural critique<br>- Rust-native high-perf engines trend again<br>- Prompt-sharing community stays highly active
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：LLM 从"生成器"进化为"搜索引导者"。EliteTable 论文（arXiv:2610.12536）展示了新范式：不直接让 LLM 生成答案，而是用 LLM 引导程序搜索——维护一个固定容量的高分方案表，驱动新提案、方案编辑和多方案重组。这把 LLM 的创造力约束在可验证、可执行的搜索空间内，特别适合控制策略这类需要可执行轨迹的任务。结合同日论文"Know What You Don't Know"（arXiv:2610.12593）提出的智能体数据合成闭环，可以看出研究界正在解决"合成数据多样性枯竭"的痛点：让 Agent 主动探索"不知道"的空间，再用执行结果自我验证。<br><br>趋势二：可解释AI的评测危机。《Faithfulness Without Anchors》（arXiv:2610.12493）是一篇立场论文，直指十年来的特征重要性指标存在结构性错位——XAI 工具承诺提升信任，但证据表明这些忠实度度量本身并不可靠。这提醒从业者：在高风险场景（医疗、金融、合规）依赖 SHAP/LIME 类解释时，应警惕解释本身的正确性，而非仅信任模型输出。</div>
+  <div>今日最值得关注的方向是「LLM 作为搜索与优化的元引导器」。arXiv 论文 EliteTable 提出固定容量精英表机制，缓存历史高分解，由 LLM 基于表内容生成新提案、局部编辑与多解混合，在可执行控制策略任务上实现自改进程序搜索。其核心洞见在于：LLM 不直接产出最终答案，而是作为「提议分布」驱动进化式搜索，兼顾探索与利用。这与同日论文「Agentic Data Synthesis by Evolving Generation Space」形成呼应——后者强调为交互式 agent 合成可执行、可验证、具学习价值的轨迹，通过演化生成空间形成闭环学习。两者共同指向一个趋势：LLM 的价值正从「单次生成」转向「持续引导搜索与自我改进」。<br><br>另一重要信号是 XAI 的反思性论文，指出 feature importance 的 faithfulness 度量存在结构性错位，提醒从业者：可解释工具提升的是「感知信任」而非「真实对齐」，评估结论需谨慎采信。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1 — LLMs are evolving from generators into search guides. EliteTable (arXiv:2610.12536) keeps a fixed-capacity table of high-scoring solutions and uses an LLM to drive new proposals, edits, and remixes. This constrains LLM creativity within a verifiable, executable search space — ideal for control policies. Combined with "Know What You Don't Know" (arXiv:2610.12593), which proposes agentic data synthesis that actively explores unknown regions in a closed verification loop, the field is clearly addressing the synthetic-data diversity collapse problem.<br><br>Trend 2 — A crisis in XAI evaluation. "Faithfulness Without Anchors" (arXiv:2610.12493) argues that feature-importance faithfulness metrics suffer structural misalignment: a decade of XAI tools promised trust, yet accumulated evidence shows the metrics themselves are unreliable. Practitioners in high-stakes domains should audit their explanation methods, not just their models.
+    The standout theme today is "LLMs as meta-guides for search and optimization." EliteTable introduces a fixed-capacity elite table that caches high-scoring solutions, with LLMs proposing new candidates, edits, and remixes—essentially acting as a proposal distribution over an evolutionary program search for executable control policies. Notably, the LLM never outputs the final answer directly; it steers exploration and exploitation. This aligns with "Agentic Data Synthesis by Evolving Generation Space," which argues interactive agents need synthetic trajectories that are executable, verifiable, and informative—evolving the generation space for closed-loop learning. Together they signal a shift from one-shot LLM generation toward LLM-guided continuous search and self-improvement.<br><br>A cautionary counterpoint is the XAI position paper showing structural misalignment in faithfulness metrics for feature importance: explainability tools may inflate perceived trust rather than true model alignment. Treat feature-importance claims with skepticism and cross-validate before high-stakes use.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 在 RL/控制类任务中尝试"LLM引导搜索表"架构 —— 比纯端到端生成更稳定，方案可复用、可审计。<br>2. 做合成数据时引入"未知空间探索"机制 —— 避免模型只在自己熟悉的分布里自我重复，提升数据多样性。<br>3. 用 SHAP/LIME 做业务解释前，先小规模验证解释指标本身的忠实度 —— 论文表明这些指标可能结构性失准。<br>4. 企业内部 prompt 管理可评估 prompts.chat 自托管方案 —— 完全私有，适合有合规要求的团队。<br>5. 关注 Rust 生态工具链（egui、nautilus_trader）— AI 工程化的基础设施正在向高性能语言迁移。</div>
+  <div>1. 借鉴「精英表+LLM提案」模式优化内部自动化与决策流程——缓存历史优解，让模型做编辑与混合而非从零生成。<br>2. 做 Agent 项目时优先保证轨迹可执行、可验证，再谈数据合成与闭环迭代，避免合成垃圾数据。<br>3. 性能敏感的 AI 基础设施考虑 Rust 重写，参考 trending 中 nautilus_trader 与 egui 的成熟度。<br>4. 团队沉淀私有提示词库，参考 prompts.chat 的自托管方案，保护内部 prompt 资产不外泄。<br>5. 使用 feature importance 类解释结论时交叉验证，勿将「看似合理」当作「真实因果」。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Try the "LLM-guided solution table" pattern for RL/control tasks — more stable than end-to-end generation, with reusable, auditable solutions.<br>2. Add unknown-space exploration to synthetic data pipelines — prevents models from recycling their own familiar distribution.<br>3. Before using SHAP/LIME for business explanations, validate the faithfulness of the explanation metrics themselves — they may be structurally misaligned.<br>4. Evaluate self-hosted prompts.chat for enterprise prompt management — fully private, suitable for compliance-driven teams.<br>5. Watch the Rust tooling ecosystem (egui, nautilus_trader) — AI engineering infrastructure is migrating toward high-performance languages.
+    1. Adopt the elite-table + LLM-proposal pattern for internal automation—cache strong historical solutions and let the model edit/remix instead of generating from scratch.<br>2. For agent projects, prioritize executable and verifiable trajectories before scaling data synthesis; avoid closed-loop training on low-quality synthetic data.<br>3. Consider Rust for performance-critical AI infrastructure, following the maturity shown by trending projects like nautilus_trader and egui.<br>4. Build a self-hosted, private prompt library inspired by prompts.chat to protect internal prompt assets.<br>5. Cross-validate feature-importance explanations; plausibility is not causality, especially in high-stakes decisions.
   </div>
 </div>
 
