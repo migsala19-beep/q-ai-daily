@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-13</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-13</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 可解释AI评测体系遭质疑，特征重要性指标结构性失准<br>- LLM驱动的程序搜索新突破：EliteTable自改进控制策略<br>- HuggingFace Transformers 稳居热榜，多模态仍是主线<br>- Agent数据合成兴起，闭环学习成LLM进化新路径<br>- 提示工程平台化：prompts.chat 支持私有化部署</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - XAI faithfulness metrics under fire — structural misalignment in feature attribution<br>- EliteTable: self-improving LLM-guided program search for control policies<br>- HuggingFace Transformers back on trending — multimodal remains the mainline<br>- Agentic data synthesis emerges as new LLM improvement loop<br>- Prompt engineering goes enterprise: prompts.chat offers self-hosted private deployment
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>趋势一：LLM 从"生成器"进化为"搜索引导者"。EliteTable 论文（arXiv:2610.12536）展示了新范式：不直接让 LLM 生成答案，而是用 LLM 引导程序搜索——维护一个固定容量的高分方案表，驱动新提案、方案编辑和多方案重组。这把 LLM 的创造力约束在可验证、可执行的搜索空间内，特别适合控制策略这类需要可执行轨迹的任务。结合同日论文"Know What You Don't Know"（arXiv:2610.12593）提出的智能体数据合成闭环，可以看出研究界正在解决"合成数据多样性枯竭"的痛点：让 Agent 主动探索"不知道"的空间，再用执行结果自我验证。<br><br>趋势二：可解释AI的评测危机。《Faithfulness Without Anchors》（arXiv:2610.12493）是一篇立场论文，直指十年来的特征重要性指标存在结构性错位——XAI 工具承诺提升信任，但证据表明这些忠实度度量本身并不可靠。这提醒从业者：在高风险场景（医疗、金融、合规）依赖 SHAP/LIME 类解释时，应警惕解释本身的正确性，而非仅信任模型输出。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Trend 1 — LLMs are evolving from generators into search guides. EliteTable (arXiv:2610.12536) keeps a fixed-capacity table of high-scoring solutions and uses an LLM to drive new proposals, edits, and remixes. This constrains LLM creativity within a verifiable, executable search space — ideal for control policies. Combined with "Know What You Don't Know" (arXiv:2610.12593), which proposes agentic data synthesis that actively explores unknown regions in a closed verification loop, the field is clearly addressing the synthetic-data diversity collapse problem.<br><br>Trend 2 — A crisis in XAI evaluation. "Faithfulness Without Anchors" (arXiv:2610.12493) argues that feature-importance faithfulness metrics suffer structural misalignment: a decade of XAI tools promised trust, yet accumulated evidence shows the metrics themselves are unreliable. Practitioners in high-stakes domains should audit their explanation methods, not just their models.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 在 RL/控制类任务中尝试"LLM引导搜索表"架构 —— 比纯端到端生成更稳定，方案可复用、可审计。<br>2. 做合成数据时引入"未知空间探索"机制 —— 避免模型只在自己熟悉的分布里自我重复，提升数据多样性。<br>3. 用 SHAP/LIME 做业务解释前，先小规模验证解释指标本身的忠实度 —— 论文表明这些指标可能结构性失准。<br>4. 企业内部 prompt 管理可评估 prompts.chat 自托管方案 —— 完全私有，适合有合规要求的团队。<br>5. 关注 Rust 生态工具链（egui、nautilus_trader）— AI 工程化的基础设施正在向高性能语言迁移。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Try the "LLM-guided solution table" pattern for RL/control tasks — more stable than end-to-end generation, with reusable, auditable solutions.<br>2. Add unknown-space exploration to synthetic data pipelines — prevents models from recycling their own familiar distribution.<br>3. Before using SHAP/LIME for business explanations, validate the faithfulness of the explanation metrics themselves — they may be structurally misaligned.<br>4. Evaluate self-hosted prompts.chat for enterprise prompt management — fully private, suitable for compliance-driven teams.<br>5. Watch the Rust tooling ecosystem (egui, nautilus_trader) — AI engineering infrastructure is migrating toward high-performance languages.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" style="font-weight:600">NationalSecurityAgency/ghidra</a>
+            <span style="color:#888;font-size:13px"> — Ghidra is a software reverse engineering (SRE) framework</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/huggingface/transformers" target="_blank" style="font-weight:600">huggingface/transformers</a>
+            <span style="color:#888;font-size:13px"> — 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/f/prompts.chat" target="_blank" style="font-weight:600">f/prompts.chat</a>
+            <span style="color:#888;font-size:13px"> — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/nautechsystems/nautilus_trader" target="_blank" style="font-weight:600">nautechsystems/nautilus_trader</a>
+            <span style="color:#888;font-size:13px"> — Production-grade Rust-native trading engine with deterministic event-driven architecture</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/tiann/KernelSU" target="_blank" style="font-weight:600">tiann/KernelSU</a>
+            <span style="color:#888;font-size:13px"> — A Kernel based root solution for Android</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/hagezi/dns-blocklists" target="_blank" style="font-weight:600">hagezi/dns-blocklists</a>
+            <span style="color:#888;font-size:13px"> — DNS-Blocklists: For a better internet - keep the internet clean!</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/emilk/egui" target="_blank" style="font-weight:600">emilk/egui</a>
+            <span style="color:#888;font-size:13px"> — egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/AssetRipper/AssetRipper" target="_blank" style="font-weight:600">AssetRipper/AssetRipper</a>
+            <span style="color:#888;font-size:13px"> — GUI application to analyze game files</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12493" target="_blank" style="font-weight:600">Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12493v1 Announce Type: new 
+Explainable Artificial Intelligence (XAI) tools have often been presented as methods to increase trust in machine learning models by making aspects of their algo</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12536" target="_blank" style="font-weight:600">EliteTable: Self-Improving Program Search for Executable Control Policies</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12536v1 Announce Type: new 
+EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guid</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12542" target="_blank" style="font-weight:600">Equal-Budget Monte Carlo Tree Search versus Randomized-Restart List Scheduling for DAG Workflows: A Controlled Equal-Budget Computational Study</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12542v1 Announce Type: new 
+Monte Carlo Tree Search (MCTS) is often proposed for scheduling directed-acyclic-graph (DAG) workflows, yet most studies never run the comparison that could refu</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12593" target="_blank" style="font-weight:600">Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12593v1 Announce Type: new 
+The continued improvement of large language models increasingly depends on synthetic experience, yet effective data synthesis for interactive agents requires not</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12596" target="_blank" style="font-weight:600">SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12596v1 Announce Type: new 
+Agentic large language models now tackle complex tasks, yet strategic reasoning over long horizons is under-studied: most agentic benchmarks are short and episod</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.12598" target="_blank" style="font-weight:600">Beyond Binary Verifiable Rewards: Behavioral Self-Rewarding for SWE Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.12598v1 Announce Type: new 
+Reinforcement learning with verifiable rewards (RLVR) provides reliable supervision for software engineering agents through executable tests, but binary rewards </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-13 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
