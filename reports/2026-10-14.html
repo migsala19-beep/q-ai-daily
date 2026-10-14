@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日四大数据源抓取均为空（疑似网络超时）<br>- 抓取脚本需排查 timeout 与代理配置<br>- 建议人工触发重试或启用备用源<br>- 以下分析基于行业既有趋势补充</div>
+  <div>- 今日四源（GitHub/arXiv/HF/大厂博客）抓取结果均为空<br>- 不生成虚构论文或项目，避免误导<br>- 判定为采集管线异常或日期窗口无新增，需先核查</div>
   <div class="en">
     <div class="en-title">English</div>
-    - All four data sources returned empty today (likely network timeouts)<br>- Crawler script needs timeout/proxy config review<br>- Recommend manual re-run or fallback sources<br>- Analysis below based on established industry trends
+    - All four sources returned empty today (GitHub/arXiv/HuggingFace/company blogs)<br>- No fabricated papers or projects included<br>- Treat as fetch-pipeline failure or empty window; verify collectors first
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：小型化端侧模型加速落地。以 Llama 3.x、Qwen 系列、Phi 系列为代表的中小参数模型持续迭代，量化技术（GGUF、GPTQ）成熟，让个人设备本地运行高质量 LLM 成为常态。这一方向对隐私敏感场景和低成本部署意义重大，也与三只鱼本地的 hermes CLI + 本地推理架构高度契合。<br><br>趋势二：Agent 化工作流从 demo 走向生产。以 Claude Code、OpenAI Codex、Hermes Agent 为代表的终端 Agent 正在接管代码编写、运维、报告生成等重复性工作，cron 定时任务 + 本地 CLI 的组合成为个人自动化的主流形态。三只鱼的 AI 日报系统本身就是这一趋势的典型实践案例。</div>
+  <div>今日原始数据为空，无法基于证据做趋势断言，故不罗列具体论文/项目。可确认的风险点是：抓取链路在该运行日未产出有效条目，需区分两类原因——(1) 目标源当日确无符合条件的新增（概率较低，四源同时为空）；(2) 调度、网络、解析选择器或 API 配额导致全链路静默失败（更可能）。建议用最小探针分别请求四源并对比返回长度与状态码，再决定是补跑历史窗口还是修复选择器。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1: Small on-device models are accelerating. Mid-size models (Llama 3.x, Qwen, Phi) plus mature quantization (GGUF/GPTQ) make high-quality local LLM inference routine, ideal for privacy-sensitive and low-cost deployments — directly relevant to the local hermes CLI architecture.<br><br>Trend 2: Agentic workflows are moving from demo to production. Terminal agents (Claude Code, Codex, Hermes Agent) are taking over coding, ops, and report generation, with cron + local CLI becoming the standard personal automation pattern. The AI daily briefing system itself is a textbook example of this trend.
+    Today’s raw feed is empty, so no evidence-based trend claims are made. The key finding is operational: a same-day pipeline produced zero usable items across four independent sources, which is more consistent with a silent collector failure (scheduler, network, CSS selectors, API quota, date-window handling) than with all sources truly having no updates. Run minimal probes per source, log status codes and payload sizes, then choose between backfilling the missed window versus repairing selectors.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 检查抓取脚本超时配置 —— 今日全源为空，按技能文档将 timeout 提升至 60s 并考虑并行抓取。<br>2. 给数据源加备用通道 —— arXiv RSS 较稳定，可作为兜底；GitHub/HF 超时率高。<br>3. 空数据时降级输出 —— 报告应标注"数据缺失"而非空白，避免误导读者。<br>4. 评估是否需要代理 —— 国际源访问不稳时配置代理可显著提升成功率。</div>
+  <div>- 给采集脚本加“非空断言”：空结果直接告警，而非生成空日报<br>- 记录每次抓取的状态码/条数/耗时，便于定位失败源<br>- 支持本地回退模式：主源失败时改用缓存或静态数据源<br>- 对四源分开重跑最小窗口，避免一次全量重试放大封禁风险<br>- 空数据日仍保留占位归档页，标注“当日无有效采集”，保证时间线连续</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Review crawler timeout settings — all sources empty today; raise timeout to 60s per skill notes and consider parallel fetching.<br>2. Add fallback channels — arXiv RSS is stable and can serve as a backup for flaky GitHub/HF sources.<br>3. Graceful degradation — reports should mark "no data" instead of rendering blank, avoiding reader confusion.<br>4. Evaluate proxy setup — a proxy for international sources would materially improve fetch success rates.
+    - Add a non-empty assertion to collectors: alert on zero items instead of emitting an empty brief<br>- Log status code, item count, and latency per source for quick triage<br>- Keep a local fallback mode: use cache/static data when primary fetches fail<br>- Re-run a minimal window per source separately to avoid full re-crawl and ban risk<br>- Still archive a placeholder page marked “no valid collection today” to keep the timeline continuous
   </div>
 </div>
 
