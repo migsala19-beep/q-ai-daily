@@ -437,6 +437,6 @@
   },
   {
     "date": "2026-10-15",
-    "summary": "### 执行摘要\n\n中文：\n- 超级智能评估难题：新基准跳出\"人机参照\"怪圈\n- Agent 数据科学暗藏\"沉默失败\"，自动化任重道远\n- ClawLoop 提出 Harness 原生自改进训练闭环\n- 扩散模型\"纠错训练\"剑指曝光偏差累积\n- 长程智能体基准升级 2.0，任务构造自动化\n\nEnglish:\n- New C-test benchmark aims to evaluate supra"
+    "summary": "### 执行摘要\n中文：\n- 超智能评估新范式：C-test摆脱人类基准\n- Agent自我改进闭环：ClawLoop原生训练\n- 数据科学Agent存在隐性失败风险\n- 扩散模型引入校正训练抗误差积累\n- 长程Agent基准2.0衡量持续进步\n\nEnglish:\n- New paradigm for supraintelligence evaluation: C-test bypasses hu"
   }
 ]
