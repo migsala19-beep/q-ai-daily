@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-15</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-15</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 超级智能评估难题：新基准跳出"人机参照"怪圈<br>- Agent 数据科学暗藏"沉默失败"，自动化任重道远<br>- ClawLoop 提出 Harness 原生自改进训练闭环<br>- 扩散模型"纠错训练"剑指曝光偏差累积<br>- 长程智能体基准升级 2.0，任务构造自动化</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - New C-test benchmark aims to evaluate supraintelligence beyond human/AI-calibrated circularity.<br>- Study exposes "silent failures" in agentic data science, questioning full automation hype.<br>- ClawLoop introduces harness-native self-improving training loops for LLM agents.<br>- Correction training targets error accumulation from exposure bias in diffusion models.<br>- Long-Horizon-Terminal-Bench 2.0 automates diverse task construction for agents.
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>**趋势一：智能体（Agent）的"可靠性与自我进化"成为新焦点。** 今日三篇论文共同指向这一方向。《The Silent Failures in Agentic Data Science》揭示现有数据科学 Agent 在任务 formulation 到模型开发的全流程中，存在大量不报错但结果错误的"沉默失败"——这提醒从业者，LLM 写代码门槛降低不等于数据分析可信。《ClawLoop》则给出进化路径：让 Agent 在沙箱工作区（文件系统+Shell）中与训练闭环原生结合，实现自我改进。而《Long-Horizon-Terminal-Bench 2.0》把评测推向长时程、多样化任务构造，测量 Agent 的持续性进步能力。三者合起来看：Agent 赛道正从"能跑通 demo"进入"可靠、可进化、可度量"的深水区。<br><br>**趋势二：当 AI 超越现有标尺，评估方法论被迫重构。** 《Artificiality's First Exam》提出尖锐问题：任何以人类或当前 AI 难度为基准的评测都会迅速饱和或陷入循环论证，因此需要"LLM 参照的 C-test"来衡量潜在的超智能。同样，《Correction Training for Diffusion Models》也针对推理时误差累积这一经典缺陷提出训练期纠偏。共性在于：社区已不满足于刷榜，而是回到第一性原理，修复基准与训练范式本身的结构性缺陷。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    **Trend 1: Agent reliability and self-improvement take center stage.** Three papers converge here. *The Silent Failures in Agentic Data Science* shows that agents silently produce wrong results without errors across the entire DS pipeline — lower coding barriers don't equal trustworthy analytics. *ClawLoop* offers an evolutionary path: a harness-native training loop where agents self-improve within sandboxed file/shell environments. *Long-Horizon-Terminal-Bench 2.0* pushes evaluation toward sustained, diverse long-horizon tasks. Together they signal the field moving from "working demos" to "reliable, evolvable, measurable" systems.<br><br>**Trend 2: Evaluation methodology is being rebuilt as AI outgrows existing yardsticks.** *Artificiality's First Exam* argues human- or current-AI-calibrated benchmarks are circular and saturate quickly, proposing an LLM-referenced C-test for supraintelligence. *Correction Training for Diffusion Models* similarly fixes structural flaws, addressing inference-time error accumulation from exposure bias. The common thread: the community is returning to first principles rather than chasing leaderboard scores.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 用 Agent 做数据分析时，务必保留人工校验关键中间结果——"沉默失败"意味着没有报错≠做对，建议对核心结论做交叉验证。<br>2. 关注 Long-Horizon-Terminal-Bench 2.0 的任务构造方法，可借鉴用于内部 Agent 评测集搭建，避免只用短任务刷分。<br>3. 扩散模型使用者可关注 Correction Training 思路，若自采样生成场景出现质量漂移，考虑在训练中加入自预测纠偏。<br>4. 评估自家 AI 产品时，警惕"与人类难度对齐"的基准，优先选择抗饱和的动态评测方案。<br>5. 研究 ClawLoop 的 harness 设计，把"工具环境+反馈回路"纳入自家 Agent 训练流程，而非只做 prompt 调优。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Keep human-in-the-loop checks for critical intermediate outputs in agentic data pipelines — silent failures mean "no error" ≠ "correct."<br>2. Borrow Long-Horizon-Terminal-Bench 2.0's automated task construction for building your own agent eval suite instead of relying on short-task benchmarks.<br>3. If you work with diffusion models and see quality drift in long sampling chains, explore correction training to counter exposure bias.<br>4. When evaluating AI products, beware benchmarks aligned to human difficulty — prefer dynamic, saturation-resistant evaluation.<br>5. Study ClawLoop's harness design: integrate tool environments + feedback loops into agent training rather than prompt-tuning alone.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14005" target="_blank" style="font-weight:600">Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14005v1 Announce Type: new 
+Under the accelerated pace of AI development, any benchmark whose difficulty is calibrated with humans or current AI systems becomes circular, or saturates soon.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14115" target="_blank" style="font-weight:600">The Silent Failures in Agentic Data Science</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14115v1 Announce Type: new 
+Large language models have significantly lowered the barrier to writing code. Naturally, this has also led to the development of data science agents that promise</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14118" target="_blank" style="font-weight:600">ClawLoop: Self-Improving Agents via Harness-Native Training Loop</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14118v1 Announce Type: new 
+The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14136" target="_blank" style="font-weight:600">Correction Training for Diffusion Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14136v1 Announce Type: new 
+Iterative sampling in diffusion models can lead to error accumulation due to exposure bias. The denoiser is trained on real images interpolated with noise, but a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14146" target="_blank" style="font-weight:600">Long-Horizon-Terminal-Bench 2.0: Automating Diverse Task Construction and Measuring Sustained Agent Progress</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14146v1 Announce Type: new 
+Long-horizon terminal benchmarks measure whether an agent can sustain progress through extended workflows with process rewards, not only whether its final state </span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.14149" target="_blank" style="font-weight:600">VETNET: Assembling Benchmark Datasets for AI-Driven Veterinary Innovation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.14149v1 Announce Type: new 
+VETNET represents an ecosystem of live benchmark datasets and evaluation frameworks designed to accelerate AI-driven innovation in animal science and veterinary </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-15 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
