@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 智能体自我改进成研究焦点（ClawLoop）<br>- 超智能基准测试陷入循环困境<br>- 数据科学智能体暴露"静默失败"<br>- 扩散模型提出纠错训练新范式<br>- GitHub热榜转向安全与测试工具</div>
+  <div>- Agent 评测转向长程持续任务<br>- 自我改进训练循环成为新热点<br>- 数据科学 Agent 可靠性受关注<br>- 扩散模型引入纠错抑制误差累积<br>- 代码与密钥安全工具持续走热</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Self-improving agents emerge as a key research focus (ClawLoop)<br>- Benchmarks for superintelligence face circularity dilemma<br>- Silent failures exposed in agentic data science<br>- Correction training proposed for diffusion models<br>- GitHub trending shifts toward security & testing tools
+    - Agent evaluation shifts to long-horizon sustained tasks.<br>- Self-improving training loops gain momentum.<br>- Reliability of agentic data science is under scrutiny.<br>- Correction training targets diffusion error accumulation.<br>- Code and secret-security tooling stays hot.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日arXiv的五篇论文中，三篇指向同一主线——**自主智能体（Agent）正从"能做任务"走向"如何持续变强、如何诚实度量"**。ClawLoop 提出"Harness-Native Training Loop"，让LLM智能体在沙箱工作区（文件系统+Shell）中自我改进，不再依赖人工标注的后训练数据；Long-Horizon-Terminal-Bench 2.0 则自动化构建多样化长程任务，度量智能体的"持续性进展"而非单点成功率。与之形成对照的是《The Silent Failures in Agentic Data Science》的冷思考：现有数据科学智能体在任务表述、执行环节存在大量不为人知的隐性失败，说明"自动化承诺"与"可靠交付"之间仍有鸿沟。第二个值得关注的方向是**评估方法的哲学困境**：《Artificiality's First Exam》指出，任何以人类或当前AI为标定难度的基准都会迅速饱和或陷入循环，作者尝试用LLM引用的C-test来评估"超越当前机器"的系统。这与本报告站关注的AI日报生产场景直接相关——当我们用AI评估AI时，度量本身的可信度必须被审视。GitHub侧，gitleaks、Ghidra等安全工具登榜，反映企业在AI代码生成时代对密钥泄漏与逆向审计的焦虑加剧。</div>
+  <div>今日主线是 Agentic AI 从“能跑通”进入“可靠、可持续、可评估”的工程化阶段。ClawLoop 提出 harness-native 训练循环，让 Agent 在沙箱、文件系统与 shell 的真实工作区内自我改进，而不是只做对话后训练；Long-Horizon-Terminal-Bench 2.0 进一步把评测拉到长时间跨任务，衡量 Agent 的持续进步而非单次通过率。与之呼应，《The Silent Failures in Agentic Data Science》提醒：代码门槛下降不等于数据科学自动化成熟，任务 formulation、实验选择、指标解释中的隐性失败仍频发。第二个趋势是评估与生成范式的“超前纠偏”。《Artificiality's First Exam》认为以人类或现有 AI 难度校准的基准会循环饱和，尝试用 LLM-referenced C-test 探测潜在超智能；扩散模型侧的 Correction Training 则针对多步采样中“训练用真值、推理用自身预测”造成的 exposure bias 与误差累积做显式校正。GitHub 侧 ghidra、gitleaks、playwright 的热度说明：模型越强，逆向、密钥泄露检测与自动化验证越成为基础设施刚需。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Three of today's five arXiv papers converge on one theme: autonomous agents are moving from "can they do tasks" to "how they improve and how we honestly measure them." ClawLoop introduces a harness-native training loop where LLM agents self-improve inside sandbox workspaces (file systems + shells), reducing reliance on human-labeled post-training data. Long-Horizon-Terminal-Bench 2.0 automates diverse long-horizon task construction to measure sustained agent progress rather than single-task success. In contrast, "The Silent Failures in Agentic Data Science" offers a cold reality check: current data science agents suffer widespread unnoticed failures from task formulation through execution, revealing a gap between automation promises and reliable delivery. A second direction is the philosophical dilemma of evaluation: "Artificiality's First Exam" argues that any benchmark calibrated against humans or current AI saturates quickly or becomes circular, proposing an LLM-referenced C-test for potentially superintelligent systems—directly relevant whenever AI evaluates AI, as in our own daily briefing pipeline. On GitHub, security tools like gitleaks and Ghidra trending reflects growing enterprise anxiety over secret leakage and code auditing in the AI code-generation era.
+    The clear through-line is Agentic AI moving from demos to reliability engineering. ClawLoop proposes a harness-native self-improvement loop where agents train inside sandboxed workspaces with real filesystems and shells, while Long-Horizon-Terminal-Bench 2.0 measures sustained progress across long tasks rather than one-shot success. The “Silent Failures” paper adds a cautionary note: cheaper code generation does not equal mature automated data science, since hidden failures persist in problem formulation, experiment choice, and metric interpretation. A second trend is forward-looking correction in evaluation and generation. The C-test paper argues that benchmarks calibrated to humans or current AI become circular or saturate, and explores an LLM-referenced test for potential supraintelligence. On the generation side, Correction Training tackles exposure bias and error accumulation in iterative diffusion sampling by explicitly correcting the train–inference mismatch. Meanwhile, trending tools like Ghidra, Gitleaks, and Playwright signal that as models write more code, reverse engineering, secret scanning, and automated verification become essential infrastructure.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 为AI日报等自动化管线建立"静默失败"审查机制——论文证明智能体失败往往无声无息，应加入抽样人工复核与结果一致性校验。<br>2. 尝试用Harness-Native思路改进本地脚本——让Q虾在沙箱中自我迭代任务执行策略，而非每次从零开始。<br>3. 立即在报告站仓库部署gitleaks扫描——今日登榜的密钥泄漏检测工具，与主人对API Key安全的极度敏感高度契合。<br>4. 用Playwright为报告站做端到端测试——热榜常客，可自动化验证每日报告页面的链接可点击性与排版正确性。<br>5. 关注长程基准（如Terminal-Bench 2.0）作为Agent选型指标——单点跑分已不可靠，持续进展能力才是分水岭。</div>
+  <div>- CI/CD 接入 gitleaks 类密钥扫描：AI 生成代码越多，硬编码泄露风险越高，理由充分且落地快。<br>- 用 Playwright 给内部 Agent 建回归测试：把长任务轨迹沉淀为可重复验收用例。<br>- 为数据科学 Agent 加“静默失败”检查清单：重点查数据泄露、指标误读、随机种子与基线缺失。<br>- 跟踪 Terminal-Bench 2.0 的任务构造方法：可作为企业 Agent 验收基准参考。<br>- 扩散生成任务启用多步纠错或重采样策略：缓解累积误差，提升高步数采样稳定性。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Add silent-failure auditing to automated pipelines like our AI daily briefing—agents fail silently, so sampled human review and consistency checks are essential.<br>2. Experiment with harness-native loops for local scripting—let Q虾 iterate execution strategies in a sandbox instead of starting from scratch each run.<br>3. Deploy gitleaks scanning on the report repo immediately—today's trending secret-detection tool aligns perfectly with the owner's extreme sensitivity to API key security.<br>4. Use Playwright for end-to-end testing of the report site—the perennial trending tool can automate verification of link clickability and layout correctness on daily pages.<br>5. Track long-horizon benchmarks (e.g., Terminal-Bench 2.0) for agent selection—single-task scores are no longer reliable; sustained progress is the real dividing line.
+    - Add gitleaks-style secret scanning to CI/CD: AI writes more code, so hardcoded-leak risk rises and the fix is cheap.<br>- Build Playwright-based regression suites for internal agents: turn long task trajectories into repeatable acceptance tests.<br>- Create a silent-failure checklist for data-science agents: check data leakage, metric misuse, seed control, and missing baselines.<br>- Study Terminal-Bench 2.0 task construction: useful as a template for enterprise agent acceptance benchmarks.<br>- Enable correction or re-sampling in diffusion pipelines: reduces accumulated error and stabilizes high-step sampling.
   </div>
 </div>
 
