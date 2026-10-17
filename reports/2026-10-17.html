@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- Agent 评测转向实时动态基准<br>- 基准饱和倒逼评估方法创新<br>- 离散扩散 SMC 引导计算加速<br>- 可验证推理 Agent 测量系统问世<br>- 形式化验证需保留完整证据链</div>
+  <div>- Agent 评测迈入"实时时钟"时代：动作迟到即失败<br>- Benchmark 逼近满分后失去区分度，安全评估告急<br>- 离散扩散引导提速：价值知情调度大幅削减 SMC 开销<br>- AlphaDiana 上线：给 Agent 推理执行链路做全链路测量<br>- 形式化验证现盲区：正确性反馈可能"抹除"反例证据</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Agent evaluation shifts to live, dynamic benchmarks<br>- Benchmark saturation forces new evaluation methods<br>- SMC guidance accelerates discrete diffusion<br>- New measurement system for verifiable-reasoning agents<br>- Formal verification must preserve evidence chains
+    - Agent evaluation enters the live-clock era: a correct action that arrives late still fails<br>- Benchmarks nearing perfect scores lose discriminative power, straining safety cases<br>- Discrete diffusion guidance gets faster via value-informed SMC schedule trimming<br>- AlphaDiana launches full-pipeline measurement of agent execution and resource use<br>- Formal verification blind spot found: correctness feedback can erase counterexample evidence
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯集中指向一个方向：AI 评估科学正在重构。一是 Agent 评估"实时化、可验证化"。《The World Won't Wait》提出 RealtimeBench（arXiv:2610.20665），含 180 个任务、六类游戏，核心论点是：在持续变化环境中，迟到的正确动作等同错误——推理与工具调用本身耗时，评测必须同时考察决策质量与决策时效，并据此教学 Agent 在时钟压力下行动。《AlphaDiana》（arXiv:2610.20675）进一步把 Agent 拆为"推理模型 + harness"（组织调用、执行工具、加载技能、维护记忆），强调测量要链接执行条件与结果、行为、资源消耗，服务可验证推理任务。二是"基准饱和"难题。《Evaluating Model Capabilities After Benchmark Saturation》（arXiv:2610.20667）指出：多模型逼近满分后基准失去区分度，直接削弱 AI 安全案例与前沿政策依据，必须发展饱和后仍可分辨能力的评估范式。工程侧亦有亮点：Value-Informed Schedule Trimming（arXiv:2610.20669）对离散扩散的逐步 SMC 引导做价值感知剪枝，降低奖励评估开销。</div>
+  <div>今日 arXiv 五篇论文共同指向两大趋势。<br><br>趋势一：Agent 评估从"做对"升级为"做得对、做得快、可测量"。RealtimeBench（arXiv:2610.20665）指出 LLM Agent 的推理与工具调用耗时在持续变化的环境中是关键变量——动作正确但迟到等于失败，其 180 个任务、六种游戏类型首次把"实时约束"纳入评测主轴。与之呼应，AlphaDiana（arXiv:2610.20675）构建测量系统，将模型调用、工具执行、技能加载、历史记忆统一关联到结果、行为与资源消耗，把 Agent 从"黑盒跑分"推向"白盒可观测"。<br><br>趋势二：AI 可信度评估的方法论危机与重构。一方面，"Evaluating Model Capabilities After Benchmark Saturation"（arXiv:2610.20667）警示当多个模型逼近满分，基准既无法区分模型，也难以支撑安全论证与前沿政策；另一方面，Verus 上的研究（相位分离完整性审计）发现形式化验证中的正确性反馈可能反过来抹除证据，导致"假阳性"证明。两条线汇合说明：随着能力逼近天花板，行业需要新一代可区分、可审计、抗操纵的评估与验证基础设施。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today's papers point to one shift: evaluation science is being rebuilt. First, agent evaluation is becoming live and verifiable. "The World Won't Wait" (arXiv:2610.20665) introduces RealtimeBench with 180 tasks across six game types, arguing that in continuously changing environments a correct action that arrives late is still a failure—agents must be scored on both decision quality and decision latency. "AlphaDiana" (arXiv:2610.20675) models an agent as a reasoning model plus a harness (calls, tools, skills, memory), measuring how execution conditions drive outcomes, behavior, and resource use in verifiable reasoning. Second, benchmark saturation is now a first-class problem: once models near perfect scores, benchmarks lose discriminative power and weaken AI-safety cases and frontier policy (arXiv:2610.20667), requiring post-saturation evaluation paradigms. On the engineering side, value-informed schedule trimming (arXiv:2610.20669) prunes per-step SMC guidance in discrete diffusion, cutting reward-evaluation cost.
+    Two clear trends emerge from today's five arXiv papers.<br><br>Trend 1: Agent evaluation is upgrading from "being correct" to "being correct, on time, and measurable." RealtimeBench (arXiv:2610.20665) argues that an LLM agent's reasoning and tool-call latency is a first-class variable in continuously changing environments—a correct action that arrives too late still fails. Its 180 tasks across six game types put real-time constraints at the center of evaluation. Complementing this, AlphaDiana (arXiv:2610.20675) links model calls, tool execution, skill loading, and memory retention to outcomes, behavior, and resource use, moving agents from black-box scoring to white-box observability.<br><br>Trend 2: A methodological crisis in AI trustworthiness. "Evaluating Model Capabilities After Benchmark Saturation" (arXiv:2610.20667) warns that once models cluster near perfect scores, benchmarks can no longer differentiate them or support safety cases and frontier policy. Meanwhile, phase-separated completeness auditing in Verus reveals that correctness feedback can erase evidence, producing false-positive proofs. Together they signal an urgent need for discriminative, auditable, manipulation-resistant evaluation and verification infrastructure.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. Agent 产品上线前测"延迟-正确率曲线"，而非只报准确率。RealtimeBench 表明实时环境中延迟本身即错误源。<br>2. 自建评测集设计防饱和机制：难度梯度、动态换题、保留未公开集。基准饱和会让安全评估失效。<br>3. 为 Agent 建立资源画像：记录 token 消耗、工具调用次数、时延并关联结果。AlphaDiana 显示执行条件与产出必须联合审计。<br>4. 审计日志保留中间证据链，勿只存最终正确结论。Verus 论文（arXiv:2610.20675 同批）提示正确性反馈可能擦除证据。<br>5. 测试时对齐场景关注 SMC trimming 类加速。奖励引导扩散/文生图对齐可显著降本。</div>
+  <div>1. 给 Agent 产品加"延迟预算"指标——RealtimeBench 证明正确但迟到等于失败，QA 用例应加入响应时限场景。理由：实时性将成为 Agent 竞争力的新分水岭。<br>2. 自建小而精的私有评测集——公开基准饱和后区分度骤降，用真实业务任务建 eval set 更能反映模型差异。理由：饱和基准无法支撑选型与安全论证。<br>3. 扩散/生成管线改用"按需引导"——价值知情调度修剪可在不牺牲对齐质量的前提下降低 SMC 奖励评估成本。理由：测试时对齐的算力开销有望数量级下降。<br>4. Agent 上线前启用全链路追踪——参考 AlphaDiana，记录每次模型调用、工具执行与资源消耗，失败时才能定位根因。理由：可观测性是 Agent 工程化落地的前提。<br>5. 关键系统形式化验证后加独立审计——正确性反馈可能抹除反例，阶段分离审计可避免"假阳性"证明进入生产。理由：高保障场景的验证结果必须可复核。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Ship agents with a latency-accuracy curve, not just accuracy; RealtimeBench shows late correct actions still fail.<br>2. Build anti-saturation evals: difficulty tiers, rotating items, hidden test sets.<br>3. Profile agent resources (tokens, tool calls, latency) linked to outcomes for auditability.<br>4. Keep evidence chains in logs, not just final verdicts; feedback can erase intermediate proof.<br>5. Adopt SMC-trimming style acceleration for reward-aligned diffusion to cut inference cost.
+    1. Add a "latency budget" metric to agent products—RealtimeBench shows a correct-but-late action still fails; QA should include response-deadline scenarios. Why: real-time performance is becoming the new dividing line for agents.<br>2. Build small, high-quality private eval sets—saturated public benchmarks lose discriminative power; task-specific eval sets reflect real model differences. Why: saturated benchmarks can no longer guide selection or safety cases.<br>3. Switch diffusion/generation pipelines to "on-demand guidance"—value-informed schedule trimming cuts SMC reward-evaluation cost while preserving alignment quality. Why: test-time alignment overhead could drop by orders of magnitude.<br>4. Enable full-pipeline tracing before agent launch—following AlphaDiana, log every model call, tool execution, and resource draw so failures can be root-caused. Why: observability is a prerequisite for production-grade agents.<br>5. Add independent auditing after formal verification in critical systems—correctness feedback can erase counterexamples; phase-separated auditing prevents false-positive proofs from reaching production. Why: verification results in high-assurance settings must be independently checkable.
   </div>
 </div>
 
@@ -101,7 +101,7 @@ Representation-based safety defenses for vision-language models (VLMs) often lea
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-10-17 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-10-17 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
