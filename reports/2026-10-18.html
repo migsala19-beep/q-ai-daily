@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 智能体评测基础设施密集涌现<br>- 基准饱和催生新型评估方法<br>- 实时环境考验Agent响应与时效<br>- NVIDIA高性能算子库持续升温</div>
+  <div>- 智能体评测进入"实时时钟"时代<br>- 基准饱和倒逼评估范式革新<br>- 离散扩散测试时对齐提速新法<br>- 可验证推理任务需系统化度量<br>- AI 基建持续受捧：CUTLASS 登榜</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Agent evaluation infrastructure emerges as a hot research focus<br>- Benchmark saturation drives new assessment methodologies<br>- Realtime environments test agent responsiveness and timeliness<br>- NVIDIA's high-performance kernel library (CUTLASS) gains traction
+    - Agent evaluation enters the "live clock" era<br>- Benchmark saturation forces an eval paradigm shift<br>- New speedups for test-time alignment in discrete diffusion<br>- Verifiable reasoning tasks demand systematic measurement<br>- AI infra stays hot: NVIDIA CUTLASS trends
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：Agent 评测从"能不能做"转向"如何科学度量"。今日 arXiv 多篇论文聚焦此方向。RealtimeBench 提出 180 个任务、覆盖六类游戏化场景，核心洞察是：LLM Agent 的推理和工具调用都需要时间，在持续变化的环境中，"正确但迟到"的动作毫无价值——它首次将"实时性"纳入 Agent 能力评估。AlphaDiana 则构建了可验证推理任务中的 Agent 测量系统，把执行条件与结果、行为、资源消耗关联起来，帮助研究者理解 Agent 表现差异究竟来自模型还是来自外部框架（harness）。两者共同标志着一个成熟信号：Agent 工程正在从拼 demo 进入拼度量体系的新阶段。<br><br>趋势二：基准饱和后的能力评估成为政策与安全议题。"Evaluating Model Capabilities After Benchmark Saturated" 指出，当多个模型接近满分时，基准失去区分度，也失去为 AI 安全论证和前沿政策提供依据的价值。这意味着公开基准正在快速失效，评估能力本身成为一门独立学科。</div>
+  <div>趋势一：智能体（Agent）评测正从"静态榜单"转向"动态、可验证、带时钟"的真实环境度量。RealtimeBench 提出 180 个任务、横跨六类游戏场景，核心洞察是：大模型智能体的推理与工具调用耗时不可忽视，在持续变化的环境中，"正确但迟到"的动作等同于失败。AlphaDiana 则构建了面向可验证推理任务的智能体测量系统，把执行条件、行为轨迹与资源消耗关联起来。配合《Evaluating Model Capabilities After Benchmark Saturation》一文指出的"基准饱和使榜单失去区分度"问题，可以看出社区正在重建评估基础设施——这对 AI 安全论证与前沿政策制定至关重要。<br><br>趋势二：测试时对齐（test-time alignment）的计算效率成为优化焦点。Value-Informed Schedule Trimming 论文针对离散扩散的 SMC 引导，只在高价值去噪步施加奖励引导，避免每步都调用奖励模型，大幅降低计算开销。这反映了一个共识：测试时计算是稀缺资源，值得"精打细算"地调度。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1: Agent evaluation is shifting from "can it do it" to "how do we measure it scientifically." RealtimeBench introduces 180 tasks across six game types, arguing that in continuously changing environments, a correct action that arrives too late is worthless — making latency a first-class evaluation dimension. AlphaDiana builds a measurement system for agents in verifiable reasoning tasks, linking execution conditions to outcomes, behavior, and resource use — helping researchers disentangle whether performance gaps come from the model or the harness. Together they signal that agent engineering is entering a measurement-driven maturity phase.<br><br>Trend 2: Post-saturation evaluation is becoming a safety and policy issue. Once models saturate public benchmarks, those benchmarks lose discriminating power and their utility for AI safety cases. Public evals degrade quickly; the ability to evaluate is itself becoming an independent discipline.
+    Trend 1: Agent evaluation is shifting from static leaderboards to dynamic, verifiable, clock-aware measurement. RealtimeBench (180 tasks, six game types) shows that in continuously changing environments, a correct action that arrives too late is worthless—agent latency must be a first-class metric. AlphaDiana builds a measurement system linking execution conditions, behavior, and resource use for verifiable reasoning tasks. Together with the benchmark-saturation paper, this signals a rebuild of evaluation infrastructure for AI safety cases and frontier policy.<br><br>Trend 2: Efficient test-time alignment is a key optimization frontier. The SMC schedule-trimming paper applies reward guidance only at high-value denoising steps in discrete diffusion, cutting reward-model calls dramatically. The broader signal: test-time compute is scarce and must be scheduled deliberately.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 自建私有评估集——公开基准迅速饱和且易被训练数据污染，内部 held-out 评测才能真实反映模型能力。<br>2. Agent 开发要同时记录延迟与正确率——RealtimeBench 表明时效是硬指标，上线前务必做端到端耗时压测。<br>3. 用 gitleaks 扫描代码仓库——今日 Trending 项目，可自动发现泄露的 API Key 和密钥，契合密钥安全管理需求。<br>4. 关注 NVIDIA CUTLASS——Python DSL 大幅降低自定义高性能线性代数算子的门槛，推理优化方向值得投入。<br>5. 评估 Agent 时区分"模型问题"与"框架问题"——参考 AlphaDiana 思路，换 harness 复测后再下结论。</div>
+  <div>- 用 gitleaks 扫描代码仓库：AI 项目密钥众多，今日热榜安全工具，防泄露成本最低<br>- 给自家 Agent 增加"延迟预算"指标：RealtimeBench 提醒，正确率之外时效同样决定成败<br>- 不盲信饱和基准的榜单分数：基准饱和论文提示，应自建贴近业务的评估集<br>- 关注 CUTLASS 类内核级优化：线性代数加速是推理降本的核心杠杆<br>- 评估智能体时记录完整执行轨迹：参考 AlphaDiana，把条件、行为、资源消耗关联分析</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Build private eval sets — public benchmarks saturate fast and get contaminated by training data; internal held-out evals reflect true capability.<br>2. Track latency alongside accuracy for agents — RealtimeBench shows timeliness is a hard requirement; run end-to-end latency stress tests before deployment.<br>3. Scan repos with gitleaks — today's trending tool that automatically detects leaked API keys and secrets, directly supporting key-security hygiene.<br>4. Watch NVIDIA CUTLASS — its Python DSLs dramatically lower the barrier to custom high-performance linear algebra kernels, worth investing for inference optimization.<br>5. Separate "model issues" from "harness issues" when evaluating agents — following AlphaDiana's approach, re-test with a different harness before drawing conclusions.
+    - Scan your repos with gitleaks: AI projects hold many secrets; today's top security tool is the cheapest leak insurance<br>- Add a latency budget to your agents: RealtimeBench shows correct-but-late actions fail in live environments<br>- Don't blindly trust saturated leaderboard scores: build evals tailored to your own use case<br>- Watch kernel-level work like CUTLASS: linear algebra acceleration is the core lever for inference cost reduction<br>- Log full agent execution traces: AlphaDiana-style measurement links conditions, behavior, and resource use
   </div>
 </div>
 
