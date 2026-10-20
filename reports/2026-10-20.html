@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日四源均未返回条目<br>- 疑似抓取超时或解析失败<br>- 先修复数据管道<br>- 再恢复趋势判断</div>
+  <div>- 今日四个数据源均为空，无有效资讯<br>- 无法生成真实摘要，疑似抓取环节异常<br>- 建议先排查采集脚本或网络状态</div>
   <div class="en">
     <div class="en-title">English</div>
-    - All four sources returned no items today.<br>- Fetching or parsing likely failed.<br>- Restore the data pipeline first.<br>- Resume trend analysis afterward.
+    - All four data sources returned empty today<br>- No genuine items to summarize; likely ingestion failure<br>- Recommend checking fetch scripts or network first
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日原始数据为空，无法基于具体论文、项目或博客做可靠趋势判断。GitHub Trending、arXiv、HuggingFace Papers 与大厂博客同时为空，更像统一抓取或解析失败，而非行业没有动态。建议先定位失败源、保留原始响应、增加空结果告警，再对恢复后的条目按项目、论文、产品、商业机会四类归因。</div>
+  <div>今日未获取到任何 GitHub Trending、arXiv、HuggingFace Papers 或大厂博客条目，因此无法进行基于真实来源的趋势分析。为避免编造论文、项目或数据，本报告不虚构案例。可能原因包括：抓取接口超时、反爬升级、RSS/API 变更、本地网络或调度任务未运行。建议先确认采集任务日志与原始 JSON 是否生成，再重跑抓取流程。</div>
   <div class="en">
     <div class="en-title">English</div>
-    No reliable trend analysis is possible because all source lists are empty. The simultaneous absence across GitHub, arXiv, HuggingFace Papers, and major company blogs suggests a shared fetching or parsing failure rather than a genuine lack of AI news. Restore collection stability first, then classify recovered items by project, paper, product, and business impact.
+    No items were retrieved from GitHub Trending, arXiv, HuggingFace Papers, or major company blogs today. To avoid fabricating papers, projects, or metrics, this section intentionally does not invent cases. Likely causes include fetch timeouts, anti-bot changes, RSS/API updates, local network issues, or the scheduled job not running. Verify ingestion logs and raw output first, then rerun the pipeline.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 检查抓取日志与超时配置：空数组通常对应网络或解析异常。<br>- 保存每源原始响应：便于复现失败样本，避免误判为无新闻。<br>- 增加空结果告警：避免生成看似正常的空报告。<br>- 恢复后优先看评估、Agent 工具链与端侧模型三条线。</div>
+  <div>- 先检查调度任务是否执行：避免后续日报连续空白<br>- 保留原始抓取日志：便于定位失败源<br>- 增加空数据告警：异常时主动通知而不是静默输出<br>- 数据源添加去重与配额控制：降低接口封禁风险<br>- 报告生成前校验非空：无数据时切换到人工补录流程</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Check fetch logs and timeouts; empty arrays usually mean network or parsing errors.<br>- Store raw responses per source to reproduce failures and avoid false “no news” reports.<br>- Add empty-result alerts so silent collection failures are not published as normal reports.<br>- After recovery, prioritize evaluation, agent toolchains, and on-device models.
+    - Check whether the scheduler ran to prevent repeat empty reports<br>- Keep raw ingestion logs for faster failure diagnosis<br>- Add empty-data alerts instead of silently publishing blanks<br>- Use dedupe and rate limits to reduce API bans<br>- Validate non-empty inputs before report generation
   </div>
 </div>
 
@@ -77,7 +77,7 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-10-20 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-10-20 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

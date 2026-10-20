@@ -457,6 +457,6 @@
   },
   {
     "date": "2026-10-20",
-    "summary": "### 执行摘要\n中文：\n- 今日四源均未返回条目\n- 疑似抓取超时或解析失败\n- 先修复数据管道\n- 再恢复趋势判断\n\nEnglish:\n- All four sources returned no items today.\n- Fetching or parsing likely failed.\n- Restore the data pipeline first.\n- Resume trend"
+    "summary": "### 执行摘要\n中文：\n- 今日四个数据源均为空，无有效资讯\n- 无法生成真实摘要，疑似抓取环节异常\n- 建议先排查采集脚本或网络状态\n\nEnglish:\n- All four data sources returned empty today\n- No genuine items to summarize; likely ingestion failure\n- Recommend checki"
   }
 ]
