@@ -458,5 +458,9 @@
   {
     "date": "2026-10-20",
     "summary": "### 执行摘要\n中文：\n- 今日四个数据源均为空，无有效资讯\n- 无法生成真实摘要，疑似抓取环节异常\n- 建议先排查采集脚本或网络状态\n\nEnglish:\n- All four data sources returned empty today\n- No genuine items to summarize; likely ingestion failure\n- Recommend checki"
+  },
+  {
+    "date": "2026-10-21",
+    "summary": "### 执行摘要\n中文：\n- 今日源数据为空\n- 无可核验新动态\n- 不宜推断趋势\n- 建议补采后重跑\n\nEnglish:\n- Source data is empty today\n- No verifiable updates\n- Avoid trend inference\n- Re-run after recollection\n\n### 深度研究报告\n中文：\n今日 GitHub Trendin"
   }
 ]
