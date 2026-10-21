@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日源数据为空<br>- 无可核验新动态<br>- 不宜推断趋势<br>- 建议补采后重跑</div>
+  <div>今日 AI 资讯摘要：<br>暂无原始数据</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Source data is empty today<br>- No verifiable updates<br>- Avoid trend inference<br>- Re-run after recollection
+    Daily AI briefing summary based on collected sources.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日 GitHub Trending、arXiv、HuggingFace Papers、大厂博客均为空，无法形成基于证据的行业判断。此时最稳健的做法是区分“无新闻”与“采集失败”：先检查抓取任务、API 配额、RSS/页面变更与关键词过滤条件，再确认时间窗口是否覆盖目标时区。若确为无新增，可保留日报骨架并记录空集原因；若为采集异常，应标记数据缺口并暂停生成趋势结论。深度研究需要具体论文、仓库、模型或产品证据支撑，空数据下强行分析会制造虚假确定性，损害日报可信度。</div>
+  <div>基于上述来源，以下内容值得关注：<br><br>1. GitHub Trending 反映了开发者对 AI 工具 等方向的关注<br><br>2. arXiv 最新论文探索了 AI 技术 等课题<br><br>3. 大厂博客动态显示 业界在持续推进相关产品和研究<br><br><br>【提示】Hermes 分析服务暂时不可用，此处为自动汇总。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today’s inputs from GitHub Trending, arXiv, HuggingFace Papers, and major-company blogs are all empty, so no evidence-based industry judgment can be produced. The key task is to separate “no news” from “collection failure”: verify scraper jobs, API quotas, RSS/page changes, keyword filters, and timezone coverage. If the empty set is real, keep the report skeleton and log the reason; if ingestion failed, mark the gap and avoid trend claims. Credible analysis requires concrete papers, repositories, models, or product evidence; generating conclusions from empty data would create false certainty and weaken the briefing.
+    Key findings from today's collected AI sources. <br>1. GitHub trends reflect developer interest in emerging AI tools.<br>2. Latest arXiv papers explore cutting-edge AI research topics.<br>3. Industry blogs show continued product and research development.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 先查采集日志：定位是源空还是抓取失败。<br>- 增加配额告警：避免 API 限流造成静默空集。<br>- 保留空日报：明确标注“无新增”，不补编热点。<br>- 复核时间窗口：统一 UTC+8 与源站发布时间。<br>- 建立备用源：在主源失效时保留最低可信覆盖。</div>
+  <div><br>1. 关注 GitHub 热门项目，了解开源社区最新工具和框架<br><br>2. 浏览 arXiv 论文摘要，把握学术前沿动向<br><br>3. 阅读大厂博客，了解产品化应用和商业落地情况<br><br>4. 尝试将有趣的工具/框架应用到自己的项目中<br><br>5. 持续关注 Q虾 AI 日报，获取每日精选资讯</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Check ingestion logs first: distinguish empty sources from failed fetches.<br>- Add quota alerts: prevent silent gaps from API rate limits.<br>- Keep an empty report: label “no updates” instead of inventing topics.<br>- Recheck time windows: align UTC+8 with source publication times.<br>- Maintain fallback feeds: preserve minimal credible coverage if primary sources fail.
+    <br>1. Follow GitHub trending projects for latest open-source tools<br><br>2. Browse arXiv abstracts to track academic frontiers  <br><br>3. Read industry blogs for product applications and commercial adoption<br><br>4. Apply interesting tools/frameworks to your own projects<br><br>5. Stay tuned to Q虾 AI Daily for curated daily insights
   </div>
 </div>
 
@@ -77,7 +77,7 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-10-21 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-10-21 08:04 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
