@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-22</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-22</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agentic AI 深入金融与医疗垂直场景<br>- RL+LLM 驱动硬件代码自动生成<br>- 边缘部署破解医疗 AI 落地瓶颈<br>- 数据基建火热，支撑 AI 应用爆发<br>- 自托管与主权 AI 持续升温</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Agentic AI moves deep into finance & healthcare verticals<br>- RL+LLM powers autonomous hardware code generation<br>- Edge deployment unlocks clinical AI adoption<br>- Data infrastructure heats up to back AI apps<br>- Self-hosting & sovereign AI gain momentum
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日 arXiv 密集出现"可验证任务执行 + 长程后训练"的 Agent 研究，标志 Agentic AI 从通用对话助手转向专业岗位替代。Navalia（arXiv:2610.26887）提出 Cowork Agents 概念，通过可验证任务合成与长程后训练，让 LLM Agent 自主完成需跨文档证据整合的金融分析；MedPAO-Assist（arXiv:2610.26913）进一步把 Agentic AI 压缩到边缘设备，实现放射报告结构化，摆脱对云端大模型与高端 GPU 的依赖，直击临床落地瓶颈。<br><br>另一主线是 RLVR（可验证奖励强化学习）向硬科技领域渗透。Pareto-Optimal RTL（arXiv:2610.26904）用多目标 RL 让 LLM 生成电路代码时同时优化功耗、性能、面积（PPA），替代人工权衡；LLM+RL 建筑施工论文（arXiv:2610.26899）则将同一范式用于工程进度自主更新。GitHub 侧 NVIDIA/Megatron-LM 持续大热，为这类大规模 RL 后训练提供底座；Apache Doris 明确瞄准"AI agents 的实时分析与混合搜索"，Supabase、Airflow 同列 Trending，印证数据基建仍是 AI 爆发的隐形赢家。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today's arXiv drop signals a clear shift: Agentic AI is moving from chat assistants to verifiable, long-horizon task execution. Navalia (arXiv:2610.26887) introduces Cowork Agents trained via verifiable task synthesis for financial analysis requiring cross-document reasoning. MedPAO-Assist (arXiv:2610.26913) pushes agentic AI to edge devices for radiology report structuring, removing the cloud/GPU dependency that has blocked clinical adoption.<br><br>A second thread is RLVR (RL with Verifiable Rewards) expanding into hardware. Pareto-Optimal RTL (arXiv:2610.26904) applies multi-objective RL so LLMs generate circuits optimizing Power, Performance and Area simultaneously. On GitHub, NVIDIA/Megatron-LM stays hot as the training backbone, while Apache Doris positions itself as the real-time hybrid-search database "for AI agents" — alongside Supabase and Airflow, confirming data infrastructure as the quiet winner of the AI boom.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 引入 RLVR 思路做内部 AI 质检——凡输出可被程序验证的场景（代码、报表、SQL），都可用"生成+奖励校验"闭环替代人工 Review。<br>2. 用 Doris/Supabase 搭 RAG 数据底座——向量+关键词混合搜索已是 Agent 检索刚需，Doris 值得 PoC 验证。<br>3. 关注边缘 AI 硬件机会——医疗、制造等数据敏感行业急需端侧推理方案，MedPAO-Assist 是可复制的架构范式。<br>4. 团队补课自托管技能——Self-Hosting-Guide 覆盖 LLM 私有化部署，建议作为运维团队学习清单。<br>5. 借鉴 WhatsApp+MCP 集成架构——go-whatsapp 的多设备+Webhook+MCP 设计，可直接迁移到客服与通知场景。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Adopt RLVR-style loops for internal AI QA — any verifiable output (code, SQL, reports) fits a "generate + reward-check" pipeline, cutting manual review.<br>2. PoC Doris/Supabase as your RAG backbone — hybrid vector+keyword search is now table stakes for agent retrieval.<br>3. Watch the edge-AI opportunity — MedPAO-Assist is a reusable blueprint for privacy-sensitive verticals like healthcare and manufacturing.<br>4. Upskill the team on self-hosting — Self-Hosting-Guide covers private LLM deployment; make it required reading for ops.<br>5. Reuse the WhatsApp + MCP integration pattern — go-whatsapp's multi-device, webhook, MCP design ports cleanly to support and notification bots.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/supabase/supabase" target="_blank" style="font-weight:600">supabase/supabase</a>
+            <span style="color:#888;font-size:13px"> — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/apache/airflow" target="_blank" style="font-weight:600">apache/airflow</a>
+            <span style="color:#888;font-size:13px"> — Apache Airflow - A platform to programmatically author, schedule, and monitor workflows</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" style="font-weight:600">NVIDIA/Megatron-LM</a>
+            <span style="color:#888;font-size:13px"> — Ongoing research training transformer models at scale</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/mikeroyal/Self-Hosting-Guide" target="_blank" style="font-weight:600">mikeroyal/Self-Hosting-Guide</a>
+            <span style="color:#888;font-size:13px"> — Self-Hosting Guide. Learn all about locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/apache/doris" target="_blank" style="font-weight:600">apache/doris</a>
+            <span style="color:#888;font-size:13px"> — Apache Doris is a real-time analytics and hybrid search database for AI agents.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/bobeff/open-source-games" target="_blank" style="font-weight:600">bobeff/open-source-games</a>
+            <span style="color:#888;font-size:13px"> — A list of open source games.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/astroautomata/PySR" target="_blank" style="font-weight:600">astroautomata/PySR</a>
+            <span style="color:#888;font-size:13px"> — Symbolic Learning in Python and Julia</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/aldinokemal/go-whatsapp-web-multidevice" target="_blank" style="font-weight:600">aldinokemal/go-whatsapp-web-multidevice</a>
+            <span style="color:#888;font-size:13px"> — GOWA - WhatsApp REST API with support for UI, Multi Account, Webhooks, and MCP, and Chatwoot. Built with Golang for efficient memory use.</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26887" target="_blank" style="font-weight:600">Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26887v1 Announce Type: new 
+Large language model (LLM) agents are evolving from conversational assistants into Cowork Agents capable of autonomous planning, tool use, and complex task execu</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26899" target="_blank" style="font-weight:600">Large language model and reinforcement learning based autonomous construction and progress updates</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26899v1 Announce Type: new 
+Due to the rapid growth of the global population, traditional construction methods are gradually unable to meet the current housing demand. The advancement of ma</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26904" target="_blank" style="font-weight:600">Pareto-Optimal RTL Code Generation via Multi-Objective Reinforcement Learning with Large Language Models</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26904v1 Announce Type: new 
+Recent studies have proposed reinforcement learning with verifiable rewards (RLVR) methods that enable LLMs to generate high-quality RTL circuits from natural-la</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26913" target="_blank" style="font-weight:600">MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26913v1 Announce Type: new 
+The adoption of Large Language Models for radiology report structuring has been largely dominated by either proprietary cloud-based models or large open models r</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26924" target="_blank" style="font-weight:600">DataPraxis: Scaling Analytics Tasks via Verified Workspace Evolution</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26924v1 Announce Type: new 
+General-purpose agents are increasingly expected to perform professional analytics work, which requires sustained reasoning, iterative investigation, and reliabl</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.26941" target="_blank" style="font-weight:600">Industrial Agentic AI: LLM-Driven New-Generation Agents for Smart Manufacturing</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.26941v1 Announce Type: new 
+Large language models (LLMs) are enabling agents to move beyond predefined workflows toward autonomous planning and execution, creating new opportunities for sma</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-22 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

@@ -462,5 +462,9 @@
   {
     "date": "2026-10-21",
     "summary": "### 执行摘要\n中文：\n今日 AI 资讯摘要：\n暂无原始数据\n\nEnglish:\nDaily AI briefing summary based on collected sources.\n\n### 深度研究报告\n中文：\n基于上述来源，以下内容值得关注：\n<br>1. GitHub Trending 反映了开发者对 AI 工具 等方向的关注\n<br>2. arXiv 最新论文探索了 AI 技术 "
+  },
+  {
+    "date": "2026-10-22",
+    "summary": "### 执行摘要\n中文：\n- Agentic AI 深入金融与医疗垂直场景\n- RL+LLM 驱动硬件代码自动生成\n- 边缘部署破解医疗 AI 落地瓶颈\n- 数据基建火热，支撑 AI 应用爆发\n- 自托管与主权 AI 持续升温\n\nEnglish:\n- Agentic AI moves deep into finance & healthcare verticals\n- RL+LLM powers "
   }
 ]
