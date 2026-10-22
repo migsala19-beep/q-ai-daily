@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- Agentic AI 深入金融与医疗垂直场景<br>- RL+LLM 驱动硬件代码自动生成<br>- 边缘部署破解医疗 AI 落地瓶颈<br>- 数据基建火热，支撑 AI 应用爆发<br>- 自托管与主权 AI 持续升温</div>
+  <div>- AI智能体从对话迈向协同执行<br>- LLM+RL渗透芯片设计等硬核领域<br>- 边缘部署Agentic AI成医疗新方向<br>- 自托管与本地LLM生态持续升温<br>- 面向Agent的数据库基础设施成型</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Agentic AI moves deep into finance & healthcare verticals<br>- RL+LLM powers autonomous hardware code generation<br>- Edge deployment unlocks clinical AI adoption<br>- Data infrastructure heats up to back AI apps<br>- Self-hosting & sovereign AI gain momentum
+    - AI agents evolve from chat to autonomous "cowork" execution<br>- LLM+RL breaks into chip design and other hard domains<br>- Edge-deployable agentic AI gains traction in healthcare<br>- Self-hosting and local LLM ecosystems keep heating up<br>- Agent-oriented database infrastructure is taking shape
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日 arXiv 密集出现"可验证任务执行 + 长程后训练"的 Agent 研究，标志 Agentic AI 从通用对话助手转向专业岗位替代。Navalia（arXiv:2610.26887）提出 Cowork Agents 概念，通过可验证任务合成与长程后训练，让 LLM Agent 自主完成需跨文档证据整合的金融分析；MedPAO-Assist（arXiv:2610.26913）进一步把 Agentic AI 压缩到边缘设备，实现放射报告结构化，摆脱对云端大模型与高端 GPU 的依赖，直击临床落地瓶颈。<br><br>另一主线是 RLVR（可验证奖励强化学习）向硬科技领域渗透。Pareto-Optimal RTL（arXiv:2610.26904）用多目标 RL 让 LLM 生成电路代码时同时优化功耗、性能、面积（PPA），替代人工权衡；LLM+RL 建筑施工论文（arXiv:2610.26899）则将同一范式用于工程进度自主更新。GitHub 侧 NVIDIA/Megatron-LM 持续大热，为这类大规模 RL 后训练提供底座；Apache Doris 明确瞄准"AI agents 的实时分析与混合搜索"，Supabase、Airflow 同列 Trending，印证数据基建仍是 AI 爆发的隐形赢家。</div>
+  <div>趋势一：Cowork Agent（协同智能体）走向可验证的长程任务执行。Navalia 论文提出通过可验证任务合成与长程后训练，让 LLM 智能体从对话助手升级为能自主规划、调用工具、执行复杂任务的 Cowork Agent，并以需要跨文档证据整合的金融分析为验证场景。基础设施层面同步成熟：Apache Doris 明确定位"面向 AI Agent 的实时分析混合搜索数据库"，GOWA 项目为 WhatsApp API 加入 MCP 协议支持，表明 Agent 工具链标准化生态正在快速成型。<br><br>趋势二：LLM+强化学习深入垂直专业领域。Pareto-Optimal RTL 论文用多目标 RL 让 LLM 生成芯片代码，同时优化功耗、性能、面积三大指标，突破以往单一度量聚合的局限。MedPAO-Assist 将 Agentic AI 部署到边缘设备，用于放射科报告结构化，摆脱云端与高端 GPU 依赖；另有论文探索 LLM+RL 驱动自动化建筑施工与进度更新。专业垂直场景正成为大模型商业化落地的主战场。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today's arXiv drop signals a clear shift: Agentic AI is moving from chat assistants to verifiable, long-horizon task execution. Navalia (arXiv:2610.26887) introduces Cowork Agents trained via verifiable task synthesis for financial analysis requiring cross-document reasoning. MedPAO-Assist (arXiv:2610.26913) pushes agentic AI to edge devices for radiology report structuring, removing the cloud/GPU dependency that has blocked clinical adoption.<br><br>A second thread is RLVR (RL with Verifiable Rewards) expanding into hardware. Pareto-Optimal RTL (arXiv:2610.26904) applies multi-objective RL so LLMs generate circuits optimizing Power, Performance and Area simultaneously. On GitHub, NVIDIA/Megatron-LM stays hot as the training backbone, while Apache Doris positions itself as the real-time hybrid-search database "for AI agents" — alongside Supabase and Airflow, confirming data infrastructure as the quiet winner of the AI boom.
+    Trend 1: From conversational assistants to verifiable "Cowork Agents." Navalia advances LLM agents through verifiable task synthesis and long-horizon post-training, targeting financial analysis that demands cross-document evidence integration. The infrastructure layer is maturing in parallel: Apache Doris positions itself as a real-time hybrid-search database built for AI agents, while the GOWA project adds MCP protocol support to its WhatsApp API—signaling a rapidly standardizing agent toolchain ecosystem.<br><br>Trend 2: LLM + RL conquering hard professional domains. The Pareto-Optimal RTL paper applies multi-objective reinforcement learning so LLMs generate hardware code while jointly optimizing power, performance, and area—moving beyond single-metric aggregation. MedPAO-Assist delivers agentic AI on edge devices for radiology report structuring, eliminating cloud and high-end GPU dependencies, while another paper applies LLM+RL to autonomous construction and progress updates. Vertical professional domains are becoming the primary battlefield for LLM commercialization.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 引入 RLVR 思路做内部 AI 质检——凡输出可被程序验证的场景（代码、报表、SQL），都可用"生成+奖励校验"闭环替代人工 Review。<br>2. 用 Doris/Supabase 搭 RAG 数据底座——向量+关键词混合搜索已是 Agent 检索刚需，Doris 值得 PoC 验证。<br>3. 关注边缘 AI 硬件机会——医疗、制造等数据敏感行业急需端侧推理方案，MedPAO-Assist 是可复制的架构范式。<br>4. 团队补课自托管技能——Self-Hosting-Guide 覆盖 LLM 私有化部署，建议作为运维团队学习清单。<br>5. 借鉴 WhatsApp+MCP 集成架构——go-whatsapp 的多设备+Webhook+MCP 设计，可直接迁移到客服与通知场景。</div>
+  <div>1. 关注 MCP 协议生态，评估内部工具接入方案——GOWA 等项目已支持 MCP，Agent 工具链标准化在即。<br>2. 跟踪 LLM+RL 在芯片/医疗的落地节奏——垂直领域 Agent 可能比通用 Agent 更快商业化。<br>3. 调研边缘部署方案——MedPAO-Assist 证明小模型 Agent 可在无高端 GPU 环境运行，适合隐私敏感场景。<br>4. 评估自托管 AI 基础设施——Self-Hosting-Guide 登上 Trending，本地部署 LLM 是降本与数据可控方向。<br>5. 数据团队试用 Apache Doris——"为 AI Agent 设计"的数据库可能成为新一代分析基建。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Adopt RLVR-style loops for internal AI QA — any verifiable output (code, SQL, reports) fits a "generate + reward-check" pipeline, cutting manual review.<br>2. PoC Doris/Supabase as your RAG backbone — hybrid vector+keyword search is now table stakes for agent retrieval.<br>3. Watch the edge-AI opportunity — MedPAO-Assist is a reusable blueprint for privacy-sensitive verticals like healthcare and manufacturing.<br>4. Upskill the team on self-hosting — Self-Hosting-Guide covers private LLM deployment; make it required reading for ops.<br>5. Reuse the WhatsApp + MCP integration pattern — go-whatsapp's multi-device, webhook, MCP design ports cleanly to support and notification bots.
+    1. Watch the MCP protocol ecosystem and evaluate internal tool integration—projects like GOWA already support MCP, and agent toolchain standardization is imminent.<br>2. Track LLM+RL adoption in chips and medicine—vertical-domain agents may commercialize faster than general-purpose ones.<br>3. Investigate edge deployment options—MedPAO-Assist proves small-model agents run without high-end GPUs, ideal for privacy-sensitive scenarios.<br>4. Evaluate self-hosted AI infrastructure—the Self-Hosting-Guide trending signals rising demand for local LLM deployment as a cost-control and data-sovereignty strategy.<br>5. Data teams should trial Apache Doris—an agent-oriented database could become the next-generation analytics foundation.
   </div>
 </div>
 
