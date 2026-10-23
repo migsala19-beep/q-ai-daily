@@ -466,5 +466,9 @@
   {
     "date": "2026-10-22",
     "summary": "### 执行摘要\n中文：\n- AI智能体从对话迈向协同执行\n- LLM+RL渗透芯片设计等硬核领域\n- 边缘部署Agentic AI成医疗新方向\n- 自托管与本地LLM生态持续升温\n- 面向Agent的数据库基础设施成型\n\nEnglish:\n- AI agents evolve from chat to autonomous \"cowork\" execution\n- LLM+RL breaks i"
+  },
+  {
+    "date": "2026-10-23",
+    "summary": "### 执行摘要\n中文：\n- RAG 查询澄清成为小模型发力新方向\n- 具身智能加速迈向多样化虚拟世界\n- LLM 进化搜索驱动低成本科学发现\n- 前沿智能体开始向自动化科研爬坡\n- 开发基建持续火热：Supabase、Vite 登榜\n\nEnglish:\n- Query clarification emerges as a niche for small models in RAG\n- Embod"
   }
 ]
