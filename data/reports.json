@@ -470,5 +470,9 @@
   {
     "date": "2026-10-23",
     "summary": "### 执行摘要\n中文：\n- AI4Science 升温：LLM 智能体自主做科研\n- SpecEvo 用\"推测式进化\"压低科研搜索成本\n- 小模型微调，RAG 查询澄清优于蛮力检索\n- Agent 工具链（Harness）可被任务\"锻造\"进化\n- GitHub 热点转向安全、身份与网络基础设施\n\nEnglish:\n- AI-for-Science heats up: LLM agents now"
+  },
+  {
+    "date": "2026-10-24",
+    "summary": "### 执行摘要\n中文：\n- Agent 通信握手开销首获实证研究\n- MCP 与 CLI 工具集成范式之争升级\n- 可微分信念函数层突破不确定性推理\n- AI 代理模型加速野火风险全国制图\n- 非单调逻辑与神经网络交叉新进展\n\nEnglish:\n- First empirical study on handshake overhead in agent communication protoco"
   }
 ]

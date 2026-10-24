@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-24</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-24</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Agent 通信握手开销首获实证研究<br>- MCP 与 CLI 工具集成范式之争升级<br>- 可微分信念函数层突破不确定性推理<br>- AI 代理模型加速野火风险全国制图<br>- 非单调逻辑与神经网络交叉新进展</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - First empirical study on handshake overhead in agent communication protocols<br>- MCP vs CLI debate intensifies for agent tool integration<br>- Differentiable belief-function layers advance uncertainty reasoning<br>- AI surrogate model accelerates national wildfire hazard mapping<br>- New progress at the intersection of non-monotonic logic and neural networks
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>**趋势一：Agent 基础设施进入「效率实证」深水区。** 今日两篇论文共同指向一个信号：AI Agent 生态正从「协议能不能跑」转向「跑起来代价多大」。《The Cost of Saying Hello》首次系统量化 Agent 交互前的握手开销——定位对手、能力发现、会话建立都在消耗首条有效消息前的延迟预算；《MCP vs CLI》则对比了两大工具集成范式：MCP 标准化但引入额外协商成本，CLI 灵活但缺乏结构化契约。这表明 Agent 工程化已从概念验证进入性能调优阶段，类似当年微服务从「拆分」走向「Service Mesh 治理」。<br><br>**趋势二：不确定性推理的深度学习化复兴。** 《Neural Networks with Differentiable Belief-Function Layers》发现 Yager 1987 年提出的信念组合规则与反向传播天然契合——在高冲突场景下，质量应重分配至「无知」而非归一化到类别单纯形，这正是 Dempster 归一化在梯度传播中失效的解药。该方向对医疗诊断、自动驾驶等高风险决策场景意义重大，值得跟踪其代码开源情况。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    **Trend 1: Agent infrastructure is entering the "efficiency empirics" phase.** Two papers signal a shift from "can protocols run" to "what do they cost." *The Cost of Saying Hello* provides the first systematic quantification of handshake overhead in agent communication—locating counterparts, capability discovery, and session establishment all consume latency budget before the first useful message. *MCP vs CLI* compares the two competing tool-integration paradigms: MCP offers standardization at the cost of negotiation overhead, while CLI offers flexibility without structured contracts. This mirrors the microservices evolution from "breaking monoliths" to "Service Mesh governance."<br><br>**Trend 2: A deep-learning revival of uncertainty reasoning.** *Differentiable Belief-Function Layers* reveals that Yager's 1987 rule of combination naturally fits backpropagation—under high conflict, mass should redistribute to ignorance rather than renormalize onto the class simplex, precisely fixing where Dempster's normalization fails during gradient propagation. This has significant implications for high-stakes decision-making in healthcare and autonomous driving.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. **为自研 Agent 系统建立握手开销基线**——参考今日论文的测量框架，把「首 token 延迟」拆解为发现+协商+建立三段，定位优化点。<br>2. **工具集成选型做 PoC 对比**——MCP 与 CLI 并非互斥，建议对内部高复用服务走 MCP，对一次性运维操作保留 CLI，按场景混布。<br>3. **跟踪可微分信念层开源实现**——若论文放出代码，可在异常检测、多模型集成投票等高冲突场景试替换 Softmax 头。<br>4. **关注 AI for Climate 赛道**——野火代理模型由过程仿真加速 10-100 倍的思路，同样适用于洪水、空气质量等公共部门需求，是政策预算驱动的稳定市场。<br>5. **今日数据源大面积空缺**——GitHub Trending / HuggingFace / 大厂博客均为空，建议检查报告站抓取脚本网络状态，避免长期漏抓关键情报。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. **Establish handshake overhead baselines for in-house agent systems** — use the paper's measurement framework to break down "first-token latency" into discovery + negotiation + setup, then target optimization.<br>2. **Run a PoC comparing MCP vs CLI** — they are not mutually exclusive: MCP for high-reuse internal services, CLI for one-off ops, deployed as a hybrid.<br>3. **Track open-source releases of differentiable belief layers** — if code drops, try replacing Softmax heads in high-conflict scenarios like anomaly detection and ensemble voting.<br>4. **Watch the AI-for-Climate vertical** — the 10–100x surrogate-model speedup approach applies equally to flood and air-quality mapping, a policy-budget-driven stable market.<br>5. **Today's sources are largely empty** — GitHub Trending / HuggingFace / big-tech blogs all missing; check the report pipeline's network health to avoid chronic情报 gaps.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30151" target="_blank" style="font-weight:600">The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30151v1 Announce Type: new 
+Every interaction between AI agents begins with a handshake: the initiating agent must locate its counterpart, learn what it can do, and establish a session befo</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30157" target="_blank" style="font-weight:600">MCP vs CLI for AI Agents: A Comparative Analysis of Tool Integration Strategies for Autonomous Systems</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30157v1 Announce Type: new 
+AI agents require interfaces to interact with external systems such as files, APIs, databases, and cloud services. Two competing paradigms have emerged: CLI (Com</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30170" target="_blank" style="font-weight:600">Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30170v1 Announce Type: new 
+Canada's increasing wildfire activity requires frequent national hazard mapping to guide proactive mitigation, including fuel management, land-use planning, infr</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30173" target="_blank" style="font-weight:600">Neural Networks with Differentiable Belief-Function Layers</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30173v1 Announce Type: new 
+Yager's 1987 rule of combination $\boxplus$ was proposed on epistemic grounds: under high conflict, mass should be redistributed to ignorance rather than renorma</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30176" target="_blank" style="font-weight:600">When Stable and Preferred Semantics Agree: A Path-Based Approach</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30176v1 Announce Type: new 
+We investigate structural conditions under which preferred and stable semantics agree in abstract argumentation frameworks. Our approach is based on suitably cho</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.30205" target="_blank" style="font-weight:600">Feedback That Backfires in Games: Do LLM Players Repeat the Move They Just Watched Fail?</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.30205v1 Announce Type: new 
+When an LLM agent's move fails, the harness writes the move and the failure message into the transcript and asks again. In tool calling, this record makes small </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-24 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
