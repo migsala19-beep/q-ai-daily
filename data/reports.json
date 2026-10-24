@@ -473,6 +473,6 @@
   },
   {
     "date": "2026-10-24",
-    "summary": "### 执行摘要\n中文：\n- Agent 通信握手开销首获实证研究\n- MCP 与 CLI 工具集成范式之争升级\n- 可微分信念函数层突破不确定性推理\n- AI 代理模型加速野火风险全国制图\n- 非单调逻辑与神经网络交叉新进展\n\nEnglish:\n- First empirical study on handshake overhead in agent communication protoco"
+    "summary": "### 执行摘要\n中文：\n- Agent 通信握手开销成新瓶颈\n- MCP 与 CLI 工具集成路线对决\n- AI 代理模型加速野火风险制图\n- 可微信念函数层增强不确定性建模\n\nEnglish:\n- Handshake overhead emerges as a new bottleneck in agent protocols\n- MCP vs CLI: competing tool-inte"
   }
 ]
