@@ -477,6 +477,6 @@
   },
   {
     "date": "2026-10-25",
-    "summary": "### 执行摘要\n中文：\n- 今日未采集到任何 AI 资讯数据\n- 四个数据源（GitHub/arXiv/HuggingFace/博客）均为空\n- 疑似爬虫任务未执行或全部抓取失败\n- 建议排查抓取任务后重新生成\n\nEnglish:\n- No AI news data collected today\n- All four sources returned empty results\n- Scrap"
+    "summary": "### 执行摘要\n中文：\n- 四大信源今日均无新增条目\n- 疑似周末停更叠加采集静默\n- 用管道自检替代空转展示\n- 建议优先核对抓取日志与状态码\n\nEnglish:\n- All four sources returned zero new items today\n- Likely weekend lull plus silent fetch failures\n- Report pivots to"
   }
 ]

@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日未采集到任何 AI 资讯数据<br>- 四个数据源（GitHub/arXiv/HuggingFace/博客）均为空<br>- 疑似爬虫任务未执行或全部抓取失败<br>- 建议排查抓取任务后重新生成</div>
+  <div>- 四大信源今日均无新增条目<br>- 疑似周末停更叠加采集静默<br>- 用管道自检替代空转展示<br>- 建议优先核对抓取日志与状态码</div>
   <div class="en">
     <div class="en-title">English</div>
-    - No AI news data collected today<br>- All four sources returned empty results<br>- Scraper task likely failed or did not run<br>- Recommend debugging before regenerating
+    - All four sources returned zero new items today<br>- Likely weekend lull plus silent fetch failures<br>- Report pivots to pipeline self-check instead<br>- Verify crawler logs and HTTP status codes first
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日无可用数据，无法进行分析。空结果通常有两种可能：一是定时抓取任务（cron）未触发或报错，二是目标站点结构变更/反爬升级导致解析失败。建议先检查抓取日志，确认 raw 数据文件是否正常落盘，再定位是网络层还是解析层的问题。</div>
+  <div>今日 GitHub Trending、arXiv、HuggingFace Papers、大厂博客四项输入全部为空。先区分两类原因：其一是“真无数据”——arXiv 的 cs.AI/cs.CL 周日通常不发布新论文，HuggingFace Papers 又依赖 arXiv 源，GitHub Trending 周末新项目显著减少，大厂博客也非日更；其二是“抓取失败”——反爬、超时、API 限额会静默返回空列表。判别方法：保留每次请求的 HTTP 状态码、响应体长度与抓取时间戳。若状态全 200 且体积极小，多为真无数据；若出现 403/429/5xx 或 connect timeout，则是故障，应触发重试与告警。稳健做法是把“空”视为一等公民状态写入报告头部（数据状态徽标），并对采集任务加“连续 N 次空即升级提醒”的规则，避免长期静默漏报。此方法比临时堆源更可靠，也便于复盘每条信源的真实更新节律。</div>
   <div class="en">
     <div class="en-title">English</div>
-    No data available for analysis. Empty results typically indicate either a failed/missed scheduled scraping run, or target site changes breaking the parsers. Check the crawler logs and raw data files to determine whether the issue is network-level or parsing-level before regenerating.
+    All four inputs are empty today. Separate two causes before acting. “Genuinely empty” is plausible: arXiv cs.AI/cs.CL rarely posts on Sundays, HuggingFace Papers mirrors arXiv, GitHub Trending slows on weekends, and vendor blogs are not daily. “Silent fetch failure” is the risk: anti-bot blocks, timeouts, or rate limits can yield empty lists without errors. Discriminate by logging HTTP status, response size, and timestamps per request. Consistent 200s with tiny bodies suggest a true lull; 403/429/5xx or connect timeouts indicate faults and should trigger retries and alerts. Treat “empty” as a first-class state: surface a data-status badge in the report header and alert only after N consecutive empties from the same source. This beats reflexively adding more feeds and makes each source’s cadence observable and auditable.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 为抓取脚本添加空数据告警，失败时推送通知（避免静默失败）<br>- 给每个数据源增加独立日志和落盘原始文件，便于定位问题<br>- 添加 cron 任务健康检查（如 last-run 时间戳）</div>
+  <div>- 采集脚本落盘状态码与响应体长度：理由是一眼区分“真无数据”与“抓取失败”。<br>- 增加 2-3 个回退信源（HuggingFace Daily RSS、Product Hunt、r/MachineLearning）：理由是平抑单源周末停更。<br>- 周末自动切“周报模式”，合并周五至周一：理由是贴合 arXiv 不发版节奏。<br>- 对关键请求加 retry、超时与 429 退避：理由是消除偶发空结果。<br>- 报告页头部加“数据状态徽标”：理由是读者可即时判断当日可信度。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Add empty-data alerts to the scraper to avoid silent failures<br>- Log raw output per source to simplify debugging<br>- Add cron health checks (e.g. last-run timestamps)
+    - Persist HTTP status and body size per fetch: it instantly separates a true lull from silent failures.<br>- Add 2-3 fallback feeds (HuggingFace Daily RSS, Product Hunt, r/MachineLearning): it smooths weekend source gaps.<br>- Auto-switch to a “weekly digest” merging Friday–Monday: it matches arXiv’s no-release rhythm.<br>- Add retries, timeouts, and 429 backoff on key requests: it removes transient empty results.<br>- Show a data-status badge in the report header: readers can judge reliability at a glance.
   </div>
 </div>
 
