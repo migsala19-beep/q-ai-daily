@@ -474,5 +474,9 @@
   {
     "date": "2026-10-24",
     "summary": "### 执行摘要\n中文：\n- Agent 通信握手开销成新瓶颈\n- MCP 与 CLI 工具集成路线对决\n- AI 代理模型加速野火风险制图\n- 可微信念函数层增强不确定性建模\n\nEnglish:\n- Handshake overhead emerges as a new bottleneck in agent protocols\n- MCP vs CLI: competing tool-inte"
+  },
+  {
+    "date": "2026-10-25",
+    "summary": "### 执行摘要\n中文：\n- 今日未采集到任何 AI 资讯数据\n- 四个数据源（GitHub/arXiv/HuggingFace/博客）均为空\n- 疑似爬虫任务未执行或全部抓取失败\n- 建议排查抓取任务后重新生成\n\nEnglish:\n- No AI news data collected today\n- All four sources returned empty results\n- Scrap"
   }
 ]
