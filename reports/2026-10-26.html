@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI运维进入可观测闭环<br>- PostHog打通Agent诊断链路<br>- Qlib推进量化研发自动化<br>- 自托管基础设施回潮<br>- Prompt资产需组织化管理</div>
+  <div>- 自托管 PaaS 继续升温  <br>- AI 量化平台引关注  <br>- 提示词资产化加速  <br>- 产品分析叠加 AI 观测  <br>- 开源替代降低 SaaS 锁定</div>
   <div class="en">
     <div class="en-title">English</div>
-    - AI operations now demand observability loops.<br>- PostHog connects agent diagnosis workflows.<br>- Qlib advances automated quant R&D.<br>- Self-hosted infrastructure is resurging.<br>- Prompt assets need governed management.
+    - Self-hosted PaaS keeps gaining momentum.  <br>- AI quant platforms draw attention.  <br>- Prompts are becoming managed assets.  <br>- Product analytics is merging with AI observability.  <br>- Open-source alternatives reduce SaaS lock-in.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日信号虽少，但指向两条清晰主线。第一，AI应用正从“能跑”转向“可诊断、可运营”。PostHog把分析、会话回放、实验、错误追踪、日志与MCP入口放在同一产品叙事里，本质上是在回答：当产品越来越多由Agent参与生成、修复和决策时，团队如何持续理解线上行为、归因问题并闭环迭代。这对AI日报、客服、编程助手、数据分析Agent都有启发：上线不是终点，事件流、反馈样本、失败案例和工具调用轨迹才是下一轮模型与提示词优化的原料。第二，垂直领域研发自动化在增强。microsoft/qlib长期服务AI量化，覆盖监督学习、市场动态建模与强化学习；其描述中明确提到与RD-Agent结合，自动化R&D流程。这代表一种范式：不只预测一个数值，而是把假设生成、因子挖掘、回测、代码实验和结果归档连成流水线。相比通用AutoML，金融/量化场景因数据边界清晰、评价指标可回测，更适合先做“研发自动化样板”。</div>
+  <div>今日信号主要来自 GitHub Trending，arXiv、HuggingFace Papers 与大厂博客为空，说明热榜焦点不在新模型论文，而在“可私有部署的 AI/数据基础设施”。第一条趋势是自托管与数据主权回流：Coolify 定位 Vercel/Heroku/Netlify 的开源自托管替代，NocoDB 对标 Airtable，Cal.com 提供调度基础设施，共同点是让团队把应用、数据和工作流留在自有服务器。PostHog 更关键，它把 analytics、session replay、feature flags、experiments、error tracking、logs 与 AI observability 打包，意味着未来产品系统不仅要埋点分析人，也要回放、诊断和引导 AI Agent 行为。第二条趋势是 AI 工程化进入垂直工作流：microsoft/qlib 用监督学习、市场动态建模和 RL 支撑量化研究，并衔接 RD-Agent 自动化研发流程；f/prompts.chat 则显示提示词正在从个人技巧变成可分享、可私有化部署的组织资产。简言之，今日看点是“开源基础设施 + Agent 可观测 + 领域工作流自动化”。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two trends stand out. First, AI products are moving from demo quality to operability. PostHog frames analytics, session replay, experiments, error tracking, logs, and MCP access as one “self-driving product” stack. The implication is that once agents help generate, debug, and ship product changes, teams need continuous telemetry: event streams, failure traces, tool-call records, and user feedback become training and evaluation assets. This applies beyond product analytics to coding assistants, support agents, and report generators. Second, R&D automation is getting more vertical. microsoft/qlib is an AI-oriented quant platform spanning supervised learning, market dynamics modeling, and RL; its note about RD-Agent points to automating the research loop itself—hypothesis generation, feature/factor discovery, backtesting, experimentation, and result archival. Quant is an early proving ground because objectives are measurable and backtests are cheap. Expect similar loops in materials, bio, ads, and operations research.
+    With arXiv, HuggingFace Papers and major-company blogs empty, attention is concentrated on self-hostable AI/data infrastructure rather than new model papers. The first trend is the return of data sovereignty: Coolify positions itself against Vercel/Heroku/Netlify, NocoDB against Airtable, and Cal.com provides scheduling infrastructure, all letting teams keep apps, data and workflows on their own servers. PostHog is especially telling: it bundles analytics, session replay, flags, experiments, error tracking, logs and AI observability, implying future systems must analyze humans and also replay, diagnose and steer AI agents. The second trend is vertical AI engineering: microsoft/qlib applies supervised learning, market-dynamics modeling and RL to quant research, connecting with RD-Agent for automated R&D; f/prompts.chat shows prompts becoming shareable, privately deployable organizational assets. Key takeaway: open infrastructure, agent observability and domain workflow automation are converging.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 给AI功能加可观测面板：理由：没有回放和失败轨迹，优化只能靠猜。<br>- 把Prompt纳入版本管理：理由：prompts.chat说明社区资产化正在加速。<br>- 用Qlib/RD-Agent思路做实验流水线：理由：先标准化回测与归档，再谈自动化。<br>- 评估自托管数据与日程栈：理由：NocoDB、Cal.com、Coolify降低SaaS锁定与隐私风险。<br>- 过滤日报噪音源：理由：游戏MOD等热点不应稀释AI主线。</div>
+  <div>- 用 Coolify/NocoDB 搭内部 AI Demo 与数据目录；自托管能快速试错且降低锁定。  <br>- 把提示词纳入 Git 管理并做版本评审；prompt 已是可复用生产资产。  <br>- 为 AI Agent 应用接入 PostHog 式观测；回放、错误与 flag 能定位线上失败。  <br>- 参考 qlib/RD-Agent 思路自动化研究流程；把假设、回测、报告串成闭环。  <br>- 涉隐私业务优先评估自托管组件；合规、成本与可控性更强。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Add observability to AI features: without replay and failure traces, tuning becomes guesswork.<br>- Version-control prompts as assets: community prompt registries are becoming operational infrastructure.<br>- Build experiment pipelines in the Qlib/RD-Agent style: standardize backtests and archives before automating research.<br>- Evaluate self-hosted data and scheduling stacks: NocoDB, Cal.com, and Coolify reduce SaaS lock-in and privacy risk.<br>- Filter non-AI noise from daily briefings: game mod spikes should not dilute the core signal.
+    - Build internal AI demos and data catalogs with Coolify/NocoDB; self-hosting speeds iteration and reduces lock-in.  <br>- Manage prompts in Git with reviews and versions; prompts are reusable production assets.  <br>- Add PostHog-style observability to AI agents; replay, errors and flags help diagnose failures.  <br>- Borrow qlib/RD-Agent ideas to automate research loops; connect hypotheses, backtests and reports.  <br>- Prefer self-hosted components for privacy-sensitive work; compliance, cost and control improve.
   </div>
 </div>
 
