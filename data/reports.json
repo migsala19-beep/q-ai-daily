@@ -478,5 +478,9 @@
   {
     "date": "2026-10-25",
     "summary": "### 执行摘要\n中文：\n- 四大信源今日均无新增条目\n- 疑似周末停更叠加采集静默\n- 用管道自检替代空转展示\n- 建议优先核对抓取日志与状态码\n\nEnglish:\n- All four sources returned zero new items today\n- Likely weekend lull plus silent fetch failures\n- Report pivots to"
+  },
+  {
+    "date": "2026-10-26",
+    "summary": "### 执行摘要\n中文：\n- AI运维进入可观测闭环\n- PostHog打通Agent诊断链路\n- Qlib推进量化研发自动化\n- 自托管基础设施回潮\n- Prompt资产需组织化管理\n\nEnglish:\n- AI operations now demand observability loops.\n- PostHog connects agent diagnosis workflows.\n- Q"
   }
 ]
