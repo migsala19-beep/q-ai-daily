@@ -485,6 +485,6 @@
   },
   {
     "date": "2026-10-27",
-    "summary": "### 执行摘要\n中文：\n- Agent 自我修复并沉淀长期经验成热点\n- 能力中心范式提升科研 Agent 效能（Phronix）\n- Lean 形式化验证加速论文严谨性（PaperFormalizer）\n- 开源自托管与隐私工具持续霸榜（Coolify/Ente）\n- Prompt 工程走向社区化共享（prompts.chat）\n\nEnglish:\n- Self-repairing agent"
+    "summary": "### 执行摘要\n中文：\n- 「智能体从错误中学习」成为今日研究热点\n- 两篇论文聚焦Agent自我进化与持久记忆机制\n- Lean形式化验证迈向论文自动严谨性检查\n- 中英双语傲慢语气检测模型发布，利好内容安全\n- 今日GitHub/HuggingFace/大厂博客源为空，仅arXiv更新\n\nEnglish:\n- \"Agents learning from mistakes\" emerges a"
   }
 ]
