@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- Coolify 登顶 GitHub Trending，自托管 PaaS 持续升温<br>- 2027 暑期实习岗位库上线，AI/数据岗位增长明显<br>- arXiv 聚焦智能体自我纠错与论文自动形式化<br>- AI 代理在科学计算中的"能力中心"范式受关注<br>- PCL 傲慢语检测研究扩展至中英双语场景</div>
+  <div>1. AI Agent 自我学习范式兴起<br>2. 论文形式化验证成新热点<br>3. 自托管开源基础设施霸榜<br>4. 多语言有害内容检测突破</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Coolify tops GitHub Trending, self-hosted PaaS gaining momentum<br>- Summer 2027 internship repo launches, AI/data roles growing<br>- arXiv spotlight: agent self-repair and autoformalization of papers<br>- Capability-centric paradigm for AI agents in scientific computing<br>- PCL (patronizing language) detection extended to English and Mandarin
+    1. AI Agent self-learning paradigms gain traction<br>2. Autoformalization of research papers emerges as hot topic<br>3. Self-hosted open-source infra dominates trending<br>4. Multilingual harmful language detection advances
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：自托管基础设施回潮，"去平台化"成为开发者新共识。Coolify（开源、可自托管的 Vercel/Heroku 替代品）登顶 GitHub Trending，与 RustDesk（自托管远程桌面，对标 TeamViewer）、VictoriaMetrics（自托管监控）同日上榜，说明开发者和企业正主动降低对 SaaS 平台的依赖。背后的驱动力是成本可控、数据主权和避免供应商锁定，这为 AI 应用的私有化部署（如本地 LLM 推理 + 本地数据存储）提供了成熟的运维底座。<br><br>趋势二：AI 智能体从"完成任务"走向"持续学习"。arXiv 今日两篇论文方向一致：Phronix 提出能力中心（Capability-Centric）学习范式，强调智能体的效果取决于其能力积累而非单次提示工程；另一篇《Don't Forget What You Just Learned》则让智能体将错误转化为持久的经验教训，实现自我定向修复（Self-Directed Repair）。这标志着 agent 研究正从 harness 工程转向长期记忆与自我改进机制，与 PaperFormalizer 这类"作者参与式自动形式化" agent 流水线共同指向：下一代 agent 的核心竞争力是经验沉淀与可验证性。</div>
+  <div>今日最值得关注的趋势是 **AI Agent 的持续学习与自我改进**。arXiv 上两篇论文形成呼应：Phronix 提出"能力中心学习范式"，主张 Agent  effectiveness 不应依赖外部 harness，而应通过能力积累实现自主进化；"Don't Forget What You Just Learned" 则进一步给出具体机制——自我导向修复（Self-Directed Repair），让 Agent 将错误转化为持久经验而非重复犯错。这标志着 Agent 研究正从"单次任务执行"转向"终身学习系统"，对构建可靠的科学计算 Agent 尤为关键。第二个方向是 **AI 辅助科研验证**：PaperFormalizer 利用 Lean 构建 agentic pipeline，自动发现并填补论文证明中的漏洞，将研究论文转化为机器可验证形式，有望大幅提升科研可靠性。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1: The self-hosting infrastructure movement is gaining real momentum. Coolify (open-source, self-hostable alternative to Vercel/Heroku/Netlify) topped GitHub Trending, alongside RustDesk (self-hosted TeamViewer alternative) and VictoriaMetrics (self-hosted monitoring). This signals that developers and enterprises are actively reducing dependence on SaaS platforms — driven by cost control, data sovereignty, and vendor-lock-in avoidance. It provides mature operational foundations for private AI deployments (local LLM inference + local data storage).<br><br>Trend 2: AI agents are evolving from "completing tasks" to "continuous learning." Two arXiv papers today point the same direction: Phronix proposes a capability-centric learning paradigm, arguing agent effectiveness depends on accumulated capabilities rather than one-shot prompt engineering; "Don't Forget What You Just Learned" introduces self-directed repair that turns agent mistakes into lasting lessons. Together with PaperFormalizer (author-in-the-loop autoformalization), this marks a shift from harness engineering toward long-term memory, self-improvement, and verifiability as the next agent core competencies.
+    Two converging trends stand out today. First, **AI Agent continuous learning** is maturing beyond single-task execution. Phronix proposes a capability-centric paradigm where agents improve through accumulated competencies rather than external harnesses, while "Don't Forget What You Just Learned" introduces self-directed repair mechanisms that convert mistakes into lasting lessons. This shift toward lifelong learning systems is critical for scientific computing agents. Second, **AI-assisted research verification** gains momentum: PaperFormalizer uses Lean-based agentic pipelines to automatically detect and close proof gaps in academic papers, transforming them into machine-verified artifacts. Together, these trends point toward more autonomous, reliable, and self-improving AI systems for both research and enterprise applications.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 关注 Coolify + 本地 LLM 的组合方案 —— 可用一台服务器私有化部署 AI 应用全家桶，成本低且数据不出内网，适合中小企业试水 AI。<br>2. 给 AI 日报增加"自托管工具"专栏 —— 今日 Trending 中 3/8 项目与自托管相关，说明这是可持续的内容维度，而非偶发热度。<br>3. 在 agent 设计中引入"错误记忆库" —— 借鉴 self-directed repair 思路，让客服/运维类 agent 把失败案例结构化存档，避免重复犯错，ROI 立竿见影。<br>4. 尝试 PaperFormalizer 式的人机协作校验 —— 技术团队可将关键设计文档/算法说明做 Lean 形式化验证，提升关键系统的可靠性。<br>5. 提前布局 2027 AI 实习人才池 —— 参考 Summer2027-Internships 仓库节奏，企业在今年 Q4 开放 AI/数据实习岗位可抢占顶尖候选人。</div>
+  <div>1. 设计 Agent 时加入"经验记忆层"——参考 Self-Directed Repair，让 Agent 从失败中提取规则，避免重复错误。<br>2. 关注 Lean/形式化验证工具——PaperFormalizer 降低了数学证明验证门槛，科研团队可尝试引入 Lean 提升论文严谨性。<br>3. 评估自托管 PaaS 方案——Coolify 等开源工具可替代 Vercel/Heroku，降低 AI 应用长期部署成本，避免供应商锁定。<br>4. 探索多语言内容安全检测——中英双语 PCL 检测论文揭示了跨文化内容审核的商业机会，尤其适合出海产品。<br>5. 监控 2027 实习招聘动态——SimplifyJobs 仓库显示 AI/数据科学岗位需求持续旺盛，可提前规划人才储备。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Explore Coolify + local LLM combos — deploy a full private AI stack on one server; data stays in-house at low cost, ideal for SMBs testing AI.<br>2. Add a "self-hosted tools" column to the daily briefing — 3 of 8 trending repos are self-hosting related, suggesting a durable content dimension rather than one-day hype.<br>3. Build an "error memory bank" into agents — inspired by self-directed repair, let support/ops agents archive failure cases structurally to avoid repeat mistakes with immediate ROI.<br>4. Try PaperFormalizer-style human-in-the-loop verification — formalize key design docs or algorithm specs in Lean to boost reliability of critical systems.<br>5. Plan early for the 2027 AI internship talent pool — following the Summer2027-Internships cadence, opening AI/data internship roles in Q4 this year captures top candidates first.
+    1. Add an "experience memory layer" to your agents —借鉴 Self-Directed Repair, extract rules from failures to prevent repeated mistakes.<br>2. Explore Lean/formal verification tools — PaperFormalizer lowers the barrier for mathematical proof verification; research teams can adopt Lean to improve rigor.<br>3. Evaluate self-hosted PaaS options — Coolify and similar open-source tools can replace Vercel/Heroku, reducing long-term deployment costs and vendor lock-in for AI applications.<br>4. Explore multilingual content safety detection — the bilingual PCL detection paper reveals commercial opportunities in cross-cultural content moderation, especially for products expanding overseas.<br>5. Monitor 2027 internship hiring trends — the SimplifyJobs repo shows sustained demand for AI/data science roles; plan talent pipelines accordingly.
   </div>
 </div>
 
