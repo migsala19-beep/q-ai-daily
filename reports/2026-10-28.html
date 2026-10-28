@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-28</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-28</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- Coolify 登顶 GitHub Trending，自托管 PaaS 持续升温<br>- 2027 暑期实习岗位库上线，AI/数据岗位增长明显<br>- arXiv 聚焦智能体自我纠错与论文自动形式化<br>- AI 代理在科学计算中的"能力中心"范式受关注<br>- PCL 傲慢语检测研究扩展至中英双语场景</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Coolify tops GitHub Trending, self-hosted PaaS gaining momentum<br>- Summer 2027 internship repo launches, AI/data roles growing<br>- arXiv spotlight: agent self-repair and autoformalization of papers<br>- Capability-centric paradigm for AI agents in scientific computing<br>- PCL (patronizing language) detection extended to English and Mandarin
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>趋势一：自托管基础设施回潮，"去平台化"成为开发者新共识。Coolify（开源、可自托管的 Vercel/Heroku 替代品）登顶 GitHub Trending，与 RustDesk（自托管远程桌面，对标 TeamViewer）、VictoriaMetrics（自托管监控）同日上榜，说明开发者和企业正主动降低对 SaaS 平台的依赖。背后的驱动力是成本可控、数据主权和避免供应商锁定，这为 AI 应用的私有化部署（如本地 LLM 推理 + 本地数据存储）提供了成熟的运维底座。<br><br>趋势二：AI 智能体从"完成任务"走向"持续学习"。arXiv 今日两篇论文方向一致：Phronix 提出能力中心（Capability-Centric）学习范式，强调智能体的效果取决于其能力积累而非单次提示工程；另一篇《Don't Forget What You Just Learned》则让智能体将错误转化为持久的经验教训，实现自我定向修复（Self-Directed Repair）。这标志着 agent 研究正从 harness 工程转向长期记忆与自我改进机制，与 PaperFormalizer 这类"作者参与式自动形式化" agent 流水线共同指向：下一代 agent 的核心竞争力是经验沉淀与可验证性。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Trend 1: The self-hosting infrastructure movement is gaining real momentum. Coolify (open-source, self-hostable alternative to Vercel/Heroku/Netlify) topped GitHub Trending, alongside RustDesk (self-hosted TeamViewer alternative) and VictoriaMetrics (self-hosted monitoring). This signals that developers and enterprises are actively reducing dependence on SaaS platforms — driven by cost control, data sovereignty, and vendor-lock-in avoidance. It provides mature operational foundations for private AI deployments (local LLM inference + local data storage).<br><br>Trend 2: AI agents are evolving from "completing tasks" to "continuous learning." Two arXiv papers today point the same direction: Phronix proposes a capability-centric learning paradigm, arguing agent effectiveness depends on accumulated capabilities rather than one-shot prompt engineering; "Don't Forget What You Just Learned" introduces self-directed repair that turns agent mistakes into lasting lessons. Together with PaperFormalizer (author-in-the-loop autoformalization), this marks a shift from harness engineering toward long-term memory, self-improvement, and verifiability as the next agent core competencies.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>1. 关注 Coolify + 本地 LLM 的组合方案 —— 可用一台服务器私有化部署 AI 应用全家桶，成本低且数据不出内网，适合中小企业试水 AI。<br>2. 给 AI 日报增加"自托管工具"专栏 —— 今日 Trending 中 3/8 项目与自托管相关，说明这是可持续的内容维度，而非偶发热度。<br>3. 在 agent 设计中引入"错误记忆库" —— 借鉴 self-directed repair 思路，让客服/运维类 agent 把失败案例结构化存档，避免重复犯错，ROI 立竿见影。<br>4. 尝试 PaperFormalizer 式的人机协作校验 —— 技术团队可将关键设计文档/算法说明做 Lean 形式化验证，提升关键系统的可靠性。<br>5. 提前布局 2027 AI 实习人才池 —— 参考 Summer2027-Internships 仓库节奏，企业在今年 Q4 开放 AI/数据实习岗位可抢占顶尖候选人。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    1. Explore Coolify + local LLM combos — deploy a full private AI stack on one server; data stays in-house at low cost, ideal for SMBs testing AI.<br>2. Add a "self-hosted tools" column to the daily briefing — 3 of 8 trending repos are self-hosting related, suggesting a durable content dimension rather than one-day hype.<br>3. Build an "error memory bank" into agents — inspired by self-directed repair, let support/ops agents archive failure cases structurally to avoid repeat mistakes with immediate ROI.<br>4. Try PaperFormalizer-style human-in-the-loop verification — formalize key design docs or algorithm specs in Lean to boost reliability of critical systems.<br>5. Plan early for the 2027 AI internship talent pool — following the Summer2027-Internships cadence, opening AI/data internship roles in Q4 this year captures top candidates first.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">8 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://github.com/coollabsio/coolify" target="_blank" style="font-weight:600">coollabsio/coolify</a>
+            <span style="color:#888;font-size:13px"> — An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/SimplifyJobs/Summer2027-Internships" target="_blank" style="font-weight:600">SimplifyJobs/Summer2027-Internships</a>
+            <span style="color:#888;font-size:13px"> — Summer 2027 software engineering, data science, AI, quant, product management, and hardware internship postings. Updated daily by Simplify and Pitt CSC.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/VictoriaMetrics/VictoriaMetrics" target="_blank" style="font-weight:600">VictoriaMetrics/VictoriaMetrics</a>
+            <span style="color:#888;font-size:13px"> — VictoriaMetrics: fast, cost-effective monitoring solution and time series database</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/neovim/neovim" target="_blank" style="font-weight:600">neovim/neovim</a>
+            <span style="color:#888;font-size:13px"> — Vim-fork focused on extensibility and usability</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/rustdesk/rustdesk" target="_blank" style="font-weight:600">rustdesk/rustdesk</a>
+            <span style="color:#888;font-size:13px"> — An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/processing/p5.js" target="_blank" style="font-weight:600">processing/p5.js</a>
+            <span style="color:#888;font-size:13px"> — p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. Looking for p5.js 2.0?http://beta.p5js.org</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/microsoft/playwright" target="_blank" style="font-weight:600">microsoft/playwright</a>
+            <span style="color:#888;font-size:13px"> — Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.</span>
+        </li><li style="margin:12px 0">
+            <a href="https://github.com/ryanoasis/nerd-fonts" target="_blank" style="font-weight:600">ryanoasis/nerd-fonts</a>
+            <span style="color:#888;font-size:13px"> — Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more</span>
+        </li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31701" target="_blank" style="font-weight:600">Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31701v1 Announce Type: new 
+Enterprise customer journeys are shaped not only by product experiences and marketing, but also by recurring resource-allocation decisions. In B2B go-to-market (</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31789" target="_blank" style="font-weight:600">Phronix: The Capability-Centric Learning Paradigm for Agents</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31789v1 Announce Type: new 
+Scientific computing increasingly relies on large language model-based agents for performance engineering tasks such as instrumentation, analysis, and workflow p</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31808" target="_blank" style="font-weight:600">Patronizing and Condescending Language Detection in English and Mandarin</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31808v1 Announce Type: new 
+Patronizing and condescending language (PCL) is a form of harmful language that belittles and assumes pity for vulnerable groups, reinforcing negative societal s</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31810" target="_blank" style="font-weight:600">PaperFormalizer: Author-in-the-Loop Autoformalization of Research Papers in Lean</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31810v1 Announce Type: new 
+Even a carefully proofread paper can leave small gaps in its proofs or its stated assumptions. We introduce PaperFormalizer, a Lean-based agentic pipeline that h</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31846" target="_blank" style="font-weight:600">Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31846v1 Announce Type: new 
+Intelligent agents should learn from their mistakes so that experience leads to continuous improvement. Yet today's agents recover from a mistake only temporaril</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.31882" target="_blank" style="font-weight:600">TACS-RF: Tool-driven Agentic Circuit Synthesis of RF and mmWave Modules</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.31882v1 Announce Type: new 
+We present the framework of TACS-RF - a Tool-driven Agentic Circuit Synthesis of RF and mmWave modules. In this framework, a large-language-model (LLM) coding ag</span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-28 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
