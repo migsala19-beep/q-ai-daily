@@ -497,6 +497,6 @@
   },
   {
     "date": "2026-10-30",
-    "summary": "### 执行摘要\n中文：\n- AI省时效益衡量框架：超越秒表，看实际产出质量 / Counting the Bandages: AI省时效益新衡量视角\n- 多模态智能体\"三位一体\"递归自我进化 / The Trinity: 多模态Agent能力驱动自我改进\n- 临床队列筛选智能体CohortFlow实现可控语义修正 / CohortFlow: 可操纵的临床队列构建Agent\n- 深度学习数据生成策"
+    "summary": "### 执行摘要\n中文：\n- AI省时改用“账本观”：质量计入成本\n- 多模态Agent走向递归自我改进\n- 临床队列Agent支持增量修正\n- 数据生成缓解小样本与类别失衡\n- AI更强时，人类转向选题与验证\n\nEnglish:\n- Measure AI time-saving with a “ledger,” not a stopwatch: quality counts.\n- Multimo"
   }
 ]

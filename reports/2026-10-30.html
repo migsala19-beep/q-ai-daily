@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- AI省时效益衡量框架：超越秒表，看实际产出质量 / Counting the Bandages: AI省时效益新衡量视角<br>- 多模态智能体"三位一体"递归自我进化 / The Trinity: 多模态Agent能力驱动自我改进<br>- 临床队列筛选智能体CohortFlow实现可控语义修正 / CohortFlow: 可操纵的临床队列构建Agent<br>- 深度学习数据生成策略助力橄榄树病害分类 / 农业AI数据增强实践案例</div>
+  <div>- AI省时改用“账本观”：质量计入成本<br>- 多模态Agent走向递归自我改进<br>- 临床队列Agent支持增量修正<br>- 数据生成缓解小样本与类别失衡<br>- AI更强时，人类转向选题与验证</div>
   <div class="en">
     <div class="en-title">English</div>
-    - New framework to measure AI time savings: beyond the stopwatch, quality matters<br>- The Trinity: capability-driven recursive self-improvement for multimodal agents<br>- CohortFlow: steerable agent for clinical cohort curation with semantic correction<br>- Data generation strategies boost olive tree disease classification models
+    - Measure AI time-saving with a “ledger,” not a stopwatch: quality counts.<br>- Multimodal agents are moving toward recursive self-improvement.<br>- Clinical cohort agents now support incremental, localized corrections.<br>- Synthetic data generation eases small-sample and class-imbalance pain.<br>- As AI out-sciences humans, people shift to problem choice and verification.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>趋势一：AI 效能评估进入"账本视角"时代。《Counting the Bandages》一文指出，AI 节省的时间不能只看计时器（stopwatch），而要用"账本视角"（ledger）——将节省时间与被放行的工作错误对照衡量。这揭示了企业落地 AI 的一个核心痛点：局部提速可能带来全局返工成本。对管理者而言，评估 AI 工具 ROI 需要引入质量审计指标。<br><br>趋势二：智能体自我进化与垂直领域落地并进。《The Trinity》探索多模态 Agent 的能力驱动递归自我改进，试图突破"环境构建昂贵、人工迭代瓶颈"两大障碍；与此同时 CohortFlow 将这一范式落地医疗场景，通过局部化语义修正实现"增量式"队列筛选，避免重复处理未变更的需求。两者共同指向：Agent 设计的下一战场是"可持续迭代"而非"一次性性能"。</div>
+  <div>趋势一：AI 生产力的度量从“秒表”转向“账本”。Counting the Bandages 区分两种视角：秒表观只看时钟节省，账本观则把省下的时间放在“放行错误/返工”旁边对照核算——AI 越快，若缺陷漏出越多，净收益可能为负。这与 Why and How to Do Science When AI Is Better at It 呼应：当 AI 在部分科学任务上强于人类，人类价值应转向提出问题、设计验证、承担责任，而非比拼产出速度。落地含义是：评估 Copilot/Agent 必须同时记录 cycle time 与 defect escape rate。<br><br>趋势二：Agent 工程化从“一次性生成”走向“可演进、可修正”。The Trinity 提出能力驱动的递归自我改进，但指出两大瓶颈：异构可验证环境构建昂贵、人工 Harness 迭代低效。CohortFlow 给出互补范式：用自然语言“转向”把修正表达为局部语义更新，避免重复处理未变需求，适合 eligibility criteria 频繁变化的临床队列。再看垂直场景，Olive Tree Diseases 用数据生成策略补齐数据不足与类别不平衡，说明小领域也能靠“合成数据+轻量模型”获得可用精度。综合看，护城河不在单次 prompt，而在评测环境、增量更新机制与领域数据管线。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Trend 1: AI efficiency evaluation enters the "ledger view" era. The paper "Counting the Bandages" argues that time saved by AI must be measured counterfactually, alongside the errors such work lets through — not merely by the stopwatch. This reveals a core pain point in enterprise AI adoption: local speedups may cause global rework costs. Managers should incorporate quality-audit metrics when evaluating AI tool ROI.<br><br>Trend 2: Agent self-evolution and vertical-domain deployment advance together. "The Trinity" explores capability-driven recursive self-improvement for multimodal agents, targeting two bottlenecks — costly environment construction and manual iteration. Meanwhile, CohortFlow lands this paradigm in healthcare, using localized semantic correction for incremental cohort curation. Both point to the same conclusion: the next battlefield in agent design is sustainable iteration, not one-shot performance.
+    Two trends stand out. First, how we measure AI productivity is shifting from a stopwatch to a ledger. Counting the Bandages argues that “time saved” should be read counterfactually next to the errors the work lets through—faster output can still be net-negative once defect rework is priced in. This pairs with Why and How to Do Science When AI Is Better at It: when AI outperforms people on parts of science, human contribution moves toward problem selection, verification design, and accountability rather than raw speed. Practically, Copilot/Agent ROI should track cycle time alongside defect escape rate.<br><br>Second, agents are becoming evolvable and steerable rather than one-shot. The Trinity frames capability-driven recursive self-improvement, while naming two bottlenecks: costly construction of heterogeneous, verifiable environments and manual harness iteration. CohortFlow complements this by turning natural-language corrections into localized semantic updates so unchanged requirements are not reprocessed—ideal when eligibility criteria keep shifting. In vertical domains, the olive-tree-disease work shows synthetic data generation can offset scarce labels and class imbalance. The moat is shifting from prompts to evaluation environments, incremental-update mechanisms, and domain data pipelines.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 评估 AI 工具时加入"返工率"指标——避免只看速度不看质量<br>- 采用 CohortFlow 式"局部修正"设计——业务需求变更频繁的场景可复用该模式<br>- 小数据领域可借鉴数据生成策略——垂直行业（农业/医疗）冷启动成本低<br>- 医疗/科研团队关注语义修正型 Agent——减少重复处理未变更需求</div>
+  <div>- 给AI任务加“质量闸门”：理由——省时须扣除漏错返工，账本观更真实。<br>- 建立轻量评测集与回归Harness：理由——The Trinity表明可验证环境是自我改进瓶颈。<br>- 让业务Agent支持“只改差异”的局部更新：理由——CohortFlow思路可省重复计算与token。<br>- 垂直场景优先做数据合成与重采样：理由——小样本/失衡下，数据策略常比换模型更有效。<br>- 把人类岗位说明书改成“选题+验证+担责”：理由——AI更强时，人类优势在判断与责任。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Add a "rework rate" metric when evaluating AI tools — speed without quality is a false economy<br>- Adopt CohortFlow-style localized correction design — reusable in scenarios with frequently changing business requirements<br>- Leverage data generation strategies in low-data domains — lowers cold-start cost for vertical industries like agriculture and healthcare<br>- Medical/research teams should watch semantic-correction agents — they avoid reprocessing unchanged requirements
+    - Add a quality gate to AI tasks: saved time must be net of escaped defects and rework.<br>- Build a lightweight eval set plus regression harness: verifiable environments are the self-improvement bottleneck.<br>- Let business agents apply localized, diff-only updates: CohortFlow-style changes save recompute and tokens.<br>- In niche domains, prioritize data generation and reweighting: it often beats swapping models under scarcity and imbalance.<br>- Rewrite human roles toward problem choice, verification, and accountability: that is where people stay decisive as AI improves.
   </div>
 </div>
 
