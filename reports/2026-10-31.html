@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-10-31</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-10-31</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- MoE训练转向内存受限优化<br>- 路由不均成新瓶颈<br>- 校准型决策受关注<br>- 科研再发现基准兴起<br>- 今日多源信号偏稀疏</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - MoE training targets memory-limited nodes<br>- Uneven expert routing becomes a bottleneck<br>- Calibrated typed decisions gain attention<br>- Scientific rediscovery benchmarks emerge<br>- Today’s multi-source signal is sparse
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日有效信息主要来自 arXiv。第一条线是稀疏 MoE 的工程化：LRMoE 提出需求侧负载再校准，针对专家路由不均导致的计算与通信瓶颈；相比继续增加专家副本或做静态放置，它更像在受限节点上重排“谁来算、何时算”，说明 MoE 竞争正从“堆容量”转向“服务成本与延迟可控”。第二条线是评估与决策可靠性：ThinkJev 关注封闭选项型决策，单次前向虽快，但对多步算术等任务概率常不可靠，需要按预算生成中间思考；OpenFrontiers 则把评估推向开放科研问题与“再发现”能力，警惕静态题库饱和和数据泄漏。共同启示：下一代模型能力不只看出分，还看校准、成本、可复现研究过程。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Today’s usable signal is mostly from arXiv. One trend is engineering sparse MoE under constraints: LRMoE reframes uneven expert routing as a demand-side load re-calibration problem, shifting MoE from raw capacity scaling toward controllable latency, communication, and memory cost on constrained nodes. A second trend is calibrated decision-making and harder evaluation: ThinkJev argues that typed decisions—closed-set choices whose probabilities downstream code consumes—cannot always be read from one forward pass, especially for multi-step arithmetic, and should spend inference budget deliberately. OpenFrontiers pushes benchmarking toward open research problems and scientific rediscovery, where models must reproduce discovery processes rather than recall answers. Together they suggest progress will be judged by calibration, efficiency, and auditable research behavior, not only benchmark scores.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 压测 MoE 服务：记录路由熵与 expert 热点；理由是 LRMoE 显示瓶颈常在负载分布而非总算力。<br>- 给关键决策加“校准闸”：概率低于阈值即触发更多思考或人工复核；理由是单次前向概率可能误导代码执行。<br>- 建内部科研基准：用开放问题替代静态问答；理由是 OpenFrontiers 强调再发现与过程可验证。<br>- 跟踪小预算推理：为 agent 设 token/延迟预算档；理由是 ThinkJev 指向按预算校准决策。<br>- 备份多源采集：GitHub/HF/博客为空需告警；理由是避免日报被单一源漂移带偏。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Stress-test MoE serving: track routing entropy and hot experts; LRMoE implies bottlenecks are often load shape, not total compute.<br>- Add calibration gates to decisions: trigger extra reasoning or human review below probability thresholds; one-pass probabilities can mislead code.<br>- Build an internal rediscovery benchmark: replace static Q&A with open problems; OpenFrontiers values process and reproducibility.<br>- Budget agent inference: define token/latency tiers; ThinkJev points to budgeted, calibrated decisions.<br>- Alert on empty sources: GitHub/HF/blogs were blank; single-source drift can skew the daily brief.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37720" target="_blank" style="font-weight:600">LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37720v1 Announce Type: new 
+Sparse Mixture-of-Experts (MoE) models offer scalable capacity for Web applications, but uneven routing creates computation and communication bottlenecks. Existi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37731" target="_blank" style="font-weight:600">Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37731v1 Announce Type: new 
+Model discrepancy may prevent a single calibration parameter from reproducing a physical response across the context domain. In addition, uncertainties in observ</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37732" target="_blank" style="font-weight:600">ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37732v1 Announce Type: new 
+Many uses of language models end in a typed decision: a choice among a closed set of options, whose probabilities code can act on. Reading those probabilities fr</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37739" target="_blank" style="font-weight:600">OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37739v1 Announce Type: new 
+Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37786" target="_blank" style="font-weight:600">WebAnything: From the Wild Web to Scalable Agent Environments</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37786v1 Announce Type: new 
+Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37809" target="_blank" style="font-weight:600">What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37809v1 Announce Type: new 
+LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-10-31 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>

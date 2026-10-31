@@ -498,5 +498,9 @@
   {
     "date": "2026-10-30",
     "summary": "### 执行摘要\n中文：\n- AI省时改用“账本观”：质量计入成本\n- 多模态Agent走向递归自我改进\n- 临床队列Agent支持增量修正\n- 数据生成缓解小样本与类别失衡\n- AI更强时，人类转向选题与验证\n\nEnglish:\n- Measure AI time-saving with a “ledger,” not a stopwatch: quality counts.\n- Multimo"
+  },
+  {
+    "date": "2026-10-31",
+    "summary": "### 执行摘要\n中文：\n- MoE训练转向内存受限优化\n- 路由不均成新瓶颈\n- 校准型决策受关注\n- 科研再发现基准兴起\n- 今日多源信号偏稀疏\n\nEnglish:\n- MoE training targets memory-limited nodes\n- Uneven expert routing becomes a bottleneck\n- Calibrated typed decisio"
   }
 ]
