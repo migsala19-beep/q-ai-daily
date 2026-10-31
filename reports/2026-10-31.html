@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- MoE训练转向内存受限优化<br>- 路由不均成新瓶颈<br>- 校准型决策受关注<br>- 科研再发现基准兴起<br>- 今日多源信号偏稀疏</div>
+  <div>• MoE训练提速：需求侧负载重校准降本增效<br>• LLM科研能力基准OpenFrontiers正式发布<br>• WebAnything：真实网页构建智能体训练环境<br>• 模型校准技术落地海洋湍流模拟场景<br>• ThinkJev优化LLM多步推理决策可靠性</div>
   <div class="en">
     <div class="en-title">English</div>
-    - MoE training targets memory-limited nodes<br>- Uneven expert routing becomes a bottleneck<br>- Calibrated typed decisions gain attention<br>- Scientific rediscovery benchmarks emerge<br>- Today’s multi-source signal is sparse
+    • LRMoE: Demand-side recalibration slashes MoE training costs<br>• OpenFrontiers benchmark launched for LLM scientific discovery<br>• WebAnything builds scalable agent environments from real web data<br>• Model calibration techniques applied to ocean turbulence simulation<br>• ThinkJev improves reliability of multi-step LLM reasoning decisions
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日有效信息主要来自 arXiv。第一条线是稀疏 MoE 的工程化：LRMoE 提出需求侧负载再校准，针对专家路由不均导致的计算与通信瓶颈；相比继续增加专家副本或做静态放置，它更像在受限节点上重排“谁来算、何时算”，说明 MoE 竞争正从“堆容量”转向“服务成本与延迟可控”。第二条线是评估与决策可靠性：ThinkJev 关注封闭选项型决策，单次前向虽快，但对多步算术等任务概率常不可靠，需要按预算生成中间思考；OpenFrontiers 则把评估推向开放科研问题与“再发现”能力，警惕静态题库饱和和数据泄漏。共同启示：下一代模型能力不只看出分，还看校准、成本、可复现研究过程。</div>
+  <div>趋势一：MoE架构进入"精益训练"时代。LRMoE论文指出，稀疏MoE模型虽为Web应用提供可扩展容量，但不均匀路由造成计算与通信双重瓶颈。现有方法多从供给侧入手（专家放置与复制），却引发额外副本竞争。LRMoE反其道而行，通过需求侧负载重校准，在内存受限节点上实现高效训练。这与DeepSeek-V3、Mixtral等MoE模型降低推理成本的行业方向高度契合，预示"少资源、大模型"成为新焦点。<br><br>趋势二：LLM能力评估向"开放科研+真实环境"双轨演进。OpenFrontiers构建了研究级开放问题集，测试LLM能否独立再发现科学成果；WebAnything则将野生网页转化为可扩展的智能体训练环境。两者共同表明：AI评测正从封闭基准（如MMLU）转向开放式、长链条、需交互的真实任务，这对智能体架构设计提出更高要求。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Today’s usable signal is mostly from arXiv. One trend is engineering sparse MoE under constraints: LRMoE reframes uneven expert routing as a demand-side load re-calibration problem, shifting MoE from raw capacity scaling toward controllable latency, communication, and memory cost on constrained nodes. A second trend is calibrated decision-making and harder evaluation: ThinkJev argues that typed decisions—closed-set choices whose probabilities downstream code consumes—cannot always be read from one forward pass, especially for multi-step arithmetic, and should spend inference budget deliberately. OpenFrontiers pushes benchmarking toward open research problems and scientific rediscovery, where models must reproduce discovery processes rather than recall answers. Together they suggest progress will be judged by calibration, efficiency, and auditable research behavior, not only benchmark scores.
+    Trend 1: MoE architecture enters the era of "lean training." LRMoE identifies that uneven routing in sparse MoE models creates computation and communication bottlenecks. While existing methods redistribute workload via expert placement and replication, LRMoE introduces demand-side load recalibration for memory-constrained nodes. This aligns with the industry shift toward cost-efficient MoE models like DeepSeek-V3 and Mixtral, signaling that "big models with fewer resources" is becoming a central theme.<br><br>Trend 2: LLM evaluation evolves toward dual tracks of "open science + real environments." OpenFrontiers provides a collection of research-level open problems to test whether LLMs can independently rediscover scientific results. WebAnything transforms wild web data into scalable agent training environments. Together, they indicate that AI benchmarking is shifting from closed benchmarks (like MMLU) toward open-ended, long-horizon, interactive real-world tasks—posing higher requirements for agent architecture design.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 压测 MoE 服务：记录路由熵与 expert 热点；理由是 LRMoE 显示瓶颈常在负载分布而非总算力。<br>- 给关键决策加“校准闸”：概率低于阈值即触发更多思考或人工复核；理由是单次前向概率可能误导代码执行。<br>- 建内部科研基准：用开放问题替代静态问答；理由是 OpenFrontiers 强调再发现与过程可验证。<br>- 跟踪小预算推理：为 agent 设 token/延迟预算档；理由是 ThinkJev 指向按预算校准决策。<br>- 备份多源采集：GitHub/HF/博客为空需告警；理由是避免日报被单一源漂移带偏。</div>
+  <div>1. 大模型微调优先评估MoE方案——LRMoE表明负载均衡策略直接影响训练成本与内存占用，选型时应重点考察。<br>2. 用OpenFrontiers类基准测试内部AI助手——若企业部署了科研辅助AI，可参考其评测框架验证真实研究能力。<br>3. 网页自动化项目关注WebAnything——从真实网页构建训练环境可降低数据采集与标注成本，适合智能体项目冷启动。<br>4. 高 stakes 场景必须做决策校准——ThinkJev揭示单次前向传播的的概率输出在多步推理中易失真，金融/医疗应用需引入校准层。<br>5. 跟踪AI for Science交叉进展——海洋湍流校准案例显示ML技术正加速渗透传统科研领域，可关注垂直结合点。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Stress-test MoE serving: track routing entropy and hot experts; LRMoE implies bottlenecks are often load shape, not total compute.<br>- Add calibration gates to decisions: trigger extra reasoning or human review below probability thresholds; one-pass probabilities can mislead code.<br>- Build an internal rediscovery benchmark: replace static Q&A with open problems; OpenFrontiers values process and reproducibility.<br>- Budget agent inference: define token/latency tiers; ThinkJev points to budgeted, calibrated decisions.<br>- Alert on empty sources: GitHub/HF/blogs were blank; single-source drift can skew the daily brief.
+    1. Prioritize MoE evaluation for LLM fine-tuning—LRMoE shows load balancing directly impacts training cost and memory; assess this during model selection.<br>2. Benchmark internal AI assistants with OpenFrontiers-style frameworks—enterprises deploying research assistants should validate real research capabilities beyond standard QA metrics.<br>3. Explore WebAnything for web automation projects—building training environments from real web data reduces collection and annotation costs, ideal for agent cold-start.<br>4. Implement decision calibration for high-stakes scenarios—ThinkJev reveals that single-pass probability outputs can distort in multi-step reasoning; finance/healthcare applications need calibration layers.<br>5. Track AI for Science crossovers—the ocean turbulence case shows ML techniques penetrating traditional research; identify vertical integration opportunities.
   </div>
 </div>
 
@@ -101,7 +101,7 @@ LLM agents that answer questions over Web knowledge graphs are increasingly wrap
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-10-31 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-10-31 08:02 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>

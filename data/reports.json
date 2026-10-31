@@ -501,6 +501,6 @@
   },
   {
     "date": "2026-10-31",
-    "summary": "### 执行摘要\n中文：\n- MoE训练转向内存受限优化\n- 路由不均成新瓶颈\n- 校准型决策受关注\n- 科研再发现基准兴起\n- 今日多源信号偏稀疏\n\nEnglish:\n- MoE training targets memory-limited nodes\n- Uneven expert routing becomes a bottleneck\n- Calibrated typed decisio"
+    "summary": "### 执行摘要\n中文：\n• MoE训练提速：需求侧负载重校准降本增效\n• LLM科研能力基准OpenFrontiers正式发布\n• WebAnything：真实网页构建智能体训练环境\n• 模型校准技术落地海洋湍流模拟场景\n• ThinkJev优化LLM多步推理决策可靠性\n\nEnglish:\n• LRMoE: Demand-side recalibration slashes MoE traini"
   }
 ]
