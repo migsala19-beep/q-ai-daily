@@ -505,6 +505,6 @@
   },
   {
     "date": "2026-11-01",
-    "summary": "### 执行摘要\n\n中文：\n- 今日数据源普遍乏力，仅 arXiv 有新增\n- MoE 训练效率成新焦点，LRMoE 解决显存瓶颈\n- ThinkJev 探索大模型\"预算可控\"的校准决策\n- OpenFrontiers  benchmark 瞄准 AI 科研再发现能力\n- 建议检查爬虫超时配置，避免空数据常态化\n\nEnglish:\n- Most data sources came back emp"
+    "summary": "### 执行摘要\n中文：\n- MoE训练负载重校准新方案登场\n- 语言模型决策校准成为热点\n- 科学难题基准OpenFrontiers发布\n- 网页智能体环境规模化探索\n- 今日源数据偏少仅arXiv有更新\n\nEnglish:\n- LRMoE rebalances MoE expert load for memory-constrained training\n- Calibrated typed "
   }
 ]

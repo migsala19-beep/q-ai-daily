@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日数据源普遍乏力，仅 arXiv 有新增<br>- MoE 训练效率成新焦点，LRMoE 解决显存瓶颈<br>- ThinkJev 探索大模型"预算可控"的校准决策<br>- OpenFrontiers  benchmark 瞄准 AI 科研再发现能力<br>- 建议检查爬虫超时配置，避免空数据常态化</div>
+  <div>- MoE训练负载重校准新方案登场<br>- 语言模型决策校准成为热点<br>- 科学难题基准OpenFrontiers发布<br>- 网页智能体环境规模化探索<br>- 今日源数据偏少仅arXiv有更新</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Most data sources came back empty today; arXiv is the only fresh feed<br>- LRMoE tackles memory bottlenecks in MoE training efficiency<br>- ThinkJev explores budget-calibrated typed decisions for LLMs<br>- OpenFrontiers benchmark targets AI's scientific rediscovery ability<br>- Recommend checking scraper timeout settings to avoid recurring empty days
+    - LRMoE rebalances MoE expert load for memory-constrained training<br>- Calibrated typed decisions emerge as a hot research topic (ThinkJev)<br>- OpenFrontiers launches benchmark for scientific rediscovery<br>- WebAnything scales web environments for agents<br>- Thin data day: only arXiv feed yielded results
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日资讯量偏低，但仅有的几篇论文恰好指向一个共性趋势：**让大模型在"有限资源下可靠地做事"**。<br><br>趋势一：MoE 的效率工程化。LRMoE 针对稀疏混合专家模型的负载不均问题，提出需求侧负载重校准方案，在不增加专家副本的前提下缓解计算与通信瓶颈。这与近期业界（如 DeepSeek、Mixtral 系列）对 MoE 落地成本的持续压榨一脉相承——MoE 的竞争已从"能不能做"转向"能不能便宜地做"。<br><br>趋势二：决策校准与评估基准。ThinkJev 关注一个被忽视的场景：LLM 输出的概率若直接驱动代码决策（如算术、多步推理），单次前向传播的概率往往失真，论文探索了"一次思考、任意预算"的校准方法。OpenFrontiers 则构建了开放科研问题集，用"科学再发现"来评估 LLM 的真实研究能力，弥补了现有基准多停留在解题层面的空白。<br><br>两者共同说明：社区正从"模型更大"转向"输出更可信、评估更真实"。</div>
+  <div>今日资讯虽少，但呈现两条清晰主线。<br><br>其一，「校准」成为贯穿多篇论文的核心议题。ThinkJev 提出单次前向传播即可输出可靠的类型化决策概率，解决多步推理（如算术题）中概率失真问题，对需要概率驱动下游代码逻辑的应用意义重大。Amortized Localized Posterior Inference 则面向科学模型（海洋湍流闭合参数），用摊销推理同时处理观测噪声与上下文不确定性，代表了物理信息机器学习（PINN）方向的最新进展。<br><br>其二，「规模化智能体与科研AI」持续升温。OpenFrontiers 汇集跨学科开放研究难题，专门评估LLM能否复现人类已知的科学发现，补齐了现有基准在「研究级问题」上的空白。WebAnything 尝试把真实互联网网页转化为可扩展的智能体训练环境，呼应了近期Operator、Browser Use等产品对网页操作智能体的押注。值得注意的是 LRMoE 从需求侧而非供给侧解决MoE负载不均，或影响未来MoE模型的分布式训练架构设计。</div>
   <div class="en">
     <div class="en-title">English</div>
-    Two trends emerge from today's sparse feed, both centered on reliability under constraints.<br><br>First, efficiency engineering for MoE. LRMoE addresses uneven expert routing in sparse Mixture-of-Experts models by recalibrating demand-side load, easing compute and communication bottlenecks without extra expert replicas. This reflects the broader industry shift — seen in DeepSeek and Mixtral lineages — from "can MoE work" to "can MoE be run cheaply on memory-constrained hardware."<br><br>Second, decision calibration and honest evaluation. ThinkJev targets a neglected scenario: when LLM probabilities directly drive code-level decisions, single-pass outputs are often miscalibrated on multi-step tasks, and the paper proposes amortized inference that adapts to any reasoning budget. OpenFrontiers complements this with a benchmark of open research problems, measuring "scientific rediscovery" to probe whether LLMs can do genuine research rather than pattern-matched problem solving.<br><br>Together, they signal a maturing field: less focus on raw scale, more on trustworthiness and truthful evaluation.
+    Two threads stand out today despite thin feeds.<br><br>First, calibration is a recurring theme. ThinkJev shows that a single forward pass can yield reliable probabilities over typed, multi-step decisions (e.g., arithmetic), which matters for pipelines where downstream code consumes model probabilities directly. Meanwhile, Amortized Localized Posterior Inference tackles scientific model calibration for ocean turbulence closures, jointly handling observation noise and context uncertainty — a notable advance in physics-informed ML.<br><br>Second, the push toward research-grade AI and scalable agents continues. OpenFrontiers curates open research problems across disciplines to benchmark whether LLMs can rediscover known scientific results, filling a gap left by math/coding benchmarks. WebAnything converts the wild web into a scalable agent environment, echoing industry bets on web-operating agents. Finally, LRMoE attacks MoE load imbalance from the demand side rather than expert replication, a design choice that could reshape distributed MoE training on memory-constrained hardware.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 检查报告站抓取脚本超时配置：今日 GitHub/HuggingFace/博客全部为空，疑似 timeout=15 的老问题复发，建议确认 timeout=60 生效<br>- 关注 MoE 推理成本优化方向：若做本地部署或微调业务，可跟踪 LRMoE 一类负载均衡方案降本<br>- 给 LLM 应用加"概率校准"环节：涉及自动决策（分类、路由、打分）的产品，可参考 ThinkJev 思路避免单前向概率误判<br>- 用 OpenFrontiers 类基准做选型测试：评估模型时加入科研题，比纯聊天更能暴露真实推理能力<br>- 设置空数据告警：数据源连续为空时主动通知，避免静默生成"空日报"</div>
+  <div>1. 关注决策概率校准能力——若你的产品依赖LLM输出概率驱动逻辑分支，ThinkJev类方法值得引入评估。<br>2. MoE部署成本有望下降——LRMoE思路提示未来可在受限硬件上训练更大稀疏模型，自部署门槛降低。<br>3. 跟踪OpenFrontiers榜单——它是评估前沿模型科研潜力的实用标尺，可用于选型参考。<br>4. 网页智能体数据工程是新机会——WebAnything预示真实网页环境构建将成为热点，可提前布局数据清洗/标注能力。<br>5. 科学计算+AI交叉岗需求上升——湍流校准案例显示懂物理又懂ML的复合人才稀缺。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Audit the report scraper's timeout config: today's empty GitHub/HuggingFace/blog results suggest the old timeout=15 issue may have returned; verify timeout=60 is active<br>- Track MoE inference-cost optimization: if you run local deployment or fine-tuning workloads, load-balancing approaches like LRMoE can materially cut costs<br>- Add probability calibration to LLM products: for apps making automated decisions (classification, routing, scoring), single-forward-pass probabilities are unreliable — ThinkJev-style calibration is worth studying<br>- Use research benchmarks for model selection: adding scientific problems (OpenFrontiers-style) to eval suites exposes real reasoning ability better than chat alone<br>- Add empty-data alerting: notify proactively when feeds stay empty to avoid silently publishing hollow reports
+    1. Audit your LLM probability pipelines — ThinkJev-style calibration fixes silent errors when probabilities drive code branches.<br>2. Watch MoE training costs — LRMoE's demand-side rebalancing may enable larger sparse models on constrained hardware.<br>3. Track OpenFrontiers — a practical yardstick for judging whether frontier models are truly research-capable.<br>4. Position for web-agent data engineering — WebAnything signals demand for converting real web pages into agent-ready environments.<br>5. Invest in SciML skills — the turbulence calibration case shows physics+ML hybrid talent remains scarce.
   </div>
 </div>
 
