@@ -502,5 +502,9 @@
   {
     "date": "2026-10-31",
     "summary": "### 执行摘要\n中文：\n• MoE训练提速：需求侧负载重校准降本增效\n• LLM科研能力基准OpenFrontiers正式发布\n• WebAnything：真实网页构建智能体训练环境\n• 模型校准技术落地海洋湍流模拟场景\n• ThinkJev优化LLM多步推理决策可靠性\n\nEnglish:\n• LRMoE: Demand-side recalibration slashes MoE traini"
+  },
+  {
+    "date": "2026-11-01",
+    "summary": "### 执行摘要\n\n中文：\n- 今日数据源普遍乏力，仅 arXiv 有新增\n- MoE 训练效率成新焦点，LRMoE 解决显存瓶颈\n- ThinkJev 探索大模型\"预算可控\"的校准决策\n- OpenFrontiers  benchmark 瞄准 AI 科研再发现能力\n- 建议检查爬虫超时配置，避免空数据常态化\n\nEnglish:\n- Most data sources came back emp"
   }
 ]

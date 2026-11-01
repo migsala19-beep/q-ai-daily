@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 | 2026-11-01</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:800px;margin:0 auto;padding:20px;background:#0a0a12;color:#e8e8e8;line-height:1.7}
+h1{color:#00d4aa;border-bottom:2px solid #00d4aa;padding-bottom:10px}
+h2{color:#00d4aa;margin-top:32px;font-size:1.3em}
+h3{color:#888;margin-top:24px;font-size:1em;border-bottom:1px solid #333;padding-bottom:6px}
+.card{background:#12121e;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 4px 12px rgba(0,212,170,0.08)}
+a{color:#4ecdc4;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:20px;list-style:none}
+li{margin:8px 0}
+li::before{content:"•";color:#00d4aa;margin-right:8px}
+.back{display:inline-block;margin-bottom:20px;color:#888}
+.tag{display:inline-block;background:#00d4aa20;color:#00d4aa;padding:2px 10px;border-radius:20px;font-size:12px;margin-right:6px}
+.empty{color:#666;font-style:italic}
+.en{color:#999;font-size:14px;margin-top:10px;padding:10px 0;border-top:1px dashed #333}
+.en-title{color:#666;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.source-count{display:inline-block;background:#1a1a2e;color:#888;padding:2px 8px;border-radius:12px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">← 返回首页</a>
+<h1>🔔 AI 日报 — 2026-11-01</h1>
+<div style="margin-bottom:20px">
+  <span class="tag">中英对照</span>
+  <span class="tag">执行摘要</span>
+  <span class="tag">深度研究</span>
+  <span class="tag">实践启发</span>
+</div>
+
+<div class="card">
+  <h2>📊 执行摘要</h2>
+  <div>- 今日数据源普遍乏力，仅 arXiv 有新增<br>- MoE 训练效率成新焦点，LRMoE 解决显存瓶颈<br>- ThinkJev 探索大模型"预算可控"的校准决策<br>- OpenFrontiers  benchmark 瞄准 AI 科研再发现能力<br>- 建议检查爬虫超时配置，避免空数据常态化</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Most data sources came back empty today; arXiv is the only fresh feed<br>- LRMoE tackles memory bottlenecks in MoE training efficiency<br>- ThinkJev explores budget-calibrated typed decisions for LLMs<br>- OpenFrontiers benchmark targets AI's scientific rediscovery ability<br>- Recommend checking scraper timeout settings to avoid recurring empty days
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔬 深度研究报告</h2>
+  <div>今日资讯量偏低，但仅有的几篇论文恰好指向一个共性趋势：**让大模型在"有限资源下可靠地做事"**。<br><br>趋势一：MoE 的效率工程化。LRMoE 针对稀疏混合专家模型的负载不均问题，提出需求侧负载重校准方案，在不增加专家副本的前提下缓解计算与通信瓶颈。这与近期业界（如 DeepSeek、Mixtral 系列）对 MoE 落地成本的持续压榨一脉相承——MoE 的竞争已从"能不能做"转向"能不能便宜地做"。<br><br>趋势二：决策校准与评估基准。ThinkJev 关注一个被忽视的场景：LLM 输出的概率若直接驱动代码决策（如算术、多步推理），单次前向传播的概率往往失真，论文探索了"一次思考、任意预算"的校准方法。OpenFrontiers 则构建了开放科研问题集，用"科学再发现"来评估 LLM 的真实研究能力，弥补了现有基准多停留在解题层面的空白。<br><br>两者共同说明：社区正从"模型更大"转向"输出更可信、评估更真实"。</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    Two trends emerge from today's sparse feed, both centered on reliability under constraints.<br><br>First, efficiency engineering for MoE. LRMoE addresses uneven expert routing in sparse Mixture-of-Experts models by recalibrating demand-side load, easing compute and communication bottlenecks without extra expert replicas. This reflects the broader industry shift — seen in DeepSeek and Mixtral lineages — from "can MoE work" to "can MoE be run cheaply on memory-constrained hardware."<br><br>Second, decision calibration and honest evaluation. ThinkJev targets a neglected scenario: when LLM probabilities directly drive code-level decisions, single-pass outputs are often miscalibrated on multi-step tasks, and the paper proposes amortized inference that adapts to any reasoning budget. OpenFrontiers complements this with a benchmark of open research problems, measuring "scientific rediscovery" to probe whether LLMs can do genuine research rather than pattern-matched problem solving.<br><br>Together, they signal a maturing field: less focus on raw scale, more on trustworthiness and truthful evaluation.
+  </div>
+</div>
+
+<div class="card">
+  <h2>💡 实践启发</h2>
+  <div>- 检查报告站抓取脚本超时配置：今日 GitHub/HuggingFace/博客全部为空，疑似 timeout=15 的老问题复发，建议确认 timeout=60 生效<br>- 关注 MoE 推理成本优化方向：若做本地部署或微调业务，可跟踪 LRMoE 一类负载均衡方案降本<br>- 给 LLM 应用加"概率校准"环节：涉及自动决策（分类、路由、打分）的产品，可参考 ThinkJev 思路避免单前向概率误判<br>- 用 OpenFrontiers 类基准做选型测试：评估模型时加入科研题，比纯聊天更能暴露真实推理能力<br>- 设置空数据告警：数据源连续为空时主动通知，避免静默生成"空日报"</div>
+  <div class="en">
+    <div class="en-title">English</div>
+    - Audit the report scraper's timeout config: today's empty GitHub/HuggingFace/blog results suggest the old timeout=15 issue may have returned; verify timeout=60 is active<br>- Track MoE inference-cost optimization: if you run local deployment or fine-tuning workloads, load-balancing approaches like LRMoE can materially cut costs<br>- Add probability calibration to LLM products: for apps making automated decisions (classification, routing, scoring), single-forward-pass probabilities are unreliable — ThinkJev-style calibration is worth studying<br>- Use research benchmarks for model selection: adding scientific problems (OpenFrontiers-style) to eval suites exposes real reasoning ability better than chat alone<br>- Add empty-data alerting: notify proactively when feeds stay empty to avoid silently publishing hollow reports
+  </div>
+</div>
+
+<div class="card">
+  <h2>💬 原始资讯</h2>
+
+  <h3>GitHub Trending <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>arXiv 论文 <span class="source-count">6 items</span></h3>
+  <ul><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37720" target="_blank" style="font-weight:600">LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37720v1 Announce Type: new 
+Sparse Mixture-of-Experts (MoE) models offer scalable capacity for Web applications, but uneven routing creates computation and communication bottlenecks. Existi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37731" target="_blank" style="font-weight:600">Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37731v1 Announce Type: new 
+Model discrepancy may prevent a single calibration parameter from reproducing a physical response across the context domain. In addition, uncertainties in observ</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37732" target="_blank" style="font-weight:600">ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37732v1 Announce Type: new 
+Many uses of language models end in a typed decision: a choice among a closed set of options, whose probabilities code can act on. Reading those probabilities fr</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37739" target="_blank" style="font-weight:600">OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37739v1 Announce Type: new 
+Large language models (LLMs) have shown increasing promise in research-level problem solving, yet a comprehensive collection of such problems is still missing, a</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37786" target="_blank" style="font-weight:600">WebAnything: From the Wild Web to Scalable Agent Environments</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37786v1 Announce Type: new 
+Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engi</span>
+        </li><li style="margin:12px 0">
+            <a href="https://arxiv.org/abs/2610.37809" target="_blank" style="font-weight:600">What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs</a>
+            <span style="color:#888;font-size:13px"> — arXiv:2610.37809v1 Announce Type: new 
+LLM agents that answer questions over Web knowledge graphs are increasingly wrapped in checks derived from the graph's ontology, on the assumption that a formal </span>
+        </li></ul>
+
+  <h3>HuggingFace Papers <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+
+  <h3>大厂博客 <span class="source-count">0 items</span></h3>
+  <ul><li class="empty">暂无数据</li></ul>
+</div>
+
+<footer style="text-align:center;color:#555;margin-top:40px">
+  生成于 2026-11-01 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+</footer>
+</body>
+</html>
