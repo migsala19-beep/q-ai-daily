@@ -506,5 +506,9 @@
   {
     "date": "2026-11-01",
     "summary": "### 执行摘要\n中文：\n- MoE训练负载重校准新方案登场\n- 语言模型决策校准成为热点\n- 科学难题基准OpenFrontiers发布\n- 网页智能体环境规模化探索\n- 今日源数据偏少仅arXiv有更新\n\nEnglish:\n- LRMoE rebalances MoE expert load for memory-constrained training\n- Calibrated typed "
+  },
+  {
+    "date": "2026-11-02",
+    "summary": "### 执行摘要\n中文：\n1. 今日各数据源均无新增内容\n2. GitHub Trending 数据抓取为空\n3. arXiv/HuggingFace 无匹配论文\n4. 大厂博客未监测到更新\n5. 建议检查抓取管道是否正常运行\n\nEnglish:\n1. No new content from any data source today\n2. GitHub Trending fetch return"
   }
 ]
