@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>1. 今日各数据源均无新增内容<br>2. GitHub Trending 数据抓取为空<br>3. arXiv/HuggingFace 无匹配论文<br>4. 大厂博客未监测到更新<br>5. 建议检查抓取管道是否正常运行</div>
+  <div>- 今日四源抓取均为空，疑抓取管线故障<br>- 无 GitHub Trending / arXiv / HF / 大厂博客数据<br>- 建议立即排查 generate_report.py 网络超时<br>- 可参考 domiai.com.cn 历史报告补位</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. No new content from any data source today<br>2. GitHub Trending fetch returned empty<br>3. No matching papers on arXiv/HuggingFace<br>4. No updates detected on major tech blogs<br>5. Recommend checking if the scraping pipeline is working properly
+    - All four data sources returned empty today — likely a scraping pipeline failure.<br>- No GitHub Trending, arXiv, HuggingFace Papers, or big-tech blog data collected.<br>- Recommend checking generate_report.py for network timeouts immediately.<br>- Past archived reports on domiai.com.cn can serve as a fallback.
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日所有数据源（GitHub Trending、arXiv、HuggingFace Papers、大厂博客）均未返回有效内容，这不是"今日无新闻"，而更可能是数据采集环节出现故障。可能的原因包括：GitHub Trending 页面结构变更导致解析失败；arXiv API 请求被限流或超时；HuggingFace papers 接口返回异常；博客 RSS 源失效。建议下一步检查抓取脚本的日志与错误输出，验证网络连通性，并对每个数据源做单独的手工测试，定位具体故障点。长期来看，应为管道增加"空数据告警"机制，避免静默失败导致日报长期空白而不被发现。</div>
+  <div>今日所有数据源（GitHub Trending、arXiv cs.AI、HuggingFace Papers、OpenAI/DeepMind 博客）均返回空列表，这不是"今日无新闻"——AI 领域每日都有大量新动态，四源同时为空几乎可以确定是抓取管线故障。根据历史经验，最可能的原因是：网络波动导致各源请求超时（脚本中 timeout 配置过短）、或目标站点结构变更/反爬升级。建议先在 Mac mini 终端手动运行一次 `cd ~/qxia-reports && python3 generate_report.py`，观察每个源的抓取日志，定位是哪个环节失败。若确认是超时问题，将 requests 的 timeout 从 15s 提升到 60s；若是个别源改版，需更新对应的 HTML 解析选择器。在修复前，今日报告建议标注"数据缺失，管线维护中"，避免发布误导性内容。</div>
   <div class="en">
     <div class="en-title">English</div>
-    All data sources (GitHub Trending, arXiv, HuggingFace Papers, major tech blogs) returned no valid content today. This is more likely a data pipeline failure than "no news today." Possible causes: GitHub Trending page structure changed, breaking the parser; arXiv API rate-limited or timed out; HuggingFace papers endpoint error; blog RSS feeds broken. Next steps: check scraper logs and error output, verify network connectivity, and manually test each source individually. Long-term, add an "empty data alert" to the pipeline to avoid silent failures going unnoticed.
+    All four sources (GitHub Trending, arXiv cs.AI, HuggingFace Papers, OpenAI/DeepMind blogs) returned empty lists today. This is almost certainly a pipeline failure rather than a genuinely quiet news day. Based on past incidents, likely causes include: network timeouts (the script's timeout value is too short), or upstream site structure changes / anti-scraping updates. Recommended first step: run `cd ~/qxia-reports && python3 generate_report.py` manually on the Mac mini and inspect per-source logs to isolate the failure. If timeouts are the culprit, raise the requests timeout from 15s to 60s; if a source's HTML changed, update its parsing selectors. Until fixed, today's report should be labeled "data missing — pipeline under maintenance" to avoid publishing misleading content.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>1. 检查抓取日志 —— 空数据通常意味着管道故障而非无新闻<br>2. 手工访问各数据源 —— 快速定位是哪个源出了问题<br>3. 为空结果加告警 —— 避免日报长期空白无人察觉<br>4. 增加数据源降级方案 —— 主源失败时自动切换备用源<br>5. 监控 API 配额与限流 —— arXiv/HF 频繁请求易触发限流</div>
+  <div>- 立即手动跑一次 generate_report.py 并查看日志 —— 快速定位是哪个源、哪一步失败。<br>- 把抓取 timeout 从 15s 提到 60s —— 历史经验表明这是空数据的最常见根因。<br>- 给管线加"空数据告警" —— 四源全空时自动通知（如写日志标记 / QQ 推送），避免静默失败。<br>- 抓取逻辑改为多线程并行 —— 单个源超时不阻塞其他源，提高整体成功率。<br>- 报告页增加数据源状态徽章 —— 每个板块显示"✅ N items / ❌ 抓取失败"，提升透明度。</div>
   <div class="en">
     <div class="en-title">English</div>
-    1. Check scraping logs — empty data usually means pipeline failure, not no news<br>2. Manually visit each source — quickly identify which one is broken<br>3. Add alerts for empty results — avoid silently blank reports going unnoticed<br>4. Build fallback sources — auto-switch to backup feeds when primary fails<br>5. Monitor API quotas and rate limits — frequent requests to arXiv/HF easily trigger throttling
+    - Re-run generate_report.py manually and check logs — the fastest way to identify which source/step failed.<br>- Raise the scraping timeout from 15s to 60s — historically the most common root cause of empty data.<br>- Add an "empty-data alert" to the pipeline — notify (log flag / QQ push) when all sources return empty, avoiding silent failures.<br>- Switch scraping to multi-threaded parallel fetching — one slow source shouldn't block the rest.<br>- Add per-source status badges on the report page — show "✅ N items / ❌ fetch failed" for transparency.
   </div>
 </div>
 

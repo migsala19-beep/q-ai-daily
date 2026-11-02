@@ -509,6 +509,6 @@
   },
   {
     "date": "2026-11-02",
-    "summary": "### 执行摘要\n中文：\n1. 今日各数据源均无新增内容\n2. GitHub Trending 数据抓取为空\n3. arXiv/HuggingFace 无匹配论文\n4. 大厂博客未监测到更新\n5. 建议检查抓取管道是否正常运行\n\nEnglish:\n1. No new content from any data source today\n2. GitHub Trending fetch return"
+    "summary": "### 执行摘要\n中文：\n- 今日四源抓取均为空，疑抓取管线故障\n- 无 GitHub Trending / arXiv / HF / 大厂博客数据\n- 建议立即排查 generate_report.py 网络超时\n- 可参考 domiai.com.cn 历史报告补位\n\nEnglish:\n- All four data sources returned empty today — likely a"
   }
 ]
