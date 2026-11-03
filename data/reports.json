@@ -510,5 +510,9 @@
   {
     "date": "2026-11-02",
     "summary": "### 执行摘要\n中文：\n- 今日四源抓取均为空，疑抓取管线故障\n- 无 GitHub Trending / arXiv / HF / 大厂博客数据\n- 建议立即排查 generate_report.py 网络超时\n- 可参考 domiai.com.cn 历史报告补位\n\nEnglish:\n- All four data sources returned empty today — likely a"
+  },
+  {
+    "date": "2026-11-03",
+    "summary": "### 执行摘要\n中文：\n- 今日AI信号偏弱\n- GitHub热点偏工程基建\n- 自进化Agent评估受关注\n- Web世界模型安全成焦点\n- AI套利与情感识别有新论\n\nEnglish:\n- Today’s AI signal is relatively weak\n- GitHub trending leans infrastructure/engineering\n- Self-evolvin"
   }
 ]
