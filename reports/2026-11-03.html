@@ -35,28 +35,28 @@ li::before{content:"•";color:#00d4aa;margin-right:8px}
 
 <div class="card">
   <h2>📊 执行摘要</h2>
-  <div>- 今日AI信号偏弱<br>- GitHub热点偏工程基建<br>- 自进化Agent评估受关注<br>- Web世界模型安全成焦点<br>- AI套利与情感识别有新论</div>
+  <div>- Agent 安全评估成研究热点<br>- 自进化 Agent 隐藏规则学习受关注<br>- 多模态语音情感识别评测新进展<br>- AI 模型市场计算套利策略首现<br>- ONNX Runtime 登 GitHub 热榜</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Today’s AI signal is relatively weak<br>- GitHub trending leans infrastructure/engineering<br>- Self-evolving agent evaluation gains attention<br>- Web world-model safety becomes a focus<br>- New papers on AI arbitrage and emotion recognition
+    - Agent safety evaluation emerges as a key research focus<br>- Self-evolving agents tested on hidden-rule learning<br>- Multimodal speech emotion recognition evaluation advances<br>- Computational arbitrage in AI model marketplaces explored<br>- ONNX Runtime climbs GitHub Trending
   </div>
 </div>
 
 <div class="card">
   <h2>🔬 深度研究报告</h2>
-  <div>今日最值得注意的不是单点突破，而是“Agent 评估与安全”正在从能力评测转向风险边界。论文《More Rules, Longer Lists?》指出，自进化 Agent 可能靠记录例外通过隐藏规则课程，列表变长并不等于真正学会规则；这提示评价自进化系统不能只看成功率，还要看状态是否膨胀、规则是否可泛化。另一个方向是 Web World Models 的安全充分性：模型能预测 plausible future，不代表能支撑正确安全决策。这对浏览器 Agent、自动下单、企业流程自动化尤其关键。工程侧，ONNX Runtime、build-your-own-x、Data-Science-For-Beginners 持续上榜，说明AI落地仍依赖推理加速、基础能力重建和数据科学普惠。</div>
+  <div>趋势一：AI Agent 安全与评估研究密集爆发。今日 arXiv 三篇论文形成清晰信号。Self-evolving agents 通过反馈重写持久状态来学习隐藏规则，但研究发现 Agent 可能只是将每条纠正记录为例外，导致规则列表无限增长——这揭示了"表面学习"与"真正泛化"的本质区别。Web World Models 论文进一步指出：预测结果看似合理，不一定支撑正确的安全决策，3000 条人类评估显示当前模型在"安全充分性"上仍有明显缺口。第三篇论文探索 ChatGPT 作为监控助手的滥用风险，提示能力越强、滥用面越广。三篇论文共同指向：Agent 能力跃升的同时，安全评测体系必须同步进化。<br><br>趋势二：AI 开发基础设施持续民主化。GitHub Trending 中，微软 ONNX Runtime 作为跨平台高性能推理加速器持续上榜，配合《Data-Science-For-Beginners》20 课教程与 build-your-own-x 项目，反映 AI 开发工具链正以前所未有的低门槛向大众开发者扩散。基础设施的普及，正是上层 Agent 应用爆发的底座。</div>
   <div class="en">
     <div class="en-title">English</div>
-    The main signal is a shift from capability benchmarking to safety and evaluation boundaries for agents. “More Rules, Longer Lists?” argues that self-evolving agents may pass hidden-rule curricula by accumulating exceptions rather than learning general rules, so persistent-state growth matters as much as success rate. Separately, “Beyond Plausible Prediction” shows that web world models can generate plausible futures while still failing safety-sufficient decisions, which is critical for browser agents and enterprise automation. On the engineering side, ONNX Runtime, build-your-own-x, and Microsoft’s data-science curriculum remain prominent, indicating that practical AI progress still depends on inference efficiency, foundational rebuilding, and broad data-science literacy.
+    Trend 1: Research on AI Agent safety and evaluation is surging. Three arXiv papers today send a clear signal. Self-evolving agents rewrite a persistent state from feedback to learn hidden rules, yet studies find agents may simply record each correction as an exception, causing the rule list to grow indefinitely—revealing the gap between "surface learning" and true generalization. The Web World Models paper further shows that plausible predictions do not necessarily support correct safety decisions; 3,000 human evaluations reveal clear gaps in "safety sufficiency." A third paper explores ChatGPT's risk as a surveillance assistant, showing that stronger capabilities widen misuse surfaces. Together: as agent capabilities leap, safety evaluation must evolve in lockstep.<br><br>Trend 2: AI dev infrastructure keeps democratizing. ONNX Runtime remains on GitHub Trending as a cross-platform inference accelerator, alongside Microsoft's Data-Science-For-Beginners and build-your-own-x, reflecting an unprecedented lowering of barriers for everyday developers. This infrastructure wave is the foundation for the agent application explosion above it.
   </div>
 </div>
 
 <div class="card">
   <h2>💡 实践启发</h2>
-  <div>- 给Agent加“状态预算”：防例外无限膨胀。<br>- 上线Web Agent前做安全决策测试：不只看任务完成率。<br>- 用ONNX Runtime优化本地推理：降本且易部署。<br>- 跟做build-your-own-x项目：补齐底层实现直觉。<br>- 建立论文→原型清单：每周挑1篇复现核心实验。</div>
+  <div>1. 做 Agent 产品的团队应引入"隐藏规则"测试集——不只看过关率，要检测 Agent 是真内化规则还是在堆例外。今日论文直接给出了这套评测范式。<br>2. 用 ONNX Runtime 优化推理成本——从原生 PyTorch/TF 迁移通常可获得显著性能提升，跨平台部署也更省事。社区共识已形成。<br>3. 部署 paperless-ngx 做文档智能化——扫描、索引、归档一站式，适合作为个人/团队知识管理底座。低门槛、高回报的 AI 落地方向。<br>4. 关注 AI 模型聚合/路由的商业模式——计算套利论文表明，不同模型成本与能力差异本身就蕴含商业机会。Marketplace 越繁荣，中间层机会越多。<br>5. 建立 AI 输出的人工复核机制——ChatGPT 监控滥用研究提示：通用模型能力越强，被滥用于高风险场景的概率越高。合规是长期竞争力。</div>
   <div class="en">
     <div class="en-title">English</div>
-    - Add a state budget to agents to prevent exception-list bloat.<br>- Test web agents for safety decisions, not only task success.<br>- Use ONNX Runtime for cheaper local inference deployment.<br>- Build one “build-your-own-x” project to strengthen fundamentals.<br>- Maintain a paper-to-prototype list; replicate one key experiment weekly.
+    1. Agent product teams should build hidden-rule test sets—don't just track pass rates; test whether the agent truly internalizes rules or merely stacks exceptions. Today's papers provide the evaluation paradigm.<br>2. Optimize inference cost with ONNX Runtime—migrating from native Pyytorch/TF usually yields significant performance gains and easier cross-platform deployment.<br>3. Deploy paperless-ngx for document intelligence—scan, index, and archive in one place, ideal as a personal/team knowledge base. Low barrier, high ROI.<br>4. Watch AI model aggregation/routing business models—the computational arbitrage paper shows cost-capability gaps across models themselves create business opportunities.<br>5. Establish human review for AI outputs—the ChatGPT surveillance study warns: the stronger general models become, the higher the misuse risk in high-stakes scenarios. Compliance is long-term competitiveness.
   </div>
 </div>
 
@@ -125,7 +125,7 @@ Recent scientific agents build knowledge recursively by retrieving evidence, con
 </div>
 
 <footer style="text-align:center;color:#555;margin-top:40px">
-  生成于 2026-11-03 08:00 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
+  生成于 2026-11-03 08:01 | Q虾 AI 助手 | <a href="../index.html">查看历史报告</a>
 </footer>
 </body>
 </html>
